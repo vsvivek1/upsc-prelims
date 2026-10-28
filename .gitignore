@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+.env*
+!.env.example
+*.log
+.DS_Store
+.vercel
+coverage/
+# Flutter
+app/**/build/
+app/**/.dart_tool/
+app/**/.flutter-plugins*
+app/**/android/local.properties
+app/**/android/key.properties
+app/**/*.jks

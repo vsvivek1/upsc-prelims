@@ -1,0 +1,66 @@
+# Architecture
+
+Algo UPSC is one Recallio course. The web app ships first; the Flutter
+Android app follows and talks to the same Supabase schema, so a learner's
+progress moves between web and phone.
+
+```
+browser (upsc.calecutech.com)            Supabase (USS project)
+  Next.js 16, client-side study app  ──►   schema upsc: content, learner state, payments
+  engine/ (FSRS, planner, sittings)        auth: Google + email code
+  service worker (web push alerts)   ◄──   edge functions: upsc-alerts (pg_cron, every 10 min)
+                                            upsc-ai (Anthropic proxy)
+                                            upsc-weekly-report (pg_cron, Sunday 18:00 IST)
+  Razorpay Checkout                  ──►   upsc-razorpay-create-order
+  Razorpay webhook                   ──►   upsc-razorpay-webhook → subscription + GST invoice
+```
+
+## Why the study app runs in the browser
+
+The Daily Feed is a single highly interactive screen: timers that pause when
+the tab is hidden, a card that never moves without a rating, resume after a
+reload. The engine runs client-side and writes straight to Supabase through
+row-level security, so the page needs no server round trip per card and the
+same engine logic can be ported to Dart for the Flutter app. Next.js renders
+the static shells (landing, legal pages) and hosts route handlers only where a
+server is needed (the invoice page).
+
+## Data flow for one card
+
+1. On open, the feed loads the learner row, every unlocked card's metadata,
+   the learner's `card_state` rows and the open sitting (if any).
+2. If no sitting is open and one is due, the sitting builder picks up to 10
+   cards and saves the sitting (card ids, position, seconds seen per card).
+3. The card's minimum time counts only while the tab is visible; seconds are
+   saved to the sitting row and localStorage every few seconds.
+4. A rating runs the FSRS update (with the exam-date cap), writes
+   `card_state`, appends `review_log` and advances the sitting position in one
+   RPC (`upsc.rate_card`), then the next card shows.
+
+## Schema `upsc`
+
+| Table | |
+|---|---|
+| `courses` | One row: titles, exam, prices, free card limit, access end |
+| `exam_info` | Official exam dates with source and last-checked date |
+| `topics`, `cards`, `questions` | Content pack (payload jsonb), `seq` = teaching order |
+| `learners` | Exam date, language, study times, minutes per day, quiet hours, report opt-in |
+| `card_state` | FSRS fields plus `last_rating`, `ever_tough`, `tough_streak`, `honesty_misses`, `recent` |
+| `review_log` | Append-only rating log |
+| `sittings` | Each sitting: card ids, position, seconds per card, kind (normal, bonus, cram) |
+| `reports` | Weekly report numbers (JSON) |
+| `push_subscriptions` | Web push endpoints per learner |
+| `ai_cache`, `ai_flags` | Cached AI explanations and learner reports of bad AI text |
+| `payment_orders`, `subscriptions`, `invoices` | Razorpay orders, access grants and GST invoices |
+| `config` | Tunable engine numbers and AI model ids |
+
+Access rule: any signed-in learner reads cards with `seq <= free_card_limit`;
+the rest need an active subscription (`upsc.has_access()`).
+
+## Payments
+
+Same contract as Geological Assistant: the client asks
+`upsc-razorpay-create-order` for an order (price from `upsc.courses`, never
+from the client), Razorpay Checkout takes the money, and only the signed
+webhook grants access and issues the GST invoice. The Razorpay account is
+shared; the webhook ignores payments whose notes name another app.
