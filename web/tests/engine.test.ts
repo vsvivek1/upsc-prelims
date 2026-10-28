@@ -197,11 +197,22 @@ describe("sittings", () => {
 
   it("opens a bonus sitting only after the gap", () => {
     const last = at("2026-10-28", "18:00");
-    const r = nextSitting({ now: at("2026-10-28", "18:30"), prefs, quotaLeft: 0, lastFinishedAt: last, bonusDoneToday: 0 });
+    const r = nextSitting({ now: at("2026-10-28", "18:30"), prefs, quotaLeft: 0, lastFinishedAt: last, normalDoneToday: 3, bonusDoneToday: 0 });
     expect(r).toEqual({ status: "at", time: "19:30", bonus: true });
-    const late = nextSitting({ now: at("2026-10-28", "21:00"), prefs, quotaLeft: 0, lastFinishedAt: at("2026-10-28", "20:30"), bonusDoneToday: 0 });
+    const late = nextSitting({ now: at("2026-10-28", "21:00"), prefs, quotaLeft: 0, lastFinishedAt: at("2026-10-28", "20:30"), normalDoneToday: 3, bonusDoneToday: 0 });
     expect(late.status).toBe("tomorrow");
-    const max = nextSitting({ now: at("2026-10-28", "12:00"), prefs, quotaLeft: 0, lastFinishedAt: last, bonusDoneToday: 2 });
+    const max = nextSitting({ now: at("2026-10-28", "12:00"), prefs, quotaLeft: 0, lastFinishedAt: last, normalDoneToday: 3, bonusDoneToday: 2 });
     expect(max.status).toBe("tomorrow");
+  });
+
+  it("opens quota sittings at study times and lets missed ones catch up", () => {
+    const base = { prefs, quotaLeft: 20, bonusDoneToday: 0 };
+    // First sitting of the day opens at once.
+    expect(nextSitting({ ...base, now: at("2026-10-28", "06:45"), lastFinishedAt: null, normalDoneToday: 0 }).status).toBe("now");
+    // After the 07:00 sitting, the next opens at 08:10 (catch-up gap) or 13:30, whichever is first.
+    const r = nextSitting({ ...base, now: at("2026-10-28", "07:15"), lastFinishedAt: at("2026-10-28", "07:10"), normalDoneToday: 1 });
+    expect(r).toEqual({ status: "at", time: "08:10", bonus: false });
+    // Missed the 13:30 time: open now.
+    expect(nextSitting({ ...base, now: at("2026-10-28", "16:00"), lastFinishedAt: at("2026-10-28", "07:10"), normalDoneToday: 1 }).status).toBe("now");
   });
 });

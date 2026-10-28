@@ -145,7 +145,8 @@ export interface SittingTimeInput {
   now: Date;
   prefs: LearnerPrefs;
   quotaLeft: number;
-  lastFinishedAt: Date | null; // end of the last sitting today
+  lastFinishedAt: Date | null; // end of the last sitting (any day)
+  normalDoneToday: number;
   bonusDoneToday: number;
   config?: EngineConfig;
 }
@@ -157,31 +158,46 @@ export interface NextSitting {
   bonus: boolean;
 }
 
+/** Minutes between two quota sittings when the learner is catching up after the last study time. */
+const CATCH_UP_GAP = 60;
+
 /**
  * When can the next sitting start?
- * Normal sittings: whenever quota is left (study times are the alerts, not locks).
- * Bonus sittings: only after the gap, at most N a day, never in quiet hours.
+ * Quota sittings open at each study time (missed ones can be caught up; the first of the day opens at once).
+ * Bonus sittings, after the quota: only after the gap, at most N a day, never in quiet hours.
  */
 export function nextSitting(input: SittingTimeInput): NextSitting {
   const cfg = input.config ?? DEFAULT_CONFIG;
   const { prefs } = input;
-  const nowMin = localMinutes(input.now, prefs.timezone);
+  const tz = prefs.timezone;
+  const nowMin = localMinutes(input.now, tz);
+  const quiet = (m: number) => inQuietHours(Math.min(Math.max(m, 0), 1439), prefs.quiet_start, prefs.quiet_end);
+  const today = localDay(input.now, tz);
+  const lastToday = input.lastFinishedAt && localDay(input.lastFinishedAt, tz) === today ? input.lastFinishedAt : null;
+  const lastMin = lastToday ? localMinutes(lastToday, tz) : null;
+
   if (input.quotaLeft > 0) {
-    return { status: "now", bonus: false };
+    const times = [...prefs.study_times].map(hm).sort((a, b) => a - b);
+    const passed = times.filter((t) => t <= nowMin).length;
+    if (input.normalDoneToday === 0 || input.normalDoneToday < passed) return { status: "now", bonus: false };
+    const upcoming = times.find((t) => t > nowMin);
+    if (upcoming !== undefined) {
+      // Catching up is allowed an hour after the last sitting, if that comes before the next study time.
+      const catchUp = lastMin !== null ? lastMin + CATCH_UP_GAP : nowMin;
+      if (catchUp <= nowMin && !quiet(nowMin)) return { status: "now", bonus: false };
+      const at = Math.min(upcoming, catchUp);
+      return { status: "at", time: toHm(at), bonus: false };
+    }
+    // All study times have passed: one more sitting an hour after the last, outside quiet hours.
+    const at = lastMin !== null ? lastMin + CATCH_UP_GAP : nowMin;
+    if (at >= 1440 || quiet(at)) return { status: "tomorrow", bonus: false };
+    return at <= nowMin ? { status: "now", bonus: false } : { status: "at", time: toHm(at), bonus: false };
   }
+
   if (input.bonusDoneToday >= cfg.bonus_per_day) return { status: "tomorrow", bonus: true };
-  const lastMin = input.lastFinishedAt ? localMinutes(input.lastFinishedAt, prefs.timezone) : nowMin;
-  const sameDay =
-    input.lastFinishedAt && localDay(input.lastFinishedAt, prefs.timezone) === localDay(input.now, prefs.timezone);
-  const openAt = sameDay ? lastMin + cfg.bonus_gap_minutes : nowMin;
-  if (openAt >= 1440 || inQuietHours(Math.min(openAt, 1439), prefs.quiet_start, prefs.quiet_end)) {
-    return { status: "tomorrow", bonus: true };
-  }
-  if (openAt <= nowMin) {
-    return inQuietHours(nowMin, prefs.quiet_start, prefs.quiet_end)
-      ? { status: "tomorrow", bonus: true }
-      : { status: "now", bonus: true };
-  }
+  const openAt = lastMin !== null ? lastMin + cfg.bonus_gap_minutes : nowMin;
+  if (openAt >= 1440 || quiet(openAt)) return { status: "tomorrow", bonus: true };
+  if (openAt <= nowMin) return quiet(nowMin) ? { status: "tomorrow", bonus: true } : { status: "now", bonus: true };
   return { status: "at", time: toHm(openAt), bonus: true };
 }
 
