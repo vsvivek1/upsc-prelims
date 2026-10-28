@@ -40,13 +40,23 @@
    "freq": 0.6
   },
   {
+   "id": "environment.ecology",
+   "subject": "environment",
+   "title": {
+    "en": "Ecology basics",
+    "hi": "पारिस्थितिकी की मूल बातें"
+   },
+   "order": 12,
+   "freq": 0.6
+  },
+  {
    "id": "polity.preamble",
    "subject": "polity",
    "title": {
     "en": "The Preamble",
     "hi": "प्रस्तावना (उद्देशिका)"
    },
-   "order": 12,
+   "order": 18,
    "freq": 0.6,
    "prereq": [
     "polity.making"
@@ -59,10 +69,23 @@
     "en": "Inflation and price indices",
     "hi": "मुद्रास्फीति और मूल्य सूचकांक"
    },
-   "order": 17,
+   "order": 23,
    "freq": 0.75,
    "prereq": [
     "economy.national"
+   ]
+  },
+  {
+   "id": "environment.biodiversity",
+   "subject": "environment",
+   "title": {
+    "en": "Biodiversity and species",
+    "hi": "जैव विविधता और प्रजातियाँ"
+   },
+   "order": 30,
+   "freq": 0.8,
+   "prereq": [
+    "environment.ecology"
    ]
   },
   {
@@ -72,7 +95,7 @@
     "en": "Fundamental Rights",
     "hi": "मौलिक अधिकार"
    },
-   "order": 24,
+   "order": 37,
    "freq": 0.9,
    "prereq": [
     "polity.preamble"
@@ -85,10 +108,23 @@
     "en": "Money, RBI and monetary policy",
     "hi": "मुद्रा, आरबीआई और मौद्रिक नीति"
    },
-   "order": 39,
+   "order": 52,
    "freq": 0.9,
    "prereq": [
     "economy.inflation"
+   ]
+  },
+  {
+   "id": "environment.laws",
+   "subject": "environment",
+   "title": {
+    "en": "Protected areas and Indian laws",
+    "hi": "संरक्षित क्षेत्र और भारतीय क़ानून"
+   },
+   "order": 59,
+   "freq": 0.8,
+   "prereq": [
+    "environment.biodiversity"
    ]
   },
   {
@@ -98,7 +134,7 @@
     "en": "Directive Principles and Fundamental Duties",
     "hi": "राज्य के नीति निदेशक तत्व और मौलिक कर्तव्य"
    },
-   "order": 46,
+   "order": 67,
    "freq": 0.7,
    "prereq": [
     "polity.fr"
@@ -111,10 +147,23 @@
     "en": "Budget, deficits and taxes",
     "hi": "बजट, घाटे और कर"
    },
-   "order": 51,
+   "order": 72,
    "freq": 0.8,
    "prereq": [
     "economy.national"
+   ]
+  },
+  {
+   "id": "environment.conventions",
+   "subject": "environment",
+   "title": {
+    "en": "International conventions",
+    "hi": "अंतरराष्ट्रीय अभिसमय"
+   },
+   "order": 79,
+   "freq": 0.85,
+   "prereq": [
+    "environment.biodiversity"
    ]
   },
   {
@@ -124,7 +173,7 @@
     "en": "Parliament",
     "hi": "संसद"
    },
-   "order": 58,
+   "order": 87,
    "freq": 0.85,
    "prereq": [
     "polity.preamble"
@@ -137,10 +186,23 @@
     "en": "Banking and finance",
     "hi": "बैंकिंग और वित्त"
    },
-   "order": 66,
+   "order": 95,
    "freq": 0.7,
    "prereq": [
     "economy.money"
+   ]
+  },
+  {
+   "id": "environment.pollution",
+   "subject": "environment",
+   "title": {
+    "en": "Pollution and climate change",
+    "hi": "प्रदूषण और जलवायु परिवर्तन"
+   },
+   "order": 101,
+   "freq": 0.7,
+   "prereq": [
+    "environment.ecology"
    ]
   },
   {
@@ -150,7 +212,7 @@
     "en": "President and the Union Executive",
     "hi": "राष्ट्रपति और संघ की कार्यपालिका"
    },
-   "order": 72,
+   "order": 109,
    "freq": 0.75,
    "prereq": [
     "polity.parliament"
@@ -163,7 +225,7 @@
     "en": "External sector",
     "hi": "बाह्य क्षेत्र"
    },
-   "order": 78,
+   "order": 115,
    "freq": 0.7,
    "prereq": [
     "economy.money"
@@ -176,7 +238,7 @@
     "en": "The Judiciary",
     "hi": "न्यायपालिका"
    },
-   "order": 83,
+   "order": 120,
    "freq": 0.8,
    "prereq": [
     "polity.fr"
@@ -189,7 +251,7 @@
     "en": "Agriculture and rural schemes",
     "hi": "कृषि और ग्रामीण योजनाएँ"
    },
-   "order": 88,
+   "order": 125,
    "freq": 0.55
   },
   {
@@ -199,7 +261,7 @@
     "en": "Federalism and Emergency",
     "hi": "संघवाद और आपातकाल"
    },
-   "order": 92,
+   "order": 129,
    "freq": 0.7,
    "prereq": [
     "polity.parliament"
@@ -212,7 +274,7 @@
     "en": "Panchayats and Municipalities",
     "hi": "पंचायतें और नगरपालिकाएँ"
    },
-   "order": 98,
+   "order": 135,
    "freq": 0.6,
    "prereq": [
     "polity.federal"
@@ -225,7 +287,7 @@
     "en": "Constitutional and other bodies",
     "hi": "संवैधानिक और अन्य निकाय"
    },
-   "order": 102,
+   "order": 139,
    "freq": 0.7,
    "prereq": [
     "polity.parliament"
@@ -570,6 +632,198 @@
    "seq": 11
   },
   {
+   "id": "environment.ecology.f01",
+   "topic": "environment.ecology",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "NCERT Class XII Biology, Unit X 'Ecology', ch. 14",
+   "status": "needs_review",
+   "learn": {
+    "en": "Only about 10% of the energy at one level of a food chain passes to the next level (Lindeman's 10% law).",
+    "hi": "आहार श्रृंखला के एक स्तर की लगभग 10% ऊर्जा ही अगले स्तर तक पहुँचती है (लिंडेमान का 10% नियम)।"
+   },
+   "why": {
+    "en": "Most energy is used for living (breathing, moving) and is lost as heat, so little is left to pass on.",
+    "hi": "अधिकांश ऊर्जा जीने (श्वसन, चलने) में ख़र्च होकर ऊष्मा बन जाती है, इसलिए आगे थोड़ी ही बचती है।"
+   },
+   "recall_q": {
+    "en": "Roughly what share of energy passes from one trophic level to the next?",
+    "hi": "एक पोषी स्तर से अगले स्तर तक ऊर्जा का लगभग कितना हिस्सा जाता है?"
+   },
+   "recall_a": {
+    "en": "About 10%.",
+    "hi": "लगभग 10%।"
+   },
+   "explain_simple": {
+    "en": "Grass → deer → tiger: the tiger gets only a tiny part of the sun's energy the grass caught.",
+    "hi": "घास → हिरण → बाघ: घास ने जो सौर ऊर्जा पकड़ी, उसका बहुत छोटा हिस्सा ही बाघ तक पहुँचता है।"
+   },
+   "example": {
+    "en": "This is why food chains rarely have more than four or five levels.",
+    "hi": "इसीलिए आहार श्रृंखलाओं में चार-पाँच से ज़्यादा स्तर कम ही होते हैं।"
+   },
+   "seq": 12
+  },
+  {
+   "id": "environment.ecology.f02",
+   "topic": "environment.ecology",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XII Biology, Unit X 'Ecology', ch. 14",
+   "status": "needs_review",
+   "learn": {
+    "en": "The pyramid of energy is always upright. The pyramid of biomass can be inverted, as in the sea.",
+    "hi": "ऊर्जा का पिरामिड हमेशा सीधा होता है। जैवभार का पिरामिड उल्टा हो सकता है, जैसे समुद्र में।"
+   },
+   "why": {
+    "en": "In the sea, tiny phytoplankton reproduce fast, so at any moment their mass can be less than the fish that eat them.",
+    "hi": "समुद्र में सूक्ष्म पादप-प्लवक तेज़ी से बढ़ते हैं, इसलिए किसी क्षण उनका भार उन्हें खाने वाली मछलियों से कम हो सकता है।"
+   },
+   "recall_q": {
+    "en": "Which ecological pyramid can never be inverted?",
+    "hi": "कौन-सा पारिस्थितिक पिरामिड कभी उल्टा नहीं हो सकता?"
+   },
+   "recall_a": {
+    "en": "The pyramid of energy.",
+    "hi": "ऊर्जा का पिरामिड।"
+   },
+   "explain_simple": {
+    "en": "Energy only flows up and is lost at each step, so each level always has less.",
+    "hi": "ऊर्जा ऊपर ही बहती है और हर स्तर पर घटती है, इसलिए हर स्तर पर हमेशा कम होती है।"
+   },
+   "seq": 13
+  },
+  {
+   "id": "environment.ecology.f03",
+   "topic": "environment.ecology",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XII Biology, Unit X 'Ecology', ch. 14",
+   "status": "needs_review",
+   "learn": {
+    "en": "Ecological succession on bare rock is primary succession. Lichens are the first, or pioneer, species.",
+    "hi": "नंगी चट्टान पर होने वाला पारिस्थितिक अनुक्रमण प्राथमिक अनुक्रमण है। लाइकेन पहली, यानी अग्रणी, प्रजाति होते हैं।"
+   },
+   "why": {
+    "en": "Lichens release acids that break rock into soil, so mosses and then larger plants can grow.",
+    "hi": "लाइकेन अम्ल छोड़कर चट्टान को मिट्टी में तोड़ते हैं, जिससे मॉस और फिर बड़े पौधे उग पाते हैं।"
+   },
+   "recall_q": {
+    "en": "Which organisms are the pioneers on bare rock?",
+    "hi": "नंगी चट्टान पर अग्रणी जीव कौन होते हैं?"
+   },
+   "recall_a": {
+    "en": "Lichens.",
+    "hi": "लाइकेन।"
+   },
+   "explain_simple": {
+    "en": "No soil yet, so the first settlers must make soil themselves: that is the lichen's job.",
+    "hi": "अभी मिट्टी नहीं है, इसलिए पहले बसने वाले ख़ुद मिट्टी बनाते हैं: यही लाइकेन का काम है।"
+   },
+   "example": {
+    "en": "Succession on an abandoned farm, where soil already exists, is secondary succession and goes faster.",
+    "hi": "छोड़े गए खेत पर, जहाँ मिट्टी पहले से है, द्वितीयक अनुक्रमण होता है और तेज़ चलता है।"
+   },
+   "seq": 14
+  },
+  {
+   "id": "environment.ecology.f04",
+   "topic": "environment.ecology",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Standard ecology texts",
+   "status": "needs_review",
+   "learn": {
+    "en": "A keystone species has a much larger effect on its ecosystem than its numbers suggest; removing it changes the whole system.",
+    "hi": "मूलाधार (कीस्टोन) प्रजाति का अपने पारितंत्र पर असर उसकी संख्या से कहीं बड़ा होता है; उसे हटाने से पूरा तंत्र बदल जाता है।"
+   },
+   "why": {
+    "en": "It controls other species, for example a predator keeping grazers in check.",
+    "hi": "यह दूसरी प्रजातियों को नियंत्रित करती है, जैसे शिकारी चरने वाले जीवों को सीमित रखता है।"
+   },
+   "recall_q": {
+    "en": "What makes a species 'keystone'?",
+    "hi": "कोई प्रजाति 'कीस्टोन' क्यों कहलाती है?"
+   },
+   "recall_a": {
+    "en": "Its effect on the ecosystem is far larger than its abundance.",
+    "hi": "पारितंत्र पर उसका असर उसकी संख्या से कहीं अधिक होता है।"
+   },
+   "explain_simple": {
+    "en": "Like the central stone of an arch: pull it and the arch falls.",
+    "hi": "मेहराब के बीच के पत्थर जैसा: उसे हटाओ तो मेहराब गिर जाती है।"
+   },
+   "example": {
+    "en": "Tigers keep deer numbers in check, which protects forest regrowth.",
+    "hi": "बाघ हिरणों की संख्या सीमित रखते हैं, जिससे जंगल का पुनर्जनन बचता है।"
+   },
+   "seq": 15
+  },
+  {
+   "id": "environment.ecology.f05",
+   "topic": "environment.ecology",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Standard ecology texts",
+   "status": "needs_review",
+   "learn": {
+    "en": "An ecotone is the transition zone between two ecosystems. It often has more species than either side: the edge effect.",
+    "hi": "इकोटोन दो पारितंत्रों के बीच का संक्रमण क्षेत्र है। इसमें अक्सर दोनों ओर से ज़्यादा प्रजातियाँ होती हैं: इसे कोर प्रभाव (एज इफ़ेक्ट) कहते हैं।"
+   },
+   "why": {
+    "en": "Species from both ecosystems meet there, plus some that live only in the transition zone.",
+    "hi": "वहाँ दोनों पारितंत्रों की प्रजातियाँ मिलती हैं, और कुछ ऐसी भी जो केवल संक्रमण क्षेत्र में रहती हैं।"
+   },
+   "recall_q": {
+    "en": "What is the edge effect?",
+    "hi": "कोर प्रभाव (एज इफ़ेक्ट) क्या है?"
+   },
+   "recall_a": {
+    "en": "Higher species diversity in an ecotone than in the ecosystems on either side.",
+    "hi": "इकोटोन में दोनों ओर के पारितंत्रों से अधिक प्रजाति विविधता।"
+   },
+   "explain_simple": {
+    "en": "Where forest meets grassland, you find forest animals, grassland animals and edge specialists.",
+    "hi": "जहाँ जंगल घास के मैदान से मिलता है, वहाँ जंगल के, मैदान के और किनारे के ख़ास जीव मिलते हैं।"
+   },
+   "example": {
+    "en": "Mangroves are an ecotone between land and sea.",
+    "hi": "मैंग्रोव भूमि और समुद्र के बीच का इकोटोन हैं।"
+   },
+   "seq": 16
+  },
+  {
+   "id": "environment.ecology.sum",
+   "topic": "environment.ecology",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "NCERT Class XII Biology, Unit X 'Ecology'",
+   "status": "needs_review",
+   "title": {
+    "en": "Ecology basics",
+    "hi": "पारिस्थितिकी की मूल बातें"
+   },
+   "points": [
+    {
+     "en": "About 10% energy passes up each level.",
+     "hi": "हर स्तर पर लगभग 10% ऊर्जा ऊपर जाती है।"
+    },
+    {
+     "en": "Energy pyramid always upright; biomass can invert in the sea.",
+     "hi": "ऊर्जा पिरामिड हमेशा सीधा; समुद्र में जैवभार उल्टा हो सकता है।"
+    },
+    {
+     "en": "Lichens pioneer bare rock.",
+     "hi": "नंगी चट्टान पर लाइकेन अग्रणी।"
+    },
+    {
+     "en": "Ecotone → edge effect.",
+     "hi": "इकोटोन → कोर प्रभाव।"
+    }
+   ],
+   "seq": 17
+  },
+  {
    "id": "polity.preamble.f01",
    "topic": "polity.preamble",
    "type": "fact",
@@ -596,7 +850,7 @@
     "en": "'We, the people' means: we made it, so we are the boss of it.",
     "hi": "'हम, भारत के लोग' का अर्थ: हमने बनाया, इसलिए इसके मालिक हम हैं।"
    },
-   "seq": 12
+   "seq": 18
   },
   {
    "id": "polity.preamble.f02",
@@ -625,7 +879,7 @@
     "en": "1976 added S-S-I: Socialist, Secular, and 'unity and integrity' of the nation.",
     "hi": "1976 में तीन शब्द जुड़े: समाजवादी, पंथनिरपेक्ष, और राष्ट्र की 'एकता और अखंडता'।"
    },
-   "seq": 13
+   "seq": 19
   },
   {
    "id": "polity.preamble.f03",
@@ -655,7 +909,7 @@
     "hi": "बेरुबारी 1960 ने 'नहीं' कहा। केशवानंद 1973 ने 'हाँ' कहा। अब बाद वाला फ़ैसला ही क़ानून है।"
    },
    "review_note": "The Preamble is not enforceable in court (non-justiciable).",
-   "seq": 14
+   "seq": 20
   },
   {
    "id": "polity.preamble.f04",
@@ -685,7 +939,7 @@
     "hi": "समाज में, पैसे के मामलों में और सत्ता में न्याय: सामाजिक, आर्थिक, राजनीतिक।"
    },
    "review_note": "'Justice: social, economic, political' is taken from the Russian (1917) revolution ideals per Laxmikanth.",
-   "seq": 15
+   "seq": 21
   },
   {
    "id": "polity.preamble.sum",
@@ -716,7 +970,7 @@
      "hi": "सामाजिक, आर्थिक और राजनीतिक न्याय का वादा।"
     }
    ],
-   "seq": 16
+   "seq": 22
   },
   {
    "id": "economy.inflation.f01",
@@ -746,7 +1000,7 @@
     "hi": "वेतन वही रहता है और सब्ज़ियाँ महँगी होती हैं: आप कम ख़रीद पाते हैं।"
    },
    "review_note": "Borrowers gain because they repay in money worth less.",
-   "seq": 17
+   "seq": 23
   },
   {
    "id": "economy.inflation.f02",
@@ -775,7 +1029,7 @@
     "en": "Aim for 4, stay between 2 and 6.",
     "hi": "निशाना 4 पर, दायरा 2 से 6।"
    },
-   "seq": 18
+   "seq": 24
   },
   {
    "id": "economy.inflation.f03",
@@ -804,7 +1058,7 @@
     "en": "Six people vote on interest rates; if it is 3–3, the Governor decides.",
     "hi": "छह लोग ब्याज दर पर मत देते हैं; 3–3 होने पर गवर्नर तय करते हैं।"
    },
-   "seq": 19
+   "seq": 25
   },
   {
    "id": "economy.inflation.f04",
@@ -834,7 +1088,7 @@
     "hi": "CPI = आपका पूरा ख़र्च, बाल कटाई और स्कूल फ़ीस सहित। WPI = थोक में बिकी वस्तुएँ, सेवाएँ नहीं।"
    },
    "review_note": "Base years and weights are being revised (CPI new base 2024 announced) — confirm before publishing.",
-   "seq": 20
+   "seq": 26
   },
   {
    "id": "economy.inflation.f05",
@@ -863,7 +1117,7 @@
     "en": "Pull = buyers pull prices up. Push = costs push prices up.",
     "hi": "माँग-जनित = ख़रीदार क़ीमतें ऊपर खींचते हैं। लागत-जनित = लागत क़ीमतें ऊपर धकेलती है।"
    },
-   "seq": 21
+   "seq": 27
   },
   {
    "id": "economy.inflation.f06",
@@ -896,7 +1150,7 @@
     "en": "The 1970s oil shocks caused stagflation in many countries.",
     "hi": "1970 के दशक के तेल झटकों ने कई देशों में स्टैगफ़्लेशन पैदा किया।"
    },
-   "seq": 22
+   "seq": 28
   },
   {
    "id": "economy.inflation.sum",
@@ -927,7 +1181,220 @@
      "hi": "माँग-जनित बनाम लागत-जनित; स्टैगफ़्लेशन।"
     }
    ],
-   "seq": 23
+   "seq": 29
+  },
+  {
+   "id": "environment.biodiversity.f01",
+   "topic": "environment.biodiversity",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Conservation International hotspot criteria",
+   "status": "needs_review",
+   "learn": {
+    "en": "A biodiversity hotspot must have at least 1,500 endemic vascular plant species and must have lost at least 70% of its original habitat.",
+    "hi": "जैव विविधता हॉटस्पॉट में कम से कम 1,500 स्थानिक संवहनी पौधों की प्रजातियाँ हों और उसका कम से कम 70% मूल आवास नष्ट हो चुका हो।"
+   },
+   "why": {
+    "en": "The idea, from Norman Myers, is to protect places that are both very rich and under great threat.",
+    "hi": "नॉर्मन मायर्स का विचार उन जगहों को बचाना है जो बहुत समृद्ध भी हैं और गंभीर ख़तरे में भी।"
+   },
+   "recall_q": {
+    "en": "What are the two tests for a biodiversity hotspot?",
+    "hi": "जैव विविधता हॉटस्पॉट की दो कसौटियाँ क्या हैं?"
+   },
+   "recall_a": {
+    "en": "1,500+ endemic plant species and 70%+ habitat lost.",
+    "hi": "1,500+ स्थानिक पौध प्रजातियाँ और 70%+ आवास नष्ट।"
+   },
+   "explain_simple": {
+    "en": "Hotspot = very rich AND badly damaged.",
+    "hi": "हॉटस्पॉट = बहुत समृद्ध और बुरी तरह क्षतिग्रस्त।"
+   },
+   "seq": 30
+  },
+  {
+   "id": "environment.biodiversity.f02",
+   "topic": "environment.biodiversity",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "Conservation International; MoEFCC",
+   "status": "needs_review",
+   "learn": {
+    "en": "India has parts of four biodiversity hotspots: the Himalaya, Indo-Burma, the Western Ghats and Sri Lanka, and Sundaland.",
+    "hi": "भारत में चार जैव विविधता हॉटस्पॉट के हिस्से हैं: हिमालय, इंडो-बर्मा, पश्चिमी घाट और श्रीलंका, तथा सुंडालैंड।"
+   },
+   "why": {
+    "en": "Sundaland reaches India through the Nicobar Islands.",
+    "hi": "सुंडालैंड निकोबार द्वीपों के ज़रिए भारत तक आता है।"
+   },
+   "recall_q": {
+    "en": "Through which part of India does the Sundaland hotspot extend?",
+    "hi": "सुंडालैंड हॉटस्पॉट भारत के किस हिस्से में फैला है?"
+   },
+   "recall_a": {
+    "en": "The Nicobar Islands.",
+    "hi": "निकोबार द्वीप।"
+   },
+   "explain_simple": {
+    "en": "Four hotspots: two in the mountains of the north and north-east, one in the south-west, one in the islands.",
+    "hi": "चार हॉटस्पॉट: दो उत्तर और पूर्वोत्तर के पहाड़ों में, एक दक्षिण-पश्चिम में, एक द्वीपों में।"
+   },
+   "seq": 31
+  },
+  {
+   "id": "environment.biodiversity.f03",
+   "topic": "environment.biodiversity",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "IUCN Red List Categories and Criteria",
+   "status": "needs_review",
+   "learn": {
+    "en": "On the IUCN Red List, Critically Endangered, Endangered and Vulnerable together are the 'threatened' categories.",
+    "hi": "IUCN रेड लिस्ट में अति संकटग्रस्त, संकटग्रस्त और सुभेद्य, तीनों मिलकर 'संकटापन्न' श्रेणियाँ हैं।"
+   },
+   "why": {
+    "en": "The scale runs from Least Concern up to Extinct; the three middle-high categories signal real risk of extinction.",
+    "hi": "पैमाना 'कम चिंता' से 'विलुप्त' तक जाता है; बीच-ऊपर की तीन श्रेणियाँ विलुप्ति के वास्तविक ख़तरे को दिखाती हैं।"
+   },
+   "recall_q": {
+    "en": "Which three IUCN categories count as 'threatened'?",
+    "hi": "IUCN की कौन-सी तीन श्रेणियाँ 'संकटापन्न' गिनी जाती हैं?"
+   },
+   "recall_a": {
+    "en": "Critically Endangered, Endangered, Vulnerable.",
+    "hi": "अति संकटग्रस्त, संकटग्रस्त, सुभेद्य।"
+   },
+   "explain_simple": {
+    "en": "CR, EN, VU: the three danger lights.",
+    "hi": "CR, EN, VU: ख़तरे की तीन बत्तियाँ।"
+   },
+   "example": {
+    "en": "The Great Indian Bustard is Critically Endangered.",
+    "hi": "सोन चिरैया (ग्रेट इंडियन बस्टर्ड) अति संकटग्रस्त है।"
+   },
+   "seq": 32
+  },
+  {
+   "id": "environment.biodiversity.f04",
+   "topic": "environment.biodiversity",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Standard ecology texts",
+   "status": "needs_review",
+   "learn": {
+    "en": "In-situ conservation protects species in their natural home; ex-situ conservation protects them outside it.",
+    "hi": "स्व-स्थाने (इन-सीटू) संरक्षण प्रजातियों को उनके प्राकृतिक घर में बचाता है; बाह्य-स्थाने (एक्स-सीटू) संरक्षण उससे बाहर।"
+   },
+   "why": {
+    "en": "Natural homes keep the whole web of life working, so in-situ is the first choice; ex-situ is a backup.",
+    "hi": "प्राकृतिक घर में पूरा जीवन-जाल काम करता रहता है, इसलिए पहली पसंद स्व-स्थाने है; बाह्य-स्थाने एक सहारा है।"
+   },
+   "recall_q": {
+    "en": "Is a seed bank in-situ or ex-situ conservation?",
+    "hi": "बीज बैंक स्व-स्थाने संरक्षण है या बाह्य-स्थाने?"
+   },
+   "recall_a": {
+    "en": "Ex-situ.",
+    "hi": "बाह्य-स्थाने।"
+   },
+   "explain_simple": {
+    "en": "In-situ = national parks, sanctuaries, biosphere reserves. Ex-situ = zoos, botanical gardens, seed banks.",
+    "hi": "स्व-स्थाने = राष्ट्रीय उद्यान, अभयारण्य, जैवमंडल आरक्षित क्षेत्र। बाह्य-स्थाने = चिड़ियाघर, वनस्पति उद्यान, बीज बैंक।"
+   },
+   "seq": 33
+  },
+  {
+   "id": "environment.biodiversity.f05",
+   "topic": "environment.biodiversity",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Standard ecology texts",
+   "status": "needs_review",
+   "learn": {
+    "en": "Coral bleaching happens when corals, stressed by warm water, expel the algae (zooxanthellae) living in their tissues.",
+    "hi": "प्रवाल विरंजन तब होता है जब गर्म पानी से तनावग्रस्त प्रवाल अपने ऊतकों में रहने वाले शैवाल (ज़ूज़ैन्थेली) को बाहर निकाल देते हैं।"
+   },
+   "why": {
+    "en": "The algae give corals their colour and most of their food, so bleached corals turn white and may starve.",
+    "hi": "शैवाल प्रवाल को रंग और अधिकांश भोजन देते हैं, इसलिए विरंजित प्रवाल सफ़ेद हो जाते हैं और भूखे मर सकते हैं।"
+   },
+   "recall_q": {
+    "en": "What do corals lose when they bleach?",
+    "hi": "विरंजन में प्रवाल क्या खो देते हैं?"
+   },
+   "recall_a": {
+    "en": "Their symbiotic algae, the zooxanthellae.",
+    "hi": "अपने सहजीवी शैवाल, ज़ूज़ैन्थेली।"
+   },
+   "explain_simple": {
+    "en": "The algae are the coral's colour and kitchen. Heat makes the coral throw them out.",
+    "hi": "शैवाल प्रवाल का रंग और रसोई हैं। गर्मी से प्रवाल उन्हें बाहर निकाल देता है।"
+   },
+   "example": {
+    "en": "Reefs in the Gulf of Mannar and Lakshadweep have bleached in marine heatwaves.",
+    "hi": "मन्नार की खाड़ी और लक्षद्वीप की चट्टानें समुद्री ताप-लहरों में विरंजित हुई हैं।"
+   },
+   "seq": 34
+  },
+  {
+   "id": "environment.biodiversity.f06",
+   "topic": "environment.biodiversity",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "Standard ecology texts",
+   "status": "needs_review",
+   "learn": {
+    "en": "Invasive alien species are introduced from elsewhere and spread fast, pushing out native species. Lantana and water hyacinth are examples in India.",
+    "hi": "आक्रामक विदेशी प्रजातियाँ बाहर से आकर तेज़ी से फैलती हैं और देशी प्रजातियों को हटाती हैं। भारत में लैंटाना और जलकुंभी इसके उदाहरण हैं।"
+   },
+   "why": {
+    "en": "In a new place they often have no natural enemies, so nothing holds them back.",
+    "hi": "नई जगह पर अक्सर उनके प्राकृतिक शत्रु नहीं होते, इसलिए उन्हें कोई नहीं रोकता।"
+   },
+   "recall_q": {
+    "en": "Why do invasive species spread so fast in a new place?",
+    "hi": "नई जगह पर आक्रामक प्रजातियाँ इतनी तेज़ी से क्यों फैलती हैं?"
+   },
+   "recall_a": {
+    "en": "They lack natural predators and diseases there.",
+    "hi": "वहाँ उनके प्राकृतिक शिकारी और रोग नहीं होते।"
+   },
+   "explain_simple": {
+    "en": "A newcomer with no enemies takes over the whole field.",
+    "hi": "बिना दुश्मन का नवागंतुक पूरा मैदान घेर लेता है।"
+   },
+   "seq": 35
+  },
+  {
+   "id": "environment.biodiversity.sum",
+   "topic": "environment.biodiversity",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "IUCN; Conservation International",
+   "status": "needs_review",
+   "title": {
+    "en": "Biodiversity",
+    "hi": "जैव विविधता"
+   },
+   "points": [
+    {
+     "en": "Hotspot: 1,500 endemic plants + 70% habitat lost.",
+     "hi": "हॉटस्पॉट: 1,500 स्थानिक पौधे + 70% आवास नष्ट।"
+    },
+    {
+     "en": "India: Himalaya, Indo-Burma, Western Ghats, Sundaland.",
+     "hi": "भारत: हिमालय, इंडो-बर्मा, पश्चिमी घाट, सुंडालैंड।"
+    },
+    {
+     "en": "Threatened = CR, EN, VU.",
+     "hi": "संकटापन्न = CR, EN, VU।"
+    },
+    {
+     "en": "Bleaching = corals expel algae.",
+     "hi": "विरंजन = प्रवाल शैवाल निकालते हैं।"
+    }
+   ],
+   "seq": 36
   },
   {
    "id": "polity.fr.f01",
@@ -956,7 +1423,7 @@
     "en": "Part 3, numbers 12 to 35. Rights you can take to court.",
     "hi": "भाग 3, अनुच्छेद 12 से 35। ऐसे अधिकार जिनके लिए आप न्यायालय जा सकते हैं।"
    },
-   "seq": 24
+   "seq": 37
   },
   {
    "id": "polity.fr.f02",
@@ -985,7 +1452,7 @@
     "en": "Seven became six when property was taken out in 1978.",
     "hi": "1978 में संपत्ति हटने से सात से छह हुए।"
    },
-   "seq": 25
+   "seq": 38
   },
   {
    "id": "polity.fr.f03",
@@ -1018,7 +1485,7 @@
     "en": "If a highway needs your land, the government can acquire it under a law, with compensation as that law provides.",
     "hi": "अगर राजमार्ग के लिए आपकी ज़मीन चाहिए, तो सरकार क़ानून के तहत, उस क़ानून में तय मुआवज़े के साथ, उसे ले सकती है।"
    },
-   "seq": 26
+   "seq": 39
   },
   {
    "id": "polity.fr.f04",
@@ -1047,7 +1514,7 @@
     "en": "Article 32 is the door to the Supreme Court for your rights.",
     "hi": "अनुच्छेद 32 आपके अधिकारों के लिए सर्वोच्च न्यायालय का दरवाज़ा है।"
    },
-   "seq": 27
+   "seq": 40
   },
   {
    "id": "polity.fr.f05",
@@ -1076,7 +1543,7 @@
     "en": "Five court orders: bring the person, do your duty, stop, send the case up, and by what authority?",
     "hi": "पाँच आदेश: व्यक्ति को पेश करो, कर्तव्य करो, रुको, मामला ऊपर भेजो, और किस अधिकार से?"
    },
-   "seq": 28
+   "seq": 41
   },
   {
    "id": "polity.fr.f06",
@@ -1109,7 +1576,7 @@
     "en": "A family whose son was picked up without charge can file habeas corpus in the High Court.",
     "hi": "जिस परिवार के बेटे को बिना आरोप पकड़ लिया गया, वह उच्च न्यायालय में बंदी प्रत्यक्षीकरण याचिका दाख़िल कर सकता है।"
    },
-   "seq": 29
+   "seq": 42
   },
   {
    "id": "polity.fr.f07",
@@ -1138,7 +1605,7 @@
     "en": "Mandamus = 'do your job'. Only for public officials.",
     "hi": "परमादेश = 'अपना काम करो'। केवल सार्वजनिक अधिकारियों के लिए।"
    },
-   "seq": 30
+   "seq": 43
   },
   {
    "id": "polity.fr.f08",
@@ -1167,7 +1634,7 @@
     "en": "'By what authority are you sitting in that chair?' — that is quo warranto.",
     "hi": "'आप किस अधिकार से उस कुर्सी पर बैठे हैं?' — यही अधिकार-पृच्छा है।"
    },
-   "seq": 31
+   "seq": 44
   },
   {
    "id": "polity.fr.f09",
@@ -1196,7 +1663,7 @@
     "en": "Prohibition = stop before. Certiorari = fix after.",
     "hi": "प्रतिषेध = पहले रोको। उत्प्रेषण = बाद में सुधारो।"
    },
-   "seq": 32
+   "seq": 45
   },
   {
    "id": "polity.fr.f10",
@@ -1229,7 +1696,7 @@
     "en": "Courts have read the right to privacy, clean environment and livelihood into Article 21.",
     "hi": "न्यायालयों ने निजता, स्वच्छ पर्यावरण और आजीविका के अधिकार को अनुच्छेद 21 में शामिल माना है।"
    },
-   "seq": 33
+   "seq": 46
   },
   {
    "id": "polity.fr.f11",
@@ -1258,7 +1725,7 @@
     "en": "21A sits right after 21 (life): education is part of a life with dignity.",
     "hi": "21A, 21 (जीवन) के ठीक बाद है: शिक्षा सम्मानजनक जीवन का हिस्सा है।"
    },
-   "seq": 34
+   "seq": 47
   },
   {
    "id": "polity.fr.f12",
@@ -1291,7 +1758,7 @@
     "en": "The Protection of Civil Rights Act, 1955 punishes the practice of untouchability.",
     "hi": "नागरिक अधिकार संरक्षण अधिनियम, 1955 अस्पृश्यता के आचरण को दंडित करता है।"
    },
-   "seq": 35
+   "seq": 48
   },
   {
    "id": "polity.fr.f13",
@@ -1320,7 +1787,7 @@
     "en": "20 (protection in criminal cases) and 21 (life) stay switched on, always.",
     "hi": "20 (आपराधिक मामलों में संरक्षण) और 21 (जीवन) हमेशा चालू रहते हैं।"
    },
-   "seq": 36
+   "seq": 49
   },
   {
    "id": "polity.fr.s01",
@@ -1389,7 +1856,7 @@
     "en": "Article 13.",
     "hi": "अनुच्छेद 13।"
    },
-   "seq": 37
+   "seq": 50
   },
   {
    "id": "polity.fr.sum",
@@ -1424,7 +1891,7 @@
      "hi": "21A: 6–14 वर्ष शिक्षा (86वाँ संशोधन)।"
     }
    ],
-   "seq": 38
+   "seq": 51
   },
   {
    "id": "economy.money.f01",
@@ -1454,7 +1921,7 @@
     "hi": "अधिनियम 1934, शुरुआत 1935, 1949 से सरकारी स्वामित्व।"
    },
    "review_note": "Recommended by the Hilton Young Commission (1926).",
-   "seq": 39
+   "seq": 52
   },
   {
    "id": "economy.money.f02",
@@ -1487,7 +1954,7 @@
     "en": "A higher repo rate usually means a higher EMI on a home loan.",
     "hi": "ऊँची रेपो दर का मतलब आमतौर पर गृह ऋण की ऊँची EMI होता है।"
    },
-   "seq": 40
+   "seq": 53
   },
   {
    "id": "economy.money.f03",
@@ -1516,7 +1983,7 @@
     "en": "CRR = cash parked at RBI. SLR = safe assets kept by the bank itself.",
     "hi": "CRR = आरबीआई के पास रखा नक़द। SLR = बैंक के पास रखी सुरक्षित संपत्तियाँ।"
    },
-   "seq": 41
+   "seq": 54
   },
   {
    "id": "economy.money.f04",
@@ -1545,7 +2012,7 @@
     "en": "Interest rates move inside a corridor: SDF at the bottom, repo in the middle, MSF at the top.",
     "hi": "ब्याज दरें एक गलियारे में चलती हैं: नीचे SDF, बीच में रेपो, ऊपर MSF।"
    },
-   "seq": 42
+   "seq": 55
   },
   {
    "id": "economy.money.f05",
@@ -1574,7 +2041,7 @@
     "en": "RBI buys bonds → pays cash → more money in the system.",
     "hi": "आरबीआई बॉन्ड ख़रीदे → नक़द चुकाए → व्यवस्था में ज़्यादा पैसा।"
    },
-   "seq": 43
+   "seq": 56
   },
   {
    "id": "economy.money.s01",
@@ -1643,7 +2110,7 @@
     "en": "Because it works through loans and demand, which change slowly (policy lag).",
     "hi": "क्योंकि यह ऋण और माँग के ज़रिए काम करती है, जो धीरे बदलते हैं (नीतिगत अंतराल)।"
    },
-   "seq": 44
+   "seq": 57
   },
   {
    "id": "economy.money.sum",
@@ -1678,7 +2145,246 @@
      "hi": "OMO ख़रीद से पैसा आता है।"
     }
    ],
-   "seq": 45
+   "seq": 58
+  },
+  {
+   "id": "environment.laws.f01",
+   "topic": "environment.laws",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Wildlife (Protection) Act 1972, ss. 35 and 18",
+   "status": "needs_review",
+   "learn": {
+    "en": "National parks and wildlife sanctuaries are declared under the Wildlife (Protection) Act 1972. National parks have stricter protection.",
+    "hi": "राष्ट्रीय उद्यान और वन्यजीव अभयारण्य वन्यजीव (संरक्षण) अधिनियम 1972 के तहत घोषित होते हैं। राष्ट्रीय उद्यानों में संरक्षण अधिक कड़ा होता है।"
+   },
+   "why": {
+    "en": "In a national park, grazing and people's rights are not allowed; a sanctuary may allow some regulated activities.",
+    "hi": "राष्ट्रीय उद्यान में चराई और लोगों के अधिकार नहीं होते; अभयारण्य में कुछ नियंत्रित गतिविधियाँ हो सकती हैं।"
+   },
+   "recall_q": {
+    "en": "Where is grazing never permitted: a national park or a sanctuary?",
+    "hi": "चराई कहाँ कभी अनुमत नहीं: राष्ट्रीय उद्यान में या अभयारण्य में?"
+   },
+   "recall_a": {
+    "en": "In a national park.",
+    "hi": "राष्ट्रीय उद्यान में।"
+   },
+   "explain_simple": {
+    "en": "National park = no entry for cattle. Sanctuary = some activities with permission.",
+    "hi": "राष्ट्रीय उद्यान = मवेशियों का प्रवेश नहीं। अभयारण्य = अनुमति से कुछ गतिविधियाँ।"
+   },
+   "seq": 59
+  },
+  {
+   "id": "environment.laws.f02",
+   "topic": "environment.laws",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Wildlife (Protection) Amendment Act 2022",
+   "status": "needs_review",
+   "learn": {
+    "en": "The 2022 amendment cut the Wildlife Act's schedules from six to four and added a schedule for species listed under CITES.",
+    "hi": "2022 के संशोधन ने वन्यजीव अधिनियम की अनुसूचियाँ छह से घटाकर चार कीं और CITES में सूचीबद्ध प्रजातियों के लिए एक अनुसूची जोड़ी।"
+   },
+   "why": {
+    "en": "Fewer, clearer schedules made enforcement simpler, and the CITES schedule brought India's law in line with that treaty.",
+    "hi": "कम और स्पष्ट अनुसूचियों से पालन आसान हुआ, और CITES अनुसूची ने भारतीय क़ानून को उस संधि के अनुरूप किया।"
+   },
+   "recall_q": {
+    "en": "How many schedules does the Wildlife Act have after 2022?",
+    "hi": "2022 के बाद वन्यजीव अधिनियम में कितनी अनुसूचियाँ हैं?"
+   },
+   "recall_a": {
+    "en": "Four.",
+    "hi": "चार।"
+   },
+   "explain_simple": {
+    "en": "Six lists became four, one of them for CITES species.",
+    "hi": "छह सूचियाँ चार बनीं, उनमें एक CITES प्रजातियों के लिए।"
+   },
+   "review_note": "Check schedule numbering (I–IV) against the gazette text before publishing.",
+   "seq": 60
+  },
+  {
+   "id": "environment.laws.f03",
+   "topic": "environment.laws",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "Environment (Protection) Act 1986",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Environment (Protection) Act 1986 is India's umbrella environment law, passed after the 1984 Bhopal gas tragedy.",
+    "hi": "पर्यावरण (संरक्षण) अधिनियम 1986 भारत का छत्र पर्यावरण क़ानून है, जो 1984 की भोपाल गैस त्रासदी के बाद बना।"
+   },
+   "why": {
+    "en": "It gives the central government wide powers to set standards, close polluting units and fill gaps left by other laws.",
+    "hi": "यह केंद्र सरकार को मानक तय करने, प्रदूषक इकाइयाँ बंद करने और दूसरे क़ानूनों की कमियाँ भरने की व्यापक शक्ति देता है।"
+   },
+   "recall_q": {
+    "en": "Which disaster led to the Environment (Protection) Act 1986?",
+    "hi": "किस आपदा के बाद पर्यावरण (संरक्षण) अधिनियम 1986 बना?"
+   },
+   "recall_a": {
+    "en": "The Bhopal gas tragedy of 1984.",
+    "hi": "1984 की भोपाल गैस त्रासदी।"
+   },
+   "explain_simple": {
+    "en": "One big law that covers everything the other environment laws miss.",
+    "hi": "एक बड़ा क़ानून जो वह सब ढकता है जो दूसरे पर्यावरण क़ानून छोड़ देते हैं।"
+   },
+   "seq": 61
+  },
+  {
+   "id": "environment.laws.f04",
+   "topic": "environment.laws",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Forest (Conservation) Act 1980; Amendment Act 2023",
+   "status": "needs_review",
+   "learn": {
+    "en": "Under the Forest (Conservation) Act 1980, forest land can be used for non-forest purposes only with the central government's prior approval.",
+    "hi": "वन (संरक्षण) अधिनियम 1980 के तहत वन भूमि का ग़ैर-वन उपयोग केवल केंद्र सरकार की पूर्व अनुमति से हो सकता है।"
+   },
+   "why": {
+    "en": "States were clearing forests fast; central approval added a check. The 2023 amendment renamed it the Van (Sanrakshan Evam Samvardhan) Adhiniyam.",
+    "hi": "राज्य तेज़ी से वन काट रहे थे; केंद्र की अनुमति ने रोक लगाई। 2023 के संशोधन ने इसका नाम वन (संरक्षण एवं संवर्धन) अधिनियम रखा।"
+   },
+   "recall_q": {
+    "en": "Whose approval is needed to divert forest land under the 1980 Act?",
+    "hi": "1980 के अधिनियम के तहत वन भूमि के अन्य उपयोग के लिए किसकी अनुमति चाहिए?"
+   },
+   "recall_a": {
+    "en": "The central government's prior approval.",
+    "hi": "केंद्र सरकार की पूर्व अनुमति।"
+   },
+   "explain_simple": {
+    "en": "A state cannot hand over forest land for a mine or a road without the Centre saying yes.",
+    "hi": "कोई राज्य केंद्र की हाँ के बिना खदान या सड़क के लिए वन भूमि नहीं दे सकता।"
+   },
+   "seq": 62
+  },
+  {
+   "id": "environment.laws.f05",
+   "topic": "environment.laws",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "National Green Tribunal Act 2010",
+   "status": "needs_review",
+   "learn": {
+    "en": "The National Green Tribunal was set up in 2010 to decide environment cases quickly; it aims to dispose of cases within six months.",
+    "hi": "राष्ट्रीय हरित अधिकरण (NGT) 2010 में पर्यावरण मामलों का तेज़ी से निपटारा करने के लिए बना; इसका लक्ष्य छह महीने में मामले निपटाना है।"
+   },
+   "why": {
+    "en": "Environment cases moved slowly in ordinary courts; a specialist tribunal with expert members speeds them up.",
+    "hi": "सामान्य अदालतों में पर्यावरण मामले धीरे चलते थे; विशेषज्ञ सदस्यों वाला अधिकरण इन्हें तेज़ करता है।"
+   },
+   "recall_q": {
+    "en": "Under which law was the NGT set up, and when?",
+    "hi": "NGT किस क़ानून के तहत और कब बना?"
+   },
+   "recall_a": {
+    "en": "The National Green Tribunal Act, 2010.",
+    "hi": "राष्ट्रीय हरित अधिकरण अधिनियम, 2010।"
+   },
+   "explain_simple": {
+    "en": "A fast-track court only for environment cases.",
+    "hi": "केवल पर्यावरण मामलों के लिए फ़ास्ट-ट्रैक अदालत।"
+   },
+   "seq": 63
+  },
+  {
+   "id": "environment.laws.f06",
+   "topic": "environment.laws",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "UNESCO Man and the Biosphere Programme",
+   "status": "needs_review",
+   "learn": {
+    "en": "A biosphere reserve has three zones: a core zone left undisturbed, a buffer zone for research and limited use, and a transition zone where people live and work.",
+    "hi": "जैवमंडल आरक्षित क्षेत्र में तीन क्षेत्र होते हैं: अछूता केंद्रीय क्षेत्र, शोध और सीमित उपयोग का बफ़र क्षेत्र, और संक्रमण क्षेत्र जहाँ लोग रहते और काम करते हैं।"
+   },
+   "why": {
+    "en": "The aim is to protect nature while letting local communities keep their livelihoods. UNESCO's Man and the Biosphere programme began in 1971.",
+    "hi": "उद्देश्य प्रकृति की रक्षा के साथ स्थानीय लोगों की आजीविका बनाए रखना है। यूनेस्को का मानव और जैवमंडल कार्यक्रम 1971 में शुरू हुआ।"
+   },
+   "recall_q": {
+    "en": "In which zone of a biosphere reserve do people live and farm?",
+    "hi": "जैवमंडल आरक्षित क्षेत्र के किस क्षेत्र में लोग रहते और खेती करते हैं?"
+   },
+   "recall_a": {
+    "en": "The transition zone.",
+    "hi": "संक्रमण क्षेत्र।"
+   },
+   "explain_simple": {
+    "en": "Three rings: untouched centre, careful middle, lived-in outer ring.",
+    "hi": "तीन घेरे: अछूता केंद्र, सावधान बीच, बसा हुआ बाहरी घेरा।"
+   },
+   "example": {
+    "en": "The Nilgiri Biosphere Reserve (1986), spread over Tamil Nadu, Kerala and Karnataka, was India's first.",
+    "hi": "नीलगिरि जैवमंडल आरक्षित क्षेत्र (1986), जो तमिलनाडु, केरल और कर्नाटक में फैला है, भारत का पहला था।"
+   },
+   "seq": 64
+  },
+  {
+   "id": "environment.laws.f07",
+   "topic": "environment.laws",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Wildlife (Protection) Amendment Act 2006",
+   "status": "needs_review",
+   "learn": {
+    "en": "Project Tiger began in 1973. The National Tiger Conservation Authority was made a statutory body by the 2006 amendment to the Wildlife Act.",
+    "hi": "बाघ परियोजना 1973 में शुरू हुई। 2006 के वन्यजीव अधिनियम संशोधन से राष्ट्रीय बाघ संरक्षण प्राधिकरण (NTCA) वैधानिक निकाय बना।"
+   },
+   "why": {
+    "en": "A statutory body has powers given by law, so tiger reserves got legal backing and oversight.",
+    "hi": "वैधानिक निकाय को क़ानून से शक्ति मिलती है, इसलिए बाघ आरक्षित क्षेत्रों को क़ानूनी आधार और निगरानी मिली।"
+   },
+   "recall_q": {
+    "en": "Under which law does the NTCA get its status?",
+    "hi": "NTCA को उसका दर्जा किस क़ानून से मिलता है?"
+   },
+   "recall_a": {
+    "en": "The Wildlife (Protection) Act 1972, as amended in 2006.",
+    "hi": "वन्यजीव (संरक्षण) अधिनियम 1972, 2006 में संशोधित।"
+   },
+   "explain_simple": {
+    "en": "1973 project, 2006 law.",
+    "hi": "1973 में परियोजना, 2006 में क़ानून।"
+   },
+   "seq": 65
+  },
+  {
+   "id": "environment.laws.sum",
+   "topic": "environment.laws",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "MoEFCC official publications",
+   "status": "needs_review",
+   "title": {
+    "en": "Protected areas and laws",
+    "hi": "संरक्षित क्षेत्र और क़ानून"
+   },
+   "points": [
+    {
+     "en": "Wildlife Act 1972: parks and sanctuaries; four schedules since 2022.",
+     "hi": "वन्यजीव अधिनियम 1972: उद्यान और अभयारण्य; 2022 से चार अनुसूचियाँ।"
+    },
+    {
+     "en": "EPA 1986 after Bhopal.",
+     "hi": "भोपाल के बाद EPA 1986।"
+    },
+    {
+     "en": "Forest Act 1980: Centre's prior approval.",
+     "hi": "वन अधिनियम 1980: केंद्र की पूर्व अनुमति।"
+    },
+    {
+     "en": "NGT 2010; biosphere: core, buffer, transition.",
+     "hi": "NGT 2010; जैवमंडल: केंद्र, बफ़र, संक्रमण।"
+    }
+   ],
+   "seq": 66
   },
   {
    "id": "polity.dpsp.f01",
@@ -1707,7 +2413,7 @@
     "en": "Rights (Part III) = court can enforce. Directives (Part IV) = goals for the government, not enforceable.",
     "hi": "अधिकार (भाग III) = न्यायालय लागू करा सकता है। निदेशक तत्व (भाग IV) = सरकार के लक्ष्य, लागू नहीं कराए जा सकते।"
    },
-   "seq": 46
+   "seq": 67
   },
   {
    "id": "polity.dpsp.f02",
@@ -1740,7 +2446,7 @@
     "en": "Goa has had a common civil code since Portuguese times.",
     "hi": "गोवा में पुर्तगाली काल से एक समान नागरिक संहिता चल रही है।"
    },
-   "seq": 47
+   "seq": 68
   },
   {
    "id": "polity.dpsp.f03",
@@ -1769,7 +2475,7 @@
     "en": "1976: Swaran Singh Committee → 42nd Amendment → Article 51A duties.",
     "hi": "1976: स्वर्ण सिंह समिति → 42वाँ संशोधन → अनुच्छेद 51A के कर्तव्य।"
    },
-   "seq": 48
+   "seq": 69
   },
   {
    "id": "polity.dpsp.f04",
@@ -1798,7 +2504,7 @@
     "en": "Ten in 1976, plus one about education in 2002 = eleven.",
     "hi": "1976 में दस, 2002 में शिक्षा वाला एक और = ग्यारह।"
    },
-   "seq": 49
+   "seq": 70
   },
   {
    "id": "polity.dpsp.sum",
@@ -1829,7 +2535,7 @@
      "hi": "11 कर्तव्य; 11वाँ 2002 में जुड़ा।"
     }
    ],
-   "seq": 50
+   "seq": 71
   },
   {
    "id": "economy.fiscal.f01",
@@ -1858,7 +2564,7 @@
     "en": "Spending minus all income that isn't a loan = what must be borrowed.",
     "hi": "ख़र्च घटा वह सारी आय जो क़र्ज़ नहीं है = जो उधार लेना पड़ेगा।"
    },
-   "seq": 51
+   "seq": 72
   },
   {
    "id": "economy.fiscal.f02",
@@ -1887,7 +2593,7 @@
     "en": "Take out the interest on old loans and see what new borrowing is left.",
     "hi": "पुराने क़र्ज़ का ब्याज निकाल दीजिए और देखिए कितना नया उधार बचता है।"
    },
-   "seq": 52
+   "seq": 73
   },
   {
    "id": "economy.fiscal.f03",
@@ -1916,7 +2622,7 @@
     "en": "Like taking a loan to pay the electricity bill instead of to buy a house.",
     "hi": "जैसे घर ख़रीदने के बजाय बिजली का बिल भरने के लिए क़र्ज़ लेना।"
    },
-   "seq": 53
+   "seq": 74
   },
   {
    "id": "economy.fiscal.f04",
@@ -1945,7 +2651,7 @@
     "en": "Everyone says budget; the Constitution says Annual Financial Statement.",
     "hi": "सब बजट कहते हैं; संविधान वार्षिक वित्तीय विवरण कहता है।"
    },
-   "seq": 54
+   "seq": 75
   },
   {
    "id": "economy.fiscal.f05",
@@ -1975,7 +2681,7 @@
     "hi": "तमिलनाडु में बना और केरल में ख़रीदा टीवी: जीएसटी का राज्य हिस्सा केरल को जाता है।"
    },
    "review_note": "Petroleum crude, diesel, petrol, natural gas and ATF are outside GST for now; alcohol for human consumption is outside by the Constitution.",
-   "seq": 55
+   "seq": 76
   },
   {
    "id": "economy.fiscal.f06",
@@ -2004,7 +2710,7 @@
     "en": "Direct = you pay it yourself. Indirect = it is hidden in the price.",
     "hi": "प्रत्यक्ष = आप ख़ुद चुकाते हैं। अप्रत्यक्ष = क़ीमत में छिपा रहता है।"
    },
-   "seq": 56
+   "seq": 77
   },
   {
    "id": "economy.fiscal.sum",
@@ -2039,7 +2745,253 @@
      "hi": "जीएसटी 1 जुलाई 2017 से, गंतव्य-आधारित।"
     }
    ],
-   "seq": 57
+   "seq": 78
+  },
+  {
+   "id": "environment.conventions.f01",
+   "topic": "environment.conventions",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Ramsar Convention Secretariat",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Ramsar Convention (1971, Ramsar, Iran) protects wetlands of international importance. India joined in 1982.",
+    "hi": "रामसर अभिसमय (1971, रामसर, ईरान) अंतरराष्ट्रीय महत्त्व की आर्द्रभूमियों की रक्षा करता है। भारत 1982 में इससे जुड़ा।"
+   },
+   "why": {
+    "en": "Wetlands clean water, control floods and shelter birds, yet they are drained fast. Chilika and Keoladeo were India's first Ramsar sites.",
+    "hi": "आर्द्रभूमियाँ पानी साफ़ करती हैं, बाढ़ रोकती हैं और पक्षियों को आश्रय देती हैं, फिर भी तेज़ी से सुखाई जाती हैं। चिल्का और केवलादेव भारत के पहले रामसर स्थल थे।"
+   },
+   "recall_q": {
+    "en": "What does the Montreux Record list?",
+    "hi": "मॉन्ट्रो रिकॉर्ड में क्या सूचीबद्ध होता है?"
+   },
+   "recall_a": {
+    "en": "Ramsar sites where the ecology is changing or under threat.",
+    "hi": "वे रामसर स्थल जिनकी पारिस्थितिकी बदल रही है या ख़तरे में है।"
+   },
+   "explain_simple": {
+    "en": "Ramsar = wetlands. Montreux Record = the 'sick list' of Ramsar sites.",
+    "hi": "रामसर = आर्द्रभूमि। मॉन्ट्रो रिकॉर्ड = रामसर स्थलों की 'बीमार सूची'।"
+   },
+   "example": {
+    "en": "Keoladeo (Rajasthan) and Loktak (Manipur) are on the Montreux Record.",
+    "hi": "केवलादेव (राजस्थान) और लोकटक (मणिपुर) मॉन्ट्रो रिकॉर्ड में हैं।"
+   },
+   "seq": 79
+  },
+  {
+   "id": "environment.conventions.f02",
+   "topic": "environment.conventions",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "CITES Secretariat",
+   "status": "needs_review",
+   "learn": {
+    "en": "CITES (1973, signed in Washington) controls international trade in wild animals and plants. Appendix I species face a ban on commercial trade.",
+    "hi": "CITES (1973, वॉशिंगटन में हस्ताक्षरित) वन्य जीवों और पौधों के अंतरराष्ट्रीय व्यापार को नियंत्रित करता है। परिशिष्ट I की प्रजातियों के व्यापारिक व्यापार पर रोक है।"
+   },
+   "why": {
+    "en": "Trade, not habitat, is its focus: it uses permits so that trade does not push species towards extinction.",
+    "hi": "इसका ध्यान आवास पर नहीं, व्यापार पर है: यह परमिट से सुनिश्चित करता है कि व्यापार प्रजातियों को विलुप्ति की ओर न धकेले।"
+   },
+   "recall_q": {
+    "en": "Which CITES appendix has the strictest controls?",
+    "hi": "CITES के किस परिशिष्ट में सबसे कड़े नियंत्रण हैं?"
+   },
+   "recall_a": {
+    "en": "Appendix I.",
+    "hi": "परिशिष्ट I।"
+   },
+   "explain_simple": {
+    "en": "CITES is a customs officer for wildlife: Appendix I means 'no commercial trade'.",
+    "hi": "CITES वन्यजीवों का सीमा-शुल्क अधिकारी है: परिशिष्ट I यानी 'कोई व्यापारिक व्यापार नहीं'।"
+   },
+   "seq": 80
+  },
+  {
+   "id": "environment.conventions.f03",
+   "topic": "environment.conventions",
+   "type": "fact",
+   "difficulty": 3,
+   "source": "Convention on Biological Diversity Secretariat",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Convention on Biological Diversity (Rio, 1992) has two protocols: Cartagena on biosafety of living modified organisms, and Nagoya on access and benefit-sharing.",
+    "hi": "जैव विविधता अभिसमय (रियो, 1992) के दो प्रोटोकॉल हैं: कार्टाजेना, जीवित संशोधित जीवों की जैव सुरक्षा पर; और नागोया, पहुँच और लाभ-साझेदारी पर।"
+   },
+   "why": {
+    "en": "Nagoya ensures communities share in profits made from their biological resources. India's Biological Diversity Act 2002 puts the CBD into law.",
+    "hi": "नागोया सुनिश्चित करता है कि जैव संसाधनों से हुए मुनाफ़े में समुदायों को हिस्सा मिले। भारत का जैव विविधता अधिनियम 2002 CBD को क़ानून बनाता है।"
+   },
+   "recall_q": {
+    "en": "Which protocol deals with genetically modified organisms?",
+    "hi": "कौन-सा प्रोटोकॉल आनुवंशिक रूप से संशोधित जीवों से जुड़ा है?"
+   },
+   "recall_a": {
+    "en": "The Cartagena Protocol.",
+    "hi": "कार्टाजेना प्रोटोकॉल।"
+   },
+   "explain_simple": {
+    "en": "Cartagena = safety of GM organisms. Nagoya = fair share of benefits.",
+    "hi": "कार्टाजेना = GM जीवों की सुरक्षा। नागोया = लाभ का उचित हिस्सा।"
+   },
+   "example": {
+    "en": "The National Biodiversity Authority under the 2002 Act is in Chennai.",
+    "hi": "2002 के अधिनियम के तहत राष्ट्रीय जैव विविधता प्राधिकरण चेन्नई में है।"
+   },
+   "seq": 81
+  },
+  {
+   "id": "environment.conventions.f04",
+   "topic": "environment.conventions",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "UNFCCC Secretariat",
+   "status": "needs_review",
+   "learn": {
+    "en": "The UNFCCC (Rio, 1992) is the main climate treaty. Its Kyoto Protocol (1997) set binding cuts only for developed (Annex I) countries.",
+    "hi": "UNFCCC (रियो, 1992) मुख्य जलवायु संधि है। इसके क्योटो प्रोटोकॉल (1997) ने केवल विकसित (अनुलग्नक I) देशों के लिए बाध्यकारी कटौती तय की।"
+   },
+   "why": {
+    "en": "Rich countries emitted most of the past greenhouse gases, so Kyoto placed the duty on them: 'common but differentiated responsibilities'.",
+    "hi": "अतीत की अधिकांश ग्रीनहाउस गैसें अमीर देशों ने छोड़ीं, इसलिए क्योटो ने ज़िम्मेदारी उन पर डाली: 'साझा पर विभेदित ज़िम्मेदारियाँ'।"
+   },
+   "recall_q": {
+    "en": "Under Kyoto, which countries had binding targets?",
+    "hi": "क्योटो के तहत किन देशों के बाध्यकारी लक्ष्य थे?"
+   },
+   "recall_a": {
+    "en": "Developed (Annex I) countries.",
+    "hi": "विकसित (अनुलग्नक I) देश।"
+   },
+   "explain_simple": {
+    "en": "Kyoto: those who polluted more, cut first.",
+    "hi": "क्योटो: जिसने ज़्यादा प्रदूषण किया, वह पहले घटाए।"
+   },
+   "seq": 82
+  },
+  {
+   "id": "environment.conventions.f05",
+   "topic": "environment.conventions",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Paris Agreement, Art. 2 and 4",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Paris Agreement (2015) aims to keep warming well below 2°C and to try for 1.5°C. Every country sets its own target, called an NDC.",
+    "hi": "पेरिस समझौता (2015) तापवृद्धि को 2°C से काफ़ी नीचे रखने और 1.5°C का प्रयास करने का लक्ष्य रखता है। हर देश अपना लक्ष्य ख़ुद तय करता है, जिसे NDC कहते हैं।"
+   },
+   "why": {
+    "en": "Unlike Kyoto, all countries take part, and targets are meant to rise every five years.",
+    "hi": "क्योटो के विपरीत, इसमें सभी देश भाग लेते हैं, और लक्ष्य हर पाँच साल में बढ़ाने होते हैं।"
+   },
+   "recall_q": {
+    "en": "What does NDC stand for?",
+    "hi": "NDC का पूरा नाम क्या है?"
+   },
+   "recall_a": {
+    "en": "Nationally Determined Contribution.",
+    "hi": "राष्ट्रीय स्तर पर निर्धारित योगदान।"
+   },
+   "explain_simple": {
+    "en": "Paris: everyone joins, each country writes its own pledge.",
+    "hi": "पेरिस: सब शामिल, हर देश अपना वचन ख़ुद लिखता है।"
+   },
+   "seq": 83
+  },
+  {
+   "id": "environment.conventions.f06",
+   "topic": "environment.conventions",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Montreal Protocol; Kigali Amendment 2016",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Montreal Protocol (1987) phases out ozone-depleting substances like CFCs. Its Kigali Amendment (2016) phases down HFCs.",
+    "hi": "मॉन्ट्रियल प्रोटोकॉल (1987) CFC जैसे ओज़ोन-क्षयकारी पदार्थों को ख़त्म करता है। इसका किगाली संशोधन (2016) HFC को घटाता है।"
+   },
+   "why": {
+    "en": "HFCs replaced CFCs and do not harm ozone, but they are powerful greenhouse gases.",
+    "hi": "HFC ने CFC की जगह ली और ये ओज़ोन को नुक़सान नहीं पहुँचाते, पर ये शक्तिशाली ग्रीनहाउस गैसें हैं।"
+   },
+   "recall_q": {
+    "en": "Why were HFCs brought under the Montreal Protocol if they don't harm ozone?",
+    "hi": "HFC ओज़ोन को नुक़सान नहीं पहुँचाते, फिर उन्हें मॉन्ट्रियल प्रोटोकॉल में क्यों लाया गया?"
+   },
+   "recall_a": {
+    "en": "Because they are strong greenhouse gases.",
+    "hi": "क्योंकि वे प्रबल ग्रीनहाउस गैसें हैं।"
+   },
+   "explain_simple": {
+    "en": "CFCs hurt the ozone; their replacements, HFCs, heat the planet. Kigali fixes the second problem.",
+    "hi": "CFC ओज़ोन को चोट पहुँचाते हैं; उनके विकल्प HFC धरती को गर्म करते हैं। किगाली दूसरी समस्या सुलझाता है।"
+   },
+   "seq": 84
+  },
+  {
+   "id": "environment.conventions.f07",
+   "topic": "environment.conventions",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "CMS and UNCCD Secretariats",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Bonn Convention (CMS, 1979) protects migratory species. The UNCCD (1994) fights desertification and land degradation.",
+    "hi": "बॉन अभिसमय (CMS, 1979) प्रवासी प्रजातियों की रक्षा करता है। UNCCD (1994) मरुस्थलीकरण और भूमि क्षरण से लड़ता है।"
+   },
+   "why": {
+    "en": "Migratory animals cross borders, so no one country can protect them alone.",
+    "hi": "प्रवासी जीव सीमाएँ पार करते हैं, इसलिए कोई एक देश अकेले उनकी रक्षा नहीं कर सकता।"
+   },
+   "recall_q": {
+    "en": "Which convention covers migratory species?",
+    "hi": "कौन-सा अभिसमय प्रवासी प्रजातियों से जुड़ा है?"
+   },
+   "recall_a": {
+    "en": "The Bonn Convention (CMS).",
+    "hi": "बॉन अभिसमय (CMS)।"
+   },
+   "explain_simple": {
+    "en": "Bonn = animals that travel. UNCCD = land turning to desert.",
+    "hi": "बॉन = यात्रा करने वाले जीव। UNCCD = रेगिस्तान बनती ज़मीन।"
+   },
+   "example": {
+    "en": "The Amur falcon, which stops in Nagaland on its way to Africa, is a species CMS cares about.",
+    "hi": "अमूर बाज़, जो अफ़्रीका जाते हुए नागालैंड में रुकता है, CMS की चिंता वाली प्रजाति है।"
+   },
+   "seq": 85
+  },
+  {
+   "id": "environment.conventions.sum",
+   "topic": "environment.conventions",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "Treaty secretariats",
+   "status": "needs_review",
+   "title": {
+    "en": "Conventions",
+    "hi": "अभिसमय"
+   },
+   "points": [
+    {
+     "en": "Ramsar 1971 wetlands; CITES 1973 trade.",
+     "hi": "रामसर 1971 आर्द्रभूमि; CITES 1973 व्यापार।"
+    },
+    {
+     "en": "CBD 1992: Cartagena (biosafety), Nagoya (benefits).",
+     "hi": "CBD 1992: कार्टाजेना (जैव सुरक्षा), नागोया (लाभ)।"
+    },
+    {
+     "en": "Kyoto: rich countries cut; Paris: all, via NDCs.",
+     "hi": "क्योटो: अमीर देश घटाएँ; पेरिस: सभी, NDC से।"
+    },
+    {
+     "en": "Montreal: CFCs; Kigali: HFCs.",
+     "hi": "मॉन्ट्रियल: CFC; किगाली: HFC।"
+    }
+   ],
+   "seq": 86
   },
   {
    "id": "polity.parliament.f01",
@@ -2068,7 +3020,7 @@
     "en": "Two houses plus the President who signs = Parliament.",
     "hi": "दो सदन और हस्ताक्षर करने वाले राष्ट्रपति = संसद।"
    },
-   "seq": 58
+   "seq": 87
   },
   {
    "id": "polity.parliament.f02",
@@ -2098,7 +3050,7 @@
     "hi": "250 सीटें: 238 विधानसभाओं द्वारा चुने गए + 12 प्रतिभा के लिए राष्ट्रपति द्वारा चुने गए।"
    },
    "review_note": "Present strength is about 245; check before publishing.",
-   "seq": 59
+   "seq": 88
   },
   {
    "id": "polity.parliament.f03",
@@ -2127,7 +3079,7 @@
     "en": "Like a school where one batch leaves every two years but the school never closes.",
     "hi": "जैसे कोई विद्यालय जहाँ हर दो साल में एक बैच निकलता है, पर विद्यालय कभी बंद नहीं होता।"
    },
-   "seq": 60
+   "seq": 89
   },
   {
    "id": "polity.parliament.f04",
@@ -2156,7 +3108,7 @@
     "en": "Lok Sabha is the people's house: all its members are now elected.",
     "hi": "लोकसभा जनता का सदन है: अब इसके सभी सदस्य चुने हुए हैं।"
    },
-   "seq": 61
+   "seq": 90
   },
   {
    "id": "polity.parliament.f05",
@@ -2185,7 +3137,7 @@
     "en": "Money comes from the people, so the people's House (Lok Sabha) has the final say. Rajya Sabha gets two weeks to comment.",
     "hi": "पैसा जनता का है, इसलिए अंतिम फ़ैसला जनता के सदन (लोकसभा) का। राज्यसभा को टिप्पणी के लिए दो सप्ताह मिलते हैं।"
    },
-   "seq": 62
+   "seq": 91
   },
   {
    "id": "polity.parliament.f06",
@@ -2218,7 +3170,7 @@
     "en": "Joint sittings have been held only three times, for example for the Prevention of Terrorism Bill in 2002.",
     "hi": "संयुक्त बैठक केवल तीन बार हुई है, जैसे 2002 में आतंकवाद निवारण विधेयक के लिए।"
    },
-   "seq": 63
+   "seq": 92
   },
   {
    "id": "polity.parliament.s01",
@@ -2293,7 +3245,7 @@
     "en": "Only once.",
     "hi": "केवल एक बार।"
    },
-   "seq": 64
+   "seq": 93
   },
   {
    "id": "polity.parliament.sum",
@@ -2324,7 +3276,7 @@
      "hi": "संयुक्त बैठक: केवल साधारण विधेयक; अध्यक्ष संचालन करते हैं।"
     }
    ],
-   "seq": 65
+   "seq": 94
   },
   {
    "id": "economy.banking.f01",
@@ -2354,7 +3306,7 @@
     "hi": "तीन महीने भुगतान नहीं → ऋण 'निष्पादित' नहीं रहता।"
    },
    "review_note": "For crop loans the rule follows crop seasons (two/one season).",
-   "seq": 66
+   "seq": 95
   },
   {
    "id": "economy.banking.f02",
@@ -2383,7 +3335,7 @@
     "en": "If a company can't pay, lenders take it to NCLT, which oversees a deadline-based rescue or sale.",
     "hi": "अगर कंपनी भुगतान न कर सके, तो ऋणदाता उसे NCLT ले जाते हैं, जो समय-सीमा वाली बचाव या बिक्री प्रक्रिया की निगरानी करता है।"
    },
-   "seq": 67
+   "seq": 96
   },
   {
    "id": "economy.banking.f03",
@@ -2413,7 +3365,7 @@
     "hi": "बैंक के हर ₹100 ऋण में से ₹40 खेती और छोटी इकाइयों जैसे क्षेत्रों को जाने चाहिए।"
    },
    "review_note": "Regional rural banks and small finance banks have a 75% target.",
-   "seq": 68
+   "seq": 97
   },
   {
    "id": "economy.banking.f04",
@@ -2443,7 +3395,7 @@
     "hi": "भुगतान बैंक बैंक लाइसेंस वाला बटुआ है: पैसा रखो, पैसा भेजो, पर उधार नहीं।"
    },
    "review_note": "Deposit cap raised from ₹1 lakh to ₹2 lakh per customer in 2021.",
-   "seq": 69
+   "seq": 98
   },
   {
    "id": "economy.banking.f05",
@@ -2473,7 +3425,7 @@
     "hi": "नाबार्ड गाँवों की सेवा करने वाले बैंकों के पीछे का बैंक है।"
    },
    "review_note": "Set up on the recommendation of the B. Sivaraman Committee (CRAFICARD).",
-   "seq": 70
+   "seq": 99
   },
   {
    "id": "economy.banking.sum",
@@ -2508,7 +3460,285 @@
      "hi": "नाबार्ड 1982: ग्रामीण ऋण की शीर्ष संस्था।"
     }
    ],
-   "seq": 71
+   "seq": 100
+  },
+  {
+   "id": "environment.pollution.f01",
+   "topic": "environment.pollution",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "NCERT Class XII Biology, Unit X 'Ecology', ch. 16",
+   "status": "needs_review",
+   "learn": {
+    "en": "Eutrophication is the over-enrichment of a water body with nutrients like nitrates and phosphates, causing algal blooms.",
+    "hi": "सुपोषण (यूट्रोफ़िकेशन) जलाशय में नाइट्रेट और फ़ॉस्फ़ेट जैसे पोषकों की अधिकता है, जिससे शैवाल प्रस्फुटन होता है।"
+   },
+   "why": {
+    "en": "When the algae die, bacteria decaying them use up oxygen, so fish suffocate.",
+    "hi": "शैवाल मरने पर उन्हें सड़ाने वाले जीवाणु ऑक्सीजन ख़त्म कर देते हैं, जिससे मछलियाँ दम घुटने से मरती हैं।"
+   },
+   "recall_q": {
+    "en": "Which two nutrients mainly cause eutrophication?",
+    "hi": "सुपोषण मुख्यतः किन दो पोषकों से होता है?"
+   },
+   "recall_a": {
+    "en": "Nitrates and phosphates.",
+    "hi": "नाइट्रेट और फ़ॉस्फ़ेट।"
+   },
+   "explain_simple": {
+    "en": "Too much fertiliser in a lake feeds the algae, and the algae end up choking the lake.",
+    "hi": "झील में ज़्यादा खाद शैवाल को खिलाती है, और शैवाल अंत में झील का दम घोंट देते हैं।"
+   },
+   "seq": 101
+  },
+  {
+   "id": "environment.pollution.f02",
+   "topic": "environment.pollution",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XII Biology, Unit X 'Ecology', ch. 16",
+   "status": "needs_review",
+   "learn": {
+    "en": "Biochemical Oxygen Demand (BOD) is the oxygen microbes need to break down organic matter in water. Higher BOD means more polluted water.",
+    "hi": "जैव रासायनिक ऑक्सीजन माँग (BOD) वह ऑक्सीजन है जो सूक्ष्मजीवों को पानी के कार्बनिक पदार्थ तोड़ने में चाहिए। अधिक BOD यानी अधिक प्रदूषित पानी।"
+   },
+   "why": {
+    "en": "More organic waste means more microbes eating it, so they take more oxygen from the water.",
+    "hi": "अधिक कार्बनिक कचरा यानी उसे खाने वाले अधिक सूक्ष्मजीव, इसलिए वे पानी से अधिक ऑक्सीजन लेते हैं।"
+   },
+   "recall_q": {
+    "en": "Does clean water have high or low BOD?",
+    "hi": "साफ़ पानी का BOD अधिक होता है या कम?"
+   },
+   "recall_a": {
+    "en": "Low.",
+    "hi": "कम।"
+   },
+   "explain_simple": {
+    "en": "BOD measures how much 'food' for microbes is floating in the water: more food, dirtier water.",
+    "hi": "BOD मापता है कि पानी में सूक्ष्मजीवों का 'भोजन' कितना है: ज़्यादा भोजन, ज़्यादा गंदा पानी।"
+   },
+   "seq": 102
+  },
+  {
+   "id": "environment.pollution.f03",
+   "topic": "environment.pollution",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "CPCB National Air Quality Index (2014)",
+   "status": "needs_review",
+   "learn": {
+    "en": "India's National Air Quality Index, launched in 2014, is based on eight pollutants, including PM2.5, PM10, ozone and ammonia.",
+    "hi": "भारत का राष्ट्रीय वायु गुणवत्ता सूचकांक, 2014 में शुरू, आठ प्रदूषकों पर आधारित है, जिनमें PM2.5, PM10, ओज़ोन और अमोनिया शामिल हैं।"
+   },
+   "why": {
+    "en": "PM2.5 particles are 2.5 micrometres or smaller, small enough to go deep into the lungs and blood.",
+    "hi": "PM2.5 कण 2.5 माइक्रोमीटर या उससे छोटे होते हैं, इतने छोटे कि फेफड़ों और ख़ून में गहरे पहुँच जाते हैं।"
+   },
+   "recall_q": {
+    "en": "How many pollutants does India's AQI use?",
+    "hi": "भारत का AQI कितने प्रदूषकों का उपयोग करता है?"
+   },
+   "recall_a": {
+    "en": "Eight.",
+    "hi": "आठ।"
+   },
+   "explain_simple": {
+    "en": "Eight pollutants, one number, one colour for the day's air.",
+    "hi": "आठ प्रदूषक, एक संख्या, दिन की हवा का एक रंग।"
+   },
+   "review_note": "Full list: PM10, PM2.5, NO2, SO2, CO, O3, NH3, Pb.",
+   "seq": 103
+  },
+  {
+   "id": "environment.pollution.f04",
+   "topic": "environment.pollution",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "NCERT Class XI Geography; WMO",
+   "status": "needs_review",
+   "learn": {
+    "en": "The ozone layer is in the stratosphere and absorbs harmful ultraviolet rays. Chlorine from CFCs breaks ozone apart.",
+    "hi": "ओज़ोन परत समताप मंडल में है और हानिकारक पराबैंगनी किरणें सोखती है। CFC से निकली क्लोरीन ओज़ोन को तोड़ती है।"
+   },
+   "why": {
+    "en": "One chlorine atom can destroy thousands of ozone molecules, so even small amounts of CFCs do great harm.",
+    "hi": "एक क्लोरीन परमाणु हज़ारों ओज़ोन अणुओं को नष्ट कर सकता है, इसलिए थोड़े CFC भी बड़ा नुक़सान करते हैं।"
+   },
+   "recall_q": {
+    "en": "In which layer of the atmosphere is the ozone layer?",
+    "hi": "ओज़ोन परत वायुमंडल की किस परत में है?"
+   },
+   "recall_a": {
+    "en": "The stratosphere.",
+    "hi": "समताप मंडल।"
+   },
+   "explain_simple": {
+    "en": "Ozone up high is a sunscreen; ozone at ground level is a pollutant.",
+    "hi": "ऊपर की ओज़ोन सनस्क्रीन है; ज़मीन के पास की ओज़ोन प्रदूषक है।"
+   },
+   "seq": 104
+  },
+  {
+   "id": "environment.pollution.f05",
+   "topic": "environment.pollution",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "IPCC AR6 WG1, ch. 7",
+   "status": "needs_review",
+   "learn": {
+    "en": "Methane traps far more heat per molecule than carbon dioxide, but it stays in the air for only about a decade.",
+    "hi": "मीथेन प्रति अणु कार्बन डाइऑक्साइड से कहीं ज़्यादा ऊष्मा रोकती है, पर हवा में केवल लगभग एक दशक रहती है।"
+   },
+   "why": {
+    "en": "This is why cutting methane, from rice fields, cattle and landfills, cools the planet quickly.",
+    "hi": "इसीलिए धान के खेतों, मवेशियों और कचरा-भराव से मीथेन घटाने पर धरती जल्दी ठंडी होती है।"
+   },
+   "recall_q": {
+    "en": "Which lasts longer in the atmosphere: methane or carbon dioxide?",
+    "hi": "वायुमंडल में कौन ज़्यादा समय रहता है: मीथेन या कार्बन डाइऑक्साइड?"
+   },
+   "recall_a": {
+    "en": "Carbon dioxide.",
+    "hi": "कार्बन डाइऑक्साइड।"
+   },
+   "explain_simple": {
+    "en": "Methane is a strong but short-lived heater; CO2 is weaker but stays for centuries.",
+    "hi": "मीथेन प्रबल पर अल्पकालिक गर्म करने वाली है; CO2 कमज़ोर पर सदियों तक रहती है।"
+   },
+   "seq": 105
+  },
+  {
+   "id": "environment.pollution.f06",
+   "topic": "environment.pollution",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "India State of Forest Report (FSI)",
+   "status": "needs_review",
+   "learn": {
+    "en": "West Bengal has the largest mangrove cover in India, mostly in the Sundarbans; Gujarat comes second.",
+    "hi": "भारत में सबसे अधिक मैंग्रोव आवरण पश्चिम बंगाल में है, अधिकतर सुंदरबन में; दूसरे स्थान पर गुजरात है।"
+   },
+   "why": {
+    "en": "Mangroves break storm waves and store a lot of carbon, so they protect both coasts and climate.",
+    "hi": "मैंग्रोव तूफ़ानी लहरों को तोड़ते हैं और बहुत कार्बन जमा करते हैं, इसलिए तट और जलवायु दोनों की रक्षा करते हैं।"
+   },
+   "recall_q": {
+    "en": "Which state has the largest mangrove cover?",
+    "hi": "किस राज्य में सबसे अधिक मैंग्रोव आवरण है?"
+   },
+   "recall_a": {
+    "en": "West Bengal.",
+    "hi": "पश्चिम बंगाल।"
+   },
+   "explain_simple": {
+    "en": "Sundarbans = the biggest mangrove forest, and it puts West Bengal first.",
+    "hi": "सुंदरबन = सबसे बड़ा मैंग्रोव वन, और यही पश्चिम बंगाल को पहला बनाता है।"
+   },
+   "review_note": "Re-check ranking against the latest ISFR before publishing.",
+   "seq": 106
+  },
+  {
+   "id": "environment.pollution.s01",
+   "topic": "environment.pollution",
+   "type": "steps",
+   "difficulty": 2,
+   "source": "NCERT Class XII Biology, Unit X 'Ecology', ch. 16",
+   "status": "needs_review",
+   "title": {
+    "en": "How a lake dies: eutrophication step by step",
+    "hi": "झील कैसे मरती है: सुपोषण क़दम-दर-क़दम"
+   },
+   "steps": [
+    {
+     "text": {
+      "en": "Fertiliser and sewage wash into the lake, carrying nitrates and phosphates.",
+      "hi": "खाद और सीवेज झील में बहकर नाइट्रेट और फ़ॉस्फ़ेट लाते हैं।"
+     }
+    },
+    {
+     "text": {
+      "en": "The extra nutrients make algae grow very fast: an algal bloom covers the surface.",
+      "hi": "अतिरिक्त पोषक शैवाल को बहुत तेज़ी से बढ़ाते हैं: शैवाल प्रस्फुटन सतह को ढक लेता है।"
+     },
+     "explain": {
+      "en": "Algae were limited by nutrients before; now that limit is gone.",
+      "hi": "पहले पोषक शैवाल को सीमित रखते थे; अब वह सीमा ख़त्म हो गई।"
+     }
+    },
+    {
+     "text": {
+      "en": "The bloom blocks sunlight, so plants under the water die.",
+      "hi": "प्रस्फुटन धूप रोकता है, इसलिए पानी के नीचे के पौधे मर जाते हैं।"
+     }
+    },
+    {
+     "text": {
+      "en": "Bacteria decompose the dead algae and plants, using up dissolved oxygen.",
+      "hi": "जीवाणु मरे शैवाल और पौधों को सड़ाते हुए घुली ऑक्सीजन ख़त्म करते हैं।"
+     },
+     "explain": {
+      "en": "This is why BOD rises sharply.",
+      "hi": "इसीलिए BOD तेज़ी से बढ़ता है।"
+     }
+    },
+    {
+     "text": {
+      "en": "With little oxygen left, fish die and the lake slowly fills up and turns into a marsh.",
+      "hi": "ऑक्सीजन कम होने पर मछलियाँ मरती हैं और झील धीरे-धीरे भरकर दलदल बन जाती है।"
+     }
+    }
+   ],
+   "summary": [
+    {
+     "en": "Nutrients in → algae boom → light blocked.",
+     "hi": "पोषक अंदर → शैवाल वृद्धि → प्रकाश बंद।"
+    },
+    {
+     "en": "Bacteria use up oxygen → BOD rises → fish die.",
+     "hi": "जीवाणु ऑक्सीजन ख़त्म करते हैं → BOD बढ़ता है → मछलियाँ मरती हैं।"
+    }
+   ],
+   "recall_q": {
+    "en": "Why does oxygen fall in a eutrophic lake?",
+    "hi": "सुपोषित झील में ऑक्सीजन क्यों घटती है?"
+   },
+   "recall_a": {
+    "en": "Bacteria use it up while decomposing dead algae.",
+    "hi": "मरे शैवाल को सड़ाते हुए जीवाणु उसे ख़त्म कर देते हैं।"
+   },
+   "seq": 107
+  },
+  {
+   "id": "environment.pollution.sum",
+   "topic": "environment.pollution",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "NCERT Class XII Biology, Unit X 'Ecology'",
+   "status": "needs_review",
+   "title": {
+    "en": "Pollution and climate",
+    "hi": "प्रदूषण और जलवायु"
+   },
+   "points": [
+    {
+     "en": "Eutrophication: nitrates, phosphates → algae → no oxygen.",
+     "hi": "सुपोषण: नाइट्रेट, फ़ॉस्फ़ेट → शैवाल → ऑक्सीजन नहीं।"
+    },
+    {
+     "en": "High BOD = polluted water.",
+     "hi": "अधिक BOD = प्रदूषित पानी।"
+    },
+    {
+     "en": "AQI: eight pollutants.",
+     "hi": "AQI: आठ प्रदूषक।"
+    },
+    {
+     "en": "Methane: strong, short-lived; CO2: weaker, long-lived.",
+     "hi": "मीथेन: प्रबल, अल्पकालिक; CO2: कमज़ोर, दीर्घकालिक।"
+    }
+   ],
+   "seq": 108
   },
   {
    "id": "polity.president.f01",
@@ -2538,7 +3768,7 @@
     "hi": "राष्ट्रपति को केवल जनता द्वारा चुने गए लोग चुनते हैं: सांसद और विधायक, मनोनीत सदस्य नहीं।"
    },
    "review_note": "Voting is by proportional representation with the single transferable vote, by secret ballot.",
-   "seq": 72
+   "seq": 109
   },
   {
    "id": "polity.president.f02",
@@ -2567,7 +3797,7 @@
     "en": "72 = mercy. A Governor has a similar power under Article 161, but cannot pardon a death sentence.",
     "hi": "72 = दया। राज्यपाल के पास अनुच्छेद 161 के तहत ऐसी शक्ति है, पर वह मृत्युदंड माफ़ नहीं कर सकते।"
    },
-   "seq": 73
+   "seq": 110
   },
   {
    "id": "polity.president.f03",
@@ -2596,7 +3826,7 @@
     "en": "An ordinance is a temporary law for a break period; Parliament must okay it within six weeks of returning.",
     "hi": "अध्यादेश छुट्टी के समय का अस्थायी क़ानून है; लौटने के छह सप्ताह में संसद को इसे मंज़ूर करना होता है।"
    },
-   "seq": 74
+   "seq": 111
   },
   {
    "id": "polity.president.f04",
@@ -2625,7 +3855,7 @@
     "en": "Lok Sabha has a Speaker; Rajya Sabha's chair is the Vice-President.",
     "hi": "लोकसभा में अध्यक्ष (स्पीकर); राज्यसभा में सभापति उपराष्ट्रपति।"
    },
-   "seq": 75
+   "seq": 112
   },
   {
    "id": "polity.president.f05",
@@ -2654,7 +3884,7 @@
     "en": "Ministers are a team answerable to Lok Sabha, and the team can be at most 15% of its size.",
     "hi": "मंत्री लोकसभा के प्रति उत्तरदायी एक टीम हैं, और टीम इसके आकार का अधिकतम 15% हो सकती है।"
    },
-   "seq": 76
+   "seq": 113
   },
   {
    "id": "polity.president.sum",
@@ -2685,7 +3915,7 @@
      "hi": "मंत्री लोकसभा के प्रति उत्तरदायी; अधिकतम 15%।"
     }
    ],
-   "seq": 77
+   "seq": 114
   },
   {
    "id": "economy.external.f01",
@@ -2718,7 +3948,7 @@
     "en": "Kerala receives a large share of India's remittances from the Gulf.",
     "hi": "भारत के धन-प्रेषण का बड़ा हिस्सा खाड़ी देशों से केरल आता है।"
    },
-   "seq": 78
+   "seq": 115
   },
   {
    "id": "economy.external.f02",
@@ -2747,7 +3977,7 @@
     "en": "Buy a big stake to help run the company = FDI. Buy a small slice to trade = FPI.",
     "hi": "कंपनी चलाने में हिस्सा लेने के लिए बड़ा हिस्सा = FDI। व्यापार के लिए छोटा टुकड़ा = FPI।"
    },
-   "seq": 79
+   "seq": 116
   },
   {
    "id": "economy.external.f03",
@@ -2776,7 +4006,7 @@
     "en": "Weak rupee: exporters smile, importers (and oil buyers) pay more.",
     "hi": "कमज़ोर रुपया: निर्यातक ख़ुश, आयातक (और तेल ख़रीदार) ज़्यादा चुकाते हैं।"
    },
-   "seq": 80
+   "seq": 117
   },
   {
    "id": "economy.external.f04",
@@ -2805,7 +4035,7 @@
     "en": "SDR is the IMF's own money, made from five big currencies — not the rupee.",
     "hi": "SDR आईएमएफ़ की अपनी मुद्रा है, पाँच बड़ी मुद्राओं से बनी — रुपया नहीं।"
    },
-   "seq": 81
+   "seq": 118
   },
   {
    "id": "economy.external.sum",
@@ -2840,7 +4070,7 @@
      "hi": "SDR: पाँच मुद्राएँ, रुपया नहीं।"
     }
    ],
-   "seq": 82
+   "seq": 119
   },
   {
    "id": "polity.judiciary.f01",
@@ -2873,7 +4103,7 @@
     "en": "The case arose from a Kerala land-reform law challenged by the head of the Edneer Mutt in Kasaragod.",
     "hi": "यह मामला कासरगोड के एडनीर मठ के प्रमुख द्वारा केरल के भूमि-सुधार क़ानून को चुनौती देने से शुरू हुआ।"
    },
-   "seq": 83
+   "seq": 120
   },
   {
    "id": "polity.judiciary.f02",
@@ -2902,7 +4132,7 @@
     "en": "131 = government vs government cases start at the top.",
     "hi": "131 = सरकार बनाम सरकार के मामले सीधे सबसे ऊपर शुरू होते हैं।"
    },
-   "seq": 84
+   "seq": 121
   },
   {
    "id": "polity.judiciary.f03",
@@ -2935,7 +4165,7 @@
     "en": "The Ayodhya reference (1993) is one the Court declined to answer.",
     "hi": "अयोध्या संदर्भ (1993) में न्यायालय ने उत्तर देने से मना कर दिया था।"
    },
-   "seq": 85
+   "seq": 122
   },
   {
    "id": "polity.judiciary.f04",
@@ -2964,7 +4194,7 @@
     "en": "Supreme Court 65, High Court 62 — the higher court retires later.",
     "hi": "सर्वोच्च 65, उच्च 62 — ऊँचे न्यायालय में सेवानिवृत्ति बाद में।"
    },
-   "seq": 86
+   "seq": 123
   },
   {
    "id": "polity.judiciary.sum",
@@ -2995,7 +4225,7 @@
      "hi": "सेवानिवृत्ति: सर्वोच्च 65, उच्च 62।"
     }
    ],
-   "seq": 87
+   "seq": 124
   },
   {
    "id": "economy.agri.f01",
@@ -3025,7 +4255,7 @@
     "hi": "CACP सुझाव देता है; आर्थिक मामलों की मंत्रिमंडल समिति तय करती और घोषित करती है।"
    },
    "review_note": "CACP is an attached office of the Ministry of Agriculture, not a statutory body. Sugarcane has FRP, not MSP.",
-   "seq": 88
+   "seq": 125
   },
   {
    "id": "economy.agri.f02",
@@ -3054,7 +4284,7 @@
     "en": "Ask for work in your village; the law says you must get it within 15 days, up to 100 days a year.",
     "hi": "अपने गाँव में काम माँगिए; क़ानून कहता है 15 दिन में मिलना चाहिए, वर्ष में 100 दिन तक।"
    },
-   "seq": 89
+   "seq": 126
   },
   {
    "id": "economy.agri.f03",
@@ -3083,7 +4313,7 @@
     "en": "₹2,000 three times a year, straight to the bank.",
     "hi": "साल में तीन बार ₹2,000, सीधे बैंक में।"
    },
-   "seq": 90
+   "seq": 127
   },
   {
    "id": "economy.agri.sum",
@@ -3110,7 +4340,7 @@
      "hi": "पीएम-किसान: ₹6,000 तीन क़िस्तों में।"
     }
    ],
-   "seq": 91
+   "seq": 128
   },
   {
    "id": "polity.federal.f01",
@@ -3143,7 +4373,7 @@
     "en": "Defence is in the Union List, police in the State List, education and forests in the Concurrent List.",
     "hi": "रक्षा संघ सूची में, पुलिस राज्य सूची में, शिक्षा और वन समवर्ती सूची में हैं।"
    },
-   "seq": 92
+   "seq": 129
   },
   {
    "id": "polity.federal.f02",
@@ -3173,7 +4403,7 @@
     "hi": "शिक्षा पहले राज्य का विषय थी; 1976 से केंद्र और राज्य दोनों इसे साझा करते हैं।"
    },
    "review_note": "The five: education, forests, weights and measures, protection of wild animals and birds, administration of justice.",
-   "seq": 93
+   "seq": 130
   },
   {
    "id": "polity.federal.f03",
@@ -3202,7 +4432,7 @@
     "en": "After 1975, the vague words 'internal disturbance' were replaced by the stricter 'armed rebellion'.",
     "hi": "1975 के बाद अस्पष्ट 'आंतरिक अशांति' की जगह सख़्त 'सशस्त्र विद्रोह' रखा गया।"
    },
-   "seq": 94
+   "seq": 131
   },
   {
    "id": "polity.federal.f04",
@@ -3231,7 +4461,7 @@
     "en": "352 national, 356 state, 360 financial. Only 360 has never been used.",
     "hi": "352 राष्ट्रीय, 356 राज्य, 360 वित्तीय। केवल 360 कभी उपयोग नहीं हुआ।"
    },
-   "seq": 95
+   "seq": 132
   },
   {
    "id": "polity.federal.f05",
@@ -3260,7 +4490,7 @@
     "en": "One tax for the country, so one table where the Centre and every state sit together.",
     "hi": "देश के लिए एक कर, इसलिए एक मेज़ जहाँ केंद्र और हर राज्य साथ बैठते हैं।"
    },
-   "seq": 96
+   "seq": 133
   },
   {
    "id": "polity.federal.sum",
@@ -3291,7 +4521,7 @@
      "hi": "अनु. 360 कभी उपयोग नहीं; जीएसटी परिषद अनु. 279A।"
     }
    ],
-   "seq": 97
+   "seq": 134
   },
   {
    "id": "polity.local.f01",
@@ -3324,7 +4554,7 @@
     "en": "Kerala's 1996 People's Plan Campaign gave panchayats about a third of the state plan funds.",
     "hi": "केरल के 1996 के जन योजना अभियान ने पंचायतों को राज्य योजना निधि का लगभग एक-तिहाई दिया।"
    },
-   "seq": 98
+   "seq": 135
   },
   {
    "id": "polity.local.f02",
@@ -3353,7 +4583,7 @@
     "en": "Villages: 73rd, 29 subjects. Towns: 74th, 18 subjects.",
     "hi": "गाँव: 73वाँ, 29 विषय। शहर: 74वाँ, 18 विषय।"
    },
-   "seq": 99
+   "seq": 136
   },
   {
    "id": "polity.local.f03",
@@ -3382,7 +4612,7 @@
     "en": "Three floors of local government — village, block, district — suggested by Balwant Rai Mehta.",
     "hi": "स्थानीय शासन की तीन मंज़िलें — गाँव, ब्लॉक, ज़िला — बलवंत राय मेहता ने सुझाईं।"
    },
-   "seq": 100
+   "seq": 137
   },
   {
    "id": "polity.local.sum",
@@ -3413,7 +4643,7 @@
      "hi": "तीन स्तर: बलवंत राय मेहता, 1957।"
     }
    ],
-   "seq": 101
+   "seq": 138
   },
   {
    "id": "polity.bodies.f01",
@@ -3442,7 +4672,7 @@
     "en": "Pairs to remember: EC 324, CAG 148, FC 280, UPSC 315.",
     "hi": "याद रखने के जोड़े: निर्वाचन आयोग 324, CAG 148, वित्त आयोग 280, UPSC 315।"
    },
-   "seq": 102
+   "seq": 139
   },
   {
    "id": "polity.bodies.f02",
@@ -3472,7 +4702,7 @@
     "hi": "हर पाँच साल में एक निर्णायक तय करता है कि कर का केक केंद्र और राज्यों में कैसे कटे।"
    },
    "review_note": "16th Finance Commission chaired by Arvind Panagariya (constituted Dec 2023); check its report status before publishing.",
-   "seq": 103
+   "seq": 140
   },
   {
    "id": "polity.bodies.f03",
@@ -3501,7 +4731,7 @@
     "en": "Constitution-made: EC, CAG, Finance Commission. Government-made: NITI Aayog.",
     "hi": "संविधान से बने: निर्वाचन आयोग, CAG, वित्त आयोग। सरकार से बना: नीति आयोग।"
    },
-   "seq": 104
+   "seq": 141
   },
   {
    "id": "polity.bodies.f04",
@@ -3530,7 +4760,7 @@
     "en": "The government's lawyer can talk in Parliament, but only members vote.",
     "hi": "सरकार के वकील संसद में बोल सकते हैं, पर मतदान केवल सदस्य करते हैं।"
    },
-   "seq": 105
+   "seq": 142
   },
   {
    "id": "polity.bodies.sum",
@@ -3561,7 +4791,7 @@
      "hi": "महान्यायवादी बोल सकते हैं, मतदान नहीं।"
     }
    ],
-   "seq": 106
+   "seq": 143
   }
  ],
  "questions": [
@@ -5481,6 +6711,767 @@
    "source": "Practice — exam pattern (not from a past paper)",
    "covers": [
     "economy.agri.f03"
+   ]
+  },
+  {
+   "id": "q.practice.environment.1",
+   "topic": "environment.ecology",
+   "kind": "mcq",
+   "q": {
+    "en": "Which of the following ecological pyramids is always upright?",
+    "hi": "निम्नलिखित में से कौन-सा पारिस्थितिक पिरामिड हमेशा सीधा होता है?"
+   },
+   "options": [
+    {
+     "en": "Pyramid of numbers",
+     "hi": "संख्या का पिरामिड"
+    },
+    {
+     "en": "Pyramid of biomass",
+     "hi": "जैवभार का पिरामिड"
+    },
+    {
+     "en": "Pyramid of energy",
+     "hi": "ऊर्जा का पिरामिड"
+    },
+    {
+     "en": "All of the above",
+     "hi": "उपरोक्त सभी"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Energy is lost at every level, so the energy pyramid can never invert.",
+    "hi": "हर स्तर पर ऊर्जा घटती है, इसलिए ऊर्जा पिरामिड कभी उल्टा नहीं होता।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.ecology.f02",
+    "environment.ecology.f01"
+   ]
+  },
+  {
+   "id": "q.practice.environment.2",
+   "topic": "environment.ecology",
+   "kind": "mcq",
+   "q": {
+    "en": "The pioneer species in primary succession on bare rock are usually:",
+    "hi": "नंगी चट्टान पर प्राथमिक अनुक्रमण में अग्रणी प्रजातियाँ प्रायः होती हैं:"
+   },
+   "options": [
+    {
+     "en": "Grasses",
+     "hi": "घास"
+    },
+    {
+     "en": "Lichens",
+     "hi": "लाइकेन"
+    },
+    {
+     "en": "Shrubs",
+     "hi": "झाड़ियाँ"
+    },
+    {
+     "en": "Ferns",
+     "hi": "फ़र्न"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Lichens break rock into the first soil.",
+    "hi": "लाइकेन चट्टान को तोड़कर पहली मिट्टी बनाते हैं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.ecology.f03"
+   ]
+  },
+  {
+   "id": "q.practice.environment.3",
+   "topic": "environment.ecology",
+   "kind": "mcq",
+   "q": {
+    "en": "The 'edge effect' refers to:",
+    "hi": "'कोर प्रभाव' (एज इफ़ेक्ट) से तात्पर्य है:"
+   },
+   "options": [
+    {
+     "en": "Loss of species at forest edges due to roads",
+     "hi": "सड़कों के कारण वन किनारों पर प्रजातियों की हानि"
+    },
+    {
+     "en": "Greater species diversity in a transition zone between ecosystems",
+     "hi": "पारितंत्रों के बीच संक्रमण क्षेत्र में अधिक प्रजाति विविधता"
+    },
+    {
+     "en": "The tendency of predators to stay at the edge of a food chain",
+     "hi": "शिकारियों का आहार श्रृंखला के छोर पर रहना"
+    },
+    {
+     "en": "Warming at the edge of glaciers",
+     "hi": "हिमनदों के किनारे पर तापवृद्धि"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Ecotones host species from both sides plus edge species.",
+    "hi": "इकोटोन में दोनों ओर की और किनारे की प्रजातियाँ होती हैं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.ecology.f05"
+   ]
+  },
+  {
+   "id": "q.practice.environment.4",
+   "topic": "environment.biodiversity",
+   "kind": "mcq",
+   "q": {
+    "en": "Consider the following:\n1. Western Ghats\n2. Eastern Ghats\n3. Indo-Burma\n4. Sundaland\nWhich of the above are biodiversity hotspots with parts in India?",
+    "hi": "निम्नलिखित पर विचार कीजिए:\n1. पश्चिमी घाट\n2. पूर्वी घाट\n3. इंडो-बर्मा\n4. सुंडालैंड\nइनमें से कौन-से जैव विविधता हॉटस्पॉट हैं जिनके हिस्से भारत में हैं?"
+   },
+   "options": [
+    {
+     "en": "1 and 2 only",
+     "hi": "केवल 1 और 2"
+    },
+    {
+     "en": "1, 3 and 4 only",
+     "hi": "केवल 1, 3 और 4"
+    },
+    {
+     "en": "2, 3 and 4 only",
+     "hi": "केवल 2, 3 और 4"
+    },
+    {
+     "en": "1, 2, 3 and 4",
+     "hi": "1, 2, 3 और 4"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "The Eastern Ghats are not a hotspot.",
+    "hi": "पूर्वी घाट हॉटस्पॉट नहीं है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.biodiversity.f02",
+    "environment.biodiversity.f01"
+   ]
+  },
+  {
+   "id": "q.practice.environment.5",
+   "topic": "environment.biodiversity",
+   "kind": "mcq",
+   "q": {
+    "en": "Which of the following is NOT a 'threatened' category in the IUCN Red List?",
+    "hi": "निम्नलिखित में से कौन-सी IUCN रेड लिस्ट की 'संकटापन्न' श्रेणी नहीं है?"
+   },
+   "options": [
+    {
+     "en": "Vulnerable",
+     "hi": "सुभेद्य"
+    },
+    {
+     "en": "Endangered",
+     "hi": "संकटग्रस्त"
+    },
+    {
+     "en": "Near Threatened",
+     "hi": "संकट के निकट"
+    },
+    {
+     "en": "Critically Endangered",
+     "hi": "अति संकटग्रस्त"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Threatened = CR, EN, VU. Near Threatened is below them.",
+    "hi": "संकटापन्न = CR, EN, VU। 'संकट के निकट' उनसे नीचे है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.biodiversity.f03"
+   ]
+  },
+  {
+   "id": "q.practice.environment.6",
+   "topic": "environment.biodiversity",
+   "kind": "mcq",
+   "q": {
+    "en": "Which of the following is an example of ex-situ conservation?",
+    "hi": "निम्नलिखित में से कौन-सा बाह्य-स्थाने संरक्षण का उदाहरण है?"
+   },
+   "options": [
+    {
+     "en": "National park",
+     "hi": "राष्ट्रीय उद्यान"
+    },
+    {
+     "en": "Sacred grove",
+     "hi": "पवित्र उपवन"
+    },
+    {
+     "en": "Seed bank",
+     "hi": "बीज बैंक"
+    },
+    {
+     "en": "Biosphere reserve",
+     "hi": "जैवमंडल आरक्षित क्षेत्र"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "A seed bank keeps species outside their natural home.",
+    "hi": "बीज बैंक प्रजातियों को उनके प्राकृतिक घर से बाहर रखता है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.biodiversity.f04"
+   ]
+  },
+  {
+   "id": "q.practice.environment.7",
+   "topic": "environment.biodiversity",
+   "kind": "mcq",
+   "q": {
+    "en": "Coral bleaching is caused mainly by:",
+    "hi": "प्रवाल विरंजन मुख्यतः किस कारण होता है?"
+   },
+   "options": [
+    {
+     "en": "Corals expelling symbiotic algae under heat stress",
+     "hi": "ताप तनाव में प्रवाल द्वारा सहजीवी शैवाल का निष्कासन"
+    },
+    {
+     "en": "Excess sunlight bleaching the coral skeleton",
+     "hi": "अधिक धूप से प्रवाल कंकाल का रंग उड़ना"
+    },
+    {
+     "en": "Fish eating coral polyps",
+     "hi": "मछलियों द्वारा प्रवाल पॉलिप खाना"
+    },
+    {
+     "en": "Freshwater flooding of reefs",
+     "hi": "चट्टानों पर मीठे पानी की बाढ़"
+    }
+   ],
+   "answer": 0,
+   "explain": {
+    "en": "Warm water makes corals expel zooxanthellae.",
+    "hi": "गर्म पानी प्रवाल से ज़ूज़ैन्थेली निकलवा देता है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.biodiversity.f05"
+   ]
+  },
+  {
+   "id": "q.practice.environment.8",
+   "topic": "environment.laws",
+   "kind": "mcq",
+   "q": {
+    "en": "With reference to protected areas in India, consider:\n1. Grazing of livestock is not permitted in a national park.\n2. Wildlife sanctuaries are declared under the Environment (Protection) Act 1986.\nWhich is/are correct?",
+    "hi": "भारत में संरक्षित क्षेत्रों के संदर्भ में विचार कीजिए:\n1. राष्ट्रीय उद्यान में पशु चराई की अनुमति नहीं है।\n2. वन्यजीव अभयारण्य पर्यावरण (संरक्षण) अधिनियम 1986 के तहत घोषित होते हैं।\nकौन-सा/से सही है/हैं?"
+   },
+   "options": [
+    {
+     "en": "1 only",
+     "hi": "केवल 1"
+    },
+    {
+     "en": "2 only",
+     "hi": "केवल 2"
+    },
+    {
+     "en": "Both 1 and 2",
+     "hi": "1 और 2 दोनों"
+    },
+    {
+     "en": "Neither 1 nor 2",
+     "hi": "न 1, न 2"
+    }
+   ],
+   "answer": 0,
+   "explain": {
+    "en": "Sanctuaries are declared under the Wildlife (Protection) Act 1972.",
+    "hi": "अभयारण्य वन्यजीव (संरक्षण) अधिनियम 1972 के तहत घोषित होते हैं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.laws.f01",
+    "environment.laws.f03"
+   ]
+  },
+  {
+   "id": "q.practice.environment.9",
+   "topic": "environment.laws",
+   "kind": "mcq",
+   "q": {
+    "en": "Under the Forest (Conservation) Act 1980, diverting forest land for non-forest use requires:",
+    "hi": "वन (संरक्षण) अधिनियम 1980 के तहत वन भूमि के ग़ैर-वन उपयोग के लिए आवश्यक है:"
+   },
+   "options": [
+    {
+     "en": "Approval of the Gram Sabha only",
+     "hi": "केवल ग्राम सभा की अनुमति"
+    },
+    {
+     "en": "Prior approval of the central government",
+     "hi": "केंद्र सरकार की पूर्व अनुमति"
+    },
+    {
+     "en": "Approval of the National Green Tribunal",
+     "hi": "राष्ट्रीय हरित अधिकरण की अनुमति"
+    },
+    {
+     "en": "A resolution of Parliament",
+     "hi": "संसद का प्रस्ताव"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "The Act requires the Centre's prior approval.",
+    "hi": "अधिनियम में केंद्र की पूर्व अनुमति आवश्यक है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.laws.f04"
+   ]
+  },
+  {
+   "id": "q.practice.environment.10",
+   "topic": "environment.laws",
+   "kind": "mcq",
+   "q": {
+    "en": "In a biosphere reserve, human settlements and farming are allowed in the:",
+    "hi": "जैवमंडल आरक्षित क्षेत्र में मानव बस्तियाँ और खेती किस क्षेत्र में अनुमत हैं?"
+   },
+   "options": [
+    {
+     "en": "Core zone",
+     "hi": "केंद्रीय क्षेत्र"
+    },
+    {
+     "en": "Buffer zone only",
+     "hi": "केवल बफ़र क्षेत्र"
+    },
+    {
+     "en": "Transition zone",
+     "hi": "संक्रमण क्षेत्र"
+    },
+    {
+     "en": "None of the zones",
+     "hi": "किसी क्षेत्र में नहीं"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "The transition zone is where people live and work.",
+    "hi": "संक्रमण क्षेत्र में लोग रहते और काम करते हैं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.laws.f06"
+   ]
+  },
+  {
+   "id": "q.practice.environment.11",
+   "topic": "environment.laws",
+   "kind": "mcq",
+   "q": {
+    "en": "The National Tiger Conservation Authority is a statutory body constituted under:",
+    "hi": "राष्ट्रीय बाघ संरक्षण प्राधिकरण किसके तहत गठित वैधानिक निकाय है?"
+   },
+   "options": [
+    {
+     "en": "Environment (Protection) Act 1986",
+     "hi": "पर्यावरण (संरक्षण) अधिनियम 1986"
+    },
+    {
+     "en": "Wildlife (Protection) Act 1972",
+     "hi": "वन्यजीव (संरक्षण) अधिनियम 1972"
+    },
+    {
+     "en": "Biological Diversity Act 2002",
+     "hi": "जैव विविधता अधिनियम 2002"
+    },
+    {
+     "en": "Forest Rights Act 2006",
+     "hi": "वन अधिकार अधिनियम 2006"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "The 2006 amendment to the Wildlife Act created the NTCA.",
+    "hi": "वन्यजीव अधिनियम के 2006 संशोधन ने NTCA बनाया।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.laws.f07"
+   ]
+  },
+  {
+   "id": "q.practice.environment.12",
+   "topic": "environment.conventions",
+   "kind": "mcq",
+   "q": {
+    "en": "The 'Montreux Record' is associated with:",
+    "hi": "'मॉन्ट्रो रिकॉर्ड' किससे संबंधित है?"
+   },
+   "options": [
+    {
+     "en": "Ozone-depleting substances",
+     "hi": "ओज़ोन-क्षयकारी पदार्थ"
+    },
+    {
+     "en": "Threatened Ramsar wetlands",
+     "hi": "संकटग्रस्त रामसर आर्द्रभूमियाँ"
+    },
+    {
+     "en": "Endangered migratory birds",
+     "hi": "संकटग्रस्त प्रवासी पक्षी"
+    },
+    {
+     "en": "Polluted rivers",
+     "hi": "प्रदूषित नदियाँ"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "It lists Ramsar sites whose ecology is under threat.",
+    "hi": "यह उन रामसर स्थलों की सूची है जिनकी पारिस्थितिकी ख़तरे में है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.conventions.f01"
+   ]
+  },
+  {
+   "id": "q.practice.environment.13",
+   "topic": "environment.conventions",
+   "kind": "mcq",
+   "q": {
+    "en": "Which protocol under the CBD deals with access to genetic resources and fair sharing of benefits?",
+    "hi": "CBD का कौन-सा प्रोटोकॉल आनुवंशिक संसाधनों तक पहुँच और लाभ की उचित साझेदारी से जुड़ा है?"
+   },
+   "options": [
+    {
+     "en": "Cartagena Protocol",
+     "hi": "कार्टाजेना प्रोटोकॉल"
+    },
+    {
+     "en": "Kyoto Protocol",
+     "hi": "क्योटो प्रोटोकॉल"
+    },
+    {
+     "en": "Nagoya Protocol",
+     "hi": "नागोया प्रोटोकॉल"
+    },
+    {
+     "en": "Montreal Protocol",
+     "hi": "मॉन्ट्रियल प्रोटोकॉल"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Nagoya = access and benefit-sharing.",
+    "hi": "नागोया = पहुँच और लाभ-साझेदारी।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.conventions.f03"
+   ]
+  },
+  {
+   "id": "q.practice.environment.14",
+   "topic": "environment.conventions",
+   "kind": "mcq",
+   "q": {
+    "en": "The Kigali Amendment to the Montreal Protocol aims to phase down:",
+    "hi": "मॉन्ट्रियल प्रोटोकॉल का किगाली संशोधन किसे घटाने का लक्ष्य रखता है?"
+   },
+   "options": [
+    {
+     "en": "CFCs",
+     "hi": "CFC"
+    },
+    {
+     "en": "HFCs",
+     "hi": "HFC"
+    },
+    {
+     "en": "Methane",
+     "hi": "मीथेन"
+    },
+    {
+     "en": "Carbon dioxide",
+     "hi": "कार्बन डाइऑक्साइड"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "HFCs are strong greenhouse gases.",
+    "hi": "HFC प्रबल ग्रीनहाउस गैसें हैं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.conventions.f06"
+   ]
+  },
+  {
+   "id": "q.practice.environment.15",
+   "topic": "environment.conventions",
+   "kind": "mcq",
+   "q": {
+    "en": "Consider:\n1. The Kyoto Protocol set binding targets for all countries.\n2. Under the Paris Agreement, each country sets its own NDC.\nWhich is/are correct?",
+    "hi": "विचार कीजिए:\n1. क्योटो प्रोटोकॉल ने सभी देशों के लिए बाध्यकारी लक्ष्य तय किए।\n2. पेरिस समझौते के तहत हर देश अपना NDC ख़ुद तय करता है।\nकौन-सा/से सही है/हैं?"
+   },
+   "options": [
+    {
+     "en": "1 only",
+     "hi": "केवल 1"
+    },
+    {
+     "en": "2 only",
+     "hi": "केवल 2"
+    },
+    {
+     "en": "Both 1 and 2",
+     "hi": "1 और 2 दोनों"
+    },
+    {
+     "en": "Neither 1 nor 2",
+     "hi": "न 1, न 2"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Kyoto bound only developed (Annex I) countries.",
+    "hi": "क्योटो ने केवल विकसित (अनुलग्नक I) देशों को बाँधा।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.conventions.f04",
+    "environment.conventions.f05"
+   ]
+  },
+  {
+   "id": "q.practice.environment.16",
+   "topic": "environment.conventions",
+   "kind": "mcq",
+   "q": {
+    "en": "CITES regulates:",
+    "hi": "CITES किसे नियंत्रित करता है?"
+   },
+   "options": [
+    {
+     "en": "International trade in wild animals and plants",
+     "hi": "वन्य जीवों और पौधों का अंतरराष्ट्रीय व्यापार"
+    },
+    {
+     "en": "Hunting inside national parks",
+     "hi": "राष्ट्रीय उद्यानों में शिकार"
+    },
+    {
+     "en": "Emissions from ships",
+     "hi": "जहाज़ों से उत्सर्जन"
+    },
+    {
+     "en": "Protection of wetlands",
+     "hi": "आर्द्रभूमियों की सुरक्षा"
+    }
+   ],
+   "answer": 0,
+   "explain": {
+    "en": "CITES is about trade.",
+    "hi": "CITES व्यापार से जुड़ा है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.conventions.f02"
+   ]
+  },
+  {
+   "id": "q.practice.environment.17",
+   "topic": "environment.conventions",
+   "kind": "mcq",
+   "q": {
+    "en": "The Bonn Convention is concerned with:",
+    "hi": "बॉन अभिसमय किससे संबंधित है?"
+   },
+   "options": [
+    {
+     "en": "Desertification",
+     "hi": "मरुस्थलीकरण"
+    },
+    {
+     "en": "Migratory species",
+     "hi": "प्रवासी प्रजातियाँ"
+    },
+    {
+     "en": "Hazardous waste",
+     "hi": "ख़तरनाक कचरा"
+    },
+    {
+     "en": "Wetlands",
+     "hi": "आर्द्रभूमियाँ"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "CMS = Convention on Migratory Species.",
+    "hi": "CMS = प्रवासी प्रजाति अभिसमय।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.conventions.f07"
+   ]
+  },
+  {
+   "id": "q.practice.environment.18",
+   "topic": "environment.pollution",
+   "kind": "mcq",
+   "q": {
+    "en": "A high Biochemical Oxygen Demand (BOD) in a river indicates:",
+    "hi": "किसी नदी में अधिक जैव रासायनिक ऑक्सीजन माँग (BOD) दर्शाती है:"
+   },
+   "options": [
+    {
+     "en": "Clean water",
+     "hi": "साफ़ पानी"
+    },
+    {
+     "en": "High organic pollution",
+     "hi": "अधिक कार्बनिक प्रदूषण"
+    },
+    {
+     "en": "High dissolved oxygen",
+     "hi": "अधिक घुली ऑक्सीजन"
+    },
+    {
+     "en": "Low microbial activity",
+     "hi": "कम सूक्ष्मजीव गतिविधि"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "More organic matter → more oxygen used by microbes.",
+    "hi": "अधिक कार्बनिक पदार्थ → सूक्ष्मजीव अधिक ऑक्सीजन लेते हैं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.pollution.f02",
+    "environment.pollution.f01"
+   ]
+  },
+  {
+   "id": "q.practice.environment.19",
+   "topic": "environment.pollution",
+   "kind": "mcq",
+   "q": {
+    "en": "Which of the following is NOT one of the pollutants in India's National Air Quality Index?",
+    "hi": "निम्नलिखित में से कौन भारत के राष्ट्रीय वायु गुणवत्ता सूचकांक का प्रदूषक नहीं है?"
+   },
+   "options": [
+    {
+     "en": "Ammonia",
+     "hi": "अमोनिया"
+    },
+    {
+     "en": "Lead",
+     "hi": "सीसा"
+    },
+    {
+     "en": "Carbon dioxide",
+     "hi": "कार्बन डाइऑक्साइड"
+    },
+    {
+     "en": "Ozone",
+     "hi": "ओज़ोन"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "CO2 is a greenhouse gas but not an AQI pollutant.",
+    "hi": "CO2 ग्रीनहाउस गैस है पर AQI प्रदूषक नहीं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.pollution.f03"
+   ]
+  },
+  {
+   "id": "q.practice.environment.20",
+   "topic": "environment.pollution",
+   "kind": "mcq",
+   "q": {
+    "en": "Consider:\n1. Methane traps more heat per molecule than carbon dioxide.\n2. Methane stays longer in the atmosphere than carbon dioxide.\nWhich is/are correct?",
+    "hi": "विचार कीजिए:\n1. मीथेन प्रति अणु कार्बन डाइऑक्साइड से अधिक ऊष्मा रोकती है।\n2. मीथेन वायुमंडल में कार्बन डाइऑक्साइड से अधिक समय रहती है।\nकौन-सा/से सही है/हैं?"
+   },
+   "options": [
+    {
+     "en": "1 only",
+     "hi": "केवल 1"
+    },
+    {
+     "en": "2 only",
+     "hi": "केवल 2"
+    },
+    {
+     "en": "Both 1 and 2",
+     "hi": "1 और 2 दोनों"
+    },
+    {
+     "en": "Neither 1 nor 2",
+     "hi": "न 1, न 2"
+    }
+   ],
+   "answer": 0,
+   "explain": {
+    "en": "Methane lasts about a decade; CO2 for centuries.",
+    "hi": "मीथेन लगभग एक दशक रहती है; CO2 सदियों तक।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.pollution.f05"
+   ]
+  },
+  {
+   "id": "q.practice.environment.21",
+   "topic": "environment.pollution",
+   "kind": "mcq",
+   "q": {
+    "en": "Which state has the largest mangrove cover in India?",
+    "hi": "भारत में सबसे अधिक मैंग्रोव आवरण किस राज्य में है?"
+   },
+   "options": [
+    {
+     "en": "Gujarat",
+     "hi": "गुजरात"
+    },
+    {
+     "en": "Odisha",
+     "hi": "ओडिशा"
+    },
+    {
+     "en": "West Bengal",
+     "hi": "पश्चिम बंगाल"
+    },
+    {
+     "en": "Andhra Pradesh",
+     "hi": "आंध्र प्रदेश"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "The Sundarbans put West Bengal first.",
+    "hi": "सुंदरबन पश्चिम बंगाल को पहला बनाता है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "environment.pollution.f06"
    ]
   }
  ]
