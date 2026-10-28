@@ -116,3 +116,13 @@ shared; the webhook ignores payments whose notes name another app.
   quota, with a "Review this week" button that brings five of the week's cards
   back as due.
 - Cron jobs: `supabase/setup/cron.sql` (run once, needs the service-role key in Vault).
+
+## Hosting
+
+- Vercel project `algo-upsc` (team "vivek's projects"), root directory `web`,
+  deploys on every push to the production branch.
+- Domain `upsc.calecutech.com` is attached. calecutech.com's DNS is at
+  Squarespace, so the record is added there: CNAME `upsc` →
+  `005891e463024931.vercel-dns-017.com`.
+- Supabase Auth needs `https://upsc.calecutech.com/**` in its redirect URLs, and
+  the `upsc` schema must be listed under Data API → Exposed schemas.
