@@ -84,3 +84,16 @@ Same contract as Geological Assistant: the client asks
 from the client), Razorpay Checkout takes the money, and only the signed
 webhook grants access and issues the GST invoice. The Razorpay account is
 shared; the webhook ignores payments whose notes name another app.
+
+- Price: `offer_price_minor` (₹3,000 introductory offer) when set, otherwise
+  `list_price_minor` (₹10,000). Prices include 18% GST.
+- Access runs to `courses.access_until`, or 7 days after the exam date.
+- `upsc.issue_invoice()` (service role only) numbers invoices per financial
+  year (`AU/2026-27/0001`) under an advisory lock, works out the taxable value
+  from the GST-inclusive price, and charges CGST + SGST when the buyer's state
+  matches the seller's, IGST otherwise. It copies the seller details from
+  `upsc.config.seller` into the invoice so later changes don't rewrite old
+  invoices. It refuses to issue while the seller GSTIN is empty; the webhook
+  still grants access and logs the error, and a re-delivered webhook issues it.
+- Example on ₹3,000: taxable ₹2,542.37, tax ₹457.63 (Kerala buyer: CGST
+  ₹228.81 + SGST ₹228.82; other states: IGST ₹457.63).

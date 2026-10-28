@@ -388,6 +388,68 @@ grant usage, select on all sequences in schema upsc to authenticated, service_ro
 grant execute on function upsc.has_access(uuid), upsc.free_limit(), upsc.course_stats(), upsc.save_rating(text, jsonb, integer, text, integer, uuid, integer), upsc.delete_my_data() to authenticated;
 revoke execute on function upsc.delete_my_data() from anon;
 
+
+-- Issues the GST invoice for one captured payment. Called only by the Razorpay
+-- webhook (service role). Safe to call twice: one invoice per payment_ref.
+-- The price includes GST, so taxable = total / (1 + rate). CGST + SGST when the
+-- buyer is in the seller's state, IGST otherwise. Numbers run per financial
+-- year (April–March): AU/2026-27/0001.
+create or replace function upsc.issue_invoice(p_payment_ref text, p_user_id uuid, p_course_id text, p_total_minor integer)
+returns uuid language plpgsql security definer set search_path = '' as $$
+declare
+  v_id uuid;
+  v_seller jsonb;
+  v_rate numeric;
+  v_learner record;
+  v_email text;
+  v_now timestamptz := now();
+  v_ist date := (now() at time zone 'Asia/Kolkata')::date;
+  v_fy_start integer;
+  v_fy text;
+  v_seq integer;
+  v_taxable integer;
+  v_tax integer;
+  v_intra boolean;
+begin
+  select id into v_id from upsc.invoices where payment_ref = p_payment_ref;
+  if v_id is not null then return v_id; end if;
+
+  select value into v_seller from upsc.config where key = 'seller';
+  if v_seller is null or coalesce(v_seller->>'gstin', '') = '' then
+    raise exception 'seller GST details are not set in upsc.config';
+  end if;
+  select gst_rate into v_rate from upsc.courses where id = p_course_id;
+  select billing_name, billing_gstin, billing_state into v_learner from upsc.learners where user_id = p_user_id;
+  select email into v_email from auth.users where id = p_user_id;
+
+  v_fy_start := case when extract(month from v_ist) >= 4 then extract(year from v_ist)::int else extract(year from v_ist)::int - 1 end;
+  v_fy := v_fy_start || '-' || lpad(((v_fy_start + 1) % 100)::text, 2, '0');
+  perform pg_advisory_xact_lock(hashtext('upsc_invoice_' || v_fy));
+  select coalesce(max(fy_seq), 0) + 1 into v_seq from upsc.invoices where fy = v_fy;
+
+  v_taxable := round(p_total_minor / (1 + coalesce(v_rate, 0.18)));
+  v_tax := p_total_minor - v_taxable;
+  v_intra := coalesce(v_learner.billing_state, v_seller->>'state') = v_seller->>'state';
+
+  insert into upsc.invoices (invoice_no, fy, fy_seq, user_id, course_id, payment_ref, buyer_name, buyer_email,
+    buyer_gstin, buyer_state, place_of_supply, taxable_minor, cgst_minor, sgst_minor, igst_minor, total_minor, seller, issued_at)
+  values (
+    coalesce(v_seller->>'invoice_prefix', 'AU') || '/' || v_fy || '/' || lpad(v_seq::text, 4, '0'),
+    v_fy, v_seq, p_user_id, p_course_id, p_payment_ref, v_learner.billing_name, v_email,
+    v_learner.billing_gstin, coalesce(v_learner.billing_state, v_seller->>'state'),
+    coalesce(v_learner.billing_state, v_seller->>'state'),
+    v_taxable,
+    case when v_intra then v_tax / 2 else 0 end,
+    case when v_intra then v_tax - v_tax / 2 else 0 end,
+    case when v_intra then 0 else v_tax end,
+    p_total_minor, v_seller, v_now)
+  returning id into v_id;
+  return v_id;
+end;
+$$;
+revoke execute on function upsc.issue_invoice(text, uuid, text, integer) from public, anon, authenticated;
+grant execute on function upsc.issue_invoice(text, uuid, text, integer) to service_role;
+
 -- ---------------------------------------------------------------- seed
 
 insert into upsc.courses (id, title, exam_name, exam_date, exam_status, exam_source, exam_checked_at,
@@ -399,6 +461,8 @@ values ('upsc_prelims_2027',
   1000000, 300000, 'Introductory offer', 200);
 
 insert into upsc.config (key, value) values
+  -- Fill in before taking payments: invoices refuse to issue without a GSTIN.
+  ('seller', '{"name": null, "address": null, "gstin": null, "state": "Kerala", "state_code": "32", "invoice_prefix": "AU", "sac": "999293"}'),
   ('retention', '0.9'),
   ('sitting_max', '10'),
   ('min_new_per_day', '5'),
