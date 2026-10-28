@@ -70,13 +70,23 @@
    "freq": 0.85
   },
   {
+   "id": "science.biology",
+   "subject": "science",
+   "title": {
+    "en": "Human body and health",
+    "hi": "मानव शरीर और स्वास्थ्य"
+   },
+   "order": 42,
+   "freq": 0.7
+  },
+  {
    "id": "polity.preamble",
    "subject": "polity",
    "title": {
     "en": "The Preamble",
     "hi": "प्रस्तावना (उद्देशिका)"
    },
-   "order": 42,
+   "order": 48,
    "freq": 0.6,
    "prereq": [
     "polity.making"
@@ -89,7 +99,7 @@
     "en": "Inflation and price indices",
     "hi": "मुद्रास्फीति और मूल्य सूचकांक"
    },
-   "order": 47,
+   "order": 53,
    "freq": 0.75,
    "prereq": [
     "economy.national"
@@ -102,7 +112,7 @@
     "en": "Biodiversity and species",
     "hi": "जैव विविधता और प्रजातियाँ"
    },
-   "order": 54,
+   "order": 60,
    "freq": 0.8,
    "prereq": [
     "environment.ecology"
@@ -115,7 +125,7 @@
     "en": "Ancient India",
     "hi": "प्राचीन भारत"
    },
-   "order": 61,
+   "order": 67,
    "freq": 0.75
   },
   {
@@ -125,8 +135,18 @@
     "en": "Climate and the monsoon",
     "hi": "जलवायु और मानसून"
    },
-   "order": 69,
+   "order": 75,
    "freq": 0.8
+  },
+  {
+   "id": "science.space",
+   "subject": "science",
+   "title": {
+    "en": "Space technology",
+    "hi": "अंतरिक्ष प्रौद्योगिकी"
+   },
+   "order": 82,
+   "freq": 0.75
   },
   {
    "id": "polity.fr",
@@ -135,7 +155,7 @@
     "en": "Fundamental Rights",
     "hi": "मौलिक अधिकार"
    },
-   "order": 76,
+   "order": 87,
    "freq": 0.9,
    "prereq": [
     "polity.preamble"
@@ -148,7 +168,7 @@
     "en": "Money, RBI and monetary policy",
     "hi": "मुद्रा, आरबीआई और मौद्रिक नीति"
    },
-   "order": 91,
+   "order": 102,
    "freq": 0.9,
    "prereq": [
     "economy.inflation"
@@ -161,7 +181,7 @@
     "en": "Protected areas and Indian laws",
     "hi": "संरक्षित क्षेत्र और भारतीय क़ानून"
    },
-   "order": 98,
+   "order": 109,
    "freq": 0.8,
    "prereq": [
     "environment.biodiversity"
@@ -174,7 +194,7 @@
     "en": "Art and culture",
     "hi": "कला और संस्कृति"
    },
-   "order": 106,
+   "order": 117,
    "freq": 0.8,
    "prereq": [
     "history.ancient"
@@ -187,8 +207,21 @@
     "en": "Earth, atmosphere and oceans",
     "hi": "पृथ्वी, वायुमंडल और महासागर"
    },
-   "order": 112,
+   "order": 123,
    "freq": 0.7
+  },
+  {
+   "id": "science.biotech",
+   "subject": "science",
+   "title": {
+    "en": "Biotechnology",
+    "hi": "जैव प्रौद्योगिकी"
+   },
+   "order": 128,
+   "freq": 0.7,
+   "prereq": [
+    "science.biology"
+   ]
   },
   {
    "id": "polity.dpsp",
@@ -197,7 +230,7 @@
     "en": "Directive Principles and Fundamental Duties",
     "hi": "राज्य के नीति निदेशक तत्व और मौलिक कर्तव्य"
    },
-   "order": 117,
+   "order": 133,
    "freq": 0.7,
    "prereq": [
     "polity.fr"
@@ -210,7 +243,7 @@
     "en": "Budget, deficits and taxes",
     "hi": "बजट, घाटे और कर"
    },
-   "order": 122,
+   "order": 138,
    "freq": 0.8,
    "prereq": [
     "economy.national"
@@ -223,7 +256,7 @@
     "en": "International conventions",
     "hi": "अंतरराष्ट्रीय अभिसमय"
    },
-   "order": 129,
+   "order": 145,
    "freq": 0.85,
    "prereq": [
     "environment.biodiversity"
@@ -236,7 +269,7 @@
     "en": "Medieval India",
     "hi": "मध्यकालीन भारत"
    },
-   "order": 137,
+   "order": 153,
    "freq": 0.55,
    "prereq": [
     "history.ancient"
@@ -249,8 +282,18 @@
     "en": "World places and resources",
     "hi": "विश्व के स्थान और संसाधन"
    },
-   "order": 143,
+   "order": 159,
    "freq": 0.6
+  },
+  {
+   "id": "science.physics",
+   "subject": "science",
+   "title": {
+    "en": "Everyday physics and chemistry",
+    "hi": "दैनिक भौतिकी और रसायन"
+   },
+   "order": 163,
+   "freq": 0.5
   },
   {
    "id": "polity.parliament",
@@ -259,7 +302,7 @@
     "en": "Parliament",
     "hi": "संसद"
    },
-   "order": 147,
+   "order": 169,
    "freq": 0.85,
    "prereq": [
     "polity.preamble"
@@ -272,7 +315,7 @@
     "en": "Banking and finance",
     "hi": "बैंकिंग और वित्त"
    },
-   "order": 155,
+   "order": 177,
    "freq": 0.7,
    "prereq": [
     "economy.money"
@@ -285,7 +328,7 @@
     "en": "Pollution and climate change",
     "hi": "प्रदूषण और जलवायु परिवर्तन"
    },
-   "order": 161,
+   "order": 183,
    "freq": 0.7,
    "prereq": [
     "environment.ecology"
@@ -298,7 +341,7 @@
     "en": "President and the Union Executive",
     "hi": "राष्ट्रपति और संघ की कार्यपालिका"
    },
-   "order": 169,
+   "order": 191,
    "freq": 0.75,
    "prereq": [
     "polity.parliament"
@@ -311,7 +354,7 @@
     "en": "External sector",
     "hi": "बाह्य क्षेत्र"
    },
-   "order": 175,
+   "order": 197,
    "freq": 0.7,
    "prereq": [
     "economy.money"
@@ -324,7 +367,7 @@
     "en": "The Judiciary",
     "hi": "न्यायपालिका"
    },
-   "order": 180,
+   "order": 202,
    "freq": 0.8,
    "prereq": [
     "polity.fr"
@@ -337,7 +380,7 @@
     "en": "Agriculture and rural schemes",
     "hi": "कृषि और ग्रामीण योजनाएँ"
    },
-   "order": 185,
+   "order": 207,
    "freq": 0.55
   },
   {
@@ -347,7 +390,7 @@
     "en": "Federalism and Emergency",
     "hi": "संघवाद और आपातकाल"
    },
-   "order": 189,
+   "order": 211,
    "freq": 0.7,
    "prereq": [
     "polity.parliament"
@@ -360,7 +403,7 @@
     "en": "Panchayats and Municipalities",
     "hi": "पंचायतें और नगरपालिकाएँ"
    },
-   "order": 195,
+   "order": 217,
    "freq": 0.6,
    "prereq": [
     "polity.federal"
@@ -373,7 +416,7 @@
     "en": "Constitutional and other bodies",
     "hi": "संवैधानिक और अन्य निकाय"
    },
-   "order": 199,
+   "order": 221,
    "freq": 0.7,
    "prereq": [
     "polity.parliament"
@@ -1681,6 +1724,186 @@
    "seq": 41
   },
   {
+   "id": "science.biology.f01",
+   "topic": "science.biology",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "NCERT Class VI Science; standard nutrition texts",
+   "status": "needs_review",
+   "learn": {
+    "en": "Lack of vitamin C causes scurvy, lack of vitamin D causes rickets, and vitamin K is needed for blood to clot.",
+    "hi": "विटामिन C की कमी से स्कर्वी, विटामिन D की कमी से रिकेट्स होता है, और ख़ून जमने के लिए विटामिन K ज़रूरी है।"
+   },
+   "why": {
+    "en": "The skin makes vitamin D in sunlight, which is why children kept indoors can get rickets.",
+    "hi": "त्वचा धूप में विटामिन D बनाती है, इसीलिए घर के अंदर रहने वाले बच्चों को रिकेट्स हो सकता है।"
+   },
+   "recall_q": {
+    "en": "Which vitamin helps blood to clot?",
+    "hi": "कौन-सा विटामिन ख़ून जमने में मदद करता है?"
+   },
+   "recall_a": {
+    "en": "Vitamin K.",
+    "hi": "विटामिन K।"
+   },
+   "explain_simple": {
+    "en": "C → gums (scurvy). D → bones (rickets). K → clotting.",
+    "hi": "C → मसूड़े (स्कर्वी)। D → हड्डियाँ (रिकेट्स)। K → ख़ून जमना।"
+   },
+   "seq": 42
+  },
+  {
+   "id": "science.biology.f02",
+   "topic": "science.biology",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Standard physiology texts",
+   "status": "needs_review",
+   "learn": {
+    "en": "O negative blood can be given to almost anyone, so O negative people are called universal donors. AB positive people are universal recipients.",
+    "hi": "O निगेटिव ख़ून लगभग किसी को भी दिया जा सकता है, इसलिए O निगेटिव लोग सार्वभौमिक दाता कहलाते हैं। AB पॉज़िटिव लोग सार्वभौमिक ग्राही हैं।"
+   },
+   "why": {
+    "en": "O negative red cells carry no A, B or Rh antigens, so the receiver's antibodies have nothing to attack.",
+    "hi": "O निगेटिव लाल कोशिकाओं पर A, B या Rh प्रतिजन नहीं होते, इसलिए ग्राही की प्रतिरक्षी के पास हमला करने को कुछ नहीं होता।"
+   },
+   "recall_q": {
+    "en": "Which blood group is the universal recipient?",
+    "hi": "कौन-सा रक्त समूह सार्वभौमिक ग्राही है?"
+   },
+   "recall_a": {
+    "en": "AB positive.",
+    "hi": "AB पॉज़िटिव।"
+   },
+   "explain_simple": {
+    "en": "O negative has no 'flags' on its cells; AB positive accepts every flag.",
+    "hi": "O निगेटिव की कोशिकाओं पर कोई 'झंडा' नहीं; AB पॉज़िटिव हर झंडा स्वीकार करता है।"
+   },
+   "seq": 43
+  },
+  {
+   "id": "science.biology.f03",
+   "topic": "science.biology",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "WHO fact sheets",
+   "status": "needs_review",
+   "learn": {
+    "en": "Tuberculosis is caused by a bacterium. Malaria is caused by a protozoan, Plasmodium, spread by female Anopheles mosquitoes. Dengue is a virus spread by Aedes mosquitoes.",
+    "hi": "क्षय रोग (टीबी) एक जीवाणु से होता है। मलेरिया एक प्रोटोज़ोआ, प्लाज़्मोडियम, से होता है, जिसे मादा एनोफ़िलीज़ मच्छर फैलाते हैं। डेंगू एक विषाणु है, जिसे एडीज़ मच्छर फैलाते हैं।"
+   },
+   "why": {
+    "en": "Knowing the cause tells you the cure: antibiotics work on bacteria, not on viruses.",
+    "hi": "कारण जानने से इलाज पता चलता है: एंटीबायोटिक जीवाणुओं पर काम करते हैं, विषाणुओं पर नहीं।"
+   },
+   "recall_q": {
+    "en": "Which mosquito spreads dengue?",
+    "hi": "डेंगू कौन-सा मच्छर फैलाता है?"
+   },
+   "recall_a": {
+    "en": "Aedes.",
+    "hi": "एडीज़।"
+   },
+   "explain_simple": {
+    "en": "TB = bacterium. Malaria = protozoan via Anopheles. Dengue = virus via Aedes.",
+    "hi": "टीबी = जीवाणु। मलेरिया = प्रोटोज़ोआ, एनोफ़िलीज़ से। डेंगू = विषाणु, एडीज़ से।"
+   },
+   "example": {
+    "en": "Aedes mosquitoes bite in the daytime and breed in clean standing water, like water in old tyres.",
+    "hi": "एडीज़ मच्छर दिन में काटते हैं और साफ़ ठहरे पानी में पनपते हैं, जैसे पुराने टायरों में भरा पानी।"
+   },
+   "seq": 44
+  },
+  {
+   "id": "science.biology.f04",
+   "topic": "science.biology",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Standard physiology texts",
+   "status": "needs_review",
+   "learn": {
+    "en": "Insulin is made by beta cells in the islets of Langerhans in the pancreas. It lowers blood sugar.",
+    "hi": "इंसुलिन अग्न्याशय की लैंगरहैंस द्वीपिकाओं की बीटा कोशिकाओं में बनता है। यह रक्त शर्करा घटाता है।"
+   },
+   "why": {
+    "en": "It helps cells take in glucose from the blood; without enough insulin, sugar builds up: diabetes.",
+    "hi": "यह कोशिकाओं को ख़ून से ग्लूकोज़ लेने में मदद करता है; पर्याप्त इंसुलिन न हो तो शर्करा बढ़ती है: मधुमेह।"
+   },
+   "recall_q": {
+    "en": "Which cells make insulin?",
+    "hi": "इंसुलिन कौन-सी कोशिकाएँ बनाती हैं?"
+   },
+   "recall_a": {
+    "en": "Beta cells of the islets of Langerhans in the pancreas.",
+    "hi": "अग्न्याशय की लैंगरहैंस द्वीपिकाओं की बीटा कोशिकाएँ।"
+   },
+   "explain_simple": {
+    "en": "Insulin is the key that opens cells to let sugar in.",
+    "hi": "इंसुलिन वह चाबी है जो कोशिकाओं को खोलकर शर्करा अंदर जाने देती है।"
+   },
+   "seq": 45
+  },
+  {
+   "id": "science.biology.f05",
+   "topic": "science.biology",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "WHO fact sheet on antimicrobial resistance",
+   "status": "needs_review",
+   "learn": {
+    "en": "Antimicrobial resistance happens when germs change and stop responding to medicines. Overuse and half-finished courses of antibiotics speed it up.",
+    "hi": "रोगाणुरोधी प्रतिरोध तब होता है जब रोगाणु बदलकर दवाओं पर असर दिखाना बंद कर देते हैं। एंटीबायोटिक का ज़्यादा उपयोग और अधूरा कोर्स इसे तेज़ करते हैं।"
+   },
+   "why": {
+    "en": "Each dose kills the weak germs first; stopping early leaves the toughest ones to multiply.",
+    "hi": "हर ख़ुराक पहले कमज़ोर रोगाणुओं को मारती है; जल्दी रोकने पर सबसे मज़बूत बचकर बढ़ते हैं।"
+   },
+   "recall_q": {
+    "en": "Why is stopping an antibiotic course early risky?",
+    "hi": "एंटीबायोटिक कोर्स जल्दी रोकना जोखिम भरा क्यों है?"
+   },
+   "recall_a": {
+    "en": "The surviving, toughest germs multiply and spread resistance.",
+    "hi": "बचे हुए सबसे मज़बूत रोगाणु बढ़ते हैं और प्रतिरोध फैलाते हैं।"
+   },
+   "explain_simple": {
+    "en": "Half a course trains the germs instead of killing them.",
+    "hi": "आधा कोर्स रोगाणुओं को मारने के बजाय उन्हें प्रशिक्षित करता है।"
+   },
+   "seq": 46
+  },
+  {
+   "id": "science.biology.sum",
+   "topic": "science.biology",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "NCERT; WHO",
+   "status": "needs_review",
+   "title": {
+    "en": "Body and health",
+    "hi": "शरीर और स्वास्थ्य"
+   },
+   "points": [
+    {
+     "en": "C scurvy, D rickets, K clotting.",
+     "hi": "C स्कर्वी, D रिकेट्स, K थक्का।"
+    },
+    {
+     "en": "O− universal donor; AB+ universal recipient.",
+     "hi": "O− सार्वभौमिक दाता; AB+ सार्वभौमिक ग्राही।"
+    },
+    {
+     "en": "Malaria: Plasmodium via Anopheles; dengue: virus via Aedes.",
+     "hi": "मलेरिया: प्लाज़्मोडियम, एनोफ़िलीज़ से; डेंगू: विषाणु, एडीज़ से।"
+    },
+    {
+     "en": "Finish antibiotic courses.",
+     "hi": "एंटीबायोटिक कोर्स पूरा करें।"
+    }
+   ],
+   "seq": 47
+  },
+  {
    "id": "polity.preamble.f01",
    "topic": "polity.preamble",
    "type": "fact",
@@ -1707,7 +1930,7 @@
     "en": "'We, the people' means: we made it, so we are the boss of it.",
     "hi": "'हम, भारत के लोग' का अर्थ: हमने बनाया, इसलिए इसके मालिक हम हैं।"
    },
-   "seq": 42
+   "seq": 48
   },
   {
    "id": "polity.preamble.f02",
@@ -1736,7 +1959,7 @@
     "en": "1976 added S-S-I: Socialist, Secular, and 'unity and integrity' of the nation.",
     "hi": "1976 में तीन शब्द जुड़े: समाजवादी, पंथनिरपेक्ष, और राष्ट्र की 'एकता और अखंडता'।"
    },
-   "seq": 43
+   "seq": 49
   },
   {
    "id": "polity.preamble.f03",
@@ -1766,7 +1989,7 @@
     "hi": "बेरुबारी 1960 ने 'नहीं' कहा। केशवानंद 1973 ने 'हाँ' कहा। अब बाद वाला फ़ैसला ही क़ानून है।"
    },
    "review_note": "The Preamble is not enforceable in court (non-justiciable).",
-   "seq": 44
+   "seq": 50
   },
   {
    "id": "polity.preamble.f04",
@@ -1796,7 +2019,7 @@
     "hi": "समाज में, पैसे के मामलों में और सत्ता में न्याय: सामाजिक, आर्थिक, राजनीतिक।"
    },
    "review_note": "'Justice: social, economic, political' is taken from the Russian (1917) revolution ideals per Laxmikanth.",
-   "seq": 45
+   "seq": 51
   },
   {
    "id": "polity.preamble.sum",
@@ -1827,7 +2050,7 @@
      "hi": "सामाजिक, आर्थिक और राजनीतिक न्याय का वादा।"
     }
    ],
-   "seq": 46
+   "seq": 52
   },
   {
    "id": "economy.inflation.f01",
@@ -1857,7 +2080,7 @@
     "hi": "वेतन वही रहता है और सब्ज़ियाँ महँगी होती हैं: आप कम ख़रीद पाते हैं।"
    },
    "review_note": "Borrowers gain because they repay in money worth less.",
-   "seq": 47
+   "seq": 53
   },
   {
    "id": "economy.inflation.f02",
@@ -1886,7 +2109,7 @@
     "en": "Aim for 4, stay between 2 and 6.",
     "hi": "निशाना 4 पर, दायरा 2 से 6।"
    },
-   "seq": 48
+   "seq": 54
   },
   {
    "id": "economy.inflation.f03",
@@ -1915,7 +2138,7 @@
     "en": "Six people vote on interest rates; if it is 3–3, the Governor decides.",
     "hi": "छह लोग ब्याज दर पर मत देते हैं; 3–3 होने पर गवर्नर तय करते हैं।"
    },
-   "seq": 49
+   "seq": 55
   },
   {
    "id": "economy.inflation.f04",
@@ -1945,7 +2168,7 @@
     "hi": "CPI = आपका पूरा ख़र्च, बाल कटाई और स्कूल फ़ीस सहित। WPI = थोक में बिकी वस्तुएँ, सेवाएँ नहीं।"
    },
    "review_note": "Base years and weights are being revised (CPI new base 2024 announced) — confirm before publishing.",
-   "seq": 50
+   "seq": 56
   },
   {
    "id": "economy.inflation.f05",
@@ -1974,7 +2197,7 @@
     "en": "Pull = buyers pull prices up. Push = costs push prices up.",
     "hi": "माँग-जनित = ख़रीदार क़ीमतें ऊपर खींचते हैं। लागत-जनित = लागत क़ीमतें ऊपर धकेलती है।"
    },
-   "seq": 51
+   "seq": 57
   },
   {
    "id": "economy.inflation.f06",
@@ -2007,7 +2230,7 @@
     "en": "The 1970s oil shocks caused stagflation in many countries.",
     "hi": "1970 के दशक के तेल झटकों ने कई देशों में स्टैगफ़्लेशन पैदा किया।"
    },
-   "seq": 52
+   "seq": 58
   },
   {
    "id": "economy.inflation.sum",
@@ -2038,7 +2261,7 @@
      "hi": "माँग-जनित बनाम लागत-जनित; स्टैगफ़्लेशन।"
     }
    ],
-   "seq": 53
+   "seq": 59
   },
   {
    "id": "environment.biodiversity.f01",
@@ -2067,7 +2290,7 @@
     "en": "Hotspot = very rich AND badly damaged.",
     "hi": "हॉटस्पॉट = बहुत समृद्ध और बुरी तरह क्षतिग्रस्त।"
    },
-   "seq": 54
+   "seq": 60
   },
   {
    "id": "environment.biodiversity.f02",
@@ -2096,7 +2319,7 @@
     "en": "Four hotspots: two in the mountains of the north and north-east, one in the south-west, one in the islands.",
     "hi": "चार हॉटस्पॉट: दो उत्तर और पूर्वोत्तर के पहाड़ों में, एक दक्षिण-पश्चिम में, एक द्वीपों में।"
    },
-   "seq": 55
+   "seq": 61
   },
   {
    "id": "environment.biodiversity.f03",
@@ -2129,7 +2352,7 @@
     "en": "The Great Indian Bustard is Critically Endangered.",
     "hi": "सोन चिरैया (ग्रेट इंडियन बस्टर्ड) अति संकटग्रस्त है।"
    },
-   "seq": 56
+   "seq": 62
   },
   {
    "id": "environment.biodiversity.f04",
@@ -2158,7 +2381,7 @@
     "en": "In-situ = national parks, sanctuaries, biosphere reserves. Ex-situ = zoos, botanical gardens, seed banks.",
     "hi": "स्व-स्थाने = राष्ट्रीय उद्यान, अभयारण्य, जैवमंडल आरक्षित क्षेत्र। बाह्य-स्थाने = चिड़ियाघर, वनस्पति उद्यान, बीज बैंक।"
    },
-   "seq": 57
+   "seq": 63
   },
   {
    "id": "environment.biodiversity.f05",
@@ -2191,7 +2414,7 @@
     "en": "Reefs in the Gulf of Mannar and Lakshadweep have bleached in marine heatwaves.",
     "hi": "मन्नार की खाड़ी और लक्षद्वीप की चट्टानें समुद्री ताप-लहरों में विरंजित हुई हैं।"
    },
-   "seq": 58
+   "seq": 64
   },
   {
    "id": "environment.biodiversity.f06",
@@ -2220,7 +2443,7 @@
     "en": "A newcomer with no enemies takes over the whole field.",
     "hi": "बिना दुश्मन का नवागंतुक पूरा मैदान घेर लेता है।"
    },
-   "seq": 59
+   "seq": 65
   },
   {
    "id": "environment.biodiversity.sum",
@@ -2251,7 +2474,7 @@
      "hi": "विरंजन = प्रवाल शैवाल निकालते हैं।"
     }
    ],
-   "seq": 60
+   "seq": 66
   },
   {
    "id": "history.ancient.f01",
@@ -2284,7 +2507,7 @@
     "en": "Dholavira became a UNESCO World Heritage Site in 2021.",
     "hi": "धोलावीरा 2021 में यूनेस्को विश्व धरोहर स्थल बना।"
    },
-   "seq": 61
+   "seq": 67
   },
   {
    "id": "history.ancient.f02",
@@ -2317,7 +2540,7 @@
     "en": "He was born at Lumbini, now in Nepal.",
     "hi": "उनका जन्म लुंबिनी में हुआ, जो अब नेपाल में है।"
    },
-   "seq": 62
+   "seq": 68
   },
   {
    "id": "history.ancient.f03",
@@ -2346,7 +2569,7 @@
     "en": "Parshvanatha gave four; Mahavira made it five.",
     "hi": "पार्श्वनाथ ने चार दिए; महावीर ने पाँच किए।"
    },
-   "seq": 63
+   "seq": 69
   },
   {
    "id": "history.ancient.f04",
@@ -2379,7 +2602,7 @@
     "en": "The Kalinga war (c. 261 BCE) turned him towards dhamma.",
     "hi": "कलिंग युद्ध (लगभग 261 ई.पू.) ने उन्हें धम्म की ओर मोड़ा।"
    },
-   "seq": 64
+   "seq": 70
   },
   {
    "id": "history.ancient.f05",
@@ -2408,7 +2631,7 @@
     "en": "Rigveda: oldest Veda, ten mandalas, the Gayatri mantra is in it.",
     "hi": "ऋग्वेद: सबसे पुराना वेद, दस मंडल, गायत्री मंत्र इसी में है।"
    },
-   "seq": 65
+   "seq": 71
   },
   {
    "id": "history.ancient.f06",
@@ -2437,7 +2660,7 @@
     "en": "Guptas: science (Aryabhata), poetry (Kalidasa), metal (Iron Pillar).",
     "hi": "गुप्त: विज्ञान (आर्यभट), काव्य (कालिदास), धातु (लौह स्तंभ)।"
    },
-   "seq": 66
+   "seq": 72
   },
   {
    "id": "history.ancient.f07",
@@ -2466,7 +2689,7 @@
     "en": "Sangam = Tamil poets' assemblies; three crowned kings.",
     "hi": "संगम = तमिल कवियों की सभाएँ; तीन मुकुटधारी राजा।"
    },
-   "seq": 67
+   "seq": 73
   },
   {
    "id": "history.ancient.sum",
@@ -2497,7 +2720,7 @@
      "hi": "गुप्त: आर्यभट, कालिदास, लौह स्तंभ।"
     }
    ],
-   "seq": 68
+   "seq": 74
   },
   {
    "id": "geography.climate.f01",
@@ -2526,7 +2749,7 @@
     "en": "Kerala gets the monsoon first; Tamil Nadu gets its rain last.",
     "hi": "केरल को मानसून सबसे पहले मिलता है; तमिलनाडु को वर्षा सबसे बाद में।"
    },
-   "seq": 69
+   "seq": 75
   },
   {
    "id": "geography.climate.f02",
@@ -2555,7 +2778,7 @@
     "en": "El Niño far away in the Pacific steals India's rain; a positive IOD nearby gives some back.",
     "hi": "दूर प्रशांत का एल नीनो भारत की वर्षा छीनता है; पास का धनात्मक IOD कुछ लौटाता है।"
    },
-   "seq": 70
+   "seq": 76
   },
   {
    "id": "geography.climate.f03",
@@ -2584,7 +2807,7 @@
     "en": "No spin at the equator, so no cyclone there.",
     "hi": "भूमध्य रेखा पर घूर्णन नहीं, इसलिए वहाँ चक्रवात नहीं।"
    },
-   "seq": 71
+   "seq": 77
   },
   {
    "id": "geography.climate.f04",
@@ -2613,7 +2836,7 @@
     "en": "Warm sea = fuel tank. Land = empty tank.",
     "hi": "गर्म समुद्र = ईंधन टंकी। ज़मीन = ख़ाली टंकी।"
    },
-   "seq": 72
+   "seq": 78
   },
   {
    "id": "geography.climate.f05",
@@ -2646,7 +2869,7 @@
     "en": "The leeward side of the Western Ghats, like the Deccan interior, stays dry: a rain shadow.",
     "hi": "पश्चिमी घाट का पवनविमुख भाग, जैसे दक्कन का भीतरी भाग, सूखा रहता है: वृष्टि-छाया।"
    },
-   "seq": 73
+   "seq": 79
   },
   {
    "id": "geography.climate.s01",
@@ -2707,7 +2930,7 @@
     "en": "East, towards South America.",
     "hi": "पूर्व की ओर, दक्षिण अमेरिका की तरफ़।"
    },
-   "seq": 74
+   "seq": 80
   },
   {
    "id": "geography.climate.sum",
@@ -2738,7 +2961,158 @@
      "hi": "चक्रवात को समुद्र > ~27°C चाहिए।"
     }
    ],
-   "seq": 75
+   "seq": 81
+  },
+  {
+   "id": "science.space.f01",
+   "topic": "science.space",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "ISRO; standard texts",
+   "status": "needs_review",
+   "learn": {
+    "en": "A geostationary satellite orbits about 35,786 km above the equator and takes 24 hours per orbit, so it seems fixed over one spot.",
+    "hi": "भूस्थिर उपग्रह भूमध्य रेखा से लगभग 35,786 किमी ऊपर घूमता है और एक चक्कर में 24 घंटे लेता है, इसलिए एक ही जगह पर टिका लगता है।"
+   },
+   "why": {
+    "en": "It turns at the same rate as the earth, which makes it ideal for TV broadcasting and weather watching.",
+    "hi": "यह पृथ्वी की गति से ही घूमता है, जिससे यह टीवी प्रसारण और मौसम निगरानी के लिए आदर्श है।"
+   },
+   "recall_q": {
+    "en": "How long does a geostationary satellite take for one orbit?",
+    "hi": "भूस्थिर उपग्रह एक चक्कर में कितना समय लेता है?"
+   },
+   "recall_a": {
+    "en": "24 hours (one day).",
+    "hi": "24 घंटे (एक दिन)।"
+   },
+   "explain_simple": {
+    "en": "It keeps pace with the earth, like a friend walking beside you.",
+    "hi": "यह पृथ्वी के साथ क़दम मिलाता है, जैसे साथ चलता दोस्त।"
+   },
+   "example": {
+    "en": "INSAT and GSAT satellites are geostationary.",
+    "hi": "INSAT और GSAT उपग्रह भूस्थिर हैं।"
+   },
+   "seq": 82
+  },
+  {
+   "id": "science.space.f02",
+   "topic": "science.space",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "ISRO mission pages (isro.gov.in)",
+   "status": "needs_review",
+   "learn": {
+    "en": "PSLV is mainly used for polar and sun-synchronous orbits. GSLV, with a cryogenic upper stage, carries heavier satellites towards geostationary orbit.",
+    "hi": "PSLV मुख्यतः ध्रुवीय और सूर्य-तुल्यकाली कक्षाओं के लिए है। GSLV, क्रायोजेनिक ऊपरी चरण के साथ, भारी उपग्रहों को भूस्थिर कक्षा की ओर ले जाता है।"
+   },
+   "why": {
+    "en": "Cryogenic engines burn liquid hydrogen and liquid oxygen, kept extremely cold, and give much more thrust per kilogram of fuel.",
+    "hi": "क्रायोजेनिक इंजन बहुत ठंडे रखे तरल हाइड्रोजन और तरल ऑक्सीजन जलाते हैं, और प्रति किलो ईंधन बहुत अधिक प्रणोद देते हैं।"
+   },
+   "recall_q": {
+    "en": "Which fuels does a cryogenic stage use?",
+    "hi": "क्रायोजेनिक चरण कौन-से ईंधन इस्तेमाल करता है?"
+   },
+   "recall_a": {
+    "en": "Liquid hydrogen and liquid oxygen.",
+    "hi": "तरल हाइड्रोजन और तरल ऑक्सीजन।"
+   },
+   "explain_simple": {
+    "en": "PSLV = workhorse for low orbits. GSLV = heavy lifter for high orbits.",
+    "hi": "PSLV = निचली कक्षाओं का भरोसेमंद घोड़ा। GSLV = ऊँची कक्षाओं का भारी वाहक।"
+   },
+   "seq": 83
+  },
+  {
+   "id": "science.space.f03",
+   "topic": "science.space",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "ISRO mission pages (isro.gov.in)",
+   "status": "needs_review",
+   "learn": {
+    "en": "Chandrayaan-3 landed near the Moon's south pole on 23 August 2023. India was the first country to land in that region.",
+    "hi": "चंद्रयान-3 23 अगस्त 2023 को चंद्रमा के दक्षिणी ध्रुव के पास उतरा। उस क्षेत्र में उतरने वाला भारत पहला देश था।"
+   },
+   "why": {
+    "en": "The south pole region may hold water ice in permanently shadowed craters, useful for future missions.",
+    "hi": "दक्षिणी ध्रुव क्षेत्र के स्थायी छाया वाले गड्ढों में जल-बर्फ़ हो सकती है, जो भविष्य के अभियानों के लिए उपयोगी है।"
+   },
+   "recall_q": {
+    "en": "What are the names of Chandrayaan-3's lander and rover?",
+    "hi": "चंद्रयान-3 के लैंडर और रोवर के नाम क्या हैं?"
+   },
+   "recall_a": {
+    "en": "Vikram (lander) and Pragyan (rover).",
+    "hi": "विक्रम (लैंडर) और प्रज्ञान (रोवर)।"
+   },
+   "explain_simple": {
+    "en": "23 August is now National Space Day in India.",
+    "hi": "23 अगस्त अब भारत में राष्ट्रीय अंतरिक्ष दिवस है।"
+   },
+   "seq": 84
+  },
+  {
+   "id": "science.space.f04",
+   "topic": "science.space",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "ISRO mission pages (isro.gov.in)",
+   "status": "needs_review",
+   "learn": {
+    "en": "Aditya-L1, launched in 2023, studies the Sun from the Lagrange point L1, about 1.5 million km from the earth.",
+    "hi": "आदित्य-L1, 2023 में प्रक्षेपित, पृथ्वी से लगभग 15 लाख किमी दूर लैग्रांज बिंदु L1 से सूर्य का अध्ययन करता है।"
+   },
+   "why": {
+    "en": "At L1 the pulls of the Sun and the earth balance, so the craft can watch the Sun without the earth ever blocking it.",
+    "hi": "L1 पर सूर्य और पृथ्वी का खिंचाव संतुलित रहता है, इसलिए यान पृथ्वी की रुकावट के बिना लगातार सूर्य को देख सकता है।"
+   },
+   "recall_q": {
+    "en": "Why is L1 a good spot to watch the Sun?",
+    "hi": "सूर्य को देखने के लिए L1 अच्छी जगह क्यों है?"
+   },
+   "recall_a": {
+    "en": "Gravity balances there and the Sun is never hidden.",
+    "hi": "वहाँ गुरुत्व संतुलित रहता है और सूर्य कभी छिपता नहीं।"
+   },
+   "explain_simple": {
+    "en": "A balcony between the earth and the Sun with a clear view all the time.",
+    "hi": "पृथ्वी और सूर्य के बीच एक बालकनी, जहाँ से हर समय साफ़ दृश्य।"
+   },
+   "seq": 85
+  },
+  {
+   "id": "science.space.sum",
+   "topic": "science.space",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "ISRO mission pages (isro.gov.in)",
+   "status": "needs_review",
+   "title": {
+    "en": "Space",
+    "hi": "अंतरिक्ष"
+   },
+   "points": [
+    {
+     "en": "Geostationary: ~35,786 km, 24 h.",
+     "hi": "भूस्थिर: ~35,786 किमी, 24 घंटे।"
+    },
+    {
+     "en": "PSLV low orbits; GSLV cryogenic, high orbits.",
+     "hi": "PSLV निचली कक्षाएँ; GSLV क्रायोजेनिक, ऊँची कक्षाएँ।"
+    },
+    {
+     "en": "Chandrayaan-3: south pole, 23 Aug 2023.",
+     "hi": "चंद्रयान-3: दक्षिणी ध्रुव, 23 अगस्त 2023।"
+    },
+    {
+     "en": "Aditya-L1 watches the Sun from L1.",
+     "hi": "आदित्य-L1, L1 से सूर्य को देखता है।"
+    }
+   ],
+   "seq": 86
   },
   {
    "id": "polity.fr.f01",
@@ -2767,7 +3141,7 @@
     "en": "Part 3, numbers 12 to 35. Rights you can take to court.",
     "hi": "भाग 3, अनुच्छेद 12 से 35। ऐसे अधिकार जिनके लिए आप न्यायालय जा सकते हैं।"
    },
-   "seq": 76
+   "seq": 87
   },
   {
    "id": "polity.fr.f02",
@@ -2796,7 +3170,7 @@
     "en": "Seven became six when property was taken out in 1978.",
     "hi": "1978 में संपत्ति हटने से सात से छह हुए।"
    },
-   "seq": 77
+   "seq": 88
   },
   {
    "id": "polity.fr.f03",
@@ -2829,7 +3203,7 @@
     "en": "If a highway needs your land, the government can acquire it under a law, with compensation as that law provides.",
     "hi": "अगर राजमार्ग के लिए आपकी ज़मीन चाहिए, तो सरकार क़ानून के तहत, उस क़ानून में तय मुआवज़े के साथ, उसे ले सकती है।"
    },
-   "seq": 78
+   "seq": 89
   },
   {
    "id": "polity.fr.f04",
@@ -2858,7 +3232,7 @@
     "en": "Article 32 is the door to the Supreme Court for your rights.",
     "hi": "अनुच्छेद 32 आपके अधिकारों के लिए सर्वोच्च न्यायालय का दरवाज़ा है।"
    },
-   "seq": 79
+   "seq": 90
   },
   {
    "id": "polity.fr.f05",
@@ -2887,7 +3261,7 @@
     "en": "Five court orders: bring the person, do your duty, stop, send the case up, and by what authority?",
     "hi": "पाँच आदेश: व्यक्ति को पेश करो, कर्तव्य करो, रुको, मामला ऊपर भेजो, और किस अधिकार से?"
    },
-   "seq": 80
+   "seq": 91
   },
   {
    "id": "polity.fr.f06",
@@ -2920,7 +3294,7 @@
     "en": "A family whose son was picked up without charge can file habeas corpus in the High Court.",
     "hi": "जिस परिवार के बेटे को बिना आरोप पकड़ लिया गया, वह उच्च न्यायालय में बंदी प्रत्यक्षीकरण याचिका दाख़िल कर सकता है।"
    },
-   "seq": 81
+   "seq": 92
   },
   {
    "id": "polity.fr.f07",
@@ -2949,7 +3323,7 @@
     "en": "Mandamus = 'do your job'. Only for public officials.",
     "hi": "परमादेश = 'अपना काम करो'। केवल सार्वजनिक अधिकारियों के लिए।"
    },
-   "seq": 82
+   "seq": 93
   },
   {
    "id": "polity.fr.f08",
@@ -2978,7 +3352,7 @@
     "en": "'By what authority are you sitting in that chair?' — that is quo warranto.",
     "hi": "'आप किस अधिकार से उस कुर्सी पर बैठे हैं?' — यही अधिकार-पृच्छा है।"
    },
-   "seq": 83
+   "seq": 94
   },
   {
    "id": "polity.fr.f09",
@@ -3007,7 +3381,7 @@
     "en": "Prohibition = stop before. Certiorari = fix after.",
     "hi": "प्रतिषेध = पहले रोको। उत्प्रेषण = बाद में सुधारो।"
    },
-   "seq": 84
+   "seq": 95
   },
   {
    "id": "polity.fr.f10",
@@ -3040,7 +3414,7 @@
     "en": "Courts have read the right to privacy, clean environment and livelihood into Article 21.",
     "hi": "न्यायालयों ने निजता, स्वच्छ पर्यावरण और आजीविका के अधिकार को अनुच्छेद 21 में शामिल माना है।"
    },
-   "seq": 85
+   "seq": 96
   },
   {
    "id": "polity.fr.f11",
@@ -3069,7 +3443,7 @@
     "en": "21A sits right after 21 (life): education is part of a life with dignity.",
     "hi": "21A, 21 (जीवन) के ठीक बाद है: शिक्षा सम्मानजनक जीवन का हिस्सा है।"
    },
-   "seq": 86
+   "seq": 97
   },
   {
    "id": "polity.fr.f12",
@@ -3102,7 +3476,7 @@
     "en": "The Protection of Civil Rights Act, 1955 punishes the practice of untouchability.",
     "hi": "नागरिक अधिकार संरक्षण अधिनियम, 1955 अस्पृश्यता के आचरण को दंडित करता है।"
    },
-   "seq": 87
+   "seq": 98
   },
   {
    "id": "polity.fr.f13",
@@ -3131,7 +3505,7 @@
     "en": "20 (protection in criminal cases) and 21 (life) stay switched on, always.",
     "hi": "20 (आपराधिक मामलों में संरक्षण) और 21 (जीवन) हमेशा चालू रहते हैं।"
    },
-   "seq": 88
+   "seq": 99
   },
   {
    "id": "polity.fr.s01",
@@ -3200,7 +3574,7 @@
     "en": "Article 13.",
     "hi": "अनुच्छेद 13।"
    },
-   "seq": 89
+   "seq": 100
   },
   {
    "id": "polity.fr.sum",
@@ -3235,7 +3609,7 @@
      "hi": "21A: 6–14 वर्ष शिक्षा (86वाँ संशोधन)।"
     }
    ],
-   "seq": 90
+   "seq": 101
   },
   {
    "id": "economy.money.f01",
@@ -3265,7 +3639,7 @@
     "hi": "अधिनियम 1934, शुरुआत 1935, 1949 से सरकारी स्वामित्व।"
    },
    "review_note": "Recommended by the Hilton Young Commission (1926).",
-   "seq": 91
+   "seq": 102
   },
   {
    "id": "economy.money.f02",
@@ -3298,7 +3672,7 @@
     "en": "A higher repo rate usually means a higher EMI on a home loan.",
     "hi": "ऊँची रेपो दर का मतलब आमतौर पर गृह ऋण की ऊँची EMI होता है।"
    },
-   "seq": 92
+   "seq": 103
   },
   {
    "id": "economy.money.f03",
@@ -3327,7 +3701,7 @@
     "en": "CRR = cash parked at RBI. SLR = safe assets kept by the bank itself.",
     "hi": "CRR = आरबीआई के पास रखा नक़द। SLR = बैंक के पास रखी सुरक्षित संपत्तियाँ।"
    },
-   "seq": 93
+   "seq": 104
   },
   {
    "id": "economy.money.f04",
@@ -3356,7 +3730,7 @@
     "en": "Interest rates move inside a corridor: SDF at the bottom, repo in the middle, MSF at the top.",
     "hi": "ब्याज दरें एक गलियारे में चलती हैं: नीचे SDF, बीच में रेपो, ऊपर MSF।"
    },
-   "seq": 94
+   "seq": 105
   },
   {
    "id": "economy.money.f05",
@@ -3385,7 +3759,7 @@
     "en": "RBI buys bonds → pays cash → more money in the system.",
     "hi": "आरबीआई बॉन्ड ख़रीदे → नक़द चुकाए → व्यवस्था में ज़्यादा पैसा।"
    },
-   "seq": 95
+   "seq": 106
   },
   {
    "id": "economy.money.s01",
@@ -3454,7 +3828,7 @@
     "en": "Because it works through loans and demand, which change slowly (policy lag).",
     "hi": "क्योंकि यह ऋण और माँग के ज़रिए काम करती है, जो धीरे बदलते हैं (नीतिगत अंतराल)।"
    },
-   "seq": 96
+   "seq": 107
   },
   {
    "id": "economy.money.sum",
@@ -3489,7 +3863,7 @@
      "hi": "OMO ख़रीद से पैसा आता है।"
     }
    ],
-   "seq": 97
+   "seq": 108
   },
   {
    "id": "environment.laws.f01",
@@ -3518,7 +3892,7 @@
     "en": "National park = no entry for cattle. Sanctuary = some activities with permission.",
     "hi": "राष्ट्रीय उद्यान = मवेशियों का प्रवेश नहीं। अभयारण्य = अनुमति से कुछ गतिविधियाँ।"
    },
-   "seq": 98
+   "seq": 109
   },
   {
    "id": "environment.laws.f02",
@@ -3548,7 +3922,7 @@
     "hi": "छह सूचियाँ चार बनीं, उनमें एक CITES प्रजातियों के लिए।"
    },
    "review_note": "Check schedule numbering (I–IV) against the gazette text before publishing.",
-   "seq": 99
+   "seq": 110
   },
   {
    "id": "environment.laws.f03",
@@ -3577,7 +3951,7 @@
     "en": "One big law that covers everything the other environment laws miss.",
     "hi": "एक बड़ा क़ानून जो वह सब ढकता है जो दूसरे पर्यावरण क़ानून छोड़ देते हैं।"
    },
-   "seq": 100
+   "seq": 111
   },
   {
    "id": "environment.laws.f04",
@@ -3606,7 +3980,7 @@
     "en": "A state cannot hand over forest land for a mine or a road without the Centre saying yes.",
     "hi": "कोई राज्य केंद्र की हाँ के बिना खदान या सड़क के लिए वन भूमि नहीं दे सकता।"
    },
-   "seq": 101
+   "seq": 112
   },
   {
    "id": "environment.laws.f05",
@@ -3635,7 +4009,7 @@
     "en": "A fast-track court only for environment cases.",
     "hi": "केवल पर्यावरण मामलों के लिए फ़ास्ट-ट्रैक अदालत।"
    },
-   "seq": 102
+   "seq": 113
   },
   {
    "id": "environment.laws.f06",
@@ -3668,7 +4042,7 @@
     "en": "The Nilgiri Biosphere Reserve (1986), spread over Tamil Nadu, Kerala and Karnataka, was India's first.",
     "hi": "नीलगिरि जैवमंडल आरक्षित क्षेत्र (1986), जो तमिलनाडु, केरल और कर्नाटक में फैला है, भारत का पहला था।"
    },
-   "seq": 103
+   "seq": 114
   },
   {
    "id": "environment.laws.f07",
@@ -3697,7 +4071,7 @@
     "en": "1973 project, 2006 law.",
     "hi": "1973 में परियोजना, 2006 में क़ानून।"
    },
-   "seq": 104
+   "seq": 115
   },
   {
    "id": "environment.laws.sum",
@@ -3728,7 +4102,7 @@
      "hi": "NGT 2010; जैवमंडल: केंद्र, बफ़र, संक्रमण।"
     }
    ],
-   "seq": 105
+   "seq": 116
   },
   {
    "id": "history.culture.f01",
@@ -3761,7 +4135,7 @@
     "en": "Sattriya was introduced by the saint Sankaradeva in the Vaishnava monasteries (sattras).",
     "hi": "सत्रिया संत शंकरदेव ने वैष्णव मठों (सत्रों) में शुरू किया।"
    },
-   "seq": 106
+   "seq": 117
   },
   {
    "id": "history.culture.f02",
@@ -3794,7 +4168,7 @@
     "en": "The Brihadeshwara temple at Thanjavur (Rajaraja Chola) is a great Dravida temple.",
     "hi": "तंजावुर का बृहदेश्वर मंदिर (राजराज चोल) एक महान द्रविड़ मंदिर है।"
    },
-   "seq": 107
+   "seq": 118
   },
   {
    "id": "history.culture.f03",
@@ -3823,7 +4197,7 @@
     "en": "Ajanta = Buddhist paintings. Ellora = three faiths, and Kailasa carved from one rock.",
     "hi": "अजंता = बौद्ध चित्र। एलोरा = तीन धर्म, और एक चट्टान से बना कैलाश।"
    },
-   "seq": 108
+   "seq": 119
   },
   {
    "id": "history.culture.f04",
@@ -3852,7 +4226,7 @@
     "en": "Alvars = Vishnu. Nayanars = Shiva.",
     "hi": "आलवार = विष्णु। नयनार = शिव।"
    },
-   "seq": 109
+   "seq": 120
   },
   {
    "id": "history.culture.f05",
@@ -3885,7 +4259,7 @@
     "en": "Amir Khusrau was a disciple of Nizamuddin Auliya.",
     "hi": "अमीर ख़ुसरो निज़ामुद्दीन औलिया के शिष्य थे।"
    },
-   "seq": 110
+   "seq": 121
   },
   {
    "id": "history.culture.sum",
@@ -3916,7 +4290,7 @@
      "hi": "आलवार विष्णु, नयनार शिव; अजमेर में चिश्ती।"
     }
    ],
-   "seq": 111
+   "seq": 122
   },
   {
    "id": "geography.physical.f01",
@@ -3949,7 +4323,7 @@
     "en": "S-waves cannot pass through liquid, and they do not cross the outer core: so the outer core is liquid.",
     "hi": "S-तरंगें द्रव से नहीं गुज़रतीं, और वे बाहरी क्रोड पार नहीं करतीं: इसलिए बाहरी क्रोड द्रव है।"
    },
-   "seq": 112
+   "seq": 123
   },
   {
    "id": "geography.physical.f02",
@@ -3978,7 +4352,7 @@
     "en": "Two cars crashing head-on: the bonnets crumple up into mountains.",
     "hi": "दो कारों की आमने-सामने टक्कर: बोनट मुड़कर पहाड़ बन जाते हैं।"
    },
-   "seq": 113
+   "seq": 124
   },
   {
    "id": "geography.physical.f03",
@@ -4011,7 +4385,7 @@
     "en": "Jet aircraft often fly in the lower stratosphere to avoid bumpy weather.",
     "hi": "जेट विमान अक्सर उथल-पुथल वाले मौसम से बचने के लिए निचले समताप मंडल में उड़ते हैं।"
    },
-   "seq": 114
+   "seq": 125
   },
   {
    "id": "geography.physical.f04",
@@ -4040,7 +4414,7 @@
     "en": "Warm meets cold → nutrients rise → plankton → fish.",
     "hi": "गर्म मिले ठंडे से → पोषक ऊपर → प्लवक → मछली।"
    },
-   "seq": 115
+   "seq": 126
   },
   {
    "id": "geography.physical.sum",
@@ -4071,7 +4445,160 @@
      "hi": "गर्म + ठंडी धाराएँ → समृद्ध मत्स्य क्षेत्र।"
     }
    ],
-   "seq": 116
+   "seq": 127
+  },
+  {
+   "id": "science.biotech.f01",
+   "topic": "science.biotech",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Standard molecular biology texts",
+   "status": "needs_review",
+   "learn": {
+    "en": "CRISPR-Cas9 is a gene-editing tool: a guide RNA leads the Cas9 enzyme to an exact spot in DNA, where it cuts.",
+    "hi": "CRISPR-Cas9 एक जीन-संपादन उपकरण है: एक गाइड RNA, Cas9 एंज़ाइम को DNA के सटीक स्थान तक ले जाता है, जहाँ वह काटता है।"
+   },
+   "why": {
+    "en": "After the cut, the cell repairs the DNA, and scientists can switch a gene off or insert a corrected one.",
+    "hi": "कटने के बाद कोशिका DNA की मरम्मत करती है, और वैज्ञानिक जीन बंद कर सकते हैं या सुधरा जीन जोड़ सकते हैं।"
+   },
+   "recall_q": {
+    "en": "In CRISPR-Cas9, what does the guide RNA do?",
+    "hi": "CRISPR-Cas9 में गाइड RNA क्या करता है?"
+   },
+   "recall_a": {
+    "en": "It leads Cas9 to the exact DNA site to cut.",
+    "hi": "यह Cas9 को काटने के लिए DNA के सटीक स्थान तक ले जाता है।"
+   },
+   "explain_simple": {
+    "en": "Guide RNA = GPS. Cas9 = scissors.",
+    "hi": "गाइड RNA = GPS। Cas9 = कैंची।"
+   },
+   "example": {
+    "en": "In 2025 India released two genome-edited rice varieties developed with this kind of tool.",
+    "hi": "2025 में भारत ने ऐसे उपकरण से विकसित दो जीनोम-संपादित धान किस्में जारी कीं।"
+   },
+   "review_note": "Verify the 2025 genome-edited rice release (ICAR) before publishing.",
+   "seq": 128
+  },
+  {
+   "id": "science.biotech.f02",
+   "topic": "science.biotech",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "GEAC, MoEFCC",
+   "status": "needs_review",
+   "learn": {
+    "en": "Bt cotton (2002) carries a gene from the soil bacterium Bacillus thuringiensis that makes a protein toxic to bollworms.",
+    "hi": "बीटी कपास (2002) में मिट्टी के जीवाणु बैसिलस थुरिंजिएन्सिस का एक जीन है, जो सुंडी (बॉलवर्म) के लिए विषैला प्रोटीन बनाता है।"
+   },
+   "why": {
+    "en": "It is the main GM crop grown commercially in India. GM crops are cleared by the Genetic Engineering Appraisal Committee (GEAC).",
+    "hi": "यह भारत में व्यावसायिक रूप से उगाई जाने वाली प्रमुख GM फ़सल है। GM फ़सलों को आनुवंशिक अभियांत्रिकी मूल्यांकन समिति (GEAC) मंज़ूरी देती है।"
+   },
+   "recall_q": {
+    "en": "Which body approves GM crops for release in India?",
+    "hi": "भारत में GM फ़सलों को जारी करने की मंज़ूरी कौन देता है?"
+   },
+   "recall_a": {
+    "en": "The Genetic Engineering Appraisal Committee (GEAC), under MoEFCC.",
+    "hi": "आनुवंशिक अभियांत्रिकी मूल्यांकन समिति (GEAC), पर्यावरण मंत्रालय के तहत।"
+   },
+   "explain_simple": {
+    "en": "The plant carries its own pest killer, borrowed from a bacterium.",
+    "hi": "पौधा जीवाणु से उधार लिया अपना कीटनाशक ख़ुद रखता है।"
+   },
+   "review_note": "GM mustard DMH-11 status is in court; keep the wording 'main GM crop' unless that changes.",
+   "seq": 129
+  },
+  {
+   "id": "science.biotech.f03",
+   "topic": "science.biotech",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "WHO; standard immunology texts",
+   "status": "needs_review",
+   "learn": {
+    "en": "An mRNA vaccine gives cells instructions to make a harmless piece of a virus, such as the spike protein, so the immune system learns to fight it.",
+    "hi": "mRNA टीका कोशिकाओं को वायरस का एक हानिरहित हिस्सा, जैसे स्पाइक प्रोटीन, बनाने का निर्देश देता है, ताकि प्रतिरक्षा तंत्र उससे लड़ना सीखे।"
+   },
+   "why": {
+    "en": "The mRNA breaks down within days and never enters the cell's nucleus or changes its DNA.",
+    "hi": "mRNA कुछ ही दिनों में टूट जाता है और न कोशिका के केंद्रक में जाता है, न उसका DNA बदलता है।"
+   },
+   "recall_q": {
+    "en": "Does an mRNA vaccine change a person's DNA?",
+    "hi": "क्या mRNA टीका व्यक्ति का DNA बदलता है?"
+   },
+   "recall_a": {
+    "en": "No.",
+    "hi": "नहीं।"
+   },
+   "explain_simple": {
+    "en": "It is a 'wanted poster' the cell prints for a few days.",
+    "hi": "यह एक 'वांछित पोस्टर' है जिसे कोशिका कुछ दिन छापती है।"
+   },
+   "seq": 130
+  },
+  {
+   "id": "science.biotech.f04",
+   "topic": "science.biotech",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Standard biology texts",
+   "status": "needs_review",
+   "learn": {
+    "en": "Stem cells can divide and turn into many kinds of specialised cells. Embryonic stem cells can become almost any cell type.",
+    "hi": "स्टेम कोशिकाएँ विभाजित होकर कई प्रकार की विशेष कोशिकाओं में बदल सकती हैं। भ्रूणीय स्टेम कोशिकाएँ लगभग किसी भी कोशिका में बदल सकती हैं।"
+   },
+   "why": {
+    "en": "This lets doctors replace damaged tissue; bone marrow transplants for blood cancers already use stem cells.",
+    "hi": "इससे डॉक्टर क्षतिग्रस्त ऊतक बदल सकते हैं; रक्त कैंसर के लिए अस्थि मज्जा प्रत्यारोपण पहले से स्टेम कोशिकाएँ इस्तेमाल करता है।"
+   },
+   "recall_q": {
+    "en": "What makes stem cells special?",
+    "hi": "स्टेम कोशिकाएँ ख़ास क्यों हैं?"
+   },
+   "recall_a": {
+    "en": "They can turn into many specialised cell types.",
+    "hi": "वे कई प्रकार की विशेष कोशिकाओं में बदल सकती हैं।"
+   },
+   "explain_simple": {
+    "en": "Stem cells are blank tiles that can become any piece of the picture.",
+    "hi": "स्टेम कोशिकाएँ ख़ाली टाइलें हैं जो तस्वीर का कोई भी टुकड़ा बन सकती हैं।"
+   },
+   "seq": 131
+  },
+  {
+   "id": "science.biotech.sum",
+   "topic": "science.biotech",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "Standard texts; GEAC",
+   "status": "needs_review",
+   "title": {
+    "en": "Biotechnology",
+    "hi": "जैव प्रौद्योगिकी"
+   },
+   "points": [
+    {
+     "en": "CRISPR: guide RNA + Cas9 scissors.",
+     "hi": "CRISPR: गाइड RNA + Cas9 कैंची।"
+    },
+    {
+     "en": "Bt cotton; GEAC approves GM crops.",
+     "hi": "बीटी कपास; GEAC GM फ़सलें मंज़ूर करती है।"
+    },
+    {
+     "en": "mRNA vaccines don't change DNA.",
+     "hi": "mRNA टीके DNA नहीं बदलते।"
+    },
+    {
+     "en": "Stem cells become many cell types.",
+     "hi": "स्टेम कोशिकाएँ कई प्रकार की कोशिकाएँ बनती हैं।"
+    }
+   ],
+   "seq": 132
   },
   {
    "id": "polity.dpsp.f01",
@@ -4100,7 +4627,7 @@
     "en": "Rights (Part III) = court can enforce. Directives (Part IV) = goals for the government, not enforceable.",
     "hi": "अधिकार (भाग III) = न्यायालय लागू करा सकता है। निदेशक तत्व (भाग IV) = सरकार के लक्ष्य, लागू नहीं कराए जा सकते।"
    },
-   "seq": 117
+   "seq": 133
   },
   {
    "id": "polity.dpsp.f02",
@@ -4133,7 +4660,7 @@
     "en": "Goa has had a common civil code since Portuguese times.",
     "hi": "गोवा में पुर्तगाली काल से एक समान नागरिक संहिता चल रही है।"
    },
-   "seq": 118
+   "seq": 134
   },
   {
    "id": "polity.dpsp.f03",
@@ -4162,7 +4689,7 @@
     "en": "1976: Swaran Singh Committee → 42nd Amendment → Article 51A duties.",
     "hi": "1976: स्वर्ण सिंह समिति → 42वाँ संशोधन → अनुच्छेद 51A के कर्तव्य।"
    },
-   "seq": 119
+   "seq": 135
   },
   {
    "id": "polity.dpsp.f04",
@@ -4191,7 +4718,7 @@
     "en": "Ten in 1976, plus one about education in 2002 = eleven.",
     "hi": "1976 में दस, 2002 में शिक्षा वाला एक और = ग्यारह।"
    },
-   "seq": 120
+   "seq": 136
   },
   {
    "id": "polity.dpsp.sum",
@@ -4222,7 +4749,7 @@
      "hi": "11 कर्तव्य; 11वाँ 2002 में जुड़ा।"
     }
    ],
-   "seq": 121
+   "seq": 137
   },
   {
    "id": "economy.fiscal.f01",
@@ -4251,7 +4778,7 @@
     "en": "Spending minus all income that isn't a loan = what must be borrowed.",
     "hi": "ख़र्च घटा वह सारी आय जो क़र्ज़ नहीं है = जो उधार लेना पड़ेगा।"
    },
-   "seq": 122
+   "seq": 138
   },
   {
    "id": "economy.fiscal.f02",
@@ -4280,7 +4807,7 @@
     "en": "Take out the interest on old loans and see what new borrowing is left.",
     "hi": "पुराने क़र्ज़ का ब्याज निकाल दीजिए और देखिए कितना नया उधार बचता है।"
    },
-   "seq": 123
+   "seq": 139
   },
   {
    "id": "economy.fiscal.f03",
@@ -4309,7 +4836,7 @@
     "en": "Like taking a loan to pay the electricity bill instead of to buy a house.",
     "hi": "जैसे घर ख़रीदने के बजाय बिजली का बिल भरने के लिए क़र्ज़ लेना।"
    },
-   "seq": 124
+   "seq": 140
   },
   {
    "id": "economy.fiscal.f04",
@@ -4338,7 +4865,7 @@
     "en": "Everyone says budget; the Constitution says Annual Financial Statement.",
     "hi": "सब बजट कहते हैं; संविधान वार्षिक वित्तीय विवरण कहता है।"
    },
-   "seq": 125
+   "seq": 141
   },
   {
    "id": "economy.fiscal.f05",
@@ -4368,7 +4895,7 @@
     "hi": "तमिलनाडु में बना और केरल में ख़रीदा टीवी: जीएसटी का राज्य हिस्सा केरल को जाता है।"
    },
    "review_note": "Petroleum crude, diesel, petrol, natural gas and ATF are outside GST for now; alcohol for human consumption is outside by the Constitution.",
-   "seq": 126
+   "seq": 142
   },
   {
    "id": "economy.fiscal.f06",
@@ -4397,7 +4924,7 @@
     "en": "Direct = you pay it yourself. Indirect = it is hidden in the price.",
     "hi": "प्रत्यक्ष = आप ख़ुद चुकाते हैं। अप्रत्यक्ष = क़ीमत में छिपा रहता है।"
    },
-   "seq": 127
+   "seq": 143
   },
   {
    "id": "economy.fiscal.sum",
@@ -4432,7 +4959,7 @@
      "hi": "जीएसटी 1 जुलाई 2017 से, गंतव्य-आधारित।"
     }
    ],
-   "seq": 128
+   "seq": 144
   },
   {
    "id": "environment.conventions.f01",
@@ -4465,7 +4992,7 @@
     "en": "Keoladeo (Rajasthan) and Loktak (Manipur) are on the Montreux Record.",
     "hi": "केवलादेव (राजस्थान) और लोकटक (मणिपुर) मॉन्ट्रो रिकॉर्ड में हैं।"
    },
-   "seq": 129
+   "seq": 145
   },
   {
    "id": "environment.conventions.f02",
@@ -4494,7 +5021,7 @@
     "en": "CITES is a customs officer for wildlife: Appendix I means 'no commercial trade'.",
     "hi": "CITES वन्यजीवों का सीमा-शुल्क अधिकारी है: परिशिष्ट I यानी 'कोई व्यापारिक व्यापार नहीं'।"
    },
-   "seq": 130
+   "seq": 146
   },
   {
    "id": "environment.conventions.f03",
@@ -4527,7 +5054,7 @@
     "en": "The National Biodiversity Authority under the 2002 Act is in Chennai.",
     "hi": "2002 के अधिनियम के तहत राष्ट्रीय जैव विविधता प्राधिकरण चेन्नई में है।"
    },
-   "seq": 131
+   "seq": 147
   },
   {
    "id": "environment.conventions.f04",
@@ -4556,7 +5083,7 @@
     "en": "Kyoto: those who polluted more, cut first.",
     "hi": "क्योटो: जिसने ज़्यादा प्रदूषण किया, वह पहले घटाए।"
    },
-   "seq": 132
+   "seq": 148
   },
   {
    "id": "environment.conventions.f05",
@@ -4585,7 +5112,7 @@
     "en": "Paris: everyone joins, each country writes its own pledge.",
     "hi": "पेरिस: सब शामिल, हर देश अपना वचन ख़ुद लिखता है।"
    },
-   "seq": 133
+   "seq": 149
   },
   {
    "id": "environment.conventions.f06",
@@ -4614,7 +5141,7 @@
     "en": "CFCs hurt the ozone; their replacements, HFCs, heat the planet. Kigali fixes the second problem.",
     "hi": "CFC ओज़ोन को चोट पहुँचाते हैं; उनके विकल्प HFC धरती को गर्म करते हैं। किगाली दूसरी समस्या सुलझाता है।"
    },
-   "seq": 134
+   "seq": 150
   },
   {
    "id": "environment.conventions.f07",
@@ -4647,7 +5174,7 @@
     "en": "The Amur falcon, which stops in Nagaland on its way to Africa, is a species CMS cares about.",
     "hi": "अमूर बाज़, जो अफ़्रीका जाते हुए नागालैंड में रुकता है, CMS की चिंता वाली प्रजाति है।"
    },
-   "seq": 135
+   "seq": 151
   },
   {
    "id": "environment.conventions.sum",
@@ -4678,7 +5205,7 @@
      "hi": "मॉन्ट्रियल: CFC; किगाली: HFC।"
     }
    ],
-   "seq": 136
+   "seq": 152
   },
   {
    "id": "history.medieval.f01",
@@ -4707,7 +5234,7 @@
     "en": "Chola villages ran their own affairs through elected committees.",
     "hi": "चोल गाँव चुनी हुई समितियों से अपना काम चलाते थे।"
    },
-   "seq": 137
+   "seq": 153
   },
   {
    "id": "history.medieval.f02",
@@ -4736,7 +5263,7 @@
     "en": "Iltutmish: land for officers. Alauddin: fixed prices for soldiers.",
     "hi": "इल्तुतमिश: अधिकारियों को भूमि। अलाउद्दीन: सैनिकों के लिए तय भाव।"
    },
-   "seq": 138
+   "seq": 154
   },
   {
    "id": "history.medieval.f03",
@@ -4769,7 +5296,7 @@
     "en": "Raja Todar Mal designed Akbar's land revenue system (zabt).",
     "hi": "राजा टोडरमल ने अकबर की भू-राजस्व व्यवस्था (ज़ब्त) बनाई।"
    },
-   "seq": 139
+   "seq": 155
   },
   {
    "id": "history.medieval.f04",
@@ -4798,7 +5325,7 @@
     "en": "1336, Hampi, Harihara and Bukka; Krishnadevaraya at its peak.",
     "hi": "1336, हम्पी, हरिहर और बुक्का; शिखर पर कृष्णदेवराय।"
    },
-   "seq": 140
+   "seq": 156
   },
   {
    "id": "history.medieval.f05",
@@ -4827,7 +5354,7 @@
     "en": "Nirguna saints: no idols, no caste, one God within.",
     "hi": "निर्गुण संत: न मूर्ति, न जाति, भीतर एक ईश्वर।"
    },
-   "seq": 141
+   "seq": 157
   },
   {
    "id": "history.medieval.sum",
@@ -4858,7 +5385,7 @@
      "hi": "विजयनगर 1336, हम्पी।"
     }
    ],
-   "seq": 142
+   "seq": 158
   },
   {
    "id": "geography.world.f01",
@@ -4887,7 +5414,7 @@
     "en": "Hormuz = Gulf oil exit. Bab-el-Mandeb = Red Sea's southern door.",
     "hi": "होर्मुज़ = खाड़ी के तेल का निकास। बाब-अल-मंदेब = लाल सागर का दक्षिणी द्वार।"
    },
-   "seq": 143
+   "seq": 159
   },
   {
    "id": "geography.world.f02",
@@ -4920,7 +5447,7 @@
     "en": "The Andaman and Nicobar Islands sit near its western entrance.",
     "hi": "अंडमान और निकोबार द्वीप इसके पश्चिमी प्रवेश के पास हैं।"
    },
-   "seq": 144
+   "seq": 160
   },
   {
    "id": "geography.world.f03",
@@ -4953,7 +5480,7 @@
     "en": "The Namib Desert has the cold Benguela Current; the Sahara's west coast has the Canary Current.",
     "hi": "नामीब मरुस्थल के पास ठंडी बेंगुएला धारा है; सहारा के पश्चिमी तट पर कैनरी धारा।"
    },
-   "seq": 145
+   "seq": 161
   },
   {
    "id": "geography.world.sum",
@@ -4984,7 +5511,195 @@
      "hi": "पश्चिमी तट के मरुस्थल ठंडी धाराओं के पास।"
     }
    ],
-   "seq": 146
+   "seq": 162
+  },
+  {
+   "id": "science.physics.f01",
+   "topic": "science.physics",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class X Science, ch. 11",
+   "status": "needs_review",
+   "learn": {
+    "en": "The sky looks blue because air molecules scatter short blue wavelengths of sunlight much more than red ones (Rayleigh scattering).",
+    "hi": "आकाश नीला दिखता है क्योंकि वायु के अणु सूर्य के प्रकाश की छोटी नीली तरंगों को लाल तरंगों से कहीं अधिक बिखेरते हैं (रैले प्रकीर्णन)।"
+   },
+   "why": {
+    "en": "At sunrise and sunset light crosses more air, the blue is scattered away, and red reaches our eyes.",
+    "hi": "सूर्योदय और सूर्यास्त पर प्रकाश अधिक वायु पार करता है, नीला बिखर जाता है, और लाल हमारी आँखों तक पहुँचता है।"
+   },
+   "recall_q": {
+    "en": "Why is the sun red at sunset?",
+    "hi": "सूर्यास्त के समय सूर्य लाल क्यों दिखता है?"
+   },
+   "recall_a": {
+    "en": "Light travels through more air, which scatters away the blue, leaving red.",
+    "hi": "प्रकाश अधिक वायु से गुज़रता है, जो नीला बिखेर देती है, और लाल बचता है।"
+   },
+   "explain_simple": {
+    "en": "Air throws blue around the sky; the long road at sunset leaves only red.",
+    "hi": "हवा नीले को आकाश में बिखेरती है; सूर्यास्त का लंबा रास्ता केवल लाल छोड़ता है।"
+   },
+   "example": {
+    "en": "On the Moon, with no air, the sky is black even in daytime.",
+    "hi": "चंद्रमा पर, हवा न होने से, दिन में भी आकाश काला होता है।"
+   },
+   "seq": 163
+  },
+  {
+   "id": "science.physics.f02",
+   "topic": "science.physics",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Department of Atomic Energy",
+   "status": "needs_review",
+   "learn": {
+    "en": "India's three-stage nuclear programme moves from natural-uranium reactors, to fast breeder reactors using plutonium, to reactors using thorium.",
+    "hi": "भारत का तीन-चरणीय परमाणु कार्यक्रम प्राकृतिक यूरेनियम रिएक्टरों से, प्लूटोनियम वाले फ़ास्ट ब्रीडर रिएक्टरों तक, और फिर थोरियम वाले रिएक्टरों तक जाता है।"
+   },
+   "why": {
+    "en": "India has little uranium but some of the world's largest thorium reserves, in the monazite sands of Kerala and Odisha.",
+    "hi": "भारत में यूरेनियम कम है पर दुनिया के सबसे बड़े थोरियम भंडारों में से कुछ हैं, केरल और ओडिशा की मोनाज़ाइट रेत में।"
+   },
+   "recall_q": {
+    "en": "Why does India's plan end with thorium?",
+    "hi": "भारत की योजना थोरियम पर क्यों ख़त्म होती है?"
+   },
+   "recall_a": {
+    "en": "India has large thorium reserves and little uranium.",
+    "hi": "भारत में थोरियम के बड़े भंडार हैं और यूरेनियम कम है।"
+   },
+   "explain_simple": {
+    "en": "Use the uranium we have to make fuel for the thorium we have plenty of.",
+    "hi": "जो यूरेनियम है, उससे उस थोरियम के लिए ईंधन बनाओ जो भरपूर है।"
+   },
+   "example": {
+    "en": "The Prototype Fast Breeder Reactor is at Kalpakkam, Tamil Nadu.",
+    "hi": "प्रोटोटाइप फ़ास्ट ब्रीडर रिएक्टर कलपक्कम, तमिलनाडु में है।"
+   },
+   "seq": 164
+  },
+  {
+   "id": "science.physics.f03",
+   "topic": "science.physics",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "NCERT Class IX Science, ch. 12",
+   "status": "needs_review",
+   "learn": {
+    "en": "Sound needs a medium and cannot travel in a vacuum. It travels fastest in solids and slowest in gases.",
+    "hi": "ध्वनि को माध्यम चाहिए और यह निर्वात में नहीं चल सकती। यह ठोस में सबसे तेज़ और गैस में सबसे धीमी चलती है।"
+   },
+   "why": {
+    "en": "Sound is a vibration passed from particle to particle; packed particles in solids pass it on faster.",
+    "hi": "ध्वनि कण से कण तक पहुँचता कंपन है; ठोस में सटे कण इसे तेज़ी से आगे बढ़ाते हैं।"
+   },
+   "recall_q": {
+    "en": "Can astronauts hear each other directly on the Moon?",
+    "hi": "क्या चंद्रमा पर अंतरिक्ष यात्री एक-दूसरे को सीधे सुन सकते हैं?"
+   },
+   "recall_a": {
+    "en": "No — there is no air to carry sound; they use radio.",
+    "hi": "नहीं — ध्वनि ले जाने को हवा नहीं है; वे रेडियो इस्तेमाल करते हैं।"
+   },
+   "explain_simple": {
+    "en": "No particles, no sound.",
+    "hi": "कण नहीं, तो ध्वनि नहीं।"
+   },
+   "seq": 165
+  },
+  {
+   "id": "science.physics.f04",
+   "topic": "science.physics",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "NCERT Class X Science, ch. 2",
+   "status": "needs_review",
+   "learn": {
+    "en": "A pH below 7 is acidic and above 7 is basic. Rain with a pH below about 5.6 is called acid rain.",
+    "hi": "7 से कम pH अम्लीय और 7 से अधिक क्षारीय होता है। लगभग 5.6 से कम pH वाली वर्षा अम्ल वर्षा कहलाती है।"
+   },
+   "why": {
+    "en": "Normal rain is slightly acidic from dissolved CO2; sulphur and nitrogen oxides from fuels make it much more acidic.",
+    "hi": "घुली CO2 से सामान्य वर्षा थोड़ी अम्लीय होती है; ईंधन से निकले सल्फ़र और नाइट्रोजन ऑक्साइड इसे बहुत अधिक अम्लीय बनाते हैं।"
+   },
+   "recall_q": {
+    "en": "Which gases mainly cause acid rain?",
+    "hi": "अम्ल वर्षा मुख्यतः किन गैसों से होती है?"
+   },
+   "recall_a": {
+    "en": "Sulphur dioxide and nitrogen oxides.",
+    "hi": "सल्फ़र डाइऑक्साइड और नाइट्रोजन ऑक्साइड।"
+   },
+   "explain_simple": {
+    "en": "pH 7 is the middle line: below is sour, above is soapy.",
+    "hi": "pH 7 बीच की रेखा है: नीचे खट्टा, ऊपर साबुन जैसा।"
+   },
+   "example": {
+    "en": "Acid rain has damaged the marble of the Taj Mahal; the Taj Trapezium Zone limits polluting industries.",
+    "hi": "अम्ल वर्षा ने ताजमहल के संगमरमर को नुक़सान पहुँचाया है; ताज ट्रेपेज़ियम ज़ोन प्रदूषक उद्योगों को सीमित करता है।"
+   },
+   "seq": 166
+  },
+  {
+   "id": "science.physics.f05",
+   "topic": "science.physics",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Standard physics texts",
+   "status": "needs_review",
+   "learn": {
+    "en": "Nuclear fission splits heavy nuclei like uranium-235 and powers today's reactors. Fusion joins light nuclei, as in the Sun, where hydrogen becomes helium.",
+    "hi": "नाभिकीय विखंडन यूरेनियम-235 जैसे भारी नाभिकों को तोड़ता है और आज के रिएक्टर चलाता है। संलयन हल्के नाभिकों को जोड़ता है, जैसे सूर्य में, जहाँ हाइड्रोजन हीलियम बनती है।"
+   },
+   "why": {
+    "en": "Fusion needs enormous temperatures, which is why fusion power stations are still experimental (for example ITER, which India is part of).",
+    "hi": "संलयन के लिए अत्यधिक तापमान चाहिए, इसीलिए संलयन बिजलीघर अभी प्रायोगिक हैं (जैसे ITER, जिसमें भारत शामिल है)।"
+   },
+   "recall_q": {
+    "en": "Which process powers the Sun?",
+    "hi": "सूर्य को कौन-सी प्रक्रिया ऊर्जा देती है?"
+   },
+   "recall_a": {
+    "en": "Nuclear fusion of hydrogen into helium.",
+    "hi": "हाइड्रोजन का हीलियम में नाभिकीय संलयन।"
+   },
+   "explain_simple": {
+    "en": "Fission = breaking big. Fusion = joining small.",
+    "hi": "विखंडन = बड़े को तोड़ना। संलयन = छोटे को जोड़ना।"
+   },
+   "seq": 167
+  },
+  {
+   "id": "science.physics.sum",
+   "topic": "science.physics",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "NCERT Class X Science",
+   "status": "needs_review",
+   "title": {
+    "en": "Everyday science",
+    "hi": "दैनिक विज्ञान"
+   },
+   "points": [
+    {
+     "en": "Blue sky: Rayleigh scattering.",
+     "hi": "नीला आकाश: रैले प्रकीर्णन।"
+    },
+    {
+     "en": "Three stages: uranium → plutonium → thorium.",
+     "hi": "तीन चरण: यूरेनियम → प्लूटोनियम → थोरियम।"
+    },
+    {
+     "en": "Sound: no vacuum; fastest in solids.",
+     "hi": "ध्वनि: निर्वात में नहीं; ठोस में सबसे तेज़।"
+    },
+    {
+     "en": "Acid rain: pH < 5.6; SO2 and NOx.",
+     "hi": "अम्ल वर्षा: pH < 5.6; SO2 और NOx।"
+    }
+   ],
+   "seq": 168
   },
   {
    "id": "polity.parliament.f01",
@@ -5013,7 +5728,7 @@
     "en": "Two houses plus the President who signs = Parliament.",
     "hi": "दो सदन और हस्ताक्षर करने वाले राष्ट्रपति = संसद।"
    },
-   "seq": 147
+   "seq": 169
   },
   {
    "id": "polity.parliament.f02",
@@ -5043,7 +5758,7 @@
     "hi": "250 सीटें: 238 विधानसभाओं द्वारा चुने गए + 12 प्रतिभा के लिए राष्ट्रपति द्वारा चुने गए।"
    },
    "review_note": "Present strength is about 245; check before publishing.",
-   "seq": 148
+   "seq": 170
   },
   {
    "id": "polity.parliament.f03",
@@ -5072,7 +5787,7 @@
     "en": "Like a school where one batch leaves every two years but the school never closes.",
     "hi": "जैसे कोई विद्यालय जहाँ हर दो साल में एक बैच निकलता है, पर विद्यालय कभी बंद नहीं होता।"
    },
-   "seq": 149
+   "seq": 171
   },
   {
    "id": "polity.parliament.f04",
@@ -5101,7 +5816,7 @@
     "en": "Lok Sabha is the people's house: all its members are now elected.",
     "hi": "लोकसभा जनता का सदन है: अब इसके सभी सदस्य चुने हुए हैं।"
    },
-   "seq": 150
+   "seq": 172
   },
   {
    "id": "polity.parliament.f05",
@@ -5130,7 +5845,7 @@
     "en": "Money comes from the people, so the people's House (Lok Sabha) has the final say. Rajya Sabha gets two weeks to comment.",
     "hi": "पैसा जनता का है, इसलिए अंतिम फ़ैसला जनता के सदन (लोकसभा) का। राज्यसभा को टिप्पणी के लिए दो सप्ताह मिलते हैं।"
    },
-   "seq": 151
+   "seq": 173
   },
   {
    "id": "polity.parliament.f06",
@@ -5163,7 +5878,7 @@
     "en": "Joint sittings have been held only three times, for example for the Prevention of Terrorism Bill in 2002.",
     "hi": "संयुक्त बैठक केवल तीन बार हुई है, जैसे 2002 में आतंकवाद निवारण विधेयक के लिए।"
    },
-   "seq": 152
+   "seq": 174
   },
   {
    "id": "polity.parliament.s01",
@@ -5238,7 +5953,7 @@
     "en": "Only once.",
     "hi": "केवल एक बार।"
    },
-   "seq": 153
+   "seq": 175
   },
   {
    "id": "polity.parliament.sum",
@@ -5269,7 +5984,7 @@
      "hi": "संयुक्त बैठक: केवल साधारण विधेयक; अध्यक्ष संचालन करते हैं।"
     }
    ],
-   "seq": 154
+   "seq": 176
   },
   {
    "id": "economy.banking.f01",
@@ -5299,7 +6014,7 @@
     "hi": "तीन महीने भुगतान नहीं → ऋण 'निष्पादित' नहीं रहता।"
    },
    "review_note": "For crop loans the rule follows crop seasons (two/one season).",
-   "seq": 155
+   "seq": 177
   },
   {
    "id": "economy.banking.f02",
@@ -5328,7 +6043,7 @@
     "en": "If a company can't pay, lenders take it to NCLT, which oversees a deadline-based rescue or sale.",
     "hi": "अगर कंपनी भुगतान न कर सके, तो ऋणदाता उसे NCLT ले जाते हैं, जो समय-सीमा वाली बचाव या बिक्री प्रक्रिया की निगरानी करता है।"
    },
-   "seq": 156
+   "seq": 178
   },
   {
    "id": "economy.banking.f03",
@@ -5358,7 +6073,7 @@
     "hi": "बैंक के हर ₹100 ऋण में से ₹40 खेती और छोटी इकाइयों जैसे क्षेत्रों को जाने चाहिए।"
    },
    "review_note": "Regional rural banks and small finance banks have a 75% target.",
-   "seq": 157
+   "seq": 179
   },
   {
    "id": "economy.banking.f04",
@@ -5388,7 +6103,7 @@
     "hi": "भुगतान बैंक बैंक लाइसेंस वाला बटुआ है: पैसा रखो, पैसा भेजो, पर उधार नहीं।"
    },
    "review_note": "Deposit cap raised from ₹1 lakh to ₹2 lakh per customer in 2021.",
-   "seq": 158
+   "seq": 180
   },
   {
    "id": "economy.banking.f05",
@@ -5418,7 +6133,7 @@
     "hi": "नाबार्ड गाँवों की सेवा करने वाले बैंकों के पीछे का बैंक है।"
    },
    "review_note": "Set up on the recommendation of the B. Sivaraman Committee (CRAFICARD).",
-   "seq": 159
+   "seq": 181
   },
   {
    "id": "economy.banking.sum",
@@ -5453,7 +6168,7 @@
      "hi": "नाबार्ड 1982: ग्रामीण ऋण की शीर्ष संस्था।"
     }
    ],
-   "seq": 160
+   "seq": 182
   },
   {
    "id": "environment.pollution.f01",
@@ -5482,7 +6197,7 @@
     "en": "Too much fertiliser in a lake feeds the algae, and the algae end up choking the lake.",
     "hi": "झील में ज़्यादा खाद शैवाल को खिलाती है, और शैवाल अंत में झील का दम घोंट देते हैं।"
    },
-   "seq": 161
+   "seq": 183
   },
   {
    "id": "environment.pollution.f02",
@@ -5511,7 +6226,7 @@
     "en": "BOD measures how much 'food' for microbes is floating in the water: more food, dirtier water.",
     "hi": "BOD मापता है कि पानी में सूक्ष्मजीवों का 'भोजन' कितना है: ज़्यादा भोजन, ज़्यादा गंदा पानी।"
    },
-   "seq": 162
+   "seq": 184
   },
   {
    "id": "environment.pollution.f03",
@@ -5541,7 +6256,7 @@
     "hi": "आठ प्रदूषक, एक संख्या, दिन की हवा का एक रंग।"
    },
    "review_note": "Full list: PM10, PM2.5, NO2, SO2, CO, O3, NH3, Pb.",
-   "seq": 163
+   "seq": 185
   },
   {
    "id": "environment.pollution.f04",
@@ -5570,7 +6285,7 @@
     "en": "Ozone up high is a sunscreen; ozone at ground level is a pollutant.",
     "hi": "ऊपर की ओज़ोन सनस्क्रीन है; ज़मीन के पास की ओज़ोन प्रदूषक है।"
    },
-   "seq": 164
+   "seq": 186
   },
   {
    "id": "environment.pollution.f05",
@@ -5599,7 +6314,7 @@
     "en": "Methane is a strong but short-lived heater; CO2 is weaker but stays for centuries.",
     "hi": "मीथेन प्रबल पर अल्पकालिक गर्म करने वाली है; CO2 कमज़ोर पर सदियों तक रहती है।"
    },
-   "seq": 165
+   "seq": 187
   },
   {
    "id": "environment.pollution.f06",
@@ -5629,7 +6344,7 @@
     "hi": "सुंदरबन = सबसे बड़ा मैंग्रोव वन, और यही पश्चिम बंगाल को पहला बनाता है।"
    },
    "review_note": "Re-check ranking against the latest ISFR before publishing.",
-   "seq": 166
+   "seq": 188
   },
   {
    "id": "environment.pollution.s01",
@@ -5700,7 +6415,7 @@
     "en": "Bacteria use it up while decomposing dead algae.",
     "hi": "मरे शैवाल को सड़ाते हुए जीवाणु उसे ख़त्म कर देते हैं।"
    },
-   "seq": 167
+   "seq": 189
   },
   {
    "id": "environment.pollution.sum",
@@ -5731,7 +6446,7 @@
      "hi": "मीथेन: प्रबल, अल्पकालिक; CO2: कमज़ोर, दीर्घकालिक।"
     }
    ],
-   "seq": 168
+   "seq": 190
   },
   {
    "id": "polity.president.f01",
@@ -5761,7 +6476,7 @@
     "hi": "राष्ट्रपति को केवल जनता द्वारा चुने गए लोग चुनते हैं: सांसद और विधायक, मनोनीत सदस्य नहीं।"
    },
    "review_note": "Voting is by proportional representation with the single transferable vote, by secret ballot.",
-   "seq": 169
+   "seq": 191
   },
   {
    "id": "polity.president.f02",
@@ -5790,7 +6505,7 @@
     "en": "72 = mercy. A Governor has a similar power under Article 161, but cannot pardon a death sentence.",
     "hi": "72 = दया। राज्यपाल के पास अनुच्छेद 161 के तहत ऐसी शक्ति है, पर वह मृत्युदंड माफ़ नहीं कर सकते।"
    },
-   "seq": 170
+   "seq": 192
   },
   {
    "id": "polity.president.f03",
@@ -5819,7 +6534,7 @@
     "en": "An ordinance is a temporary law for a break period; Parliament must okay it within six weeks of returning.",
     "hi": "अध्यादेश छुट्टी के समय का अस्थायी क़ानून है; लौटने के छह सप्ताह में संसद को इसे मंज़ूर करना होता है।"
    },
-   "seq": 171
+   "seq": 193
   },
   {
    "id": "polity.president.f04",
@@ -5848,7 +6563,7 @@
     "en": "Lok Sabha has a Speaker; Rajya Sabha's chair is the Vice-President.",
     "hi": "लोकसभा में अध्यक्ष (स्पीकर); राज्यसभा में सभापति उपराष्ट्रपति।"
    },
-   "seq": 172
+   "seq": 194
   },
   {
    "id": "polity.president.f05",
@@ -5877,7 +6592,7 @@
     "en": "Ministers are a team answerable to Lok Sabha, and the team can be at most 15% of its size.",
     "hi": "मंत्री लोकसभा के प्रति उत्तरदायी एक टीम हैं, और टीम इसके आकार का अधिकतम 15% हो सकती है।"
    },
-   "seq": 173
+   "seq": 195
   },
   {
    "id": "polity.president.sum",
@@ -5908,7 +6623,7 @@
      "hi": "मंत्री लोकसभा के प्रति उत्तरदायी; अधिकतम 15%।"
     }
    ],
-   "seq": 174
+   "seq": 196
   },
   {
    "id": "economy.external.f01",
@@ -5941,7 +6656,7 @@
     "en": "Kerala receives a large share of India's remittances from the Gulf.",
     "hi": "भारत के धन-प्रेषण का बड़ा हिस्सा खाड़ी देशों से केरल आता है।"
    },
-   "seq": 175
+   "seq": 197
   },
   {
    "id": "economy.external.f02",
@@ -5970,7 +6685,7 @@
     "en": "Buy a big stake to help run the company = FDI. Buy a small slice to trade = FPI.",
     "hi": "कंपनी चलाने में हिस्सा लेने के लिए बड़ा हिस्सा = FDI। व्यापार के लिए छोटा टुकड़ा = FPI।"
    },
-   "seq": 176
+   "seq": 198
   },
   {
    "id": "economy.external.f03",
@@ -5999,7 +6714,7 @@
     "en": "Weak rupee: exporters smile, importers (and oil buyers) pay more.",
     "hi": "कमज़ोर रुपया: निर्यातक ख़ुश, आयातक (और तेल ख़रीदार) ज़्यादा चुकाते हैं।"
    },
-   "seq": 177
+   "seq": 199
   },
   {
    "id": "economy.external.f04",
@@ -6028,7 +6743,7 @@
     "en": "SDR is the IMF's own money, made from five big currencies — not the rupee.",
     "hi": "SDR आईएमएफ़ की अपनी मुद्रा है, पाँच बड़ी मुद्राओं से बनी — रुपया नहीं।"
    },
-   "seq": 178
+   "seq": 200
   },
   {
    "id": "economy.external.sum",
@@ -6063,7 +6778,7 @@
      "hi": "SDR: पाँच मुद्राएँ, रुपया नहीं।"
     }
    ],
-   "seq": 179
+   "seq": 201
   },
   {
    "id": "polity.judiciary.f01",
@@ -6096,7 +6811,7 @@
     "en": "The case arose from a Kerala land-reform law challenged by the head of the Edneer Mutt in Kasaragod.",
     "hi": "यह मामला कासरगोड के एडनीर मठ के प्रमुख द्वारा केरल के भूमि-सुधार क़ानून को चुनौती देने से शुरू हुआ।"
    },
-   "seq": 180
+   "seq": 202
   },
   {
    "id": "polity.judiciary.f02",
@@ -6125,7 +6840,7 @@
     "en": "131 = government vs government cases start at the top.",
     "hi": "131 = सरकार बनाम सरकार के मामले सीधे सबसे ऊपर शुरू होते हैं।"
    },
-   "seq": 181
+   "seq": 203
   },
   {
    "id": "polity.judiciary.f03",
@@ -6158,7 +6873,7 @@
     "en": "The Ayodhya reference (1993) is one the Court declined to answer.",
     "hi": "अयोध्या संदर्भ (1993) में न्यायालय ने उत्तर देने से मना कर दिया था।"
    },
-   "seq": 182
+   "seq": 204
   },
   {
    "id": "polity.judiciary.f04",
@@ -6187,7 +6902,7 @@
     "en": "Supreme Court 65, High Court 62 — the higher court retires later.",
     "hi": "सर्वोच्च 65, उच्च 62 — ऊँचे न्यायालय में सेवानिवृत्ति बाद में।"
    },
-   "seq": 183
+   "seq": 205
   },
   {
    "id": "polity.judiciary.sum",
@@ -6218,7 +6933,7 @@
      "hi": "सेवानिवृत्ति: सर्वोच्च 65, उच्च 62।"
     }
    ],
-   "seq": 184
+   "seq": 206
   },
   {
    "id": "economy.agri.f01",
@@ -6248,7 +6963,7 @@
     "hi": "CACP सुझाव देता है; आर्थिक मामलों की मंत्रिमंडल समिति तय करती और घोषित करती है।"
    },
    "review_note": "CACP is an attached office of the Ministry of Agriculture, not a statutory body. Sugarcane has FRP, not MSP.",
-   "seq": 185
+   "seq": 207
   },
   {
    "id": "economy.agri.f02",
@@ -6277,7 +6992,7 @@
     "en": "Ask for work in your village; the law says you must get it within 15 days, up to 100 days a year.",
     "hi": "अपने गाँव में काम माँगिए; क़ानून कहता है 15 दिन में मिलना चाहिए, वर्ष में 100 दिन तक।"
    },
-   "seq": 186
+   "seq": 208
   },
   {
    "id": "economy.agri.f03",
@@ -6306,7 +7021,7 @@
     "en": "₹2,000 three times a year, straight to the bank.",
     "hi": "साल में तीन बार ₹2,000, सीधे बैंक में।"
    },
-   "seq": 187
+   "seq": 209
   },
   {
    "id": "economy.agri.sum",
@@ -6333,7 +7048,7 @@
      "hi": "पीएम-किसान: ₹6,000 तीन क़िस्तों में।"
     }
    ],
-   "seq": 188
+   "seq": 210
   },
   {
    "id": "polity.federal.f01",
@@ -6366,7 +7081,7 @@
     "en": "Defence is in the Union List, police in the State List, education and forests in the Concurrent List.",
     "hi": "रक्षा संघ सूची में, पुलिस राज्य सूची में, शिक्षा और वन समवर्ती सूची में हैं।"
    },
-   "seq": 189
+   "seq": 211
   },
   {
    "id": "polity.federal.f02",
@@ -6396,7 +7111,7 @@
     "hi": "शिक्षा पहले राज्य का विषय थी; 1976 से केंद्र और राज्य दोनों इसे साझा करते हैं।"
    },
    "review_note": "The five: education, forests, weights and measures, protection of wild animals and birds, administration of justice.",
-   "seq": 190
+   "seq": 212
   },
   {
    "id": "polity.federal.f03",
@@ -6425,7 +7140,7 @@
     "en": "After 1975, the vague words 'internal disturbance' were replaced by the stricter 'armed rebellion'.",
     "hi": "1975 के बाद अस्पष्ट 'आंतरिक अशांति' की जगह सख़्त 'सशस्त्र विद्रोह' रखा गया।"
    },
-   "seq": 191
+   "seq": 213
   },
   {
    "id": "polity.federal.f04",
@@ -6454,7 +7169,7 @@
     "en": "352 national, 356 state, 360 financial. Only 360 has never been used.",
     "hi": "352 राष्ट्रीय, 356 राज्य, 360 वित्तीय। केवल 360 कभी उपयोग नहीं हुआ।"
    },
-   "seq": 192
+   "seq": 214
   },
   {
    "id": "polity.federal.f05",
@@ -6483,7 +7198,7 @@
     "en": "One tax for the country, so one table where the Centre and every state sit together.",
     "hi": "देश के लिए एक कर, इसलिए एक मेज़ जहाँ केंद्र और हर राज्य साथ बैठते हैं।"
    },
-   "seq": 193
+   "seq": 215
   },
   {
    "id": "polity.federal.sum",
@@ -6514,7 +7229,7 @@
      "hi": "अनु. 360 कभी उपयोग नहीं; जीएसटी परिषद अनु. 279A।"
     }
    ],
-   "seq": 194
+   "seq": 216
   },
   {
    "id": "polity.local.f01",
@@ -6547,7 +7262,7 @@
     "en": "Kerala's 1996 People's Plan Campaign gave panchayats about a third of the state plan funds.",
     "hi": "केरल के 1996 के जन योजना अभियान ने पंचायतों को राज्य योजना निधि का लगभग एक-तिहाई दिया।"
    },
-   "seq": 195
+   "seq": 217
   },
   {
    "id": "polity.local.f02",
@@ -6576,7 +7291,7 @@
     "en": "Villages: 73rd, 29 subjects. Towns: 74th, 18 subjects.",
     "hi": "गाँव: 73वाँ, 29 विषय। शहर: 74वाँ, 18 विषय।"
    },
-   "seq": 196
+   "seq": 218
   },
   {
    "id": "polity.local.f03",
@@ -6605,7 +7320,7 @@
     "en": "Three floors of local government — village, block, district — suggested by Balwant Rai Mehta.",
     "hi": "स्थानीय शासन की तीन मंज़िलें — गाँव, ब्लॉक, ज़िला — बलवंत राय मेहता ने सुझाईं।"
    },
-   "seq": 197
+   "seq": 219
   },
   {
    "id": "polity.local.sum",
@@ -6636,7 +7351,7 @@
      "hi": "तीन स्तर: बलवंत राय मेहता, 1957।"
     }
    ],
-   "seq": 198
+   "seq": 220
   },
   {
    "id": "polity.bodies.f01",
@@ -6665,7 +7380,7 @@
     "en": "Pairs to remember: EC 324, CAG 148, FC 280, UPSC 315.",
     "hi": "याद रखने के जोड़े: निर्वाचन आयोग 324, CAG 148, वित्त आयोग 280, UPSC 315।"
    },
-   "seq": 199
+   "seq": 221
   },
   {
    "id": "polity.bodies.f02",
@@ -6695,7 +7410,7 @@
     "hi": "हर पाँच साल में एक निर्णायक तय करता है कि कर का केक केंद्र और राज्यों में कैसे कटे।"
    },
    "review_note": "16th Finance Commission chaired by Arvind Panagariya (constituted Dec 2023); check its report status before publishing.",
-   "seq": 200
+   "seq": 222
   },
   {
    "id": "polity.bodies.f03",
@@ -6724,7 +7439,7 @@
     "en": "Constitution-made: EC, CAG, Finance Commission. Government-made: NITI Aayog.",
     "hi": "संविधान से बने: निर्वाचन आयोग, CAG, वित्त आयोग। सरकार से बना: नीति आयोग।"
    },
-   "seq": 201
+   "seq": 223
   },
   {
    "id": "polity.bodies.f04",
@@ -6753,7 +7468,7 @@
     "en": "The government's lawyer can talk in Parliament, but only members vote.",
     "hi": "सरकार के वकील संसद में बोल सकते हैं, पर मतदान केवल सदस्य करते हैं।"
    },
-   "seq": 202
+   "seq": 224
   },
   {
    "id": "polity.bodies.sum",
@@ -6784,7 +7499,7 @@
      "hi": "महान्यायवादी बोल सकते हैं, मतदान नहीं।"
     }
    ],
-   "seq": 203
+   "seq": 225
   }
  ],
  "questions": [
@@ -10839,6 +11554,619 @@
    "source": "Practice — exam pattern (not from a past paper)",
    "covers": [
     "geography.world.f02"
+   ]
+  },
+  {
+   "id": "q.practice.science.1",
+   "topic": "science.biology",
+   "kind": "mcq",
+   "q": {
+    "en": "Deficiency of which vitamin causes rickets?",
+    "hi": "किस विटामिन की कमी से रिकेट्स होता है?"
+   },
+   "options": [
+    {
+     "en": "Vitamin A",
+     "hi": "विटामिन A"
+    },
+    {
+     "en": "Vitamin C",
+     "hi": "विटामिन C"
+    },
+    {
+     "en": "Vitamin D",
+     "hi": "विटामिन D"
+    },
+    {
+     "en": "Vitamin K",
+     "hi": "विटामिन K"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Vitamin D builds bones.",
+    "hi": "विटामिन D हड्डियाँ बनाता है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "science.biology.f01"
+   ]
+  },
+  {
+   "id": "q.practice.science.2",
+   "topic": "science.biology",
+   "kind": "mcq",
+   "q": {
+    "en": "Consider:\n1. Malaria is caused by a virus.\n2. Dengue is spread by Aedes mosquitoes.\nWhich is/are correct?",
+    "hi": "विचार कीजिए:\n1. मलेरिया एक विषाणु से होता है।\n2. डेंगू एडीज़ मच्छरों से फैलता है।\nकौन-सा/से सही है/हैं?"
+   },
+   "options": [
+    {
+     "en": "1 only",
+     "hi": "केवल 1"
+    },
+    {
+     "en": "2 only",
+     "hi": "केवल 2"
+    },
+    {
+     "en": "Both 1 and 2",
+     "hi": "1 और 2 दोनों"
+    },
+    {
+     "en": "Neither 1 nor 2",
+     "hi": "न 1, न 2"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Malaria is caused by Plasmodium, a protozoan.",
+    "hi": "मलेरिया प्लाज़्मोडियम, एक प्रोटोज़ोआ, से होता है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "science.biology.f03"
+   ]
+  },
+  {
+   "id": "q.practice.science.3",
+   "topic": "science.biology",
+   "kind": "mcq",
+   "q": {
+    "en": "Which blood group is called the universal donor?",
+    "hi": "किस रक्त समूह को सार्वभौमिक दाता कहते हैं?"
+   },
+   "options": [
+    {
+     "en": "AB positive",
+     "hi": "AB पॉज़िटिव"
+    },
+    {
+     "en": "O negative",
+     "hi": "O निगेटिव"
+    },
+    {
+     "en": "A positive",
+     "hi": "A पॉज़िटिव"
+    },
+    {
+     "en": "B negative",
+     "hi": "B निगेटिव"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "O negative cells carry no A, B or Rh antigens.",
+    "hi": "O निगेटिव कोशिकाओं पर A, B या Rh प्रतिजन नहीं होते।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "science.biology.f02"
+   ]
+  },
+  {
+   "id": "q.practice.science.4",
+   "topic": "science.biology",
+   "kind": "mcq",
+   "q": {
+    "en": "Insulin is secreted by:",
+    "hi": "इंसुलिन किसके द्वारा स्रावित होता है?"
+   },
+   "options": [
+    {
+     "en": "Liver",
+     "hi": "यकृत"
+    },
+    {
+     "en": "Alpha cells of the pancreas",
+     "hi": "अग्न्याशय की अल्फ़ा कोशिकाएँ"
+    },
+    {
+     "en": "Beta cells of the pancreas",
+     "hi": "अग्न्याशय की बीटा कोशिकाएँ"
+    },
+    {
+     "en": "Thyroid",
+     "hi": "थायरॉइड"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Alpha cells make glucagon, which raises blood sugar.",
+    "hi": "अल्फ़ा कोशिकाएँ ग्लूकागॉन बनाती हैं, जो रक्त शर्करा बढ़ाता है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "science.biology.f04"
+   ]
+  },
+  {
+   "id": "q.practice.science.5",
+   "topic": "science.biology",
+   "kind": "mcq",
+   "q": {
+    "en": "Which practice speeds up antimicrobial resistance?",
+    "hi": "कौन-सी आदत रोगाणुरोधी प्रतिरोध को तेज़ करती है?"
+   },
+   "options": [
+    {
+     "en": "Completing the full antibiotic course",
+     "hi": "एंटीबायोटिक का पूरा कोर्स करना"
+    },
+    {
+     "en": "Taking antibiotics for viral colds",
+     "hi": "वायरल सर्दी में एंटीबायोटिक लेना"
+    },
+    {
+     "en": "Vaccination",
+     "hi": "टीकाकरण"
+    },
+    {
+     "en": "Washing hands",
+     "hi": "हाथ धोना"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Antibiotics don't work on viruses, and misuse breeds resistance.",
+    "hi": "एंटीबायोटिक विषाणुओं पर काम नहीं करते, और दुरुपयोग प्रतिरोध बढ़ाता है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "science.biology.f05",
+    "science.biology.f03"
+   ]
+  },
+  {
+   "id": "q.practice.science.6",
+   "topic": "science.space",
+   "kind": "mcq",
+   "q": {
+    "en": "A geostationary satellite:",
+    "hi": "एक भूस्थिर उपग्रह:"
+   },
+   "options": [
+    {
+     "en": "Orbits over the poles",
+     "hi": "ध्रुवों के ऊपर घूमता है"
+    },
+    {
+     "en": "Has an orbital period of 24 hours above the equator",
+     "hi": "भूमध्य रेखा के ऊपर 24 घंटे की कक्षीय अवधि रखता है"
+    },
+    {
+     "en": "Orbits at about 500 km",
+     "hi": "लगभग 500 किमी पर घूमता है"
+    },
+    {
+     "en": "Moves opposite to the earth's rotation",
+     "hi": "पृथ्वी के घूर्णन की उलटी दिशा में चलता है"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "It keeps pace with the earth at about 35,786 km.",
+    "hi": "यह लगभग 35,786 किमी पर पृथ्वी के साथ क़दम मिलाता है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "science.space.f01"
+   ]
+  },
+  {
+   "id": "q.practice.science.7",
+   "topic": "science.space",
+   "kind": "mcq",
+   "q": {
+    "en": "The cryogenic stage of a rocket uses:",
+    "hi": "रॉकेट का क्रायोजेनिक चरण क्या इस्तेमाल करता है?"
+   },
+   "options": [
+    {
+     "en": "Solid fuel",
+     "hi": "ठोस ईंधन"
+    },
+    {
+     "en": "Liquid hydrogen and liquid oxygen",
+     "hi": "तरल हाइड्रोजन और तरल ऑक्सीजन"
+    },
+    {
+     "en": "Kerosene and nitrogen",
+     "hi": "केरोसिन और नाइट्रोजन"
+    },
+    {
+     "en": "Hydrazine only",
+     "hi": "केवल हाइड्राज़ीन"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Super-cold liquid fuels give high thrust.",
+    "hi": "अति ठंडे तरल ईंधन अधिक प्रणोद देते हैं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "science.space.f02"
+   ]
+  },
+  {
+   "id": "q.practice.science.8",
+   "topic": "science.space",
+   "kind": "mcq",
+   "q": {
+    "en": "Aditya-L1 is placed at L1 because:",
+    "hi": "आदित्य-L1 को L1 पर क्यों रखा गया है?"
+   },
+   "options": [
+    {
+     "en": "It is the closest point to the Sun",
+     "hi": "यह सूर्य का सबसे निकट बिंदु है"
+    },
+    {
+     "en": "The Sun is never blocked by the earth or Moon from there",
+     "hi": "वहाँ से सूर्य कभी पृथ्वी या चंद्रमा से नहीं ढकता"
+    },
+    {
+     "en": "It is inside the earth's atmosphere",
+     "hi": "यह पृथ्वी के वायुमंडल के भीतर है"
+    },
+    {
+     "en": "Solar radiation is weakest there",
+     "hi": "वहाँ सौर विकिरण सबसे कमज़ोर है"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Gravity balances at L1, giving a constant view.",
+    "hi": "L1 पर गुरुत्व संतुलित रहता है, जिससे लगातार दृश्य मिलता है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "science.space.f04"
+   ]
+  },
+  {
+   "id": "q.practice.science.9",
+   "topic": "science.space",
+   "kind": "mcq",
+   "q": {
+    "en": "Chandrayaan-3's rover was named:",
+    "hi": "चंद्रयान-3 के रोवर का नाम क्या था?"
+   },
+   "options": [
+    {
+     "en": "Vikram",
+     "hi": "विक्रम"
+    },
+    {
+     "en": "Pragyan",
+     "hi": "प्रज्ञान"
+    },
+    {
+     "en": "Mangalyaan",
+     "hi": "मंगलयान"
+    },
+    {
+     "en": "Gaganyaan",
+     "hi": "गगनयान"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Vikram was the lander.",
+    "hi": "विक्रम लैंडर था।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "science.space.f03"
+   ]
+  },
+  {
+   "id": "q.practice.science.10",
+   "topic": "science.biotech",
+   "kind": "mcq",
+   "q": {
+    "en": "In CRISPR-Cas9 gene editing, Cas9 is:",
+    "hi": "CRISPR-Cas9 जीन संपादन में Cas9 क्या है?"
+   },
+   "options": [
+    {
+     "en": "A guide RNA",
+     "hi": "एक गाइड RNA"
+    },
+    {
+     "en": "An enzyme that cuts DNA",
+     "hi": "DNA काटने वाला एंज़ाइम"
+    },
+    {
+     "en": "A virus vector",
+     "hi": "एक वायरस वाहक"
+    },
+    {
+     "en": "A type of stem cell",
+     "hi": "एक प्रकार की स्टेम कोशिका"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Guide RNA finds the site; Cas9 cuts.",
+    "hi": "गाइड RNA स्थान खोजता है; Cas9 काटता है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "science.biotech.f01"
+   ]
+  },
+  {
+   "id": "q.practice.science.11",
+   "topic": "science.biotech",
+   "kind": "mcq",
+   "q": {
+    "en": "The gene in Bt cotton comes from:",
+    "hi": "बीटी कपास का जीन कहाँ से आता है?"
+   },
+   "options": [
+    {
+     "en": "A fungus",
+     "hi": "एक कवक"
+    },
+    {
+     "en": "A soil bacterium",
+     "hi": "मिट्टी का एक जीवाणु"
+    },
+    {
+     "en": "A virus",
+     "hi": "एक विषाणु"
+    },
+    {
+     "en": "Wild cotton",
+     "hi": "जंगली कपास"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Bacillus thuringiensis.",
+    "hi": "बैसिलस थुरिंजिएन्सिस।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "science.biotech.f02"
+   ]
+  },
+  {
+   "id": "q.practice.science.12",
+   "topic": "science.biotech",
+   "kind": "mcq",
+   "q": {
+    "en": "Consider:\n1. mRNA vaccines alter the DNA of the recipient.\n2. mRNA vaccines make cells produce a viral protein.\nWhich is/are correct?",
+    "hi": "विचार कीजिए:\n1. mRNA टीके ग्राही का DNA बदलते हैं।\n2. mRNA टीके कोशिकाओं से एक वायरल प्रोटीन बनवाते हैं।\nकौन-सा/से सही है/हैं?"
+   },
+   "options": [
+    {
+     "en": "1 only",
+     "hi": "केवल 1"
+    },
+    {
+     "en": "2 only",
+     "hi": "केवल 2"
+    },
+    {
+     "en": "Both 1 and 2",
+     "hi": "1 और 2 दोनों"
+    },
+    {
+     "en": "Neither 1 nor 2",
+     "hi": "न 1, न 2"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "mRNA never enters the nucleus.",
+    "hi": "mRNA कभी केंद्रक में नहीं जाता।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "science.biotech.f03"
+   ]
+  },
+  {
+   "id": "q.practice.science.13",
+   "topic": "science.physics",
+   "kind": "mcq",
+   "q": {
+    "en": "The blue colour of the sky is due to:",
+    "hi": "आकाश का नीला रंग किस कारण है?"
+   },
+   "options": [
+    {
+     "en": "Reflection by oceans",
+     "hi": "महासागरों से परावर्तन"
+    },
+    {
+     "en": "Scattering of light by air molecules",
+     "hi": "वायु अणुओं द्वारा प्रकाश का प्रकीर्णन"
+    },
+    {
+     "en": "Refraction by clouds",
+     "hi": "बादलों द्वारा अपवर्तन"
+    },
+    {
+     "en": "Absorption of red light by ozone",
+     "hi": "ओज़ोन द्वारा लाल प्रकाश का अवशोषण"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Rayleigh scattering favours short blue wavelengths.",
+    "hi": "रैले प्रकीर्णन छोटी नीली तरंगों को अधिक बिखेरता है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "science.physics.f01"
+   ]
+  },
+  {
+   "id": "q.practice.science.14",
+   "topic": "science.physics",
+   "kind": "mcq",
+   "q": {
+    "en": "The third stage of India's nuclear power programme is based on:",
+    "hi": "भारत के परमाणु ऊर्जा कार्यक्रम का तीसरा चरण किस पर आधारित है?"
+   },
+   "options": [
+    {
+     "en": "Natural uranium",
+     "hi": "प्राकृतिक यूरेनियम"
+    },
+    {
+     "en": "Plutonium",
+     "hi": "प्लूटोनियम"
+    },
+    {
+     "en": "Thorium",
+     "hi": "थोरियम"
+    },
+    {
+     "en": "Hydrogen fusion",
+     "hi": "हाइड्रोजन संलयन"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "India has large thorium reserves.",
+    "hi": "भारत में थोरियम के बड़े भंडार हैं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "science.physics.f02"
+   ]
+  },
+  {
+   "id": "q.practice.science.15",
+   "topic": "science.physics",
+   "kind": "mcq",
+   "q": {
+    "en": "Sound travels fastest in:",
+    "hi": "ध्वनि सबसे तेज़ किसमें चलती है?"
+   },
+   "options": [
+    {
+     "en": "Vacuum",
+     "hi": "निर्वात"
+    },
+    {
+     "en": "Air",
+     "hi": "वायु"
+    },
+    {
+     "en": "Water",
+     "hi": "जल"
+    },
+    {
+     "en": "Steel",
+     "hi": "इस्पात"
+    }
+   ],
+   "answer": 3,
+   "explain": {
+    "en": "Solids pass vibrations fastest; vacuum not at all.",
+    "hi": "ठोस कंपन सबसे तेज़ आगे बढ़ाते हैं; निर्वात बिल्कुल नहीं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "science.physics.f03"
+   ]
+  },
+  {
+   "id": "q.practice.science.16",
+   "topic": "science.physics",
+   "kind": "mcq",
+   "q": {
+    "en": "Which of the following is the main cause of acid rain?",
+    "hi": "निम्नलिखित में से अम्ल वर्षा का मुख्य कारण क्या है?"
+   },
+   "options": [
+    {
+     "en": "Carbon monoxide",
+     "hi": "कार्बन मोनोऑक्साइड"
+    },
+    {
+     "en": "Sulphur dioxide and nitrogen oxides",
+     "hi": "सल्फ़र डाइऑक्साइड और नाइट्रोजन ऑक्साइड"
+    },
+    {
+     "en": "Methane",
+     "hi": "मीथेन"
+    },
+    {
+     "en": "Ozone",
+     "hi": "ओज़ोन"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "They form sulphuric and nitric acids in rain.",
+    "hi": "ये वर्षा में सल्फ़्यूरिक और नाइट्रिक अम्ल बनाते हैं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "science.physics.f04"
+   ]
+  },
+  {
+   "id": "q.practice.science.17",
+   "topic": "science.physics",
+   "kind": "mcq",
+   "q": {
+    "en": "Energy in the Sun is produced mainly by:",
+    "hi": "सूर्य में ऊर्जा मुख्यतः किससे बनती है?"
+   },
+   "options": [
+    {
+     "en": "Nuclear fission of uranium",
+     "hi": "यूरेनियम का नाभिकीय विखंडन"
+    },
+    {
+     "en": "Nuclear fusion of hydrogen",
+     "hi": "हाइड्रोजन का नाभिकीय संलयन"
+    },
+    {
+     "en": "Burning of gases",
+     "hi": "गैसों का दहन"
+    },
+    {
+     "en": "Radioactive decay",
+     "hi": "रेडियोधर्मी क्षय"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Hydrogen fuses into helium.",
+    "hi": "हाइड्रोजन संलयित होकर हीलियम बनती है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "science.physics.f05"
    ]
   }
  ]
