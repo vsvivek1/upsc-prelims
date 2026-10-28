@@ -60,13 +60,23 @@
    "freq": 0.9
   },
   {
+   "id": "geography.india",
+   "subject": "geography",
+   "title": {
+    "en": "Physical geography of India",
+    "hi": "भारत का भौतिक भूगोल"
+   },
+   "order": 31,
+   "freq": 0.85
+  },
+  {
    "id": "polity.preamble",
    "subject": "polity",
    "title": {
     "en": "The Preamble",
     "hi": "प्रस्तावना (उद्देशिका)"
    },
-   "order": 31,
+   "order": 42,
    "freq": 0.6,
    "prereq": [
     "polity.making"
@@ -79,7 +89,7 @@
     "en": "Inflation and price indices",
     "hi": "मुद्रास्फीति और मूल्य सूचकांक"
    },
-   "order": 36,
+   "order": 47,
    "freq": 0.75,
    "prereq": [
     "economy.national"
@@ -92,7 +102,7 @@
     "en": "Biodiversity and species",
     "hi": "जैव विविधता और प्रजातियाँ"
    },
-   "order": 43,
+   "order": 54,
    "freq": 0.8,
    "prereq": [
     "environment.ecology"
@@ -105,8 +115,18 @@
     "en": "Ancient India",
     "hi": "प्राचीन भारत"
    },
-   "order": 50,
+   "order": 61,
    "freq": 0.75
+  },
+  {
+   "id": "geography.climate",
+   "subject": "geography",
+   "title": {
+    "en": "Climate and the monsoon",
+    "hi": "जलवायु और मानसून"
+   },
+   "order": 69,
+   "freq": 0.8
   },
   {
    "id": "polity.fr",
@@ -115,7 +135,7 @@
     "en": "Fundamental Rights",
     "hi": "मौलिक अधिकार"
    },
-   "order": 58,
+   "order": 76,
    "freq": 0.9,
    "prereq": [
     "polity.preamble"
@@ -128,7 +148,7 @@
     "en": "Money, RBI and monetary policy",
     "hi": "मुद्रा, आरबीआई और मौद्रिक नीति"
    },
-   "order": 73,
+   "order": 91,
    "freq": 0.9,
    "prereq": [
     "economy.inflation"
@@ -141,7 +161,7 @@
     "en": "Protected areas and Indian laws",
     "hi": "संरक्षित क्षेत्र और भारतीय क़ानून"
    },
-   "order": 80,
+   "order": 98,
    "freq": 0.8,
    "prereq": [
     "environment.biodiversity"
@@ -154,11 +174,21 @@
     "en": "Art and culture",
     "hi": "कला और संस्कृति"
    },
-   "order": 88,
+   "order": 106,
    "freq": 0.8,
    "prereq": [
     "history.ancient"
    ]
+  },
+  {
+   "id": "geography.physical",
+   "subject": "geography",
+   "title": {
+    "en": "Earth, atmosphere and oceans",
+    "hi": "पृथ्वी, वायुमंडल और महासागर"
+   },
+   "order": 112,
+   "freq": 0.7
   },
   {
    "id": "polity.dpsp",
@@ -167,7 +197,7 @@
     "en": "Directive Principles and Fundamental Duties",
     "hi": "राज्य के नीति निदेशक तत्व और मौलिक कर्तव्य"
    },
-   "order": 94,
+   "order": 117,
    "freq": 0.7,
    "prereq": [
     "polity.fr"
@@ -180,7 +210,7 @@
     "en": "Budget, deficits and taxes",
     "hi": "बजट, घाटे और कर"
    },
-   "order": 99,
+   "order": 122,
    "freq": 0.8,
    "prereq": [
     "economy.national"
@@ -193,7 +223,7 @@
     "en": "International conventions",
     "hi": "अंतरराष्ट्रीय अभिसमय"
    },
-   "order": 106,
+   "order": 129,
    "freq": 0.85,
    "prereq": [
     "environment.biodiversity"
@@ -206,11 +236,21 @@
     "en": "Medieval India",
     "hi": "मध्यकालीन भारत"
    },
-   "order": 114,
+   "order": 137,
    "freq": 0.55,
    "prereq": [
     "history.ancient"
    ]
+  },
+  {
+   "id": "geography.world",
+   "subject": "geography",
+   "title": {
+    "en": "World places and resources",
+    "hi": "विश्व के स्थान और संसाधन"
+   },
+   "order": 143,
+   "freq": 0.6
   },
   {
    "id": "polity.parliament",
@@ -219,7 +259,7 @@
     "en": "Parliament",
     "hi": "संसद"
    },
-   "order": 120,
+   "order": 147,
    "freq": 0.85,
    "prereq": [
     "polity.preamble"
@@ -232,7 +272,7 @@
     "en": "Banking and finance",
     "hi": "बैंकिंग और वित्त"
    },
-   "order": 128,
+   "order": 155,
    "freq": 0.7,
    "prereq": [
     "economy.money"
@@ -245,7 +285,7 @@
     "en": "Pollution and climate change",
     "hi": "प्रदूषण और जलवायु परिवर्तन"
    },
-   "order": 134,
+   "order": 161,
    "freq": 0.7,
    "prereq": [
     "environment.ecology"
@@ -258,7 +298,7 @@
     "en": "President and the Union Executive",
     "hi": "राष्ट्रपति और संघ की कार्यपालिका"
    },
-   "order": 142,
+   "order": 169,
    "freq": 0.75,
    "prereq": [
     "polity.parliament"
@@ -271,7 +311,7 @@
     "en": "External sector",
     "hi": "बाह्य क्षेत्र"
    },
-   "order": 148,
+   "order": 175,
    "freq": 0.7,
    "prereq": [
     "economy.money"
@@ -284,7 +324,7 @@
     "en": "The Judiciary",
     "hi": "न्यायपालिका"
    },
-   "order": 153,
+   "order": 180,
    "freq": 0.8,
    "prereq": [
     "polity.fr"
@@ -297,7 +337,7 @@
     "en": "Agriculture and rural schemes",
     "hi": "कृषि और ग्रामीण योजनाएँ"
    },
-   "order": 158,
+   "order": 185,
    "freq": 0.55
   },
   {
@@ -307,7 +347,7 @@
     "en": "Federalism and Emergency",
     "hi": "संघवाद और आपातकाल"
    },
-   "order": 162,
+   "order": 189,
    "freq": 0.7,
    "prereq": [
     "polity.parliament"
@@ -320,7 +360,7 @@
     "en": "Panchayats and Municipalities",
     "hi": "पंचायतें और नगरपालिकाएँ"
    },
-   "order": 168,
+   "order": 195,
    "freq": 0.6,
    "prereq": [
     "polity.federal"
@@ -333,7 +373,7 @@
     "en": "Constitutional and other bodies",
     "hi": "संवैधानिक और अन्य निकाय"
    },
-   "order": 172,
+   "order": 199,
    "freq": 0.7,
    "prereq": [
     "polity.parliament"
@@ -1307,6 +1347,340 @@
    "seq": 30
   },
   {
+   "id": "geography.india.f01",
+   "topic": "geography.india",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XI 'India: Physical Environment', ch. 3",
+   "status": "needs_review",
+   "learn": {
+    "en": "Himalayan rivers are perennial, fed by snow and rain. Peninsular rivers depend on rain, so their flow drops sharply in summer.",
+    "hi": "हिमालयी नदियाँ बारहमासी हैं, जिन्हें बर्फ़ और वर्षा दोनों से पानी मिलता है। प्रायद्वीपीय नदियाँ वर्षा पर निर्भर हैं, इसलिए गर्मियों में उनका बहाव बहुत घट जाता है।"
+   },
+   "why": {
+    "en": "Glaciers keep melting through the dry season, so the Ganga never runs dry the way peninsular rivers can.",
+    "hi": "सूखे मौसम में भी हिमनद पिघलते रहते हैं, इसलिए गंगा प्रायद्वीपीय नदियों की तरह कभी नहीं सूखती।"
+   },
+   "recall_q": {
+    "en": "Why do Himalayan rivers flow all year?",
+    "hi": "हिमालयी नदियाँ साल भर क्यों बहती हैं?"
+   },
+   "recall_a": {
+    "en": "They are fed by melting snow as well as rain.",
+    "hi": "उन्हें वर्षा के साथ पिघलती बर्फ़ से भी पानी मिलता है।"
+   },
+   "explain_simple": {
+    "en": "Snow is a summer water bank for northern rivers.",
+    "hi": "बर्फ़ उत्तरी नदियों के लिए गर्मियों का जल-बैंक है।"
+   },
+   "seq": 31
+  },
+  {
+   "id": "geography.india.f02",
+   "topic": "geography.india",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XI 'India: Physical Environment', ch. 3",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Narmada and the Tapi flow west through rift valleys and form estuaries, not deltas.",
+    "hi": "नर्मदा और तापी दरार घाटियों से होकर पश्चिम की ओर बहती हैं और डेल्टा नहीं, ज्वारनदमुख (एस्चुअरी) बनाती हैं।"
+   },
+   "why": {
+    "en": "They flow fast over hard rock and carry little silt, so there is not enough sediment to build a delta.",
+    "hi": "वे कठोर चट्टानों पर तेज़ बहती हैं और कम गाद लाती हैं, इसलिए डेल्टा बनाने लायक़ तलछट नहीं होता।"
+   },
+   "recall_q": {
+    "en": "Which two major peninsular rivers flow west and form estuaries?",
+    "hi": "कौन-सी दो प्रमुख प्रायद्वीपीय नदियाँ पश्चिम में बहकर ज्वारनदमुख बनाती हैं?"
+   },
+   "recall_a": {
+    "en": "The Narmada and the Tapi.",
+    "hi": "नर्मदा और तापी।"
+   },
+   "explain_simple": {
+    "en": "East-flowing rivers (Godavari, Krishna, Kaveri, Mahanadi) build deltas; the west-flowing two don't.",
+    "hi": "पूर्व में बहने वाली नदियाँ (गोदावरी, कृष्णा, कावेरी, महानदी) डेल्टा बनाती हैं; पश्चिम में बहने वाली ये दो नहीं।"
+   },
+   "example": {
+    "en": "The Godavari is the longest peninsular river and is called the Dakshin Ganga.",
+    "hi": "गोदावरी सबसे लंबी प्रायद्वीपीय नदी है और दक्षिण गंगा कहलाती है।"
+   },
+   "seq": 32
+  },
+  {
+   "id": "geography.india.f03",
+   "topic": "geography.india",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Indus Waters Treaty 1960",
+   "status": "needs_review",
+   "learn": {
+    "en": "Under the Indus Waters Treaty (1960), India controls the eastern rivers (Ravi, Beas, Sutlej) and Pakistan gets most of the western rivers (Indus, Jhelum, Chenab).",
+    "hi": "सिंधु जल संधि (1960) के तहत पूर्वी नदियाँ (रावी, ब्यास, सतलुज) भारत के नियंत्रण में हैं और पश्चिमी नदियाँ (सिंधु, झेलम, चिनाब) मुख्यतः पाकिस्तान को मिलती हैं।"
+   },
+   "why": {
+    "en": "The World Bank brokered the treaty to share the Indus system after Partition.",
+    "hi": "विभाजन के बाद सिंधु तंत्र को बाँटने के लिए विश्व बैंक ने यह संधि करवाई।"
+   },
+   "recall_q": {
+    "en": "Which rivers are the 'eastern rivers' under the treaty?",
+    "hi": "संधि में 'पूर्वी नदियाँ' कौन-सी हैं?"
+   },
+   "recall_a": {
+    "en": "Ravi, Beas and Sutlej.",
+    "hi": "रावी, ब्यास और सतलुज।"
+   },
+   "explain_simple": {
+    "en": "East three to India, west three mostly to Pakistan.",
+    "hi": "पूर्व की तीन भारत को, पश्चिम की तीन मुख्यतः पाकिस्तान को।"
+   },
+   "review_note": "India announced it was holding the treaty 'in abeyance' in April 2025; check status before publishing.",
+   "seq": 33
+  },
+  {
+   "id": "geography.india.f04",
+   "topic": "geography.india",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "NCERT Class XI 'India: Physical Environment', ch. 6",
+   "status": "needs_review",
+   "learn": {
+    "en": "Alluvial soil is India's most widespread soil. Black soil (regur), formed from Deccan basalt, holds moisture and suits cotton.",
+    "hi": "जलोढ़ मिट्टी भारत में सबसे अधिक फैली मिट्टी है। दक्कन बेसाल्ट से बनी काली मिट्टी (रेगुर) नमी रोकती है और कपास के लिए उपयुक्त है।"
+   },
+   "why": {
+    "en": "Black soil swells when wet and cracks when dry, which lets air reach deep into it.",
+    "hi": "काली मिट्टी गीली होने पर फूलती और सूखने पर फटती है, जिससे हवा गहराई तक पहुँचती है।"
+   },
+   "recall_q": {
+    "en": "Which soil is called regur, and which crop does it suit?",
+    "hi": "किस मिट्टी को रेगुर कहते हैं, और यह किस फ़सल के लिए उपयुक्त है?"
+   },
+   "recall_a": {
+    "en": "Black soil; cotton.",
+    "hi": "काली मिट्टी; कपास।"
+   },
+   "explain_simple": {
+    "en": "Rivers spread alluvium; lava gave the Deccan its black cotton soil.",
+    "hi": "नदियों ने जलोढ़ फैलाया; लावा ने दक्कन को काली कपास मिट्टी दी।"
+   },
+   "seq": 34
+  },
+  {
+   "id": "geography.india.f05",
+   "topic": "geography.india",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XI 'India: Physical Environment', ch. 6",
+   "status": "needs_review",
+   "learn": {
+    "en": "Laterite soil forms where heavy rain and high heat wash away silica and lime, leaving iron and aluminium.",
+    "hi": "लैटेराइट मिट्टी वहाँ बनती है जहाँ भारी वर्षा और तेज़ गर्मी सिलिका और चूना बहा ले जाती हैं, और लोहा व एल्यूमिनियम बचे रहते हैं।"
+   },
+   "why": {
+    "en": "This washing-out is called leaching; the leftover iron makes the soil red and poor in nutrients.",
+    "hi": "इस बहाव को निक्षालन कहते हैं; बचा लोहा मिट्टी को लाल और पोषक-विहीन बनाता है।"
+   },
+   "recall_q": {
+    "en": "What process forms laterite soil?",
+    "hi": "लैटेराइट मिट्टी किस प्रक्रिया से बनती है?"
+   },
+   "recall_a": {
+    "en": "Leaching under heavy rain and high temperature.",
+    "hi": "भारी वर्षा और ऊँचे तापमान में निक्षालन।"
+   },
+   "explain_simple": {
+    "en": "Rain washes the good stuff away and leaves the rust behind.",
+    "hi": "बारिश अच्छे तत्व बहा ले जाती है और ज़ंग पीछे छोड़ देती है।"
+   },
+   "example": {
+    "en": "It suits cashew, tea and coffee, as in Kerala and Karnataka.",
+    "hi": "यह काजू, चाय और कॉफ़ी के लिए उपयुक्त है, जैसे केरल और कर्नाटक में।"
+   },
+   "seq": 35
+  },
+  {
+   "id": "geography.india.f06",
+   "topic": "geography.india",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "NCERT Class XI 'India: Physical Environment', ch. 1",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Tropic of Cancer passes through eight Indian states: Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura and Mizoram.",
+    "hi": "कर्क रेखा आठ भारतीय राज्यों से गुज़रती है: गुजरात, राजस्थान, मध्य प्रदेश, छत्तीसगढ़, झारखंड, पश्चिम बंगाल, त्रिपुरा और मिज़ोरम।"
+   },
+   "why": {
+    "en": "It runs west to east across the middle of India, roughly dividing it into tropical south and subtropical north.",
+    "hi": "यह भारत के बीच से पश्चिम से पूर्व चलती है, और मोटे तौर पर उसे उष्णकटिबंधीय दक्षिण और उपोष्ण उत्तर में बाँटती है।"
+   },
+   "recall_q": {
+    "en": "Does the Tropic of Cancer pass through Odisha?",
+    "hi": "क्या कर्क रेखा ओडिशा से गुज़रती है?"
+   },
+   "recall_a": {
+    "en": "No.",
+    "hi": "नहीं।"
+   },
+   "explain_simple": {
+    "en": "West to east: Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, Bengal, Tripura, Mizoram.",
+    "hi": "पश्चिम से पूर्व: गुजरात, राजस्थान, मध्य प्रदेश, छत्तीसगढ़, झारखंड, बंगाल, त्रिपुरा, मिज़ोरम।"
+   },
+   "seq": 36
+  },
+  {
+   "id": "geography.india.f07",
+   "topic": "geography.india",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "NCERT Class XI 'India: Physical Environment', ch. 1",
+   "status": "needs_review",
+   "learn": {
+    "en": "Indian Standard Time is set at 82°30'E, near Mirzapur in Uttar Pradesh. IST is GMT plus 5 hours 30 minutes.",
+    "hi": "भारतीय मानक समय 82°30' पूर्व देशांतर पर, उत्तर प्रदेश के मिर्ज़ापुर के पास, तय है। IST = GMT + 5 घंटे 30 मिनट।"
+   },
+   "why": {
+    "en": "Each 15° of longitude makes one hour of time difference: 82.5 ÷ 15 = 5.5 hours.",
+    "hi": "हर 15° देशांतर पर एक घंटे का अंतर होता है: 82.5 ÷ 15 = 5.5 घंटे।"
+   },
+   "recall_q": {
+    "en": "Why is IST 5½ hours ahead of GMT?",
+    "hi": "IST, GMT से 5½ घंटे आगे क्यों है?"
+   },
+   "recall_a": {
+    "en": "Because 82.5° ÷ 15° per hour = 5.5 hours.",
+    "hi": "क्योंकि 82.5° ÷ 15° प्रति घंटा = 5.5 घंटे।"
+   },
+   "explain_simple": {
+    "en": "One standard line for the whole country, near Mirzapur.",
+    "hi": "पूरे देश के लिए एक मानक रेखा, मिर्ज़ापुर के पास।"
+   },
+   "example": {
+    "en": "The sun rises nearly two hours earlier in Arunachal Pradesh than in Gujarat.",
+    "hi": "अरुणाचल प्रदेश में सूर्य गुजरात से लगभग दो घंटे पहले उगता है।"
+   },
+   "seq": 37
+  },
+  {
+   "id": "geography.india.f08",
+   "topic": "geography.india",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XI 'India: Physical Environment', ch. 2",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Ten Degree Channel separates the Andaman Islands from the Nicobar Islands. Barren Island in the Andamans is India's only active volcano.",
+    "hi": "दस डिग्री चैनल अंडमान द्वीपों को निकोबार द्वीपों से अलग करता है। अंडमान का बैरन द्वीप भारत का एकमात्र सक्रिय ज्वालामुखी है।"
+   },
+   "why": {
+    "en": "The Eight Degree Channel separates Minicoy (Lakshadweep) from the Maldives; the Palk Strait separates India from Sri Lanka.",
+    "hi": "आठ डिग्री चैनल मिनिकॉय (लक्षद्वीप) को मालदीव से अलग करता है; पाक जलडमरूमध्य भारत को श्रीलंका से अलग करता है।"
+   },
+   "recall_q": {
+    "en": "What separates the Andamans from the Nicobars?",
+    "hi": "अंडमान को निकोबार से क्या अलग करता है?"
+   },
+   "recall_a": {
+    "en": "The Ten Degree Channel.",
+    "hi": "दस डिग्री चैनल।"
+   },
+   "explain_simple": {
+    "en": "10° channel: Andaman | Nicobar. 8° channel: Minicoy | Maldives.",
+    "hi": "10° चैनल: अंडमान | निकोबार। 8° चैनल: मिनिकॉय | मालदीव।"
+   },
+   "seq": 38
+  },
+  {
+   "id": "geography.india.f09",
+   "topic": "geography.india",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XI 'India: Physical Environment', ch. 2",
+   "status": "needs_review",
+   "learn": {
+    "en": "Anamudi (2,695 m) in Kerala's Western Ghats is the highest peak in peninsular India.",
+    "hi": "केरल के पश्चिमी घाट में अनामुडी (2,695 मीटर) प्रायद्वीपीय भारत की सबसे ऊँची चोटी है।"
+   },
+   "why": {
+    "en": "The Western Ghats are continuous and high; the Eastern Ghats are broken up by rivers flowing to the Bay of Bengal.",
+    "hi": "पश्चिमी घाट लगातार और ऊँचे हैं; पूर्वी घाट बंगाल की खाड़ी में जाने वाली नदियों से कटे-फटे हैं।"
+   },
+   "recall_q": {
+    "en": "What is the highest peak of peninsular India?",
+    "hi": "प्रायद्वीपीय भारत की सबसे ऊँची चोटी कौन-सी है?"
+   },
+   "recall_a": {
+    "en": "Anamudi.",
+    "hi": "अनामुडी।"
+   },
+   "explain_simple": {
+    "en": "Anamudi tops the south; the Eastern Ghats are a broken wall.",
+    "hi": "अनामुडी दक्षिण में सबसे ऊँची; पूर्वी घाट टूटी दीवार है।"
+   },
+   "seq": 39
+  },
+  {
+   "id": "geography.india.f10",
+   "topic": "geography.india",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "NCERT Class XII 'India: People and Economy', ch. 5",
+   "status": "needs_review",
+   "learn": {
+    "en": "Kharif crops are sown with the monsoon (June–July), like rice and cotton. Rabi crops are sown in winter (October–November), like wheat and mustard.",
+    "hi": "ख़रीफ़ फ़सलें मानसून के साथ (जून–जुलाई) बोई जाती हैं, जैसे धान और कपास। रबी फ़सलें सर्दियों में (अक्टूबर–नवंबर) बोई जाती हैं, जैसे गेहूँ और सरसों।"
+   },
+   "why": {
+    "en": "Kharif needs monsoon rain; rabi grows on stored soil moisture and cool weather.",
+    "hi": "ख़रीफ़ को मानसूनी वर्षा चाहिए; रबी मिट्टी की बची नमी और ठंडे मौसम में उगती है।"
+   },
+   "recall_q": {
+    "en": "Is wheat a kharif or a rabi crop?",
+    "hi": "गेहूँ ख़रीफ़ फ़सल है या रबी?"
+   },
+   "recall_a": {
+    "en": "Rabi.",
+    "hi": "रबी।"
+   },
+   "explain_simple": {
+    "en": "Kharif = rain crops. Rabi = winter crops. Zaid = short summer crops in between.",
+    "hi": "ख़रीफ़ = वर्षा की फ़सल। रबी = सर्दी की फ़सल। ज़ायद = बीच की छोटी गर्मी की फ़सल।"
+   },
+   "seq": 40
+  },
+  {
+   "id": "geography.india.sum",
+   "topic": "geography.india",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "NCERT Class XI 'India: Physical Environment'",
+   "status": "needs_review",
+   "title": {
+    "en": "India's physical geography",
+    "hi": "भारत का भौतिक भूगोल"
+   },
+   "points": [
+    {
+     "en": "Himalayan rivers perennial; Narmada, Tapi form estuaries.",
+     "hi": "हिमालयी नदियाँ बारहमासी; नर्मदा, तापी ज्वारनदमुख बनाती हैं।"
+    },
+    {
+     "en": "Alluvial most widespread; black = cotton; laterite = leaching.",
+     "hi": "जलोढ़ सबसे व्यापक; काली = कपास; लैटेराइट = निक्षालन।"
+    },
+    {
+     "en": "Tropic of Cancer: eight states; IST at 82°30'E.",
+     "hi": "कर्क रेखा: आठ राज्य; IST 82°30' पूर्व पर।"
+    },
+    {
+     "en": "Ten Degree Channel: Andaman | Nicobar; Anamudi tallest in south.",
+     "hi": "दस डिग्री चैनल: अंडमान | निकोबार; दक्षिण में अनामुडी सबसे ऊँची।"
+    }
+   ],
+   "seq": 41
+  },
+  {
    "id": "polity.preamble.f01",
    "topic": "polity.preamble",
    "type": "fact",
@@ -1333,7 +1707,7 @@
     "en": "'We, the people' means: we made it, so we are the boss of it.",
     "hi": "'हम, भारत के लोग' का अर्थ: हमने बनाया, इसलिए इसके मालिक हम हैं।"
    },
-   "seq": 31
+   "seq": 42
   },
   {
    "id": "polity.preamble.f02",
@@ -1362,7 +1736,7 @@
     "en": "1976 added S-S-I: Socialist, Secular, and 'unity and integrity' of the nation.",
     "hi": "1976 में तीन शब्द जुड़े: समाजवादी, पंथनिरपेक्ष, और राष्ट्र की 'एकता और अखंडता'।"
    },
-   "seq": 32
+   "seq": 43
   },
   {
    "id": "polity.preamble.f03",
@@ -1392,7 +1766,7 @@
     "hi": "बेरुबारी 1960 ने 'नहीं' कहा। केशवानंद 1973 ने 'हाँ' कहा। अब बाद वाला फ़ैसला ही क़ानून है।"
    },
    "review_note": "The Preamble is not enforceable in court (non-justiciable).",
-   "seq": 33
+   "seq": 44
   },
   {
    "id": "polity.preamble.f04",
@@ -1422,7 +1796,7 @@
     "hi": "समाज में, पैसे के मामलों में और सत्ता में न्याय: सामाजिक, आर्थिक, राजनीतिक।"
    },
    "review_note": "'Justice: social, economic, political' is taken from the Russian (1917) revolution ideals per Laxmikanth.",
-   "seq": 34
+   "seq": 45
   },
   {
    "id": "polity.preamble.sum",
@@ -1453,7 +1827,7 @@
      "hi": "सामाजिक, आर्थिक और राजनीतिक न्याय का वादा।"
     }
    ],
-   "seq": 35
+   "seq": 46
   },
   {
    "id": "economy.inflation.f01",
@@ -1483,7 +1857,7 @@
     "hi": "वेतन वही रहता है और सब्ज़ियाँ महँगी होती हैं: आप कम ख़रीद पाते हैं।"
    },
    "review_note": "Borrowers gain because they repay in money worth less.",
-   "seq": 36
+   "seq": 47
   },
   {
    "id": "economy.inflation.f02",
@@ -1512,7 +1886,7 @@
     "en": "Aim for 4, stay between 2 and 6.",
     "hi": "निशाना 4 पर, दायरा 2 से 6।"
    },
-   "seq": 37
+   "seq": 48
   },
   {
    "id": "economy.inflation.f03",
@@ -1541,7 +1915,7 @@
     "en": "Six people vote on interest rates; if it is 3–3, the Governor decides.",
     "hi": "छह लोग ब्याज दर पर मत देते हैं; 3–3 होने पर गवर्नर तय करते हैं।"
    },
-   "seq": 38
+   "seq": 49
   },
   {
    "id": "economy.inflation.f04",
@@ -1571,7 +1945,7 @@
     "hi": "CPI = आपका पूरा ख़र्च, बाल कटाई और स्कूल फ़ीस सहित। WPI = थोक में बिकी वस्तुएँ, सेवाएँ नहीं।"
    },
    "review_note": "Base years and weights are being revised (CPI new base 2024 announced) — confirm before publishing.",
-   "seq": 39
+   "seq": 50
   },
   {
    "id": "economy.inflation.f05",
@@ -1600,7 +1974,7 @@
     "en": "Pull = buyers pull prices up. Push = costs push prices up.",
     "hi": "माँग-जनित = ख़रीदार क़ीमतें ऊपर खींचते हैं। लागत-जनित = लागत क़ीमतें ऊपर धकेलती है।"
    },
-   "seq": 40
+   "seq": 51
   },
   {
    "id": "economy.inflation.f06",
@@ -1633,7 +2007,7 @@
     "en": "The 1970s oil shocks caused stagflation in many countries.",
     "hi": "1970 के दशक के तेल झटकों ने कई देशों में स्टैगफ़्लेशन पैदा किया।"
    },
-   "seq": 41
+   "seq": 52
   },
   {
    "id": "economy.inflation.sum",
@@ -1664,7 +2038,7 @@
      "hi": "माँग-जनित बनाम लागत-जनित; स्टैगफ़्लेशन।"
     }
    ],
-   "seq": 42
+   "seq": 53
   },
   {
    "id": "environment.biodiversity.f01",
@@ -1693,7 +2067,7 @@
     "en": "Hotspot = very rich AND badly damaged.",
     "hi": "हॉटस्पॉट = बहुत समृद्ध और बुरी तरह क्षतिग्रस्त।"
    },
-   "seq": 43
+   "seq": 54
   },
   {
    "id": "environment.biodiversity.f02",
@@ -1722,7 +2096,7 @@
     "en": "Four hotspots: two in the mountains of the north and north-east, one in the south-west, one in the islands.",
     "hi": "चार हॉटस्पॉट: दो उत्तर और पूर्वोत्तर के पहाड़ों में, एक दक्षिण-पश्चिम में, एक द्वीपों में।"
    },
-   "seq": 44
+   "seq": 55
   },
   {
    "id": "environment.biodiversity.f03",
@@ -1755,7 +2129,7 @@
     "en": "The Great Indian Bustard is Critically Endangered.",
     "hi": "सोन चिरैया (ग्रेट इंडियन बस्टर्ड) अति संकटग्रस्त है।"
    },
-   "seq": 45
+   "seq": 56
   },
   {
    "id": "environment.biodiversity.f04",
@@ -1784,7 +2158,7 @@
     "en": "In-situ = national parks, sanctuaries, biosphere reserves. Ex-situ = zoos, botanical gardens, seed banks.",
     "hi": "स्व-स्थाने = राष्ट्रीय उद्यान, अभयारण्य, जैवमंडल आरक्षित क्षेत्र। बाह्य-स्थाने = चिड़ियाघर, वनस्पति उद्यान, बीज बैंक।"
    },
-   "seq": 46
+   "seq": 57
   },
   {
    "id": "environment.biodiversity.f05",
@@ -1817,7 +2191,7 @@
     "en": "Reefs in the Gulf of Mannar and Lakshadweep have bleached in marine heatwaves.",
     "hi": "मन्नार की खाड़ी और लक्षद्वीप की चट्टानें समुद्री ताप-लहरों में विरंजित हुई हैं।"
    },
-   "seq": 47
+   "seq": 58
   },
   {
    "id": "environment.biodiversity.f06",
@@ -1846,7 +2220,7 @@
     "en": "A newcomer with no enemies takes over the whole field.",
     "hi": "बिना दुश्मन का नवागंतुक पूरा मैदान घेर लेता है।"
    },
-   "seq": 48
+   "seq": 59
   },
   {
    "id": "environment.biodiversity.sum",
@@ -1877,7 +2251,7 @@
      "hi": "विरंजन = प्रवाल शैवाल निकालते हैं।"
     }
    ],
-   "seq": 49
+   "seq": 60
   },
   {
    "id": "history.ancient.f01",
@@ -1910,7 +2284,7 @@
     "en": "Dholavira became a UNESCO World Heritage Site in 2021.",
     "hi": "धोलावीरा 2021 में यूनेस्को विश्व धरोहर स्थल बना।"
    },
-   "seq": 50
+   "seq": 61
   },
   {
    "id": "history.ancient.f02",
@@ -1943,7 +2317,7 @@
     "en": "He was born at Lumbini, now in Nepal.",
     "hi": "उनका जन्म लुंबिनी में हुआ, जो अब नेपाल में है।"
    },
-   "seq": 51
+   "seq": 62
   },
   {
    "id": "history.ancient.f03",
@@ -1972,7 +2346,7 @@
     "en": "Parshvanatha gave four; Mahavira made it five.",
     "hi": "पार्श्वनाथ ने चार दिए; महावीर ने पाँच किए।"
    },
-   "seq": 52
+   "seq": 63
   },
   {
    "id": "history.ancient.f04",
@@ -2005,7 +2379,7 @@
     "en": "The Kalinga war (c. 261 BCE) turned him towards dhamma.",
     "hi": "कलिंग युद्ध (लगभग 261 ई.पू.) ने उन्हें धम्म की ओर मोड़ा।"
    },
-   "seq": 53
+   "seq": 64
   },
   {
    "id": "history.ancient.f05",
@@ -2034,7 +2408,7 @@
     "en": "Rigveda: oldest Veda, ten mandalas, the Gayatri mantra is in it.",
     "hi": "ऋग्वेद: सबसे पुराना वेद, दस मंडल, गायत्री मंत्र इसी में है।"
    },
-   "seq": 54
+   "seq": 65
   },
   {
    "id": "history.ancient.f06",
@@ -2063,7 +2437,7 @@
     "en": "Guptas: science (Aryabhata), poetry (Kalidasa), metal (Iron Pillar).",
     "hi": "गुप्त: विज्ञान (आर्यभट), काव्य (कालिदास), धातु (लौह स्तंभ)।"
    },
-   "seq": 55
+   "seq": 66
   },
   {
    "id": "history.ancient.f07",
@@ -2092,7 +2466,7 @@
     "en": "Sangam = Tamil poets' assemblies; three crowned kings.",
     "hi": "संगम = तमिल कवियों की सभाएँ; तीन मुकुटधारी राजा।"
    },
-   "seq": 56
+   "seq": 67
   },
   {
    "id": "history.ancient.sum",
@@ -2123,7 +2497,248 @@
      "hi": "गुप्त: आर्यभट, कालिदास, लौह स्तंभ।"
     }
    ],
-   "seq": 57
+   "seq": 68
+  },
+  {
+   "id": "geography.climate.f01",
+   "topic": "geography.climate",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "IMD; NCERT Class XI 'India: Physical Environment', ch. 4",
+   "status": "needs_review",
+   "learn": {
+    "en": "The southwest monsoon normally reaches Kerala around 1 June. The retreating northeast monsoon brings Tamil Nadu most of its rain in October–December.",
+    "hi": "दक्षिण-पश्चिम मानसून सामान्यतः 1 जून के आसपास केरल पहुँचता है। लौटता उत्तर-पूर्वी मानसून तमिलनाडु को अक्टूबर–दिसंबर में अधिकांश वर्षा देता है।"
+   },
+   "why": {
+    "en": "Tamil Nadu sits in the rain shadow of the Western Ghats in summer, so the winter winds over the Bay of Bengal give it rain.",
+    "hi": "गर्मियों में तमिलनाडु पश्चिमी घाट की वृष्टि-छाया में रहता है, इसलिए बंगाल की खाड़ी से आती सर्दी की हवाएँ उसे वर्षा देती हैं।"
+   },
+   "recall_q": {
+    "en": "Which state gets most of its rain from the northeast monsoon?",
+    "hi": "किस राज्य को अधिकांश वर्षा उत्तर-पूर्वी मानसून से मिलती है?"
+   },
+   "recall_a": {
+    "en": "Tamil Nadu.",
+    "hi": "तमिलनाडु।"
+   },
+   "explain_simple": {
+    "en": "Kerala gets the monsoon first; Tamil Nadu gets its rain last.",
+    "hi": "केरल को मानसून सबसे पहले मिलता है; तमिलनाडु को वर्षा सबसे बाद में।"
+   },
+   "seq": 69
+  },
+  {
+   "id": "geography.climate.f02",
+   "topic": "geography.climate",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "IMD; NOAA",
+   "status": "needs_review",
+   "learn": {
+    "en": "El Niño is an unusual warming of the central and eastern Pacific. It often weakens India's monsoon.",
+    "hi": "एल नीनो मध्य और पूर्वी प्रशांत महासागर का असामान्य रूप से गर्म होना है। यह अक्सर भारत के मानसून को कमज़ोर करता है।"
+   },
+   "why": {
+    "en": "A positive Indian Ocean Dipole, with a warmer western Indian Ocean, can offset El Niño and help the monsoon.",
+    "hi": "धनात्मक हिंद महासागर द्विध्रुव, जिसमें पश्चिमी हिंद महासागर गर्म होता है, एल नीनो का असर कम कर मानसून की मदद कर सकता है।"
+   },
+   "recall_q": {
+    "en": "What does a positive IOD usually do to the Indian monsoon?",
+    "hi": "धनात्मक IOD सामान्यतः भारतीय मानसून पर क्या असर डालता है?"
+   },
+   "recall_a": {
+    "en": "Helps it — more rain.",
+    "hi": "मदद करता है — अधिक वर्षा।"
+   },
+   "explain_simple": {
+    "en": "El Niño far away in the Pacific steals India's rain; a positive IOD nearby gives some back.",
+    "hi": "दूर प्रशांत का एल नीनो भारत की वर्षा छीनता है; पास का धनात्मक IOD कुछ लौटाता है।"
+   },
+   "seq": 70
+  },
+  {
+   "id": "geography.climate.f03",
+   "topic": "geography.climate",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XI 'Fundamentals of Physical Geography'",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Coriolis force, from the earth's rotation, deflects winds to the right in the northern hemisphere and to the left in the southern.",
+    "hi": "पृथ्वी के घूमने से उत्पन्न कोरिऑलिस बल हवाओं को उत्तरी गोलार्ध में दाईं ओर और दक्षिणी गोलार्ध में बाईं ओर मोड़ता है।"
+   },
+   "why": {
+    "en": "It is zero at the equator, so cyclones, which need spin, do not form right at the equator.",
+    "hi": "भूमध्य रेखा पर यह शून्य होता है, इसलिए घूर्णन चाहने वाले चक्रवात ठीक भूमध्य रेखा पर नहीं बनते।"
+   },
+   "recall_q": {
+    "en": "Why do cyclones not form at the equator?",
+    "hi": "भूमध्य रेखा पर चक्रवात क्यों नहीं बनते?"
+   },
+   "recall_a": {
+    "en": "The Coriolis force is zero there.",
+    "hi": "वहाँ कोरिऑलिस बल शून्य होता है।"
+   },
+   "explain_simple": {
+    "en": "No spin at the equator, so no cyclone there.",
+    "hi": "भूमध्य रेखा पर घूर्णन नहीं, इसलिए वहाँ चक्रवात नहीं।"
+   },
+   "seq": 71
+  },
+  {
+   "id": "geography.climate.f04",
+   "topic": "geography.climate",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XI 'Fundamentals of Physical Geography'",
+   "status": "needs_review",
+   "learn": {
+    "en": "Tropical cyclones need sea surface temperatures above about 27°C. They are called hurricanes in the Atlantic, typhoons in the west Pacific and cyclones in the Indian Ocean.",
+    "hi": "उष्णकटिबंधीय चक्रवातों के लिए समुद्र सतह का तापमान लगभग 27°C से अधिक चाहिए। अटलांटिक में इन्हें हरिकेन, पश्चिमी प्रशांत में टाइफ़ून और हिंद महासागर में साइक्लोन कहते हैं।"
+   },
+   "why": {
+    "en": "Warm water gives off moisture whose heat powers the storm; over land the supply stops and the storm weakens.",
+    "hi": "गर्म पानी से निकली नमी की ऊष्मा तूफ़ान को ऊर्जा देती है; ज़मीन पर यह आपूर्ति रुकते ही तूफ़ान कमज़ोर होता है।"
+   },
+   "recall_q": {
+    "en": "Why do cyclones weaken after landfall?",
+    "hi": "तट से टकराने के बाद चक्रवात क्यों कमज़ोर होते हैं?"
+   },
+   "recall_a": {
+    "en": "They lose their supply of warm, moist air from the sea.",
+    "hi": "उन्हें समुद्र से गर्म, नम हवा मिलना बंद हो जाता है।"
+   },
+   "explain_simple": {
+    "en": "Warm sea = fuel tank. Land = empty tank.",
+    "hi": "गर्म समुद्र = ईंधन टंकी। ज़मीन = ख़ाली टंकी।"
+   },
+   "seq": 72
+  },
+  {
+   "id": "geography.climate.f05",
+   "topic": "geography.climate",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "NCERT Class XI 'India: Physical Environment', ch. 4",
+   "status": "needs_review",
+   "learn": {
+    "en": "Mawsynram in Meghalaya gets the highest average rainfall in India, because moist winds are forced up the Khasi hills.",
+    "hi": "मेघालय के मासिनराम में भारत की सबसे अधिक औसत वर्षा होती है, क्योंकि नम हवाओं को खासी पहाड़ियों पर ऊपर चढ़ना पड़ता है।"
+   },
+   "why": {
+    "en": "Rising air cools, and cool air cannot hold as much water, so it falls as rain: relief (orographic) rainfall.",
+    "hi": "ऊपर उठती हवा ठंडी होती है, और ठंडी हवा उतना पानी नहीं रोक पाती, इसलिए वर्षा होती है: पर्वतीय वर्षा।"
+   },
+   "recall_q": {
+    "en": "What type of rainfall does Mawsynram get?",
+    "hi": "मासिनराम में किस प्रकार की वर्षा होती है?"
+   },
+   "recall_a": {
+    "en": "Orographic (relief) rainfall.",
+    "hi": "पर्वतीय वर्षा।"
+   },
+   "explain_simple": {
+    "en": "Hills squeeze the clouds like a sponge.",
+    "hi": "पहाड़ बादलों को स्पंज की तरह निचोड़ते हैं।"
+   },
+   "example": {
+    "en": "The leeward side of the Western Ghats, like the Deccan interior, stays dry: a rain shadow.",
+    "hi": "पश्चिमी घाट का पवनविमुख भाग, जैसे दक्कन का भीतरी भाग, सूखा रहता है: वृष्टि-छाया।"
+   },
+   "seq": 73
+  },
+  {
+   "id": "geography.climate.s01",
+   "topic": "geography.climate",
+   "type": "steps",
+   "difficulty": 3,
+   "source": "IMD; NOAA ENSO explainer",
+   "status": "needs_review",
+   "title": {
+    "en": "How El Niño weakens the Indian monsoon",
+    "hi": "एल नीनो भारतीय मानसून को कैसे कमज़ोर करता है"
+   },
+   "steps": [
+    {
+     "text": {
+      "en": "Normally, trade winds push warm water west across the Pacific, towards Indonesia.",
+      "hi": "सामान्यतः व्यापारिक पवनें गर्म पानी को प्रशांत के पार पश्चिम में, इंडोनेशिया की ओर धकेलती हैं।"
+     }
+    },
+    {
+     "text": {
+      "en": "Warm water in the west means rising air and rain there, a pattern linked to a good Indian monsoon.",
+      "hi": "पश्चिम में गर्म पानी का अर्थ है वहाँ उठती हवा और वर्षा, जो अच्छे भारतीय मानसून से जुड़ा पैटर्न है।"
+     }
+    },
+    {
+     "text": {
+      "en": "In an El Niño year the trade winds weaken, and warm water spreads back east towards South America.",
+      "hi": "एल नीनो वर्ष में व्यापारिक पवनें कमज़ोर पड़ती हैं, और गर्म पानी पूर्व में दक्षिण अमेरिका की ओर लौटता है।"
+     },
+     "explain": {
+      "en": "The area of rising air and rain moves east with it.",
+      "hi": "उठती हवा और वर्षा का क्षेत्र भी उसके साथ पूर्व में चला जाता है।"
+     }
+    },
+    {
+     "text": {
+      "en": "Over India, air tends to sink instead of rise, and sinking air brings less rain.",
+      "hi": "भारत के ऊपर हवा उठने के बजाय नीचे बैठने लगती है, और बैठती हवा कम वर्षा लाती है।"
+     }
+    }
+   ],
+   "summary": [
+    {
+     "en": "Weak trade winds → warm water moves east → rain moves east.",
+     "hi": "कमज़ोर व्यापारिक पवनें → गर्म पानी पूर्व में → वर्षा पूर्व में।"
+    },
+    {
+     "en": "Sinking air over India → weaker monsoon.",
+     "hi": "भारत पर बैठती हवा → कमज़ोर मानसून।"
+    }
+   ],
+   "recall_q": {
+    "en": "In an El Niño year, which way does the warm Pacific water move?",
+    "hi": "एल नीनो वर्ष में प्रशांत का गर्म पानी किस ओर जाता है?"
+   },
+   "recall_a": {
+    "en": "East, towards South America.",
+    "hi": "पूर्व की ओर, दक्षिण अमेरिका की तरफ़।"
+   },
+   "seq": 74
+  },
+  {
+   "id": "geography.climate.sum",
+   "topic": "geography.climate",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "IMD; NCERT",
+   "status": "needs_review",
+   "title": {
+    "en": "Climate and monsoon",
+    "hi": "जलवायु और मानसून"
+   },
+   "points": [
+    {
+     "en": "Monsoon reaches Kerala ~1 June; NE monsoon wets Tamil Nadu.",
+     "hi": "मानसून ~1 जून केरल; उत्तर-पूर्वी मानसून तमिलनाडु को भिगोता है।"
+    },
+    {
+     "en": "El Niño weakens; positive IOD helps.",
+     "hi": "एल नीनो कमज़ोर करता है; धनात्मक IOD मदद करता है।"
+    },
+    {
+     "en": "Coriolis zero at equator → no cyclones there.",
+     "hi": "भूमध्य रेखा पर कोरिऑलिस शून्य → वहाँ चक्रवात नहीं।"
+    },
+    {
+     "en": "Cyclones need sea > ~27°C.",
+     "hi": "चक्रवात को समुद्र > ~27°C चाहिए।"
+    }
+   ],
+   "seq": 75
   },
   {
    "id": "polity.fr.f01",
@@ -2152,7 +2767,7 @@
     "en": "Part 3, numbers 12 to 35. Rights you can take to court.",
     "hi": "भाग 3, अनुच्छेद 12 से 35। ऐसे अधिकार जिनके लिए आप न्यायालय जा सकते हैं।"
    },
-   "seq": 58
+   "seq": 76
   },
   {
    "id": "polity.fr.f02",
@@ -2181,7 +2796,7 @@
     "en": "Seven became six when property was taken out in 1978.",
     "hi": "1978 में संपत्ति हटने से सात से छह हुए।"
    },
-   "seq": 59
+   "seq": 77
   },
   {
    "id": "polity.fr.f03",
@@ -2214,7 +2829,7 @@
     "en": "If a highway needs your land, the government can acquire it under a law, with compensation as that law provides.",
     "hi": "अगर राजमार्ग के लिए आपकी ज़मीन चाहिए, तो सरकार क़ानून के तहत, उस क़ानून में तय मुआवज़े के साथ, उसे ले सकती है।"
    },
-   "seq": 60
+   "seq": 78
   },
   {
    "id": "polity.fr.f04",
@@ -2243,7 +2858,7 @@
     "en": "Article 32 is the door to the Supreme Court for your rights.",
     "hi": "अनुच्छेद 32 आपके अधिकारों के लिए सर्वोच्च न्यायालय का दरवाज़ा है।"
    },
-   "seq": 61
+   "seq": 79
   },
   {
    "id": "polity.fr.f05",
@@ -2272,7 +2887,7 @@
     "en": "Five court orders: bring the person, do your duty, stop, send the case up, and by what authority?",
     "hi": "पाँच आदेश: व्यक्ति को पेश करो, कर्तव्य करो, रुको, मामला ऊपर भेजो, और किस अधिकार से?"
    },
-   "seq": 62
+   "seq": 80
   },
   {
    "id": "polity.fr.f06",
@@ -2305,7 +2920,7 @@
     "en": "A family whose son was picked up without charge can file habeas corpus in the High Court.",
     "hi": "जिस परिवार के बेटे को बिना आरोप पकड़ लिया गया, वह उच्च न्यायालय में बंदी प्रत्यक्षीकरण याचिका दाख़िल कर सकता है।"
    },
-   "seq": 63
+   "seq": 81
   },
   {
    "id": "polity.fr.f07",
@@ -2334,7 +2949,7 @@
     "en": "Mandamus = 'do your job'. Only for public officials.",
     "hi": "परमादेश = 'अपना काम करो'। केवल सार्वजनिक अधिकारियों के लिए।"
    },
-   "seq": 64
+   "seq": 82
   },
   {
    "id": "polity.fr.f08",
@@ -2363,7 +2978,7 @@
     "en": "'By what authority are you sitting in that chair?' — that is quo warranto.",
     "hi": "'आप किस अधिकार से उस कुर्सी पर बैठे हैं?' — यही अधिकार-पृच्छा है।"
    },
-   "seq": 65
+   "seq": 83
   },
   {
    "id": "polity.fr.f09",
@@ -2392,7 +3007,7 @@
     "en": "Prohibition = stop before. Certiorari = fix after.",
     "hi": "प्रतिषेध = पहले रोको। उत्प्रेषण = बाद में सुधारो।"
    },
-   "seq": 66
+   "seq": 84
   },
   {
    "id": "polity.fr.f10",
@@ -2425,7 +3040,7 @@
     "en": "Courts have read the right to privacy, clean environment and livelihood into Article 21.",
     "hi": "न्यायालयों ने निजता, स्वच्छ पर्यावरण और आजीविका के अधिकार को अनुच्छेद 21 में शामिल माना है।"
    },
-   "seq": 67
+   "seq": 85
   },
   {
    "id": "polity.fr.f11",
@@ -2454,7 +3069,7 @@
     "en": "21A sits right after 21 (life): education is part of a life with dignity.",
     "hi": "21A, 21 (जीवन) के ठीक बाद है: शिक्षा सम्मानजनक जीवन का हिस्सा है।"
    },
-   "seq": 68
+   "seq": 86
   },
   {
    "id": "polity.fr.f12",
@@ -2487,7 +3102,7 @@
     "en": "The Protection of Civil Rights Act, 1955 punishes the practice of untouchability.",
     "hi": "नागरिक अधिकार संरक्षण अधिनियम, 1955 अस्पृश्यता के आचरण को दंडित करता है।"
    },
-   "seq": 69
+   "seq": 87
   },
   {
    "id": "polity.fr.f13",
@@ -2516,7 +3131,7 @@
     "en": "20 (protection in criminal cases) and 21 (life) stay switched on, always.",
     "hi": "20 (आपराधिक मामलों में संरक्षण) और 21 (जीवन) हमेशा चालू रहते हैं।"
    },
-   "seq": 70
+   "seq": 88
   },
   {
    "id": "polity.fr.s01",
@@ -2585,7 +3200,7 @@
     "en": "Article 13.",
     "hi": "अनुच्छेद 13।"
    },
-   "seq": 71
+   "seq": 89
   },
   {
    "id": "polity.fr.sum",
@@ -2620,7 +3235,7 @@
      "hi": "21A: 6–14 वर्ष शिक्षा (86वाँ संशोधन)।"
     }
    ],
-   "seq": 72
+   "seq": 90
   },
   {
    "id": "economy.money.f01",
@@ -2650,7 +3265,7 @@
     "hi": "अधिनियम 1934, शुरुआत 1935, 1949 से सरकारी स्वामित्व।"
    },
    "review_note": "Recommended by the Hilton Young Commission (1926).",
-   "seq": 73
+   "seq": 91
   },
   {
    "id": "economy.money.f02",
@@ -2683,7 +3298,7 @@
     "en": "A higher repo rate usually means a higher EMI on a home loan.",
     "hi": "ऊँची रेपो दर का मतलब आमतौर पर गृह ऋण की ऊँची EMI होता है।"
    },
-   "seq": 74
+   "seq": 92
   },
   {
    "id": "economy.money.f03",
@@ -2712,7 +3327,7 @@
     "en": "CRR = cash parked at RBI. SLR = safe assets kept by the bank itself.",
     "hi": "CRR = आरबीआई के पास रखा नक़द। SLR = बैंक के पास रखी सुरक्षित संपत्तियाँ।"
    },
-   "seq": 75
+   "seq": 93
   },
   {
    "id": "economy.money.f04",
@@ -2741,7 +3356,7 @@
     "en": "Interest rates move inside a corridor: SDF at the bottom, repo in the middle, MSF at the top.",
     "hi": "ब्याज दरें एक गलियारे में चलती हैं: नीचे SDF, बीच में रेपो, ऊपर MSF।"
    },
-   "seq": 76
+   "seq": 94
   },
   {
    "id": "economy.money.f05",
@@ -2770,7 +3385,7 @@
     "en": "RBI buys bonds → pays cash → more money in the system.",
     "hi": "आरबीआई बॉन्ड ख़रीदे → नक़द चुकाए → व्यवस्था में ज़्यादा पैसा।"
    },
-   "seq": 77
+   "seq": 95
   },
   {
    "id": "economy.money.s01",
@@ -2839,7 +3454,7 @@
     "en": "Because it works through loans and demand, which change slowly (policy lag).",
     "hi": "क्योंकि यह ऋण और माँग के ज़रिए काम करती है, जो धीरे बदलते हैं (नीतिगत अंतराल)।"
    },
-   "seq": 78
+   "seq": 96
   },
   {
    "id": "economy.money.sum",
@@ -2874,7 +3489,7 @@
      "hi": "OMO ख़रीद से पैसा आता है।"
     }
    ],
-   "seq": 79
+   "seq": 97
   },
   {
    "id": "environment.laws.f01",
@@ -2903,7 +3518,7 @@
     "en": "National park = no entry for cattle. Sanctuary = some activities with permission.",
     "hi": "राष्ट्रीय उद्यान = मवेशियों का प्रवेश नहीं। अभयारण्य = अनुमति से कुछ गतिविधियाँ।"
    },
-   "seq": 80
+   "seq": 98
   },
   {
    "id": "environment.laws.f02",
@@ -2933,7 +3548,7 @@
     "hi": "छह सूचियाँ चार बनीं, उनमें एक CITES प्रजातियों के लिए।"
    },
    "review_note": "Check schedule numbering (I–IV) against the gazette text before publishing.",
-   "seq": 81
+   "seq": 99
   },
   {
    "id": "environment.laws.f03",
@@ -2962,7 +3577,7 @@
     "en": "One big law that covers everything the other environment laws miss.",
     "hi": "एक बड़ा क़ानून जो वह सब ढकता है जो दूसरे पर्यावरण क़ानून छोड़ देते हैं।"
    },
-   "seq": 82
+   "seq": 100
   },
   {
    "id": "environment.laws.f04",
@@ -2991,7 +3606,7 @@
     "en": "A state cannot hand over forest land for a mine or a road without the Centre saying yes.",
     "hi": "कोई राज्य केंद्र की हाँ के बिना खदान या सड़क के लिए वन भूमि नहीं दे सकता।"
    },
-   "seq": 83
+   "seq": 101
   },
   {
    "id": "environment.laws.f05",
@@ -3020,7 +3635,7 @@
     "en": "A fast-track court only for environment cases.",
     "hi": "केवल पर्यावरण मामलों के लिए फ़ास्ट-ट्रैक अदालत।"
    },
-   "seq": 84
+   "seq": 102
   },
   {
    "id": "environment.laws.f06",
@@ -3053,7 +3668,7 @@
     "en": "The Nilgiri Biosphere Reserve (1986), spread over Tamil Nadu, Kerala and Karnataka, was India's first.",
     "hi": "नीलगिरि जैवमंडल आरक्षित क्षेत्र (1986), जो तमिलनाडु, केरल और कर्नाटक में फैला है, भारत का पहला था।"
    },
-   "seq": 85
+   "seq": 103
   },
   {
    "id": "environment.laws.f07",
@@ -3082,7 +3697,7 @@
     "en": "1973 project, 2006 law.",
     "hi": "1973 में परियोजना, 2006 में क़ानून।"
    },
-   "seq": 86
+   "seq": 104
   },
   {
    "id": "environment.laws.sum",
@@ -3113,7 +3728,7 @@
      "hi": "NGT 2010; जैवमंडल: केंद्र, बफ़र, संक्रमण।"
     }
    ],
-   "seq": 87
+   "seq": 105
   },
   {
    "id": "history.culture.f01",
@@ -3146,7 +3761,7 @@
     "en": "Sattriya was introduced by the saint Sankaradeva in the Vaishnava monasteries (sattras).",
     "hi": "सत्रिया संत शंकरदेव ने वैष्णव मठों (सत्रों) में शुरू किया।"
    },
-   "seq": 88
+   "seq": 106
   },
   {
    "id": "history.culture.f02",
@@ -3179,7 +3794,7 @@
     "en": "The Brihadeshwara temple at Thanjavur (Rajaraja Chola) is a great Dravida temple.",
     "hi": "तंजावुर का बृहदेश्वर मंदिर (राजराज चोल) एक महान द्रविड़ मंदिर है।"
    },
-   "seq": 89
+   "seq": 107
   },
   {
    "id": "history.culture.f03",
@@ -3208,7 +3823,7 @@
     "en": "Ajanta = Buddhist paintings. Ellora = three faiths, and Kailasa carved from one rock.",
     "hi": "अजंता = बौद्ध चित्र। एलोरा = तीन धर्म, और एक चट्टान से बना कैलाश।"
    },
-   "seq": 90
+   "seq": 108
   },
   {
    "id": "history.culture.f04",
@@ -3237,7 +3852,7 @@
     "en": "Alvars = Vishnu. Nayanars = Shiva.",
     "hi": "आलवार = विष्णु। नयनार = शिव।"
    },
-   "seq": 91
+   "seq": 109
   },
   {
    "id": "history.culture.f05",
@@ -3270,7 +3885,7 @@
     "en": "Amir Khusrau was a disciple of Nizamuddin Auliya.",
     "hi": "अमीर ख़ुसरो निज़ामुद्दीन औलिया के शिष्य थे।"
    },
-   "seq": 92
+   "seq": 110
   },
   {
    "id": "history.culture.sum",
@@ -3301,7 +3916,162 @@
      "hi": "आलवार विष्णु, नयनार शिव; अजमेर में चिश्ती।"
     }
    ],
-   "seq": 93
+   "seq": 111
+  },
+  {
+   "id": "geography.physical.f01",
+   "topic": "geography.physical",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XI 'Fundamentals of Physical Geography', ch. 3",
+   "status": "needs_review",
+   "learn": {
+    "en": "The earth has three main layers: crust, mantle and core. The Moho discontinuity is the boundary between the crust and the mantle.",
+    "hi": "पृथ्वी की तीन मुख्य परतें हैं: भूपर्पटी, मेंटल और क्रोड। मोहो असांतत्य भूपर्पटी और मेंटल के बीच की सीमा है।"
+   },
+   "why": {
+    "en": "We know this from earthquake waves, which change speed where the rock changes.",
+    "hi": "यह हमें भूकंपीय तरंगों से पता चलता है, जिनकी गति चट्टान बदलने पर बदलती है।"
+   },
+   "recall_q": {
+    "en": "Which boundary separates the crust from the mantle?",
+    "hi": "भूपर्पटी को मेंटल से कौन-सी सीमा अलग करती है?"
+   },
+   "recall_a": {
+    "en": "The Mohorovičić (Moho) discontinuity.",
+    "hi": "मोहोरोविचिक (मोहो) असांतत्य।"
+   },
+   "explain_simple": {
+    "en": "Like an egg: thin shell (crust), white (mantle), yolk (core).",
+    "hi": "अंडे की तरह: पतला छिलका (भूपर्पटी), सफ़ेदी (मेंटल), ज़र्दी (क्रोड)।"
+   },
+   "example": {
+    "en": "S-waves cannot pass through liquid, and they do not cross the outer core: so the outer core is liquid.",
+    "hi": "S-तरंगें द्रव से नहीं गुज़रतीं, और वे बाहरी क्रोड पार नहीं करतीं: इसलिए बाहरी क्रोड द्रव है।"
+   },
+   "seq": 112
+  },
+  {
+   "id": "geography.physical.f02",
+   "topic": "geography.physical",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XI 'Fundamentals of Physical Geography', ch. 4",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Himalayas formed when the Indian plate collided with the Eurasian plate. Both are continental, so neither sank and the crust folded up.",
+    "hi": "हिमालय तब बना जब भारतीय प्लेट यूरेशियाई प्लेट से टकराई। दोनों महाद्वीपीय हैं, इसलिए कोई नीचे नहीं धँसी और भूपर्पटी मुड़कर ऊपर उठ गई।"
+   },
+   "why": {
+    "en": "The Indian plate is still moving north, so the Himalayas are still rising and the region has frequent earthquakes.",
+    "hi": "भारतीय प्लेट अब भी उत्तर की ओर बढ़ रही है, इसलिए हिमालय अब भी ऊँचा हो रहा है और वहाँ भूकंप अक्सर आते हैं।"
+   },
+   "recall_q": {
+    "en": "What type of plate boundary formed the Himalayas?",
+    "hi": "हिमालय किस प्रकार की प्लेट सीमा से बना?"
+   },
+   "recall_a": {
+    "en": "A convergent boundary between two continental plates.",
+    "hi": "दो महाद्वीपीय प्लेटों के बीच अभिसारी सीमा।"
+   },
+   "explain_simple": {
+    "en": "Two cars crashing head-on: the bonnets crumple up into mountains.",
+    "hi": "दो कारों की आमने-सामने टक्कर: बोनट मुड़कर पहाड़ बन जाते हैं।"
+   },
+   "seq": 113
+  },
+  {
+   "id": "geography.physical.f03",
+   "topic": "geography.physical",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "NCERT Class XI 'Fundamentals of Physical Geography', ch. 8",
+   "status": "needs_review",
+   "learn": {
+    "en": "Weather happens in the troposphere, the lowest layer. Above it, the stratosphere holds the ozone layer.",
+    "hi": "मौसम क्षोभमंडल में होता है, जो सबसे निचली परत है। उसके ऊपर समताप मंडल में ओज़ोन परत है।"
+   },
+   "why": {
+    "en": "Meteors burn up in the mesosphere; the ionosphere, higher up, reflects radio waves back to earth.",
+    "hi": "उल्काएँ मध्यमंडल में जल जाती हैं; उससे ऊपर आयनमंडल रेडियो तरंगों को पृथ्वी की ओर लौटाता है।"
+   },
+   "recall_q": {
+    "en": "In which layer do meteors burn up?",
+    "hi": "उल्काएँ किस परत में जलती हैं?"
+   },
+   "recall_a": {
+    "en": "The mesosphere.",
+    "hi": "मध्यमंडल।"
+   },
+   "explain_simple": {
+    "en": "Bottom up: tropo (weather), strato (ozone), meso (meteors), thermo/iono (radio).",
+    "hi": "नीचे से ऊपर: क्षोभ (मौसम), समताप (ओज़ोन), मध्य (उल्का), ताप/आयन (रेडियो)।"
+   },
+   "example": {
+    "en": "Jet aircraft often fly in the lower stratosphere to avoid bumpy weather.",
+    "hi": "जेट विमान अक्सर उथल-पुथल वाले मौसम से बचने के लिए निचले समताप मंडल में उड़ते हैं।"
+   },
+   "seq": 114
+  },
+  {
+   "id": "geography.physical.f04",
+   "topic": "geography.physical",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XI 'Fundamentals of Physical Geography', ch. 14",
+   "status": "needs_review",
+   "learn": {
+    "en": "Where the warm Gulf Stream meets the cold Labrador Current near Newfoundland, the Grand Banks became one of the world's richest fishing grounds.",
+    "hi": "जहाँ गर्म गल्फ़ स्ट्रीम न्यूफ़ाउंडलैंड के पास ठंडी लैब्राडोर धारा से मिलती है, वहाँ ग्रैंड बैंक्स दुनिया के सबसे समृद्ध मछली क्षेत्रों में बना।"
+   },
+   "why": {
+    "en": "Mixing warm and cold water brings up nutrients that feed plankton, and plankton feed fish.",
+    "hi": "गर्म और ठंडे पानी का मिलना पोषक तत्व ऊपर लाता है, जो प्लवक को भोजन देते हैं, और प्लवक मछलियों को।"
+   },
+   "recall_q": {
+    "en": "Why are meeting points of warm and cold currents good for fishing?",
+    "hi": "गर्म और ठंडी धाराओं के मिलन स्थल मछली पकड़ने के लिए अच्छे क्यों हैं?"
+   },
+   "recall_a": {
+    "en": "The mixing brings up nutrients for plankton, which fish eat.",
+    "hi": "मिलन से प्लवक के लिए पोषक ऊपर आते हैं, जिन्हें मछलियाँ खाती हैं।"
+   },
+   "explain_simple": {
+    "en": "Warm meets cold → nutrients rise → plankton → fish.",
+    "hi": "गर्म मिले ठंडे से → पोषक ऊपर → प्लवक → मछली।"
+   },
+   "seq": 115
+  },
+  {
+   "id": "geography.physical.sum",
+   "topic": "geography.physical",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "NCERT Class XI 'Fundamentals of Physical Geography'",
+   "status": "needs_review",
+   "title": {
+    "en": "Earth and atmosphere",
+    "hi": "पृथ्वी और वायुमंडल"
+   },
+   "points": [
+    {
+     "en": "Crust | Moho | mantle | core.",
+     "hi": "भूपर्पटी | मोहो | मेंटल | क्रोड।"
+    },
+    {
+     "en": "Himalayas: continent–continent collision.",
+     "hi": "हिमालय: महाद्वीप–महाद्वीप टक्कर।"
+    },
+    {
+     "en": "Tropo weather, strato ozone, meso meteors.",
+     "hi": "क्षोभ मौसम, समताप ओज़ोन, मध्य उल्का।"
+    },
+    {
+     "en": "Warm + cold currents → rich fishing.",
+     "hi": "गर्म + ठंडी धाराएँ → समृद्ध मत्स्य क्षेत्र।"
+    }
+   ],
+   "seq": 116
   },
   {
    "id": "polity.dpsp.f01",
@@ -3330,7 +4100,7 @@
     "en": "Rights (Part III) = court can enforce. Directives (Part IV) = goals for the government, not enforceable.",
     "hi": "अधिकार (भाग III) = न्यायालय लागू करा सकता है। निदेशक तत्व (भाग IV) = सरकार के लक्ष्य, लागू नहीं कराए जा सकते।"
    },
-   "seq": 94
+   "seq": 117
   },
   {
    "id": "polity.dpsp.f02",
@@ -3363,7 +4133,7 @@
     "en": "Goa has had a common civil code since Portuguese times.",
     "hi": "गोवा में पुर्तगाली काल से एक समान नागरिक संहिता चल रही है।"
    },
-   "seq": 95
+   "seq": 118
   },
   {
    "id": "polity.dpsp.f03",
@@ -3392,7 +4162,7 @@
     "en": "1976: Swaran Singh Committee → 42nd Amendment → Article 51A duties.",
     "hi": "1976: स्वर्ण सिंह समिति → 42वाँ संशोधन → अनुच्छेद 51A के कर्तव्य।"
    },
-   "seq": 96
+   "seq": 119
   },
   {
    "id": "polity.dpsp.f04",
@@ -3421,7 +4191,7 @@
     "en": "Ten in 1976, plus one about education in 2002 = eleven.",
     "hi": "1976 में दस, 2002 में शिक्षा वाला एक और = ग्यारह।"
    },
-   "seq": 97
+   "seq": 120
   },
   {
    "id": "polity.dpsp.sum",
@@ -3452,7 +4222,7 @@
      "hi": "11 कर्तव्य; 11वाँ 2002 में जुड़ा।"
     }
    ],
-   "seq": 98
+   "seq": 121
   },
   {
    "id": "economy.fiscal.f01",
@@ -3481,7 +4251,7 @@
     "en": "Spending minus all income that isn't a loan = what must be borrowed.",
     "hi": "ख़र्च घटा वह सारी आय जो क़र्ज़ नहीं है = जो उधार लेना पड़ेगा।"
    },
-   "seq": 99
+   "seq": 122
   },
   {
    "id": "economy.fiscal.f02",
@@ -3510,7 +4280,7 @@
     "en": "Take out the interest on old loans and see what new borrowing is left.",
     "hi": "पुराने क़र्ज़ का ब्याज निकाल दीजिए और देखिए कितना नया उधार बचता है।"
    },
-   "seq": 100
+   "seq": 123
   },
   {
    "id": "economy.fiscal.f03",
@@ -3539,7 +4309,7 @@
     "en": "Like taking a loan to pay the electricity bill instead of to buy a house.",
     "hi": "जैसे घर ख़रीदने के बजाय बिजली का बिल भरने के लिए क़र्ज़ लेना।"
    },
-   "seq": 101
+   "seq": 124
   },
   {
    "id": "economy.fiscal.f04",
@@ -3568,7 +4338,7 @@
     "en": "Everyone says budget; the Constitution says Annual Financial Statement.",
     "hi": "सब बजट कहते हैं; संविधान वार्षिक वित्तीय विवरण कहता है।"
    },
-   "seq": 102
+   "seq": 125
   },
   {
    "id": "economy.fiscal.f05",
@@ -3598,7 +4368,7 @@
     "hi": "तमिलनाडु में बना और केरल में ख़रीदा टीवी: जीएसटी का राज्य हिस्सा केरल को जाता है।"
    },
    "review_note": "Petroleum crude, diesel, petrol, natural gas and ATF are outside GST for now; alcohol for human consumption is outside by the Constitution.",
-   "seq": 103
+   "seq": 126
   },
   {
    "id": "economy.fiscal.f06",
@@ -3627,7 +4397,7 @@
     "en": "Direct = you pay it yourself. Indirect = it is hidden in the price.",
     "hi": "प्रत्यक्ष = आप ख़ुद चुकाते हैं। अप्रत्यक्ष = क़ीमत में छिपा रहता है।"
    },
-   "seq": 104
+   "seq": 127
   },
   {
    "id": "economy.fiscal.sum",
@@ -3662,7 +4432,7 @@
      "hi": "जीएसटी 1 जुलाई 2017 से, गंतव्य-आधारित।"
     }
    ],
-   "seq": 105
+   "seq": 128
   },
   {
    "id": "environment.conventions.f01",
@@ -3695,7 +4465,7 @@
     "en": "Keoladeo (Rajasthan) and Loktak (Manipur) are on the Montreux Record.",
     "hi": "केवलादेव (राजस्थान) और लोकटक (मणिपुर) मॉन्ट्रो रिकॉर्ड में हैं।"
    },
-   "seq": 106
+   "seq": 129
   },
   {
    "id": "environment.conventions.f02",
@@ -3724,7 +4494,7 @@
     "en": "CITES is a customs officer for wildlife: Appendix I means 'no commercial trade'.",
     "hi": "CITES वन्यजीवों का सीमा-शुल्क अधिकारी है: परिशिष्ट I यानी 'कोई व्यापारिक व्यापार नहीं'।"
    },
-   "seq": 107
+   "seq": 130
   },
   {
    "id": "environment.conventions.f03",
@@ -3757,7 +4527,7 @@
     "en": "The National Biodiversity Authority under the 2002 Act is in Chennai.",
     "hi": "2002 के अधिनियम के तहत राष्ट्रीय जैव विविधता प्राधिकरण चेन्नई में है।"
    },
-   "seq": 108
+   "seq": 131
   },
   {
    "id": "environment.conventions.f04",
@@ -3786,7 +4556,7 @@
     "en": "Kyoto: those who polluted more, cut first.",
     "hi": "क्योटो: जिसने ज़्यादा प्रदूषण किया, वह पहले घटाए।"
    },
-   "seq": 109
+   "seq": 132
   },
   {
    "id": "environment.conventions.f05",
@@ -3815,7 +4585,7 @@
     "en": "Paris: everyone joins, each country writes its own pledge.",
     "hi": "पेरिस: सब शामिल, हर देश अपना वचन ख़ुद लिखता है।"
    },
-   "seq": 110
+   "seq": 133
   },
   {
    "id": "environment.conventions.f06",
@@ -3844,7 +4614,7 @@
     "en": "CFCs hurt the ozone; their replacements, HFCs, heat the planet. Kigali fixes the second problem.",
     "hi": "CFC ओज़ोन को चोट पहुँचाते हैं; उनके विकल्प HFC धरती को गर्म करते हैं। किगाली दूसरी समस्या सुलझाता है।"
    },
-   "seq": 111
+   "seq": 134
   },
   {
    "id": "environment.conventions.f07",
@@ -3877,7 +4647,7 @@
     "en": "The Amur falcon, which stops in Nagaland on its way to Africa, is a species CMS cares about.",
     "hi": "अमूर बाज़, जो अफ़्रीका जाते हुए नागालैंड में रुकता है, CMS की चिंता वाली प्रजाति है।"
    },
-   "seq": 112
+   "seq": 135
   },
   {
    "id": "environment.conventions.sum",
@@ -3908,7 +4678,7 @@
      "hi": "मॉन्ट्रियल: CFC; किगाली: HFC।"
     }
    ],
-   "seq": 113
+   "seq": 136
   },
   {
    "id": "history.medieval.f01",
@@ -3937,7 +4707,7 @@
     "en": "Chola villages ran their own affairs through elected committees.",
     "hi": "चोल गाँव चुनी हुई समितियों से अपना काम चलाते थे।"
    },
-   "seq": 114
+   "seq": 137
   },
   {
    "id": "history.medieval.f02",
@@ -3966,7 +4736,7 @@
     "en": "Iltutmish: land for officers. Alauddin: fixed prices for soldiers.",
     "hi": "इल्तुतमिश: अधिकारियों को भूमि। अलाउद्दीन: सैनिकों के लिए तय भाव।"
    },
-   "seq": 115
+   "seq": 138
   },
   {
    "id": "history.medieval.f03",
@@ -3999,7 +4769,7 @@
     "en": "Raja Todar Mal designed Akbar's land revenue system (zabt).",
     "hi": "राजा टोडरमल ने अकबर की भू-राजस्व व्यवस्था (ज़ब्त) बनाई।"
    },
-   "seq": 116
+   "seq": 139
   },
   {
    "id": "history.medieval.f04",
@@ -4028,7 +4798,7 @@
     "en": "1336, Hampi, Harihara and Bukka; Krishnadevaraya at its peak.",
     "hi": "1336, हम्पी, हरिहर और बुक्का; शिखर पर कृष्णदेवराय।"
    },
-   "seq": 117
+   "seq": 140
   },
   {
    "id": "history.medieval.f05",
@@ -4057,7 +4827,7 @@
     "en": "Nirguna saints: no idols, no caste, one God within.",
     "hi": "निर्गुण संत: न मूर्ति, न जाति, भीतर एक ईश्वर।"
    },
-   "seq": 118
+   "seq": 141
   },
   {
    "id": "history.medieval.sum",
@@ -4088,7 +4858,133 @@
      "hi": "विजयनगर 1336, हम्पी।"
     }
    ],
-   "seq": 119
+   "seq": 142
+  },
+  {
+   "id": "geography.world.f01",
+   "topic": "geography.world",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Standard atlases",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Strait of Hormuz links the Persian Gulf to the Gulf of Oman. The Bab-el-Mandeb links the Red Sea to the Gulf of Aden.",
+    "hi": "होर्मुज़ जलडमरूमध्य फ़ारस की खाड़ी को ओमान की खाड़ी से जोड़ता है। बाब-अल-मंदेब लाल सागर को अदन की खाड़ी से जोड़ता है।"
+   },
+   "why": {
+    "en": "A large share of the world's oil passes through Hormuz, so trouble there raises fuel prices worldwide.",
+    "hi": "दुनिया के तेल का बड़ा हिस्सा होर्मुज़ से गुज़रता है, इसलिए वहाँ संकट से दुनिया भर में ईंधन महँगा होता है।"
+   },
+   "recall_q": {
+    "en": "Which strait joins the Red Sea and the Gulf of Aden?",
+    "hi": "कौन-सा जलडमरूमध्य लाल सागर और अदन की खाड़ी को जोड़ता है?"
+   },
+   "recall_a": {
+    "en": "The Bab-el-Mandeb.",
+    "hi": "बाब-अल-मंदेब।"
+   },
+   "explain_simple": {
+    "en": "Hormuz = Gulf oil exit. Bab-el-Mandeb = Red Sea's southern door.",
+    "hi": "होर्मुज़ = खाड़ी के तेल का निकास। बाब-अल-मंदेब = लाल सागर का दक्षिणी द्वार।"
+   },
+   "seq": 143
+  },
+  {
+   "id": "geography.world.f02",
+   "topic": "geography.world",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Standard atlases",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Strait of Malacca, between Malaysia and Sumatra, links the Indian Ocean with the Pacific through the South China Sea.",
+    "hi": "मलक्का जलडमरूमध्य, मलेशिया और सुमात्रा के बीच, हिंद महासागर को दक्षिण चीन सागर के रास्ते प्रशांत से जोड़ता है।"
+   },
+   "why": {
+    "en": "It is the shortest sea route between India and East Asia, so it is one of the busiest shipping lanes.",
+    "hi": "यह भारत और पूर्वी एशिया के बीच सबसे छोटा समुद्री मार्ग है, इसलिए सबसे व्यस्त जलमार्गों में है।"
+   },
+   "recall_q": {
+    "en": "Which two land masses border the Strait of Malacca?",
+    "hi": "मलक्का जलडमरूमध्य किन दो भू-भागों के बीच है?"
+   },
+   "recall_a": {
+    "en": "The Malay Peninsula and Sumatra.",
+    "hi": "मलय प्रायद्वीप और सुमात्रा।"
+   },
+   "explain_simple": {
+    "en": "Malacca = the gate from our ocean to the Pacific.",
+    "hi": "मलक्का = हमारे महासागर से प्रशांत का द्वार।"
+   },
+   "example": {
+    "en": "The Andaman and Nicobar Islands sit near its western entrance.",
+    "hi": "अंडमान और निकोबार द्वीप इसके पश्चिमी प्रवेश के पास हैं।"
+   },
+   "seq": 144
+  },
+  {
+   "id": "geography.world.f03",
+   "topic": "geography.world",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XI 'Fundamentals of Physical Geography', ch. 10",
+   "status": "needs_review",
+   "learn": {
+    "en": "Hot deserts lie on the western sides of continents near the tropics, where cold ocean currents flow and air sinks.",
+    "hi": "गर्म मरुस्थल कर्क और मकर रेखाओं के पास महाद्वीपों के पश्चिमी किनारों पर हैं, जहाँ ठंडी समुद्री धाराएँ बहती हैं और हवा नीचे बैठती है।"
+   },
+   "why": {
+    "en": "Cold currents cool the air above them, so it cannot rise and form rain clouds.",
+    "hi": "ठंडी धाराएँ ऊपर की हवा को ठंडा करती हैं, इसलिए वह उठकर वर्षा के बादल नहीं बना पाती।"
+   },
+   "recall_q": {
+    "en": "Which cold current is linked to the Atacama Desert?",
+    "hi": "अटाकामा मरुस्थल से कौन-सी ठंडी धारा जुड़ी है?"
+   },
+   "recall_a": {
+    "en": "The Humboldt (Peru) Current.",
+    "hi": "हम्बोल्ट (पेरू) धारा।"
+   },
+   "explain_simple": {
+    "en": "Cold current + sinking air = desert coast.",
+    "hi": "ठंडी धारा + बैठती हवा = मरुस्थलीय तट।"
+   },
+   "example": {
+    "en": "The Namib Desert has the cold Benguela Current; the Sahara's west coast has the Canary Current.",
+    "hi": "नामीब मरुस्थल के पास ठंडी बेंगुएला धारा है; सहारा के पश्चिमी तट पर कैनरी धारा।"
+   },
+   "seq": 145
+  },
+  {
+   "id": "geography.world.sum",
+   "topic": "geography.world",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "Standard atlases",
+   "status": "needs_review",
+   "title": {
+    "en": "World places",
+    "hi": "विश्व के स्थान"
+   },
+   "points": [
+    {
+     "en": "Hormuz: Persian Gulf ↔ Gulf of Oman.",
+     "hi": "होर्मुज़: फ़ारस की खाड़ी ↔ ओमान की खाड़ी।"
+    },
+    {
+     "en": "Bab-el-Mandeb: Red Sea ↔ Gulf of Aden.",
+     "hi": "बाब-अल-मंदेब: लाल सागर ↔ अदन की खाड़ी।"
+    },
+    {
+     "en": "Malacca: Indian Ocean ↔ Pacific.",
+     "hi": "मलक्का: हिंद महासागर ↔ प्रशांत।"
+    },
+    {
+     "en": "West-coast deserts sit by cold currents.",
+     "hi": "पश्चिमी तट के मरुस्थल ठंडी धाराओं के पास।"
+    }
+   ],
+   "seq": 146
   },
   {
    "id": "polity.parliament.f01",
@@ -4117,7 +5013,7 @@
     "en": "Two houses plus the President who signs = Parliament.",
     "hi": "दो सदन और हस्ताक्षर करने वाले राष्ट्रपति = संसद।"
    },
-   "seq": 120
+   "seq": 147
   },
   {
    "id": "polity.parliament.f02",
@@ -4147,7 +5043,7 @@
     "hi": "250 सीटें: 238 विधानसभाओं द्वारा चुने गए + 12 प्रतिभा के लिए राष्ट्रपति द्वारा चुने गए।"
    },
    "review_note": "Present strength is about 245; check before publishing.",
-   "seq": 121
+   "seq": 148
   },
   {
    "id": "polity.parliament.f03",
@@ -4176,7 +5072,7 @@
     "en": "Like a school where one batch leaves every two years but the school never closes.",
     "hi": "जैसे कोई विद्यालय जहाँ हर दो साल में एक बैच निकलता है, पर विद्यालय कभी बंद नहीं होता।"
    },
-   "seq": 122
+   "seq": 149
   },
   {
    "id": "polity.parliament.f04",
@@ -4205,7 +5101,7 @@
     "en": "Lok Sabha is the people's house: all its members are now elected.",
     "hi": "लोकसभा जनता का सदन है: अब इसके सभी सदस्य चुने हुए हैं।"
    },
-   "seq": 123
+   "seq": 150
   },
   {
    "id": "polity.parliament.f05",
@@ -4234,7 +5130,7 @@
     "en": "Money comes from the people, so the people's House (Lok Sabha) has the final say. Rajya Sabha gets two weeks to comment.",
     "hi": "पैसा जनता का है, इसलिए अंतिम फ़ैसला जनता के सदन (लोकसभा) का। राज्यसभा को टिप्पणी के लिए दो सप्ताह मिलते हैं।"
    },
-   "seq": 124
+   "seq": 151
   },
   {
    "id": "polity.parliament.f06",
@@ -4267,7 +5163,7 @@
     "en": "Joint sittings have been held only three times, for example for the Prevention of Terrorism Bill in 2002.",
     "hi": "संयुक्त बैठक केवल तीन बार हुई है, जैसे 2002 में आतंकवाद निवारण विधेयक के लिए।"
    },
-   "seq": 125
+   "seq": 152
   },
   {
    "id": "polity.parliament.s01",
@@ -4342,7 +5238,7 @@
     "en": "Only once.",
     "hi": "केवल एक बार।"
    },
-   "seq": 126
+   "seq": 153
   },
   {
    "id": "polity.parliament.sum",
@@ -4373,7 +5269,7 @@
      "hi": "संयुक्त बैठक: केवल साधारण विधेयक; अध्यक्ष संचालन करते हैं।"
     }
    ],
-   "seq": 127
+   "seq": 154
   },
   {
    "id": "economy.banking.f01",
@@ -4403,7 +5299,7 @@
     "hi": "तीन महीने भुगतान नहीं → ऋण 'निष्पादित' नहीं रहता।"
    },
    "review_note": "For crop loans the rule follows crop seasons (two/one season).",
-   "seq": 128
+   "seq": 155
   },
   {
    "id": "economy.banking.f02",
@@ -4432,7 +5328,7 @@
     "en": "If a company can't pay, lenders take it to NCLT, which oversees a deadline-based rescue or sale.",
     "hi": "अगर कंपनी भुगतान न कर सके, तो ऋणदाता उसे NCLT ले जाते हैं, जो समय-सीमा वाली बचाव या बिक्री प्रक्रिया की निगरानी करता है।"
    },
-   "seq": 129
+   "seq": 156
   },
   {
    "id": "economy.banking.f03",
@@ -4462,7 +5358,7 @@
     "hi": "बैंक के हर ₹100 ऋण में से ₹40 खेती और छोटी इकाइयों जैसे क्षेत्रों को जाने चाहिए।"
    },
    "review_note": "Regional rural banks and small finance banks have a 75% target.",
-   "seq": 130
+   "seq": 157
   },
   {
    "id": "economy.banking.f04",
@@ -4492,7 +5388,7 @@
     "hi": "भुगतान बैंक बैंक लाइसेंस वाला बटुआ है: पैसा रखो, पैसा भेजो, पर उधार नहीं।"
    },
    "review_note": "Deposit cap raised from ₹1 lakh to ₹2 lakh per customer in 2021.",
-   "seq": 131
+   "seq": 158
   },
   {
    "id": "economy.banking.f05",
@@ -4522,7 +5418,7 @@
     "hi": "नाबार्ड गाँवों की सेवा करने वाले बैंकों के पीछे का बैंक है।"
    },
    "review_note": "Set up on the recommendation of the B. Sivaraman Committee (CRAFICARD).",
-   "seq": 132
+   "seq": 159
   },
   {
    "id": "economy.banking.sum",
@@ -4557,7 +5453,7 @@
      "hi": "नाबार्ड 1982: ग्रामीण ऋण की शीर्ष संस्था।"
     }
    ],
-   "seq": 133
+   "seq": 160
   },
   {
    "id": "environment.pollution.f01",
@@ -4586,7 +5482,7 @@
     "en": "Too much fertiliser in a lake feeds the algae, and the algae end up choking the lake.",
     "hi": "झील में ज़्यादा खाद शैवाल को खिलाती है, और शैवाल अंत में झील का दम घोंट देते हैं।"
    },
-   "seq": 134
+   "seq": 161
   },
   {
    "id": "environment.pollution.f02",
@@ -4615,7 +5511,7 @@
     "en": "BOD measures how much 'food' for microbes is floating in the water: more food, dirtier water.",
     "hi": "BOD मापता है कि पानी में सूक्ष्मजीवों का 'भोजन' कितना है: ज़्यादा भोजन, ज़्यादा गंदा पानी।"
    },
-   "seq": 135
+   "seq": 162
   },
   {
    "id": "environment.pollution.f03",
@@ -4645,7 +5541,7 @@
     "hi": "आठ प्रदूषक, एक संख्या, दिन की हवा का एक रंग।"
    },
    "review_note": "Full list: PM10, PM2.5, NO2, SO2, CO, O3, NH3, Pb.",
-   "seq": 136
+   "seq": 163
   },
   {
    "id": "environment.pollution.f04",
@@ -4674,7 +5570,7 @@
     "en": "Ozone up high is a sunscreen; ozone at ground level is a pollutant.",
     "hi": "ऊपर की ओज़ोन सनस्क्रीन है; ज़मीन के पास की ओज़ोन प्रदूषक है।"
    },
-   "seq": 137
+   "seq": 164
   },
   {
    "id": "environment.pollution.f05",
@@ -4703,7 +5599,7 @@
     "en": "Methane is a strong but short-lived heater; CO2 is weaker but stays for centuries.",
     "hi": "मीथेन प्रबल पर अल्पकालिक गर्म करने वाली है; CO2 कमज़ोर पर सदियों तक रहती है।"
    },
-   "seq": 138
+   "seq": 165
   },
   {
    "id": "environment.pollution.f06",
@@ -4733,7 +5629,7 @@
     "hi": "सुंदरबन = सबसे बड़ा मैंग्रोव वन, और यही पश्चिम बंगाल को पहला बनाता है।"
    },
    "review_note": "Re-check ranking against the latest ISFR before publishing.",
-   "seq": 139
+   "seq": 166
   },
   {
    "id": "environment.pollution.s01",
@@ -4804,7 +5700,7 @@
     "en": "Bacteria use it up while decomposing dead algae.",
     "hi": "मरे शैवाल को सड़ाते हुए जीवाणु उसे ख़त्म कर देते हैं।"
    },
-   "seq": 140
+   "seq": 167
   },
   {
    "id": "environment.pollution.sum",
@@ -4835,7 +5731,7 @@
      "hi": "मीथेन: प्रबल, अल्पकालिक; CO2: कमज़ोर, दीर्घकालिक।"
     }
    ],
-   "seq": 141
+   "seq": 168
   },
   {
    "id": "polity.president.f01",
@@ -4865,7 +5761,7 @@
     "hi": "राष्ट्रपति को केवल जनता द्वारा चुने गए लोग चुनते हैं: सांसद और विधायक, मनोनीत सदस्य नहीं।"
    },
    "review_note": "Voting is by proportional representation with the single transferable vote, by secret ballot.",
-   "seq": 142
+   "seq": 169
   },
   {
    "id": "polity.president.f02",
@@ -4894,7 +5790,7 @@
     "en": "72 = mercy. A Governor has a similar power under Article 161, but cannot pardon a death sentence.",
     "hi": "72 = दया। राज्यपाल के पास अनुच्छेद 161 के तहत ऐसी शक्ति है, पर वह मृत्युदंड माफ़ नहीं कर सकते।"
    },
-   "seq": 143
+   "seq": 170
   },
   {
    "id": "polity.president.f03",
@@ -4923,7 +5819,7 @@
     "en": "An ordinance is a temporary law for a break period; Parliament must okay it within six weeks of returning.",
     "hi": "अध्यादेश छुट्टी के समय का अस्थायी क़ानून है; लौटने के छह सप्ताह में संसद को इसे मंज़ूर करना होता है।"
    },
-   "seq": 144
+   "seq": 171
   },
   {
    "id": "polity.president.f04",
@@ -4952,7 +5848,7 @@
     "en": "Lok Sabha has a Speaker; Rajya Sabha's chair is the Vice-President.",
     "hi": "लोकसभा में अध्यक्ष (स्पीकर); राज्यसभा में सभापति उपराष्ट्रपति।"
    },
-   "seq": 145
+   "seq": 172
   },
   {
    "id": "polity.president.f05",
@@ -4981,7 +5877,7 @@
     "en": "Ministers are a team answerable to Lok Sabha, and the team can be at most 15% of its size.",
     "hi": "मंत्री लोकसभा के प्रति उत्तरदायी एक टीम हैं, और टीम इसके आकार का अधिकतम 15% हो सकती है।"
    },
-   "seq": 146
+   "seq": 173
   },
   {
    "id": "polity.president.sum",
@@ -5012,7 +5908,7 @@
      "hi": "मंत्री लोकसभा के प्रति उत्तरदायी; अधिकतम 15%।"
     }
    ],
-   "seq": 147
+   "seq": 174
   },
   {
    "id": "economy.external.f01",
@@ -5045,7 +5941,7 @@
     "en": "Kerala receives a large share of India's remittances from the Gulf.",
     "hi": "भारत के धन-प्रेषण का बड़ा हिस्सा खाड़ी देशों से केरल आता है।"
    },
-   "seq": 148
+   "seq": 175
   },
   {
    "id": "economy.external.f02",
@@ -5074,7 +5970,7 @@
     "en": "Buy a big stake to help run the company = FDI. Buy a small slice to trade = FPI.",
     "hi": "कंपनी चलाने में हिस्सा लेने के लिए बड़ा हिस्सा = FDI। व्यापार के लिए छोटा टुकड़ा = FPI।"
    },
-   "seq": 149
+   "seq": 176
   },
   {
    "id": "economy.external.f03",
@@ -5103,7 +5999,7 @@
     "en": "Weak rupee: exporters smile, importers (and oil buyers) pay more.",
     "hi": "कमज़ोर रुपया: निर्यातक ख़ुश, आयातक (और तेल ख़रीदार) ज़्यादा चुकाते हैं।"
    },
-   "seq": 150
+   "seq": 177
   },
   {
    "id": "economy.external.f04",
@@ -5132,7 +6028,7 @@
     "en": "SDR is the IMF's own money, made from five big currencies — not the rupee.",
     "hi": "SDR आईएमएफ़ की अपनी मुद्रा है, पाँच बड़ी मुद्राओं से बनी — रुपया नहीं।"
    },
-   "seq": 151
+   "seq": 178
   },
   {
    "id": "economy.external.sum",
@@ -5167,7 +6063,7 @@
      "hi": "SDR: पाँच मुद्राएँ, रुपया नहीं।"
     }
    ],
-   "seq": 152
+   "seq": 179
   },
   {
    "id": "polity.judiciary.f01",
@@ -5200,7 +6096,7 @@
     "en": "The case arose from a Kerala land-reform law challenged by the head of the Edneer Mutt in Kasaragod.",
     "hi": "यह मामला कासरगोड के एडनीर मठ के प्रमुख द्वारा केरल के भूमि-सुधार क़ानून को चुनौती देने से शुरू हुआ।"
    },
-   "seq": 153
+   "seq": 180
   },
   {
    "id": "polity.judiciary.f02",
@@ -5229,7 +6125,7 @@
     "en": "131 = government vs government cases start at the top.",
     "hi": "131 = सरकार बनाम सरकार के मामले सीधे सबसे ऊपर शुरू होते हैं।"
    },
-   "seq": 154
+   "seq": 181
   },
   {
    "id": "polity.judiciary.f03",
@@ -5262,7 +6158,7 @@
     "en": "The Ayodhya reference (1993) is one the Court declined to answer.",
     "hi": "अयोध्या संदर्भ (1993) में न्यायालय ने उत्तर देने से मना कर दिया था।"
    },
-   "seq": 155
+   "seq": 182
   },
   {
    "id": "polity.judiciary.f04",
@@ -5291,7 +6187,7 @@
     "en": "Supreme Court 65, High Court 62 — the higher court retires later.",
     "hi": "सर्वोच्च 65, उच्च 62 — ऊँचे न्यायालय में सेवानिवृत्ति बाद में।"
    },
-   "seq": 156
+   "seq": 183
   },
   {
    "id": "polity.judiciary.sum",
@@ -5322,7 +6218,7 @@
      "hi": "सेवानिवृत्ति: सर्वोच्च 65, उच्च 62।"
     }
    ],
-   "seq": 157
+   "seq": 184
   },
   {
    "id": "economy.agri.f01",
@@ -5352,7 +6248,7 @@
     "hi": "CACP सुझाव देता है; आर्थिक मामलों की मंत्रिमंडल समिति तय करती और घोषित करती है।"
    },
    "review_note": "CACP is an attached office of the Ministry of Agriculture, not a statutory body. Sugarcane has FRP, not MSP.",
-   "seq": 158
+   "seq": 185
   },
   {
    "id": "economy.agri.f02",
@@ -5381,7 +6277,7 @@
     "en": "Ask for work in your village; the law says you must get it within 15 days, up to 100 days a year.",
     "hi": "अपने गाँव में काम माँगिए; क़ानून कहता है 15 दिन में मिलना चाहिए, वर्ष में 100 दिन तक।"
    },
-   "seq": 159
+   "seq": 186
   },
   {
    "id": "economy.agri.f03",
@@ -5410,7 +6306,7 @@
     "en": "₹2,000 three times a year, straight to the bank.",
     "hi": "साल में तीन बार ₹2,000, सीधे बैंक में।"
    },
-   "seq": 160
+   "seq": 187
   },
   {
    "id": "economy.agri.sum",
@@ -5437,7 +6333,7 @@
      "hi": "पीएम-किसान: ₹6,000 तीन क़िस्तों में।"
     }
    ],
-   "seq": 161
+   "seq": 188
   },
   {
    "id": "polity.federal.f01",
@@ -5470,7 +6366,7 @@
     "en": "Defence is in the Union List, police in the State List, education and forests in the Concurrent List.",
     "hi": "रक्षा संघ सूची में, पुलिस राज्य सूची में, शिक्षा और वन समवर्ती सूची में हैं।"
    },
-   "seq": 162
+   "seq": 189
   },
   {
    "id": "polity.federal.f02",
@@ -5500,7 +6396,7 @@
     "hi": "शिक्षा पहले राज्य का विषय थी; 1976 से केंद्र और राज्य दोनों इसे साझा करते हैं।"
    },
    "review_note": "The five: education, forests, weights and measures, protection of wild animals and birds, administration of justice.",
-   "seq": 163
+   "seq": 190
   },
   {
    "id": "polity.federal.f03",
@@ -5529,7 +6425,7 @@
     "en": "After 1975, the vague words 'internal disturbance' were replaced by the stricter 'armed rebellion'.",
     "hi": "1975 के बाद अस्पष्ट 'आंतरिक अशांति' की जगह सख़्त 'सशस्त्र विद्रोह' रखा गया।"
    },
-   "seq": 164
+   "seq": 191
   },
   {
    "id": "polity.federal.f04",
@@ -5558,7 +6454,7 @@
     "en": "352 national, 356 state, 360 financial. Only 360 has never been used.",
     "hi": "352 राष्ट्रीय, 356 राज्य, 360 वित्तीय। केवल 360 कभी उपयोग नहीं हुआ।"
    },
-   "seq": 165
+   "seq": 192
   },
   {
    "id": "polity.federal.f05",
@@ -5587,7 +6483,7 @@
     "en": "One tax for the country, so one table where the Centre and every state sit together.",
     "hi": "देश के लिए एक कर, इसलिए एक मेज़ जहाँ केंद्र और हर राज्य साथ बैठते हैं।"
    },
-   "seq": 166
+   "seq": 193
   },
   {
    "id": "polity.federal.sum",
@@ -5618,7 +6514,7 @@
      "hi": "अनु. 360 कभी उपयोग नहीं; जीएसटी परिषद अनु. 279A।"
     }
    ],
-   "seq": 167
+   "seq": 194
   },
   {
    "id": "polity.local.f01",
@@ -5651,7 +6547,7 @@
     "en": "Kerala's 1996 People's Plan Campaign gave panchayats about a third of the state plan funds.",
     "hi": "केरल के 1996 के जन योजना अभियान ने पंचायतों को राज्य योजना निधि का लगभग एक-तिहाई दिया।"
    },
-   "seq": 168
+   "seq": 195
   },
   {
    "id": "polity.local.f02",
@@ -5680,7 +6576,7 @@
     "en": "Villages: 73rd, 29 subjects. Towns: 74th, 18 subjects.",
     "hi": "गाँव: 73वाँ, 29 विषय। शहर: 74वाँ, 18 विषय।"
    },
-   "seq": 169
+   "seq": 196
   },
   {
    "id": "polity.local.f03",
@@ -5709,7 +6605,7 @@
     "en": "Three floors of local government — village, block, district — suggested by Balwant Rai Mehta.",
     "hi": "स्थानीय शासन की तीन मंज़िलें — गाँव, ब्लॉक, ज़िला — बलवंत राय मेहता ने सुझाईं।"
    },
-   "seq": 170
+   "seq": 197
   },
   {
    "id": "polity.local.sum",
@@ -5740,7 +6636,7 @@
      "hi": "तीन स्तर: बलवंत राय मेहता, 1957।"
     }
    ],
-   "seq": 171
+   "seq": 198
   },
   {
    "id": "polity.bodies.f01",
@@ -5769,7 +6665,7 @@
     "en": "Pairs to remember: EC 324, CAG 148, FC 280, UPSC 315.",
     "hi": "याद रखने के जोड़े: निर्वाचन आयोग 324, CAG 148, वित्त आयोग 280, UPSC 315।"
    },
-   "seq": 172
+   "seq": 199
   },
   {
    "id": "polity.bodies.f02",
@@ -5799,7 +6695,7 @@
     "hi": "हर पाँच साल में एक निर्णायक तय करता है कि कर का केक केंद्र और राज्यों में कैसे कटे।"
    },
    "review_note": "16th Finance Commission chaired by Arvind Panagariya (constituted Dec 2023); check its report status before publishing.",
-   "seq": 173
+   "seq": 200
   },
   {
    "id": "polity.bodies.f03",
@@ -5828,7 +6724,7 @@
     "en": "Constitution-made: EC, CAG, Finance Commission. Government-made: NITI Aayog.",
     "hi": "संविधान से बने: निर्वाचन आयोग, CAG, वित्त आयोग। सरकार से बना: नीति आयोग।"
    },
-   "seq": 174
+   "seq": 201
   },
   {
    "id": "polity.bodies.f04",
@@ -5857,7 +6753,7 @@
     "en": "The government's lawyer can talk in Parliament, but only members vote.",
     "hi": "सरकार के वकील संसद में बोल सकते हैं, पर मतदान केवल सदस्य करते हैं।"
    },
-   "seq": 175
+   "seq": 202
   },
   {
    "id": "polity.bodies.sum",
@@ -5888,7 +6784,7 @@
      "hi": "महान्यायवादी बोल सकते हैं, मतदान नहीं।"
     }
    ],
-   "seq": 176
+   "seq": 203
   }
  ],
  "questions": [
@@ -9293,6 +10189,656 @@
    "source": "Practice — exam pattern (not from a past paper)",
    "covers": [
     "history.medieval.f02"
+   ]
+  },
+  {
+   "id": "q.practice.geography.1",
+   "topic": "geography.india",
+   "kind": "mcq",
+   "q": {
+    "en": "Which of the following rivers form estuaries rather than deltas?\n1. Narmada\n2. Godavari\n3. Tapi\n4. Mahanadi",
+    "hi": "निम्नलिखित में से कौन-सी नदियाँ डेल्टा के बजाय ज्वारनदमुख बनाती हैं?\n1. नर्मदा\n2. गोदावरी\n3. तापी\n4. महानदी"
+   },
+   "options": [
+    {
+     "en": "1 and 3 only",
+     "hi": "केवल 1 और 3"
+    },
+    {
+     "en": "2 and 4 only",
+     "hi": "केवल 2 और 4"
+    },
+    {
+     "en": "1, 2 and 3 only",
+     "hi": "केवल 1, 2 और 3"
+    },
+    {
+     "en": "1, 2, 3 and 4",
+     "hi": "1, 2, 3 और 4"
+    }
+   ],
+   "answer": 0,
+   "explain": {
+    "en": "West-flowing rivers through rift valleys form estuaries.",
+    "hi": "दरार घाटियों से पश्चिम बहने वाली नदियाँ ज्वारनदमुख बनाती हैं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "geography.india.f02"
+   ]
+  },
+  {
+   "id": "q.practice.geography.2",
+   "topic": "geography.india",
+   "kind": "mcq",
+   "q": {
+    "en": "Under the Indus Waters Treaty, which of the following are 'eastern rivers'?",
+    "hi": "सिंधु जल संधि के अंतर्गत निम्नलिखित में से कौन 'पूर्वी नदियाँ' हैं?"
+   },
+   "options": [
+    {
+     "en": "Jhelum, Chenab, Indus",
+     "hi": "झेलम, चिनाब, सिंधु"
+    },
+    {
+     "en": "Ravi, Beas, Sutlej",
+     "hi": "रावी, ब्यास, सतलुज"
+    },
+    {
+     "en": "Chenab, Ravi, Beas",
+     "hi": "चिनाब, रावी, ब्यास"
+    },
+    {
+     "en": "Indus, Sutlej, Jhelum",
+     "hi": "सिंधु, सतलुज, झेलम"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Eastern rivers went to India.",
+    "hi": "पूर्वी नदियाँ भारत को मिलीं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "geography.india.f03"
+   ]
+  },
+  {
+   "id": "q.practice.geography.3",
+   "topic": "geography.india",
+   "kind": "mcq",
+   "q": {
+    "en": "Regur soil is best suited for the cultivation of:",
+    "hi": "रेगुर मिट्टी किस फ़सल के लिए सबसे उपयुक्त है?"
+   },
+   "options": [
+    {
+     "en": "Rice",
+     "hi": "धान"
+    },
+    {
+     "en": "Cotton",
+     "hi": "कपास"
+    },
+    {
+     "en": "Tea",
+     "hi": "चाय"
+    },
+    {
+     "en": "Jute",
+     "hi": "जूट"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Black soil holds moisture and suits cotton.",
+    "hi": "काली मिट्टी नमी रोकती है और कपास के लिए उपयुक्त है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "geography.india.f04"
+   ]
+  },
+  {
+   "id": "q.practice.geography.4",
+   "topic": "geography.india",
+   "kind": "mcq",
+   "q": {
+    "en": "Laterite soils are formed mainly by:",
+    "hi": "लैटेराइट मिट्टी मुख्यतः किससे बनती है?"
+   },
+   "options": [
+    {
+     "en": "Wind deposition",
+     "hi": "पवन निक्षेप"
+    },
+    {
+     "en": "Leaching under high rainfall and temperature",
+     "hi": "अधिक वर्षा और तापमान में निक्षालन"
+    },
+    {
+     "en": "Glacial deposition",
+     "hi": "हिमनदीय निक्षेप"
+    },
+    {
+     "en": "Weathering of granite in dry climate",
+     "hi": "शुष्क जलवायु में ग्रेनाइट का अपक्षय"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Heavy rain washes away silica and lime.",
+    "hi": "भारी वर्षा सिलिका और चूना बहा ले जाती है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "geography.india.f05"
+   ]
+  },
+  {
+   "id": "q.practice.geography.5",
+   "topic": "geography.india",
+   "kind": "mcq",
+   "q": {
+    "en": "The Tropic of Cancer does NOT pass through:",
+    "hi": "कर्क रेखा किससे होकर नहीं गुज़रती?"
+   },
+   "options": [
+    {
+     "en": "Tripura",
+     "hi": "त्रिपुरा"
+    },
+    {
+     "en": "Jharkhand",
+     "hi": "झारखंड"
+    },
+    {
+     "en": "Odisha",
+     "hi": "ओडिशा"
+    },
+    {
+     "en": "Mizoram",
+     "hi": "मिज़ोरम"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Odisha lies south of it.",
+    "hi": "ओडिशा उसके दक्षिण में है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "geography.india.f06"
+   ]
+  },
+  {
+   "id": "q.practice.geography.6",
+   "topic": "geography.india",
+   "kind": "mcq",
+   "q": {
+    "en": "Which channel separates the Andaman Islands from the Nicobar Islands?",
+    "hi": "कौन-सा चैनल अंडमान द्वीपों को निकोबार द्वीपों से अलग करता है?"
+   },
+   "options": [
+    {
+     "en": "Eight Degree Channel",
+     "hi": "आठ डिग्री चैनल"
+    },
+    {
+     "en": "Nine Degree Channel",
+     "hi": "नौ डिग्री चैनल"
+    },
+    {
+     "en": "Ten Degree Channel",
+     "hi": "दस डिग्री चैनल"
+    },
+    {
+     "en": "Palk Strait",
+     "hi": "पाक जलडमरूमध्य"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Ten Degree Channel.",
+    "hi": "दस डिग्री चैनल।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "geography.india.f08"
+   ]
+  },
+  {
+   "id": "q.practice.geography.7",
+   "topic": "geography.india",
+   "kind": "mcq",
+   "q": {
+    "en": "Which of the following is a rabi crop?",
+    "hi": "निम्नलिखित में से कौन-सी रबी फ़सल है?"
+   },
+   "options": [
+    {
+     "en": "Rice",
+     "hi": "धान"
+    },
+    {
+     "en": "Cotton",
+     "hi": "कपास"
+    },
+    {
+     "en": "Mustard",
+     "hi": "सरसों"
+    },
+    {
+     "en": "Jowar",
+     "hi": "ज्वार"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Mustard and wheat are sown in winter.",
+    "hi": "सरसों और गेहूँ सर्दियों में बोए जाते हैं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "geography.india.f10"
+   ]
+  },
+  {
+   "id": "q.practice.geography.8",
+   "topic": "geography.climate",
+   "kind": "mcq",
+   "q": {
+    "en": "Tamil Nadu receives most of its rainfall during:",
+    "hi": "तमिलनाडु को अधिकांश वर्षा कब मिलती है?"
+   },
+   "options": [
+    {
+     "en": "June–September",
+     "hi": "जून–सितंबर"
+    },
+    {
+     "en": "October–December",
+     "hi": "अक्टूबर–दिसंबर"
+    },
+    {
+     "en": "March–May",
+     "hi": "मार्च–मई"
+    },
+    {
+     "en": "January–February",
+     "hi": "जनवरी–फ़रवरी"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "The northeast monsoon.",
+    "hi": "उत्तर-पूर्वी मानसून।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "geography.climate.f01"
+   ]
+  },
+  {
+   "id": "q.practice.geography.9",
+   "topic": "geography.climate",
+   "kind": "mcq",
+   "q": {
+    "en": "Consider:\n1. El Niño usually strengthens the Indian monsoon.\n2. A positive Indian Ocean Dipole usually favours the Indian monsoon.\nWhich is/are correct?",
+    "hi": "विचार कीजिए:\n1. एल नीनो सामान्यतः भारतीय मानसून को मज़बूत करता है।\n2. धनात्मक हिंद महासागर द्विध्रुव सामान्यतः भारतीय मानसून के अनुकूल होता है।\nकौन-सा/से सही है/हैं?"
+   },
+   "options": [
+    {
+     "en": "1 only",
+     "hi": "केवल 1"
+    },
+    {
+     "en": "2 only",
+     "hi": "केवल 2"
+    },
+    {
+     "en": "Both 1 and 2",
+     "hi": "1 और 2 दोनों"
+    },
+    {
+     "en": "Neither 1 nor 2",
+     "hi": "न 1, न 2"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "El Niño usually weakens it.",
+    "hi": "एल नीनो सामान्यतः इसे कमज़ोर करता है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "geography.climate.f02",
+    "geography.climate.s01"
+   ]
+  },
+  {
+   "id": "q.practice.geography.10",
+   "topic": "geography.climate",
+   "kind": "mcq",
+   "q": {
+    "en": "Tropical cyclones do not form at the equator because:",
+    "hi": "उष्णकटिबंधीय चक्रवात भूमध्य रेखा पर नहीं बनते क्योंकि:"
+   },
+   "options": [
+    {
+     "en": "The sea is too cold",
+     "hi": "समुद्र बहुत ठंडा है"
+    },
+    {
+     "en": "The Coriolis force is zero there",
+     "hi": "वहाँ कोरिऑलिस बल शून्य है"
+    },
+    {
+     "en": "There is no moisture",
+     "hi": "नमी नहीं होती"
+    },
+    {
+     "en": "Winds are too strong",
+     "hi": "हवाएँ बहुत तेज़ हैं"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "No Coriolis force, no spin.",
+    "hi": "कोरिऑलिस बल नहीं, घूर्णन नहीं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "geography.climate.f03",
+    "geography.climate.f04"
+   ]
+  },
+  {
+   "id": "q.practice.geography.11",
+   "topic": "geography.climate",
+   "kind": "mcq",
+   "q": {
+    "en": "Mawsynram receives very heavy rainfall mainly because of:",
+    "hi": "मासिनराम में बहुत भारी वर्षा मुख्यतः किस कारण होती है?"
+   },
+   "options": [
+    {
+     "en": "Convectional rainfall",
+     "hi": "संवहनीय वर्षा"
+    },
+    {
+     "en": "Orographic rainfall over the Khasi hills",
+     "hi": "खासी पहाड़ियों पर पर्वतीय वर्षा"
+    },
+    {
+     "en": "Cyclonic rainfall",
+     "hi": "चक्रवातीय वर्षा"
+    },
+    {
+     "en": "Western disturbances",
+     "hi": "पश्चिमी विक्षोभ"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Moist winds rise over the hills and cool.",
+    "hi": "नम हवाएँ पहाड़ों पर उठकर ठंडी होती हैं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "geography.climate.f05"
+   ]
+  },
+  {
+   "id": "q.practice.geography.12",
+   "topic": "geography.physical",
+   "kind": "mcq",
+   "q": {
+    "en": "The Mohorovičić discontinuity separates:",
+    "hi": "मोहोरोविचिक असांतत्य किन्हें अलग करता है?"
+   },
+   "options": [
+    {
+     "en": "Outer core and inner core",
+     "hi": "बाहरी क्रोड और आंतरिक क्रोड"
+    },
+    {
+     "en": "Crust and mantle",
+     "hi": "भूपर्पटी और मेंटल"
+    },
+    {
+     "en": "Mantle and outer core",
+     "hi": "मेंटल और बाहरी क्रोड"
+    },
+    {
+     "en": "Troposphere and stratosphere",
+     "hi": "क्षोभमंडल और समताप मंडल"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Moho = base of the crust.",
+    "hi": "मोहो = भूपर्पटी का तल।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "geography.physical.f01"
+   ]
+  },
+  {
+   "id": "q.practice.geography.13",
+   "topic": "geography.physical",
+   "kind": "mcq",
+   "q": {
+    "en": "Radio waves are reflected back to the earth by the:",
+    "hi": "रेडियो तरंगें पृथ्वी की ओर किसके द्वारा परावर्तित होती हैं?"
+   },
+   "options": [
+    {
+     "en": "Troposphere",
+     "hi": "क्षोभमंडल"
+    },
+    {
+     "en": "Stratosphere",
+     "hi": "समताप मंडल"
+    },
+    {
+     "en": "Ionosphere",
+     "hi": "आयनमंडल"
+    },
+    {
+     "en": "Mesosphere",
+     "hi": "मध्यमंडल"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Charged particles in the ionosphere reflect them.",
+    "hi": "आयनमंडल के आवेशित कण उन्हें परावर्तित करते हैं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "geography.physical.f03"
+   ]
+  },
+  {
+   "id": "q.practice.geography.14",
+   "topic": "geography.physical",
+   "kind": "mcq",
+   "q": {
+    "en": "The Grand Banks near Newfoundland are rich fishing grounds because:",
+    "hi": "न्यूफ़ाउंडलैंड के पास ग्रैंड बैंक्स समृद्ध मत्स्य क्षेत्र हैं क्योंकि:"
+   },
+   "options": [
+    {
+     "en": "Warm and cold currents meet there",
+     "hi": "वहाँ गर्म और ठंडी धाराएँ मिलती हैं"
+    },
+    {
+     "en": "The water is very deep",
+     "hi": "पानी बहुत गहरा है"
+    },
+    {
+     "en": "Rivers bring fresh water",
+     "hi": "नदियाँ मीठा पानी लाती हैं"
+    },
+    {
+     "en": "It lies on the equator",
+     "hi": "यह भूमध्य रेखा पर है"
+    }
+   ],
+   "answer": 0,
+   "explain": {
+    "en": "Gulf Stream meets Labrador Current.",
+    "hi": "गल्फ़ स्ट्रीम लैब्राडोर धारा से मिलती है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "geography.physical.f04"
+   ]
+  },
+  {
+   "id": "q.practice.geography.15",
+   "topic": "geography.physical",
+   "kind": "mcq",
+   "q": {
+    "en": "The Himalayas were formed by the collision of:",
+    "hi": "हिमालय किसकी टक्कर से बना?"
+   },
+   "options": [
+    {
+     "en": "Oceanic and continental plates",
+     "hi": "महासागरीय और महाद्वीपीय प्लेटें"
+    },
+    {
+     "en": "Two oceanic plates",
+     "hi": "दो महासागरीय प्लेटें"
+    },
+    {
+     "en": "Two continental plates",
+     "hi": "दो महाद्वीपीय प्लेटें"
+    },
+    {
+     "en": "A divergent boundary",
+     "hi": "एक अपसारी सीमा"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Indian and Eurasian plates, both continental.",
+    "hi": "भारतीय और यूरेशियाई प्लेटें, दोनों महाद्वीपीय।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "geography.physical.f02"
+   ]
+  },
+  {
+   "id": "q.practice.geography.16",
+   "topic": "geography.world",
+   "kind": "mcq",
+   "q": {
+    "en": "Bab-el-Mandeb connects:",
+    "hi": "बाब-अल-मंदेब किन्हें जोड़ता है?"
+   },
+   "options": [
+    {
+     "en": "Red Sea and Mediterranean",
+     "hi": "लाल सागर और भूमध्य सागर"
+    },
+    {
+     "en": "Red Sea and Gulf of Aden",
+     "hi": "लाल सागर और अदन की खाड़ी"
+    },
+    {
+     "en": "Persian Gulf and Gulf of Oman",
+     "hi": "फ़ारस की खाड़ी और ओमान की खाड़ी"
+    },
+    {
+     "en": "Black Sea and Mediterranean",
+     "hi": "काला सागर और भूमध्य सागर"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Hormuz joins the Persian Gulf and the Gulf of Oman.",
+    "hi": "होर्मुज़ फ़ारस की खाड़ी और ओमान की खाड़ी को जोड़ता है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "geography.world.f01"
+   ]
+  },
+  {
+   "id": "q.practice.geography.17",
+   "topic": "geography.world",
+   "kind": "mcq",
+   "q": {
+    "en": "Which cold current flows along the coast of the Namib Desert?",
+    "hi": "नामीब मरुस्थल के तट के साथ कौन-सी ठंडी धारा बहती है?"
+   },
+   "options": [
+    {
+     "en": "Humboldt",
+     "hi": "हम्बोल्ट"
+    },
+    {
+     "en": "Canary",
+     "hi": "कैनरी"
+    },
+    {
+     "en": "Benguela",
+     "hi": "बेंगुएला"
+    },
+    {
+     "en": "Labrador",
+     "hi": "लैब्राडोर"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Benguela, off south-west Africa.",
+    "hi": "बेंगुएला, दक्षिण-पश्चिम अफ़्रीका के पास।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "geography.world.f03"
+   ]
+  },
+  {
+   "id": "q.practice.geography.18",
+   "topic": "geography.world",
+   "kind": "mcq",
+   "q": {
+    "en": "The Strait of Malacca lies between:",
+    "hi": "मलक्का जलडमरूमध्य किनके बीच है?"
+   },
+   "options": [
+    {
+     "en": "Sri Lanka and India",
+     "hi": "श्रीलंका और भारत"
+    },
+    {
+     "en": "Malay Peninsula and Sumatra",
+     "hi": "मलय प्रायद्वीप और सुमात्रा"
+    },
+    {
+     "en": "Java and Sumatra",
+     "hi": "जावा और सुमात्रा"
+    },
+    {
+     "en": "Borneo and Malaysia",
+     "hi": "बोर्नियो और मलेशिया"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Malaysia on one side, Sumatra on the other.",
+    "hi": "एक ओर मलेशिया, दूसरी ओर सुमात्रा।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "geography.world.f02"
    ]
   }
  ]
