@@ -277,7 +277,7 @@ $$;
 
 -- Saves one rating in one transaction: FSRS state, the review log and the sitting position.
 create or replace function upsc.save_rating(
-  p_card_id text, p_state jsonb, p_rating smallint, p_mode text, p_seconds integer,
+  p_card_id text, p_state jsonb, p_rating integer, p_mode text, p_seconds integer,
   p_sitting_id uuid, p_position integer
 ) returns void language plpgsql security invoker set search_path = '' as $$
 begin
@@ -385,7 +385,7 @@ grant insert, update, delete on upsc.learners, upsc.card_state, upsc.sittings, u
 grant insert on upsc.review_log, upsc.test_answers, upsc.ai_flags to authenticated;
 grant all on all tables in schema upsc to service_role;
 grant usage, select on all sequences in schema upsc to authenticated, service_role;
-grant execute on function upsc.has_access(uuid), upsc.free_limit(), upsc.course_stats(), upsc.save_rating(text, jsonb, smallint, text, integer, uuid, integer), upsc.delete_my_data() to authenticated;
+grant execute on function upsc.has_access(uuid), upsc.free_limit(), upsc.course_stats(), upsc.save_rating(text, jsonb, integer, text, integer, uuid, integer), upsc.delete_my_data() to authenticated;
 revoke execute on function upsc.delete_my_data() from anon;
 
 -- ---------------------------------------------------------------- seed

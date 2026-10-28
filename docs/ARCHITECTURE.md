@@ -35,7 +35,7 @@ server is needed (the invoice page).
    saved to the sitting row and localStorage every few seconds.
 4. A rating runs the FSRS update (with the exam-date cap), writes
    `card_state`, appends `review_log` and advances the sitting position in one
-   RPC (`upsc.rate_card`), then the next card shows.
+   RPC (`upsc.save_rating`), then the next card shows.
 
 ## Schema `upsc`
 
@@ -56,6 +56,26 @@ server is needed (the invoice page).
 
 Access rule: any signed-in learner reads cards with `seq <= free_card_limit`;
 the rest need an active subscription (`upsc.has_access()`).
+
+## Content pipeline
+
+```
+content/src/<subject>.py ──► content/build.py ──► content/upsc_prelims.json
+                                                     │  scripts/validate_pack.py (must PASS)
+                                                     ▼
+                              scripts/pack_to_sql.py ──► supabase/seed/content.sql ──► upsc.topics/cards/questions
+```
+
+- Each subject file lists its topics (syllabus order, how often asked) and
+  cards; `build.py` interleaves subjects topic by topic and numbers the cards
+  (`seq`). The first 200 by `seq` are the free tier.
+- The seed upserts by id and deletes cards no longer in the pack, so it can be
+  re-run after every content change. Card ids never change once published,
+  because learner progress is keyed on them.
+- Every card starts as `needs_review`; practice questions say "Practice — exam
+  pattern (not from a past paper)" until real past-paper citations are added.
+- Tested against a local Postgres 16 with stub `auth` roles: migration, seed,
+  RLS free limit (200 of 239 visible), `save_rating` and `delete_my_data`.
 
 ## Payments
 
