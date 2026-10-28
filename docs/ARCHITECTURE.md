@@ -97,3 +97,22 @@ shared; the webhook ignores payments whose notes name another app.
   still grants access and logs the error, and a re-delivered webhook issues it.
 - Example on ₹3,000: taxable ₹2,542.37, tax ₹457.63 (Kerala buyer: CGST
   ₹228.81 + SGST ₹228.82; other states: IGST ₹457.63).
+
+## Alerts, AI and the weekly report
+
+- **Alerts.** The feed saves today's quota on the learner row
+  (`quota_day`, `quota_left`, `minutes_left`). `upsc-alerts` runs every 10
+  minutes, sends one alarm-style push per study time and at most one follow-up
+  an hour later, skips quiet hours and finished quotas, and claims each slot in
+  `alert_log` before sending so a slot never fires twice.
+- **AI.** `upsc-ai` takes a task name and a card id only. It reads the card with
+  the learner's own session (RLS hides locked cards), builds the prompt from the
+  card's text, returns schema-checked JSON, and caches it per card + language +
+  pack version. Every AI answer in the app has a Report button (`ai_flags`).
+- **Weekly report.** `upsc.weekly_report_data()` computes days studied, cards,
+  minutes, topics that went from tough to easy, and topics still tough.
+  `upsc-weekly-report` stores it in `upsc.reports` on Sunday evening and emails
+  it when the learner gave an address. The feed shows it once, after the day's
+  quota, with a "Review this week" button that brings five of the week's cards
+  back as due.
+- Cron jobs: `supabase/setup/cron.sql` (run once, needs the service-role key in Vault).

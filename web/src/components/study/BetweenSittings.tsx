@@ -4,6 +4,7 @@ import type { Course } from "@/lib/data";
 import { clock, t } from "@/lib/i18n";
 import { UnlockCard } from "./UnlockCard";
 import { AlertsBanner } from "./AlertsBanner";
+import { WeeklyReportCard } from "./WeeklyReportCard";
 
 /** The calm screen between sittings: progress, when the next one opens, bonus sets, unlock and exam-day notes. */
 export function BetweenSittings(props: {
@@ -15,6 +16,7 @@ export function BetweenSittings(props: {
   nextTime: { time: string; tomorrow: boolean } | null;
   onStart: (bonus: boolean) => void;
   onPaid: () => void;
+  onReviewWeek: (cardIds: string[]) => void;
 }) {
   const { lang, plan, next } = props;
   const L = t(lang);
@@ -53,6 +55,7 @@ export function BetweenSittings(props: {
     main = (
       <div className="space-y-4">
         <p className="font-display text-3xl text-leaf">{L.quotaComplete} ✓</p>
+        <WeeklyReportCard lang={lang} onReview={props.onReviewWeek} />
         {next?.status === "now" && next.bonus && (
           <>
             <p className="text-lg">{L.bonusNow}</p>

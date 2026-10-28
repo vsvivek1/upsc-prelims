@@ -455,6 +455,46 @@ $$;
 revoke execute on function upsc.issue_invoice(text, uuid, text, integer) from public, anon, authenticated;
 grant execute on function upsc.issue_invoice(text, uuid, text, integer) to service_role;
 
+
+-- The weekly report's numbers for one learner and one week (Monday start, IST).
+-- Facts only, from the learner's own rows; the report card and email are built from it.
+create or replace function upsc.weekly_report_data(p_user_id uuid, p_week_start date)
+returns jsonb language sql stable security definer set search_path = '' as $$
+  with w as (
+    select (p_week_start::timestamp at time zone 'Asia/Kolkata') as t0,
+           ((p_week_start + 7)::timestamp at time zone 'Asia/Kolkata') as t1
+  ),
+  logs as (
+    select r.* from upsc.review_log r, w
+    where r.user_id = p_user_id and r.reviewed_at >= w.t0 and r.reviewed_at < w.t1
+  ),
+  easy as (
+    select c.topic, count(*) n from upsc.card_state s join upsc.cards c on c.id = s.card_id, w
+    where s.user_id = p_user_id and s.ever_tough and s.tough_streak = 0 and s.last_rating >= 3
+      and s.last_review >= w.t0 and s.last_review < w.t1
+    group by c.topic
+  ),
+  tough as (
+    select c.topic, count(*) n from upsc.card_state s join upsc.cards c on c.id = s.card_id
+    where s.user_id = p_user_id and s.tough_streak > 0
+    group by c.topic
+  )
+  select jsonb_build_object(
+    'week_start', p_week_start,
+    'days_studied', (select count(distinct (reviewed_at at time zone 'Asia/Kolkata')::date) from logs),
+    'cards_rated', (select count(*) from logs),
+    'new_learned', (select count(*) from logs where mode = 'learn'),
+    'minutes', (select coalesce(round(sum(seconds) / 60.0), 0) from logs),
+    'became_easy', coalesce((select jsonb_agg(jsonb_build_object('topic', e.topic, 'title', t.title, 'cards', e.n) order by e.n desc)
+                             from easy e join upsc.topics t on t.id = e.topic), '[]'::jsonb),
+    'still_tough', coalesce((select jsonb_agg(jsonb_build_object('topic', k.topic, 'title', t.title, 'cards', k.n) order by k.n desc)
+                             from tough k join upsc.topics t on t.id = k.topic), '[]'::jsonb),
+    'review_cards', coalesce((select jsonb_agg(distinct card_id) from (select card_id from logs where mode = 'learn' limit 50) x), '[]'::jsonb)
+  );
+$$;
+revoke execute on function upsc.weekly_report_data(uuid, date) from public, anon, authenticated;
+grant execute on function upsc.weekly_report_data(uuid, date) to service_role;
+
 -- ---------------------------------------------------------------- seed
 
 insert into upsc.courses (id, title, exam_name, exam_date, exam_status, exam_source, exam_checked_at,

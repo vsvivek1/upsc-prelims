@@ -463,6 +463,10 @@ export function Feed({ userId, learner, onLearner }: { userId: string; learner: 
         nextTime={nextStudyTime(now, learner)}
         onStart={(bonus) => start(bonus)}
         onPaid={load}
+        onReviewWeek={async (ids) => {
+          await makeDueNow(ids).catch(() => {});
+          await load();
+        }}
       />
     );
   }
