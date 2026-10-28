@@ -80,13 +80,23 @@
    "freq": 0.7
   },
   {
+   "id": "csat.pattern",
+   "subject": "csat",
+   "title": {
+    "en": "Prelims pattern and scoring",
+    "hi": "प्रारंभिक परीक्षा का स्वरूप और अंक"
+   },
+   "order": 48,
+   "freq": 0.5
+  },
+  {
    "id": "polity.preamble",
    "subject": "polity",
    "title": {
     "en": "The Preamble",
     "hi": "प्रस्तावना (उद्देशिका)"
    },
-   "order": 48,
+   "order": 51,
    "freq": 0.6,
    "prereq": [
     "polity.making"
@@ -99,7 +109,7 @@
     "en": "Inflation and price indices",
     "hi": "मुद्रास्फीति और मूल्य सूचकांक"
    },
-   "order": 53,
+   "order": 56,
    "freq": 0.75,
    "prereq": [
     "economy.national"
@@ -112,7 +122,7 @@
     "en": "Biodiversity and species",
     "hi": "जैव विविधता और प्रजातियाँ"
    },
-   "order": 60,
+   "order": 63,
    "freq": 0.8,
    "prereq": [
     "environment.ecology"
@@ -125,7 +135,7 @@
     "en": "Ancient India",
     "hi": "प्राचीन भारत"
    },
-   "order": 67,
+   "order": 70,
    "freq": 0.75
   },
   {
@@ -135,7 +145,7 @@
     "en": "Climate and the monsoon",
     "hi": "जलवायु और मानसून"
    },
-   "order": 75,
+   "order": 78,
    "freq": 0.8
   },
   {
@@ -145,8 +155,21 @@
     "en": "Space technology",
     "hi": "अंतरिक्ष प्रौद्योगिकी"
    },
-   "order": 82,
+   "order": 85,
    "freq": 0.75
+  },
+  {
+   "id": "csat.quant",
+   "subject": "csat",
+   "title": {
+    "en": "Basic numeracy",
+    "hi": "मूल संख्यात्मक योग्यता"
+   },
+   "order": 90,
+   "freq": 0.9,
+   "prereq": [
+    "csat.pattern"
+   ]
   },
   {
    "id": "polity.fr",
@@ -155,7 +178,7 @@
     "en": "Fundamental Rights",
     "hi": "मौलिक अधिकार"
    },
-   "order": 87,
+   "order": 96,
    "freq": 0.9,
    "prereq": [
     "polity.preamble"
@@ -168,7 +191,7 @@
     "en": "Money, RBI and monetary policy",
     "hi": "मुद्रा, आरबीआई और मौद्रिक नीति"
    },
-   "order": 102,
+   "order": 111,
    "freq": 0.9,
    "prereq": [
     "economy.inflation"
@@ -181,7 +204,7 @@
     "en": "Protected areas and Indian laws",
     "hi": "संरक्षित क्षेत्र और भारतीय क़ानून"
    },
-   "order": 109,
+   "order": 118,
    "freq": 0.8,
    "prereq": [
     "environment.biodiversity"
@@ -194,7 +217,7 @@
     "en": "Art and culture",
     "hi": "कला और संस्कृति"
    },
-   "order": 117,
+   "order": 126,
    "freq": 0.8,
    "prereq": [
     "history.ancient"
@@ -207,7 +230,7 @@
     "en": "Earth, atmosphere and oceans",
     "hi": "पृथ्वी, वायुमंडल और महासागर"
    },
-   "order": 123,
+   "order": 132,
    "freq": 0.7
   },
   {
@@ -217,10 +240,23 @@
     "en": "Biotechnology",
     "hi": "जैव प्रौद्योगिकी"
    },
-   "order": 128,
+   "order": 137,
    "freq": 0.7,
    "prereq": [
     "science.biology"
+   ]
+  },
+  {
+   "id": "csat.reasoning",
+   "subject": "csat",
+   "title": {
+    "en": "Logical reasoning",
+    "hi": "तार्किक विवेचन"
+   },
+   "order": 142,
+   "freq": 0.85,
+   "prereq": [
+    "csat.pattern"
    ]
   },
   {
@@ -230,7 +266,7 @@
     "en": "Directive Principles and Fundamental Duties",
     "hi": "राज्य के नीति निदेशक तत्व और मौलिक कर्तव्य"
    },
-   "order": 133,
+   "order": 147,
    "freq": 0.7,
    "prereq": [
     "polity.fr"
@@ -243,7 +279,7 @@
     "en": "Budget, deficits and taxes",
     "hi": "बजट, घाटे और कर"
    },
-   "order": 138,
+   "order": 152,
    "freq": 0.8,
    "prereq": [
     "economy.national"
@@ -256,7 +292,7 @@
     "en": "International conventions",
     "hi": "अंतरराष्ट्रीय अभिसमय"
    },
-   "order": 145,
+   "order": 159,
    "freq": 0.85,
    "prereq": [
     "environment.biodiversity"
@@ -269,7 +305,7 @@
     "en": "Medieval India",
     "hi": "मध्यकालीन भारत"
    },
-   "order": 153,
+   "order": 167,
    "freq": 0.55,
    "prereq": [
     "history.ancient"
@@ -282,7 +318,7 @@
     "en": "World places and resources",
     "hi": "विश्व के स्थान और संसाधन"
    },
-   "order": 159,
+   "order": 173,
    "freq": 0.6
   },
   {
@@ -292,7 +328,7 @@
     "en": "Everyday physics and chemistry",
     "hi": "दैनिक भौतिकी और रसायन"
    },
-   "order": 163,
+   "order": 177,
    "freq": 0.5
   },
   {
@@ -302,7 +338,7 @@
     "en": "Parliament",
     "hi": "संसद"
    },
-   "order": 169,
+   "order": 183,
    "freq": 0.85,
    "prereq": [
     "polity.preamble"
@@ -315,7 +351,7 @@
     "en": "Banking and finance",
     "hi": "बैंकिंग और वित्त"
    },
-   "order": 177,
+   "order": 191,
    "freq": 0.7,
    "prereq": [
     "economy.money"
@@ -328,7 +364,7 @@
     "en": "Pollution and climate change",
     "hi": "प्रदूषण और जलवायु परिवर्तन"
    },
-   "order": 183,
+   "order": 197,
    "freq": 0.7,
    "prereq": [
     "environment.ecology"
@@ -341,7 +377,7 @@
     "en": "President and the Union Executive",
     "hi": "राष्ट्रपति और संघ की कार्यपालिका"
    },
-   "order": 191,
+   "order": 205,
    "freq": 0.75,
    "prereq": [
     "polity.parliament"
@@ -354,7 +390,7 @@
     "en": "External sector",
     "hi": "बाह्य क्षेत्र"
    },
-   "order": 197,
+   "order": 211,
    "freq": 0.7,
    "prereq": [
     "economy.money"
@@ -367,7 +403,7 @@
     "en": "The Judiciary",
     "hi": "न्यायपालिका"
    },
-   "order": 202,
+   "order": 216,
    "freq": 0.8,
    "prereq": [
     "polity.fr"
@@ -380,7 +416,7 @@
     "en": "Agriculture and rural schemes",
     "hi": "कृषि और ग्रामीण योजनाएँ"
    },
-   "order": 207,
+   "order": 221,
    "freq": 0.55
   },
   {
@@ -390,7 +426,7 @@
     "en": "Federalism and Emergency",
     "hi": "संघवाद और आपातकाल"
    },
-   "order": 211,
+   "order": 225,
    "freq": 0.7,
    "prereq": [
     "polity.parliament"
@@ -403,7 +439,7 @@
     "en": "Panchayats and Municipalities",
     "hi": "पंचायतें और नगरपालिकाएँ"
    },
-   "order": 217,
+   "order": 231,
    "freq": 0.6,
    "prereq": [
     "polity.federal"
@@ -416,7 +452,7 @@
     "en": "Constitutional and other bodies",
     "hi": "संवैधानिक और अन्य निकाय"
    },
-   "order": 221,
+   "order": 235,
    "freq": 0.7,
    "prereq": [
     "polity.parliament"
@@ -1904,6 +1940,99 @@
    "seq": 47
   },
   {
+   "id": "csat.pattern.f01",
+   "topic": "csat.pattern",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "UPSC Civil Services Examination notice (scheme of examination)",
+   "status": "needs_review",
+   "learn": {
+    "en": "Prelims has two papers of 200 marks each. Paper I (General Studies) has 100 questions and decides the cut-off; Paper II (CSAT) has 80 questions and only needs 33%.",
+    "hi": "प्रारंभिक परीक्षा में 200-200 अंकों के दो प्रश्नपत्र हैं। प्रश्नपत्र I (सामान्य अध्ययन) में 100 प्रश्न हैं और यही कट-ऑफ़ तय करता है; प्रश्नपत्र II (सीसैट) में 80 प्रश्न हैं और केवल 33% चाहिए।"
+   },
+   "why": {
+    "en": "CSAT is qualifying: 66 out of 200 is enough, but missing it means your GS score is not even counted.",
+    "hi": "सीसैट क्वालिफ़ाइंग है: 200 में 66 काफ़ी है, पर इससे चूकने पर आपके सामान्य अध्ययन के अंक गिने ही नहीं जाते।"
+   },
+   "recall_q": {
+    "en": "What is the qualifying mark in CSAT?",
+    "hi": "सीसैट में क्वालिफ़ाइंग अंक कितने हैं?"
+   },
+   "recall_a": {
+    "en": "33%, that is 66 out of 200.",
+    "hi": "33%, यानी 200 में 66।"
+   },
+   "explain_simple": {
+    "en": "GS Paper I = your rank. CSAT = a gate you must pass through.",
+    "hi": "सामान्य अध्ययन प्रश्नपत्र I = आपकी रैंक। सीसैट = एक द्वार जिसे पार करना ही है।"
+   },
+   "seq": 48
+  },
+  {
+   "id": "csat.pattern.f02",
+   "topic": "csat.pattern",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "UPSC Civil Services Examination notice (scheme of examination)",
+   "status": "needs_review",
+   "learn": {
+    "en": "Each wrong answer costs one-third of that question's marks. In GS Paper I, a right answer gives 2 marks and a wrong one takes away about 0.66.",
+    "hi": "हर ग़लत उत्तर पर उस प्रश्न के एक-तिहाई अंक कटते हैं। सामान्य अध्ययन प्रश्नपत्र I में सही उत्तर पर 2 अंक मिलते हैं और ग़लत पर लगभग 0.66 कटते हैं।"
+   },
+   "why": {
+    "en": "A blind guess among four options loses marks on average, but if you can rule out two options, guessing pays.",
+    "hi": "चार विकल्पों में अंधा अनुमान औसतन अंक घटाता है, पर अगर आप दो विकल्प हटा सकें तो अनुमान फ़ायदेमंद है।"
+   },
+   "recall_q": {
+    "en": "How many marks does one wrong answer cost in GS Paper I?",
+    "hi": "सामान्य अध्ययन प्रश्नपत्र I में एक ग़लत उत्तर पर कितने अंक कटते हैं?"
+   },
+   "recall_a": {
+    "en": "About 0.66 (one-third of 2).",
+    "hi": "लगभग 0.66 (2 का एक-तिहाई)।"
+   },
+   "explain_simple": {
+    "en": "Three wrong answers wipe out one right answer.",
+    "hi": "तीन ग़लत उत्तर एक सही उत्तर को मिटा देते हैं।"
+   },
+   "example": {
+    "en": "Unanswered questions lose nothing.",
+    "hi": "छोड़े गए प्रश्नों पर कुछ नहीं कटता।"
+   },
+   "seq": 49
+  },
+  {
+   "id": "csat.pattern.sum",
+   "topic": "csat.pattern",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "UPSC Civil Services Examination notice (scheme of examination)",
+   "status": "needs_review",
+   "title": {
+    "en": "Prelims pattern",
+    "hi": "प्रारंभिक परीक्षा का स्वरूप"
+   },
+   "points": [
+    {
+     "en": "GS I: 100 questions, decides the cut-off.",
+     "hi": "सामान्य अध्ययन I: 100 प्रश्न, कट-ऑफ़ तय करता है।"
+    },
+    {
+     "en": "CSAT: 80 questions, qualify with 66/200.",
+     "hi": "सीसैट: 80 प्रश्न, 66/200 से क्वालिफ़ाई।"
+    },
+    {
+     "en": "Wrong answer: −1/3 of the marks.",
+     "hi": "ग़लत उत्तर: अंकों का −1/3।"
+    },
+    {
+     "en": "Guess only after ruling out two options.",
+     "hi": "दो विकल्प हटाने के बाद ही अनुमान लगाएँ।"
+    }
+   ],
+   "seq": 50
+  },
+  {
    "id": "polity.preamble.f01",
    "topic": "polity.preamble",
    "type": "fact",
@@ -1930,7 +2059,7 @@
     "en": "'We, the people' means: we made it, so we are the boss of it.",
     "hi": "'हम, भारत के लोग' का अर्थ: हमने बनाया, इसलिए इसके मालिक हम हैं।"
    },
-   "seq": 48
+   "seq": 51
   },
   {
    "id": "polity.preamble.f02",
@@ -1959,7 +2088,7 @@
     "en": "1976 added S-S-I: Socialist, Secular, and 'unity and integrity' of the nation.",
     "hi": "1976 में तीन शब्द जुड़े: समाजवादी, पंथनिरपेक्ष, और राष्ट्र की 'एकता और अखंडता'।"
    },
-   "seq": 49
+   "seq": 52
   },
   {
    "id": "polity.preamble.f03",
@@ -1989,7 +2118,7 @@
     "hi": "बेरुबारी 1960 ने 'नहीं' कहा। केशवानंद 1973 ने 'हाँ' कहा। अब बाद वाला फ़ैसला ही क़ानून है।"
    },
    "review_note": "The Preamble is not enforceable in court (non-justiciable).",
-   "seq": 50
+   "seq": 53
   },
   {
    "id": "polity.preamble.f04",
@@ -2019,7 +2148,7 @@
     "hi": "समाज में, पैसे के मामलों में और सत्ता में न्याय: सामाजिक, आर्थिक, राजनीतिक।"
    },
    "review_note": "'Justice: social, economic, political' is taken from the Russian (1917) revolution ideals per Laxmikanth.",
-   "seq": 51
+   "seq": 54
   },
   {
    "id": "polity.preamble.sum",
@@ -2050,7 +2179,7 @@
      "hi": "सामाजिक, आर्थिक और राजनीतिक न्याय का वादा।"
     }
    ],
-   "seq": 52
+   "seq": 55
   },
   {
    "id": "economy.inflation.f01",
@@ -2080,7 +2209,7 @@
     "hi": "वेतन वही रहता है और सब्ज़ियाँ महँगी होती हैं: आप कम ख़रीद पाते हैं।"
    },
    "review_note": "Borrowers gain because they repay in money worth less.",
-   "seq": 53
+   "seq": 56
   },
   {
    "id": "economy.inflation.f02",
@@ -2109,7 +2238,7 @@
     "en": "Aim for 4, stay between 2 and 6.",
     "hi": "निशाना 4 पर, दायरा 2 से 6।"
    },
-   "seq": 54
+   "seq": 57
   },
   {
    "id": "economy.inflation.f03",
@@ -2138,7 +2267,7 @@
     "en": "Six people vote on interest rates; if it is 3–3, the Governor decides.",
     "hi": "छह लोग ब्याज दर पर मत देते हैं; 3–3 होने पर गवर्नर तय करते हैं।"
    },
-   "seq": 55
+   "seq": 58
   },
   {
    "id": "economy.inflation.f04",
@@ -2168,7 +2297,7 @@
     "hi": "CPI = आपका पूरा ख़र्च, बाल कटाई और स्कूल फ़ीस सहित। WPI = थोक में बिकी वस्तुएँ, सेवाएँ नहीं।"
    },
    "review_note": "Base years and weights are being revised (CPI new base 2024 announced) — confirm before publishing.",
-   "seq": 56
+   "seq": 59
   },
   {
    "id": "economy.inflation.f05",
@@ -2197,7 +2326,7 @@
     "en": "Pull = buyers pull prices up. Push = costs push prices up.",
     "hi": "माँग-जनित = ख़रीदार क़ीमतें ऊपर खींचते हैं। लागत-जनित = लागत क़ीमतें ऊपर धकेलती है।"
    },
-   "seq": 57
+   "seq": 60
   },
   {
    "id": "economy.inflation.f06",
@@ -2230,7 +2359,7 @@
     "en": "The 1970s oil shocks caused stagflation in many countries.",
     "hi": "1970 के दशक के तेल झटकों ने कई देशों में स्टैगफ़्लेशन पैदा किया।"
    },
-   "seq": 58
+   "seq": 61
   },
   {
    "id": "economy.inflation.sum",
@@ -2261,7 +2390,7 @@
      "hi": "माँग-जनित बनाम लागत-जनित; स्टैगफ़्लेशन।"
     }
    ],
-   "seq": 59
+   "seq": 62
   },
   {
    "id": "environment.biodiversity.f01",
@@ -2290,7 +2419,7 @@
     "en": "Hotspot = very rich AND badly damaged.",
     "hi": "हॉटस्पॉट = बहुत समृद्ध और बुरी तरह क्षतिग्रस्त।"
    },
-   "seq": 60
+   "seq": 63
   },
   {
    "id": "environment.biodiversity.f02",
@@ -2319,7 +2448,7 @@
     "en": "Four hotspots: two in the mountains of the north and north-east, one in the south-west, one in the islands.",
     "hi": "चार हॉटस्पॉट: दो उत्तर और पूर्वोत्तर के पहाड़ों में, एक दक्षिण-पश्चिम में, एक द्वीपों में।"
    },
-   "seq": 61
+   "seq": 64
   },
   {
    "id": "environment.biodiversity.f03",
@@ -2352,7 +2481,7 @@
     "en": "The Great Indian Bustard is Critically Endangered.",
     "hi": "सोन चिरैया (ग्रेट इंडियन बस्टर्ड) अति संकटग्रस्त है।"
    },
-   "seq": 62
+   "seq": 65
   },
   {
    "id": "environment.biodiversity.f04",
@@ -2381,7 +2510,7 @@
     "en": "In-situ = national parks, sanctuaries, biosphere reserves. Ex-situ = zoos, botanical gardens, seed banks.",
     "hi": "स्व-स्थाने = राष्ट्रीय उद्यान, अभयारण्य, जैवमंडल आरक्षित क्षेत्र। बाह्य-स्थाने = चिड़ियाघर, वनस्पति उद्यान, बीज बैंक।"
    },
-   "seq": 63
+   "seq": 66
   },
   {
    "id": "environment.biodiversity.f05",
@@ -2414,7 +2543,7 @@
     "en": "Reefs in the Gulf of Mannar and Lakshadweep have bleached in marine heatwaves.",
     "hi": "मन्नार की खाड़ी और लक्षद्वीप की चट्टानें समुद्री ताप-लहरों में विरंजित हुई हैं।"
    },
-   "seq": 64
+   "seq": 67
   },
   {
    "id": "environment.biodiversity.f06",
@@ -2443,7 +2572,7 @@
     "en": "A newcomer with no enemies takes over the whole field.",
     "hi": "बिना दुश्मन का नवागंतुक पूरा मैदान घेर लेता है।"
    },
-   "seq": 65
+   "seq": 68
   },
   {
    "id": "environment.biodiversity.sum",
@@ -2474,7 +2603,7 @@
      "hi": "विरंजन = प्रवाल शैवाल निकालते हैं।"
     }
    ],
-   "seq": 66
+   "seq": 69
   },
   {
    "id": "history.ancient.f01",
@@ -2507,7 +2636,7 @@
     "en": "Dholavira became a UNESCO World Heritage Site in 2021.",
     "hi": "धोलावीरा 2021 में यूनेस्को विश्व धरोहर स्थल बना।"
    },
-   "seq": 67
+   "seq": 70
   },
   {
    "id": "history.ancient.f02",
@@ -2540,7 +2669,7 @@
     "en": "He was born at Lumbini, now in Nepal.",
     "hi": "उनका जन्म लुंबिनी में हुआ, जो अब नेपाल में है।"
    },
-   "seq": 68
+   "seq": 71
   },
   {
    "id": "history.ancient.f03",
@@ -2569,7 +2698,7 @@
     "en": "Parshvanatha gave four; Mahavira made it five.",
     "hi": "पार्श्वनाथ ने चार दिए; महावीर ने पाँच किए।"
    },
-   "seq": 69
+   "seq": 72
   },
   {
    "id": "history.ancient.f04",
@@ -2602,7 +2731,7 @@
     "en": "The Kalinga war (c. 261 BCE) turned him towards dhamma.",
     "hi": "कलिंग युद्ध (लगभग 261 ई.पू.) ने उन्हें धम्म की ओर मोड़ा।"
    },
-   "seq": 70
+   "seq": 73
   },
   {
    "id": "history.ancient.f05",
@@ -2631,7 +2760,7 @@
     "en": "Rigveda: oldest Veda, ten mandalas, the Gayatri mantra is in it.",
     "hi": "ऋग्वेद: सबसे पुराना वेद, दस मंडल, गायत्री मंत्र इसी में है।"
    },
-   "seq": 71
+   "seq": 74
   },
   {
    "id": "history.ancient.f06",
@@ -2660,7 +2789,7 @@
     "en": "Guptas: science (Aryabhata), poetry (Kalidasa), metal (Iron Pillar).",
     "hi": "गुप्त: विज्ञान (आर्यभट), काव्य (कालिदास), धातु (लौह स्तंभ)।"
    },
-   "seq": 72
+   "seq": 75
   },
   {
    "id": "history.ancient.f07",
@@ -2689,7 +2818,7 @@
     "en": "Sangam = Tamil poets' assemblies; three crowned kings.",
     "hi": "संगम = तमिल कवियों की सभाएँ; तीन मुकुटधारी राजा।"
    },
-   "seq": 73
+   "seq": 76
   },
   {
    "id": "history.ancient.sum",
@@ -2720,7 +2849,7 @@
      "hi": "गुप्त: आर्यभट, कालिदास, लौह स्तंभ।"
     }
    ],
-   "seq": 74
+   "seq": 77
   },
   {
    "id": "geography.climate.f01",
@@ -2749,7 +2878,7 @@
     "en": "Kerala gets the monsoon first; Tamil Nadu gets its rain last.",
     "hi": "केरल को मानसून सबसे पहले मिलता है; तमिलनाडु को वर्षा सबसे बाद में।"
    },
-   "seq": 75
+   "seq": 78
   },
   {
    "id": "geography.climate.f02",
@@ -2778,7 +2907,7 @@
     "en": "El Niño far away in the Pacific steals India's rain; a positive IOD nearby gives some back.",
     "hi": "दूर प्रशांत का एल नीनो भारत की वर्षा छीनता है; पास का धनात्मक IOD कुछ लौटाता है।"
    },
-   "seq": 76
+   "seq": 79
   },
   {
    "id": "geography.climate.f03",
@@ -2807,7 +2936,7 @@
     "en": "No spin at the equator, so no cyclone there.",
     "hi": "भूमध्य रेखा पर घूर्णन नहीं, इसलिए वहाँ चक्रवात नहीं।"
    },
-   "seq": 77
+   "seq": 80
   },
   {
    "id": "geography.climate.f04",
@@ -2836,7 +2965,7 @@
     "en": "Warm sea = fuel tank. Land = empty tank.",
     "hi": "गर्म समुद्र = ईंधन टंकी। ज़मीन = ख़ाली टंकी।"
    },
-   "seq": 78
+   "seq": 81
   },
   {
    "id": "geography.climate.f05",
@@ -2869,7 +2998,7 @@
     "en": "The leeward side of the Western Ghats, like the Deccan interior, stays dry: a rain shadow.",
     "hi": "पश्चिमी घाट का पवनविमुख भाग, जैसे दक्कन का भीतरी भाग, सूखा रहता है: वृष्टि-छाया।"
    },
-   "seq": 79
+   "seq": 82
   },
   {
    "id": "geography.climate.s01",
@@ -2930,7 +3059,7 @@
     "en": "East, towards South America.",
     "hi": "पूर्व की ओर, दक्षिण अमेरिका की तरफ़।"
    },
-   "seq": 80
+   "seq": 83
   },
   {
    "id": "geography.climate.sum",
@@ -2961,7 +3090,7 @@
      "hi": "चक्रवात को समुद्र > ~27°C चाहिए।"
     }
    ],
-   "seq": 81
+   "seq": 84
   },
   {
    "id": "science.space.f01",
@@ -2994,7 +3123,7 @@
     "en": "INSAT and GSAT satellites are geostationary.",
     "hi": "INSAT और GSAT उपग्रह भूस्थिर हैं।"
    },
-   "seq": 82
+   "seq": 85
   },
   {
    "id": "science.space.f02",
@@ -3023,7 +3152,7 @@
     "en": "PSLV = workhorse for low orbits. GSLV = heavy lifter for high orbits.",
     "hi": "PSLV = निचली कक्षाओं का भरोसेमंद घोड़ा। GSLV = ऊँची कक्षाओं का भारी वाहक।"
    },
-   "seq": 83
+   "seq": 86
   },
   {
    "id": "science.space.f03",
@@ -3052,7 +3181,7 @@
     "en": "23 August is now National Space Day in India.",
     "hi": "23 अगस्त अब भारत में राष्ट्रीय अंतरिक्ष दिवस है।"
    },
-   "seq": 84
+   "seq": 87
   },
   {
    "id": "science.space.f04",
@@ -3081,7 +3210,7 @@
     "en": "A balcony between the earth and the Sun with a clear view all the time.",
     "hi": "पृथ्वी और सूर्य के बीच एक बालकनी, जहाँ से हर समय साफ़ दृश्य।"
    },
-   "seq": 85
+   "seq": 88
   },
   {
    "id": "science.space.sum",
@@ -3112,7 +3241,518 @@
      "hi": "आदित्य-L1, L1 से सूर्य को देखता है।"
     }
    ],
-   "seq": 86
+   "seq": 89
+  },
+  {
+   "id": "csat.quant.m01",
+   "topic": "csat.quant",
+   "type": "math",
+   "difficulty": 2,
+   "source": "Standard CSAT quantitative aptitude method",
+   "status": "needs_review",
+   "exam_q": {
+    "en": "The price of a book rises by 20% and then falls by 20%. What is the net change?",
+    "hi": "एक किताब का दाम 20% बढ़ता है और फिर 20% घटता है। कुल बदलाव कितना है?"
+   },
+   "exam_note": {
+    "en": "A question like this can come in CSAT",
+    "hi": "ऐसा प्रश्न सीसैट में आ सकता है"
+   },
+   "split": {
+    "given": {
+     "en": "A 20% rise, then a 20% fall.",
+     "hi": "20% वृद्धि, फिर 20% कमी।"
+    },
+    "find": {
+     "en": "The net percentage change.",
+     "hi": "कुल प्रतिशत बदलाव।"
+    },
+    "idea": {
+     "en": "Start from 100; the second change works on the new price, not on 100.",
+     "hi": "100 से शुरू करें; दूसरा बदलाव नए दाम पर लगता है, 100 पर नहीं।"
+    }
+   },
+   "theory": {
+    "en": "For two changes a% and b%, the net change is a + b + (a × b ÷ 100). Use minus signs for falls.",
+    "hi": "दो बदलावों a% और b% के लिए कुल बदलाव = a + b + (a × b ÷ 100)। कमी के लिए ऋण चिह्न लगाएँ।"
+   },
+   "steps": [
+    {
+     "work": {
+      "en": "100 + 20% = 120",
+      "hi": "100 + 20% = 120"
+     },
+     "why": {
+      "en": "Take 100 so percentages are easy.",
+      "hi": "100 लें ताकि प्रतिशत आसान रहें।"
+     }
+    },
+    {
+     "work": {
+      "en": "120 − 20% of 120 = 120 − 24 = 96",
+      "hi": "120 − 120 का 20% = 120 − 24 = 96"
+     },
+     "why": {
+      "en": "The fall is on 120, so it is bigger than the rise.",
+      "hi": "कमी 120 पर है, इसलिए वृद्धि से बड़ी है।"
+     }
+    },
+    {
+     "work": {
+      "en": "96 − 100 = −4 → a 4% fall",
+      "hi": "96 − 100 = −4 → 4% कमी"
+     },
+     "why": {
+      "en": "Check: 20 − 20 − (20 × 20 ÷ 100) = −4.",
+      "hi": "जाँच: 20 − 20 − (20 × 20 ÷ 100) = −4।"
+     }
+    }
+   ],
+   "answer": {
+    "en": "A 4% fall.",
+    "hi": "4% कमी।"
+   },
+   "practice": [
+    {
+     "q": {
+      "en": "A salary rises 10% and then falls 10%. What is the net change?",
+      "hi": "वेतन 10% बढ़ता है और फिर 10% घटता है। कुल बदलाव कितना है?"
+     },
+     "steps": [
+      {
+       "en": "100 → 110",
+       "hi": "100 → 110"
+      },
+      {
+       "en": "110 − 11 = 99",
+       "hi": "110 − 11 = 99"
+      }
+     ],
+     "answer": {
+      "en": "A 1% fall.",
+      "hi": "1% कमी।"
+     }
+    },
+    {
+     "q": {
+      "en": "A population grows 10% one year and 20% the next. What is the total growth?",
+      "hi": "जनसंख्या एक वर्ष 10% और अगले वर्ष 20% बढ़ती है। कुल वृद्धि कितनी है?"
+     },
+     "steps": [
+      {
+       "en": "10 + 20 + (10 × 20 ÷ 100) = 30 + 2",
+       "hi": "10 + 20 + (10 × 20 ÷ 100) = 30 + 2"
+      }
+     ],
+     "answer": {
+      "en": "32%.",
+      "hi": "32%।"
+     }
+    }
+   ],
+   "review_note": "confirm with past CSAT papers",
+   "seq": 90
+  },
+  {
+   "id": "csat.quant.m02",
+   "topic": "csat.quant",
+   "type": "math",
+   "difficulty": 2,
+   "source": "Standard CSAT quantitative aptitude method",
+   "status": "needs_review",
+   "exam_q": {
+    "en": "A train 150 m long passes a pole in 10 seconds. What is its speed in km/h?",
+    "hi": "150 मीटर लंबी एक ट्रेन एक खंभे को 10 सेकंड में पार करती है। उसकी गति किमी/घंटा में कितनी है?"
+   },
+   "exam_note": {
+    "en": "A question like this can come in CSAT",
+    "hi": "ऐसा प्रश्न सीसैट में आ सकता है"
+   },
+   "split": {
+    "given": {
+     "en": "Length 150 m, time 10 s, passing a pole.",
+     "hi": "लंबाई 150 मीटर, समय 10 सेकंड, एक खंभा पार करना।"
+    },
+    "find": {
+     "en": "Speed in km/h.",
+     "hi": "गति किमी/घंटा में।"
+    },
+    "idea": {
+     "en": "To pass a pole, the train covers only its own length.",
+     "hi": "खंभा पार करने के लिए ट्रेन केवल अपनी लंबाई तय करती है।"
+    }
+   },
+   "theory": {
+    "en": "Speed = distance ÷ time. To change m/s to km/h, multiply by 18/5.",
+    "hi": "गति = दूरी ÷ समय। मी/से को किमी/घंटा में बदलने के लिए 18/5 से गुणा करें।"
+   },
+   "steps": [
+    {
+     "work": {
+      "en": "150 ÷ 10 = 15 m/s",
+      "hi": "150 ÷ 10 = 15 मी/से"
+     },
+     "why": {
+      "en": "Distance is the train's length.",
+      "hi": "दूरी ट्रेन की लंबाई है।"
+     }
+    },
+    {
+     "work": {
+      "en": "15 × 18/5 = 54 km/h",
+      "hi": "15 × 18/5 = 54 किमी/घंटा"
+     },
+     "why": {
+      "en": "1 m/s = 3.6 km/h, which is 18/5.",
+      "hi": "1 मी/से = 3.6 किमी/घंटा, यानी 18/5।"
+     }
+    }
+   ],
+   "answer": {
+    "en": "54 km/h.",
+    "hi": "54 किमी/घंटा।"
+   },
+   "practice": [
+    {
+     "q": {
+      "en": "A 200 m train crosses a 100 m platform in 15 seconds. Find its speed in km/h.",
+      "hi": "200 मीटर की ट्रेन 100 मीटर का प्लेटफ़ॉर्म 15 सेकंड में पार करती है। गति किमी/घंटा में निकालें।"
+     },
+     "steps": [
+      {
+       "en": "Distance = 200 + 100 = 300 m",
+       "hi": "दूरी = 200 + 100 = 300 मीटर"
+      },
+      {
+       "en": "300 ÷ 15 = 20 m/s",
+       "hi": "300 ÷ 15 = 20 मी/से"
+      },
+      {
+       "en": "20 × 18/5 = 72 km/h",
+       "hi": "20 × 18/5 = 72 किमी/घंटा"
+      }
+     ],
+     "answer": {
+      "en": "72 km/h.",
+      "hi": "72 किमी/घंटा।"
+     }
+    }
+   ],
+   "review_note": "confirm with past CSAT papers",
+   "seq": 91
+  },
+  {
+   "id": "csat.quant.m03",
+   "topic": "csat.quant",
+   "type": "math",
+   "difficulty": 2,
+   "source": "Standard CSAT quantitative aptitude method",
+   "status": "needs_review",
+   "exam_q": {
+    "en": "A can finish a job in 10 days and B in 15 days. How long will they take working together?",
+    "hi": "A एक काम 10 दिन में और B 15 दिन में पूरा कर सकता है। साथ मिलकर वे कितने दिन लेंगे?"
+   },
+   "exam_note": {
+    "en": "A question like this can come in CSAT",
+    "hi": "ऐसा प्रश्न सीसैट में आ सकता है"
+   },
+   "split": {
+    "given": {
+     "en": "A: 10 days, B: 15 days.",
+     "hi": "A: 10 दिन, B: 15 दिन।"
+    },
+    "find": {
+     "en": "Days needed together.",
+     "hi": "साथ में लगने वाले दिन।"
+    },
+    "idea": {
+     "en": "Add what each does in one day, not the days themselves.",
+     "hi": "दिन नहीं, हर एक का एक दिन का काम जोड़ें।"
+    }
+   },
+   "theory": {
+    "en": "If a person finishes a job in n days, they do 1/n of it each day. Together: add the fractions, then flip.",
+    "hi": "अगर कोई काम n दिन में पूरा करता है, तो रोज़ उसका 1/n करता है। साथ में: भिन्न जोड़ें, फिर उलटें।"
+   },
+   "steps": [
+    {
+     "work": {
+      "en": "A per day = 1/10, B per day = 1/15",
+      "hi": "A प्रति दिन = 1/10, B प्रति दिन = 1/15"
+     },
+     "why": {
+      "en": "One day's share of the job.",
+      "hi": "काम का एक दिन का हिस्सा।"
+     }
+    },
+    {
+     "work": {
+      "en": "1/10 + 1/15 = 3/30 + 2/30 = 5/30 = 1/6",
+      "hi": "1/10 + 1/15 = 3/30 + 2/30 = 5/30 = 1/6"
+     },
+     "why": {
+      "en": "Use 30 as the common denominator.",
+      "hi": "30 को सामान्य हर लें।"
+     }
+    },
+    {
+     "work": {
+      "en": "They finish 1/6 per day → 6 days",
+      "hi": "वे रोज़ 1/6 करते हैं → 6 दिन"
+     },
+     "why": {
+      "en": "Flip the fraction to get the days.",
+      "hi": "दिन पाने के लिए भिन्न उलटें।"
+     }
+    }
+   ],
+   "answer": {
+    "en": "6 days.",
+    "hi": "6 दिन।"
+   },
+   "practice": [
+    {
+     "q": {
+      "en": "A can do a job in 12 days and B in 6 days. How long together?",
+      "hi": "A एक काम 12 दिन में और B 6 दिन में कर सकता है। साथ में कितने दिन?"
+     },
+     "steps": [
+      {
+       "en": "1/12 + 1/6 = 1/12 + 2/12 = 3/12 = 1/4",
+       "hi": "1/12 + 1/6 = 1/12 + 2/12 = 3/12 = 1/4"
+      }
+     ],
+     "answer": {
+      "en": "4 days.",
+      "hi": "4 दिन।"
+     }
+    }
+   ],
+   "review_note": "confirm with past CSAT papers",
+   "seq": 92
+  },
+  {
+   "id": "csat.quant.m04",
+   "topic": "csat.quant",
+   "type": "math",
+   "difficulty": 2,
+   "source": "Standard CSAT quantitative aptitude method",
+   "status": "needs_review",
+   "exam_q": {
+    "en": "The average of 5 numbers is 20. When one number is removed, the average of the rest is 18. Which number was removed?",
+    "hi": "5 संख्याओं का औसत 20 है। एक संख्या हटाने पर बाक़ी का औसत 18 हो जाता है। कौन-सी संख्या हटाई गई?"
+   },
+   "exam_note": {
+    "en": "A question like this can come in CSAT",
+    "hi": "ऐसा प्रश्न सीसैट में आ सकता है"
+   },
+   "split": {
+    "given": {
+     "en": "5 numbers, average 20; 4 numbers, average 18.",
+     "hi": "5 संख्याएँ, औसत 20; 4 संख्याएँ, औसत 18।"
+    },
+    "find": {
+     "en": "The removed number.",
+     "hi": "हटाई गई संख्या।"
+    },
+    "idea": {
+     "en": "Turn averages into totals; the difference in totals is the removed number.",
+     "hi": "औसत को योग में बदलें; योग का अंतर ही हटाई गई संख्या है।"
+    }
+   },
+   "theory": {
+    "en": "Total = average × count. Work with totals, not with averages.",
+    "hi": "योग = औसत × संख्या। औसत से नहीं, योग से काम करें।"
+   },
+   "steps": [
+    {
+     "work": {
+      "en": "Total of 5 = 5 × 20 = 100",
+      "hi": "5 का योग = 5 × 20 = 100"
+     },
+     "why": {
+      "en": "Average times count.",
+      "hi": "औसत गुणा संख्या।"
+     }
+    },
+    {
+     "work": {
+      "en": "Total of 4 = 4 × 18 = 72",
+      "hi": "4 का योग = 4 × 18 = 72"
+     },
+     "why": {
+      "en": "Same rule after removal.",
+      "hi": "हटाने के बाद वही नियम।"
+     }
+    },
+    {
+     "work": {
+      "en": "100 − 72 = 28",
+      "hi": "100 − 72 = 28"
+     },
+     "why": {
+      "en": "What went missing from the total.",
+      "hi": "योग से जो घटा।"
+     }
+    }
+   ],
+   "answer": {
+    "en": "28.",
+    "hi": "28।"
+   },
+   "practice": [
+    {
+     "q": {
+      "en": "The average of 6 numbers is 15. Adding one more number makes the average 16. What number was added?",
+      "hi": "6 संख्याओं का औसत 15 है। एक संख्या जोड़ने पर औसत 16 हो जाता है। कौन-सी संख्या जोड़ी गई?"
+     },
+     "steps": [
+      {
+       "en": "6 × 15 = 90",
+       "hi": "6 × 15 = 90"
+      },
+      {
+       "en": "7 × 16 = 112",
+       "hi": "7 × 16 = 112"
+      },
+      {
+       "en": "112 − 90 = 22",
+       "hi": "112 − 90 = 22"
+      }
+     ],
+     "answer": {
+      "en": "22.",
+      "hi": "22।"
+     }
+    }
+   ],
+   "review_note": "confirm with past CSAT papers",
+   "seq": 93
+  },
+  {
+   "id": "csat.quant.m05",
+   "topic": "csat.quant",
+   "type": "math",
+   "difficulty": 1,
+   "source": "Standard CSAT quantitative aptitude method",
+   "status": "needs_review",
+   "exam_q": {
+    "en": "Divide ₹720 among three people in the ratio 2 : 3 : 4.",
+    "hi": "₹720 को तीन लोगों में 2 : 3 : 4 के अनुपात में बाँटिए।"
+   },
+   "exam_note": {
+    "en": "A question like this can come in CSAT",
+    "hi": "ऐसा प्रश्न सीसैट में आ सकता है"
+   },
+   "split": {
+    "given": {
+     "en": "Total ₹720, ratio 2 : 3 : 4.",
+     "hi": "कुल ₹720, अनुपात 2 : 3 : 4।"
+    },
+    "find": {
+     "en": "Each person's share.",
+     "hi": "हर व्यक्ति का हिस्सा।"
+    },
+    "idea": {
+     "en": "Find the value of one 'part', then multiply.",
+     "hi": "एक 'भाग' का मान निकालें, फिर गुणा करें।"
+    }
+   },
+   "theory": {
+    "en": "Add the ratio terms to get the number of parts. One part = total ÷ parts.",
+    "hi": "भागों की संख्या पाने के लिए अनुपात के पद जोड़ें। एक भाग = कुल ÷ भाग।"
+   },
+   "steps": [
+    {
+     "work": {
+      "en": "2 + 3 + 4 = 9 parts",
+      "hi": "2 + 3 + 4 = 9 भाग"
+     },
+     "why": {
+      "en": "Count the parts.",
+      "hi": "भाग गिनें।"
+     }
+    },
+    {
+     "work": {
+      "en": "720 ÷ 9 = 80 per part",
+      "hi": "720 ÷ 9 = 80 प्रति भाग"
+     },
+     "why": {
+      "en": "Value of one part.",
+      "hi": "एक भाग का मान।"
+     }
+    },
+    {
+     "work": {
+      "en": "2 × 80 = 160, 3 × 80 = 240, 4 × 80 = 320",
+      "hi": "2 × 80 = 160, 3 × 80 = 240, 4 × 80 = 320"
+     },
+     "why": {
+      "en": "Check: 160 + 240 + 320 = 720.",
+      "hi": "जाँच: 160 + 240 + 320 = 720।"
+     }
+    }
+   ],
+   "answer": {
+    "en": "₹160, ₹240 and ₹320.",
+    "hi": "₹160, ₹240 और ₹320।"
+   },
+   "practice": [
+    {
+     "q": {
+      "en": "The ages of two sisters are in the ratio 3 : 4 and add up to 35. Find their ages.",
+      "hi": "दो बहनों की आयु 3 : 4 के अनुपात में है और योग 35 है। उनकी आयु निकालें।"
+     },
+     "steps": [
+      {
+       "en": "3 + 4 = 7 parts; 35 ÷ 7 = 5",
+       "hi": "3 + 4 = 7 भाग; 35 ÷ 7 = 5"
+      },
+      {
+       "en": "3 × 5 = 15, 4 × 5 = 20",
+       "hi": "3 × 5 = 15, 4 × 5 = 20"
+      }
+     ],
+     "answer": {
+      "en": "15 and 20 years.",
+      "hi": "15 और 20 वर्ष।"
+     }
+    }
+   ],
+   "review_note": "confirm with past CSAT papers",
+   "seq": 94
+  },
+  {
+   "id": "csat.quant.sum",
+   "topic": "csat.quant",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "Standard CSAT quantitative aptitude method",
+   "status": "needs_review",
+   "title": {
+    "en": "Numeracy rules",
+    "hi": "संख्यात्मक नियम"
+   },
+   "points": [
+    {
+     "en": "Two changes: a + b + ab/100.",
+     "hi": "दो बदलाव: a + b + ab/100।"
+    },
+    {
+     "en": "m/s × 18/5 = km/h; a train passing a pole covers its own length.",
+     "hi": "मी/से × 18/5 = किमी/घंटा; खंभा पार करती ट्रेन अपनी लंबाई तय करती है।"
+    },
+    {
+     "en": "Work: add 1/n per day, then flip.",
+     "hi": "काम: प्रति दिन 1/n जोड़ें, फिर उलटें।"
+    },
+    {
+     "en": "Averages → totals; ratios → value of one part.",
+     "hi": "औसत → योग; अनुपात → एक भाग का मान।"
+    }
+   ],
+   "seq": 95
   },
   {
    "id": "polity.fr.f01",
@@ -3141,7 +3781,7 @@
     "en": "Part 3, numbers 12 to 35. Rights you can take to court.",
     "hi": "भाग 3, अनुच्छेद 12 से 35। ऐसे अधिकार जिनके लिए आप न्यायालय जा सकते हैं।"
    },
-   "seq": 87
+   "seq": 96
   },
   {
    "id": "polity.fr.f02",
@@ -3170,7 +3810,7 @@
     "en": "Seven became six when property was taken out in 1978.",
     "hi": "1978 में संपत्ति हटने से सात से छह हुए।"
    },
-   "seq": 88
+   "seq": 97
   },
   {
    "id": "polity.fr.f03",
@@ -3203,7 +3843,7 @@
     "en": "If a highway needs your land, the government can acquire it under a law, with compensation as that law provides.",
     "hi": "अगर राजमार्ग के लिए आपकी ज़मीन चाहिए, तो सरकार क़ानून के तहत, उस क़ानून में तय मुआवज़े के साथ, उसे ले सकती है।"
    },
-   "seq": 89
+   "seq": 98
   },
   {
    "id": "polity.fr.f04",
@@ -3232,7 +3872,7 @@
     "en": "Article 32 is the door to the Supreme Court for your rights.",
     "hi": "अनुच्छेद 32 आपके अधिकारों के लिए सर्वोच्च न्यायालय का दरवाज़ा है।"
    },
-   "seq": 90
+   "seq": 99
   },
   {
    "id": "polity.fr.f05",
@@ -3261,7 +3901,7 @@
     "en": "Five court orders: bring the person, do your duty, stop, send the case up, and by what authority?",
     "hi": "पाँच आदेश: व्यक्ति को पेश करो, कर्तव्य करो, रुको, मामला ऊपर भेजो, और किस अधिकार से?"
    },
-   "seq": 91
+   "seq": 100
   },
   {
    "id": "polity.fr.f06",
@@ -3294,7 +3934,7 @@
     "en": "A family whose son was picked up without charge can file habeas corpus in the High Court.",
     "hi": "जिस परिवार के बेटे को बिना आरोप पकड़ लिया गया, वह उच्च न्यायालय में बंदी प्रत्यक्षीकरण याचिका दाख़िल कर सकता है।"
    },
-   "seq": 92
+   "seq": 101
   },
   {
    "id": "polity.fr.f07",
@@ -3323,7 +3963,7 @@
     "en": "Mandamus = 'do your job'. Only for public officials.",
     "hi": "परमादेश = 'अपना काम करो'। केवल सार्वजनिक अधिकारियों के लिए।"
    },
-   "seq": 93
+   "seq": 102
   },
   {
    "id": "polity.fr.f08",
@@ -3352,7 +3992,7 @@
     "en": "'By what authority are you sitting in that chair?' — that is quo warranto.",
     "hi": "'आप किस अधिकार से उस कुर्सी पर बैठे हैं?' — यही अधिकार-पृच्छा है।"
    },
-   "seq": 94
+   "seq": 103
   },
   {
    "id": "polity.fr.f09",
@@ -3381,7 +4021,7 @@
     "en": "Prohibition = stop before. Certiorari = fix after.",
     "hi": "प्रतिषेध = पहले रोको। उत्प्रेषण = बाद में सुधारो।"
    },
-   "seq": 95
+   "seq": 104
   },
   {
    "id": "polity.fr.f10",
@@ -3414,7 +4054,7 @@
     "en": "Courts have read the right to privacy, clean environment and livelihood into Article 21.",
     "hi": "न्यायालयों ने निजता, स्वच्छ पर्यावरण और आजीविका के अधिकार को अनुच्छेद 21 में शामिल माना है।"
    },
-   "seq": 96
+   "seq": 105
   },
   {
    "id": "polity.fr.f11",
@@ -3443,7 +4083,7 @@
     "en": "21A sits right after 21 (life): education is part of a life with dignity.",
     "hi": "21A, 21 (जीवन) के ठीक बाद है: शिक्षा सम्मानजनक जीवन का हिस्सा है।"
    },
-   "seq": 97
+   "seq": 106
   },
   {
    "id": "polity.fr.f12",
@@ -3476,7 +4116,7 @@
     "en": "The Protection of Civil Rights Act, 1955 punishes the practice of untouchability.",
     "hi": "नागरिक अधिकार संरक्षण अधिनियम, 1955 अस्पृश्यता के आचरण को दंडित करता है।"
    },
-   "seq": 98
+   "seq": 107
   },
   {
    "id": "polity.fr.f13",
@@ -3505,7 +4145,7 @@
     "en": "20 (protection in criminal cases) and 21 (life) stay switched on, always.",
     "hi": "20 (आपराधिक मामलों में संरक्षण) और 21 (जीवन) हमेशा चालू रहते हैं।"
    },
-   "seq": 99
+   "seq": 108
   },
   {
    "id": "polity.fr.s01",
@@ -3574,7 +4214,7 @@
     "en": "Article 13.",
     "hi": "अनुच्छेद 13।"
    },
-   "seq": 100
+   "seq": 109
   },
   {
    "id": "polity.fr.sum",
@@ -3609,7 +4249,7 @@
      "hi": "21A: 6–14 वर्ष शिक्षा (86वाँ संशोधन)।"
     }
    ],
-   "seq": 101
+   "seq": 110
   },
   {
    "id": "economy.money.f01",
@@ -3639,7 +4279,7 @@
     "hi": "अधिनियम 1934, शुरुआत 1935, 1949 से सरकारी स्वामित्व।"
    },
    "review_note": "Recommended by the Hilton Young Commission (1926).",
-   "seq": 102
+   "seq": 111
   },
   {
    "id": "economy.money.f02",
@@ -3672,7 +4312,7 @@
     "en": "A higher repo rate usually means a higher EMI on a home loan.",
     "hi": "ऊँची रेपो दर का मतलब आमतौर पर गृह ऋण की ऊँची EMI होता है।"
    },
-   "seq": 103
+   "seq": 112
   },
   {
    "id": "economy.money.f03",
@@ -3701,7 +4341,7 @@
     "en": "CRR = cash parked at RBI. SLR = safe assets kept by the bank itself.",
     "hi": "CRR = आरबीआई के पास रखा नक़द। SLR = बैंक के पास रखी सुरक्षित संपत्तियाँ।"
    },
-   "seq": 104
+   "seq": 113
   },
   {
    "id": "economy.money.f04",
@@ -3730,7 +4370,7 @@
     "en": "Interest rates move inside a corridor: SDF at the bottom, repo in the middle, MSF at the top.",
     "hi": "ब्याज दरें एक गलियारे में चलती हैं: नीचे SDF, बीच में रेपो, ऊपर MSF।"
    },
-   "seq": 105
+   "seq": 114
   },
   {
    "id": "economy.money.f05",
@@ -3759,7 +4399,7 @@
     "en": "RBI buys bonds → pays cash → more money in the system.",
     "hi": "आरबीआई बॉन्ड ख़रीदे → नक़द चुकाए → व्यवस्था में ज़्यादा पैसा।"
    },
-   "seq": 106
+   "seq": 115
   },
   {
    "id": "economy.money.s01",
@@ -3828,7 +4468,7 @@
     "en": "Because it works through loans and demand, which change slowly (policy lag).",
     "hi": "क्योंकि यह ऋण और माँग के ज़रिए काम करती है, जो धीरे बदलते हैं (नीतिगत अंतराल)।"
    },
-   "seq": 107
+   "seq": 116
   },
   {
    "id": "economy.money.sum",
@@ -3863,7 +4503,7 @@
      "hi": "OMO ख़रीद से पैसा आता है।"
     }
    ],
-   "seq": 108
+   "seq": 117
   },
   {
    "id": "environment.laws.f01",
@@ -3892,7 +4532,7 @@
     "en": "National park = no entry for cattle. Sanctuary = some activities with permission.",
     "hi": "राष्ट्रीय उद्यान = मवेशियों का प्रवेश नहीं। अभयारण्य = अनुमति से कुछ गतिविधियाँ।"
    },
-   "seq": 109
+   "seq": 118
   },
   {
    "id": "environment.laws.f02",
@@ -3922,7 +4562,7 @@
     "hi": "छह सूचियाँ चार बनीं, उनमें एक CITES प्रजातियों के लिए।"
    },
    "review_note": "Check schedule numbering (I–IV) against the gazette text before publishing.",
-   "seq": 110
+   "seq": 119
   },
   {
    "id": "environment.laws.f03",
@@ -3951,7 +4591,7 @@
     "en": "One big law that covers everything the other environment laws miss.",
     "hi": "एक बड़ा क़ानून जो वह सब ढकता है जो दूसरे पर्यावरण क़ानून छोड़ देते हैं।"
    },
-   "seq": 111
+   "seq": 120
   },
   {
    "id": "environment.laws.f04",
@@ -3980,7 +4620,7 @@
     "en": "A state cannot hand over forest land for a mine or a road without the Centre saying yes.",
     "hi": "कोई राज्य केंद्र की हाँ के बिना खदान या सड़क के लिए वन भूमि नहीं दे सकता।"
    },
-   "seq": 112
+   "seq": 121
   },
   {
    "id": "environment.laws.f05",
@@ -4009,7 +4649,7 @@
     "en": "A fast-track court only for environment cases.",
     "hi": "केवल पर्यावरण मामलों के लिए फ़ास्ट-ट्रैक अदालत।"
    },
-   "seq": 113
+   "seq": 122
   },
   {
    "id": "environment.laws.f06",
@@ -4042,7 +4682,7 @@
     "en": "The Nilgiri Biosphere Reserve (1986), spread over Tamil Nadu, Kerala and Karnataka, was India's first.",
     "hi": "नीलगिरि जैवमंडल आरक्षित क्षेत्र (1986), जो तमिलनाडु, केरल और कर्नाटक में फैला है, भारत का पहला था।"
    },
-   "seq": 114
+   "seq": 123
   },
   {
    "id": "environment.laws.f07",
@@ -4071,7 +4711,7 @@
     "en": "1973 project, 2006 law.",
     "hi": "1973 में परियोजना, 2006 में क़ानून।"
    },
-   "seq": 115
+   "seq": 124
   },
   {
    "id": "environment.laws.sum",
@@ -4102,7 +4742,7 @@
      "hi": "NGT 2010; जैवमंडल: केंद्र, बफ़र, संक्रमण।"
     }
    ],
-   "seq": 116
+   "seq": 125
   },
   {
    "id": "history.culture.f01",
@@ -4135,7 +4775,7 @@
     "en": "Sattriya was introduced by the saint Sankaradeva in the Vaishnava monasteries (sattras).",
     "hi": "सत्रिया संत शंकरदेव ने वैष्णव मठों (सत्रों) में शुरू किया।"
    },
-   "seq": 117
+   "seq": 126
   },
   {
    "id": "history.culture.f02",
@@ -4168,7 +4808,7 @@
     "en": "The Brihadeshwara temple at Thanjavur (Rajaraja Chola) is a great Dravida temple.",
     "hi": "तंजावुर का बृहदेश्वर मंदिर (राजराज चोल) एक महान द्रविड़ मंदिर है।"
    },
-   "seq": 118
+   "seq": 127
   },
   {
    "id": "history.culture.f03",
@@ -4197,7 +4837,7 @@
     "en": "Ajanta = Buddhist paintings. Ellora = three faiths, and Kailasa carved from one rock.",
     "hi": "अजंता = बौद्ध चित्र। एलोरा = तीन धर्म, और एक चट्टान से बना कैलाश।"
    },
-   "seq": 119
+   "seq": 128
   },
   {
    "id": "history.culture.f04",
@@ -4226,7 +4866,7 @@
     "en": "Alvars = Vishnu. Nayanars = Shiva.",
     "hi": "आलवार = विष्णु। नयनार = शिव।"
    },
-   "seq": 120
+   "seq": 129
   },
   {
    "id": "history.culture.f05",
@@ -4259,7 +4899,7 @@
     "en": "Amir Khusrau was a disciple of Nizamuddin Auliya.",
     "hi": "अमीर ख़ुसरो निज़ामुद्दीन औलिया के शिष्य थे।"
    },
-   "seq": 121
+   "seq": 130
   },
   {
    "id": "history.culture.sum",
@@ -4290,7 +4930,7 @@
      "hi": "आलवार विष्णु, नयनार शिव; अजमेर में चिश्ती।"
     }
    ],
-   "seq": 122
+   "seq": 131
   },
   {
    "id": "geography.physical.f01",
@@ -4323,7 +4963,7 @@
     "en": "S-waves cannot pass through liquid, and they do not cross the outer core: so the outer core is liquid.",
     "hi": "S-तरंगें द्रव से नहीं गुज़रतीं, और वे बाहरी क्रोड पार नहीं करतीं: इसलिए बाहरी क्रोड द्रव है।"
    },
-   "seq": 123
+   "seq": 132
   },
   {
    "id": "geography.physical.f02",
@@ -4352,7 +4992,7 @@
     "en": "Two cars crashing head-on: the bonnets crumple up into mountains.",
     "hi": "दो कारों की आमने-सामने टक्कर: बोनट मुड़कर पहाड़ बन जाते हैं।"
    },
-   "seq": 124
+   "seq": 133
   },
   {
    "id": "geography.physical.f03",
@@ -4385,7 +5025,7 @@
     "en": "Jet aircraft often fly in the lower stratosphere to avoid bumpy weather.",
     "hi": "जेट विमान अक्सर उथल-पुथल वाले मौसम से बचने के लिए निचले समताप मंडल में उड़ते हैं।"
    },
-   "seq": 125
+   "seq": 134
   },
   {
    "id": "geography.physical.f04",
@@ -4414,7 +5054,7 @@
     "en": "Warm meets cold → nutrients rise → plankton → fish.",
     "hi": "गर्म मिले ठंडे से → पोषक ऊपर → प्लवक → मछली।"
    },
-   "seq": 126
+   "seq": 135
   },
   {
    "id": "geography.physical.sum",
@@ -4445,7 +5085,7 @@
      "hi": "गर्म + ठंडी धाराएँ → समृद्ध मत्स्य क्षेत्र।"
     }
    ],
-   "seq": 127
+   "seq": 136
   },
   {
    "id": "science.biotech.f01",
@@ -4479,7 +5119,7 @@
     "hi": "2025 में भारत ने ऐसे उपकरण से विकसित दो जीनोम-संपादित धान किस्में जारी कीं।"
    },
    "review_note": "Verify the 2025 genome-edited rice release (ICAR) before publishing.",
-   "seq": 128
+   "seq": 137
   },
   {
    "id": "science.biotech.f02",
@@ -4509,7 +5149,7 @@
     "hi": "पौधा जीवाणु से उधार लिया अपना कीटनाशक ख़ुद रखता है।"
    },
    "review_note": "GM mustard DMH-11 status is in court; keep the wording 'main GM crop' unless that changes.",
-   "seq": 129
+   "seq": 138
   },
   {
    "id": "science.biotech.f03",
@@ -4538,7 +5178,7 @@
     "en": "It is a 'wanted poster' the cell prints for a few days.",
     "hi": "यह एक 'वांछित पोस्टर' है जिसे कोशिका कुछ दिन छापती है।"
    },
-   "seq": 130
+   "seq": 139
   },
   {
    "id": "science.biotech.f04",
@@ -4567,7 +5207,7 @@
     "en": "Stem cells are blank tiles that can become any piece of the picture.",
     "hi": "स्टेम कोशिकाएँ ख़ाली टाइलें हैं जो तस्वीर का कोई भी टुकड़ा बन सकती हैं।"
    },
-   "seq": 131
+   "seq": 140
   },
   {
    "id": "science.biotech.sum",
@@ -4598,7 +5238,398 @@
      "hi": "स्टेम कोशिकाएँ कई प्रकार की कोशिकाएँ बनती हैं।"
     }
    ],
-   "seq": 132
+   "seq": 141
+  },
+  {
+   "id": "csat.reasoning.r01",
+   "topic": "csat.reasoning",
+   "type": "reasoning",
+   "difficulty": 2,
+   "source": "Standard CSAT reasoning method",
+   "status": "needs_review",
+   "exam_q": {
+    "en": "Find the next number: 2, 6, 12, 20, 30, ?",
+    "hi": "अगली संख्या ज्ञात कीजिए: 2, 6, 12, 20, 30, ?"
+   },
+   "exam_note": {
+    "en": "A question like this can come in CSAT",
+    "hi": "ऐसा प्रश्न सीसैट में आ सकता है"
+   },
+   "split": {
+    "given": {
+     "en": "The series 2, 6, 12, 20, 30.",
+     "hi": "श्रृंखला 2, 6, 12, 20, 30।"
+    },
+    "find": {
+     "en": "The next term.",
+     "hi": "अगला पद।"
+    },
+    "idea": {
+     "en": "Look at the gaps between terms first.",
+     "hi": "पहले पदों के बीच के अंतर देखें।"
+    }
+   },
+   "theory": {
+    "en": "Most CSAT series follow a pattern in their differences: constant, rising by a fixed step, or squares and cubes.",
+    "hi": "सीसैट की अधिकतर श्रृंखलाएँ अंतरों के पैटर्न पर चलती हैं: स्थिर, तय क़दम से बढ़ते, या वर्ग और घन।"
+   },
+   "steps": [
+    {
+     "work": {
+      "en": "Gaps: 4, 6, 8, 10",
+      "hi": "अंतर: 4, 6, 8, 10"
+     },
+     "why": {
+      "en": "6−2, 12−6, 20−12, 30−20.",
+      "hi": "6−2, 12−6, 20−12, 30−20।"
+     }
+    },
+    {
+     "work": {
+      "en": "Next gap = 12",
+      "hi": "अगला अंतर = 12"
+     },
+     "why": {
+      "en": "The gaps rise by 2 each time.",
+      "hi": "अंतर हर बार 2 बढ़ते हैं।"
+     }
+    },
+    {
+     "work": {
+      "en": "30 + 12 = 42",
+      "hi": "30 + 12 = 42"
+     },
+     "why": {
+      "en": "Check: the terms are 1×2, 2×3, 3×4, 4×5, 5×6, 6×7.",
+      "hi": "जाँच: पद हैं 1×2, 2×3, 3×4, 4×5, 5×6, 6×7।"
+     }
+    }
+   ],
+   "answer": {
+    "en": "42.",
+    "hi": "42।"
+   },
+   "practice": [
+    {
+     "q": {
+      "en": "Find the next number: 3, 5, 9, 17, 33, ?",
+      "hi": "अगली संख्या ज्ञात कीजिए: 3, 5, 9, 17, 33, ?"
+     },
+     "steps": [
+      {
+       "en": "Gaps: 2, 4, 8, 16",
+       "hi": "अंतर: 2, 4, 8, 16"
+      },
+      {
+       "en": "Next gap = 32; 33 + 32 = 65",
+       "hi": "अगला अंतर = 32; 33 + 32 = 65"
+      }
+     ],
+     "answer": {
+      "en": "65.",
+      "hi": "65।"
+     }
+    }
+   ],
+   "review_note": "confirm with past CSAT papers",
+   "seq": 142
+  },
+  {
+   "id": "csat.reasoning.r02",
+   "topic": "csat.reasoning",
+   "type": "reasoning",
+   "difficulty": 2,
+   "source": "Standard CSAT reasoning method",
+   "status": "needs_review",
+   "exam_q": {
+    "en": "If APPLE is written as BQQMF, how is MANGO written in that code?",
+    "hi": "अगर APPLE को BQQMF लिखा जाता है, तो उसी कोड में MANGO कैसे लिखा जाएगा?"
+   },
+   "exam_note": {
+    "en": "A question like this can come in CSAT",
+    "hi": "ऐसा प्रश्न सीसैट में आ सकता है"
+   },
+   "split": {
+    "given": {
+     "en": "APPLE → BQQMF.",
+     "hi": "APPLE → BQQMF।"
+    },
+    "find": {
+     "en": "The code for MANGO.",
+     "hi": "MANGO का कोड।"
+    },
+    "idea": {
+     "en": "Compare each letter with its code letter and find the shift.",
+     "hi": "हर अक्षर की उसके कोड अक्षर से तुलना करें और खिसकाव ढूँढें।"
+    }
+   },
+   "theory": {
+    "en": "In letter-shift codes, each letter moves the same number of places in the alphabet (A=1 … Z=26).",
+    "hi": "अक्षर-खिसकाव कोड में हर अक्षर वर्णमाला में उतने ही स्थान खिसकता है (A=1 … Z=26)।"
+   },
+   "steps": [
+    {
+     "work": {
+      "en": "A→B, P→Q, L→M, E→F",
+      "hi": "A→B, P→Q, L→M, E→F"
+     },
+     "why": {
+      "en": "Each letter moves +1.",
+      "hi": "हर अक्षर +1 खिसकता है।"
+     }
+    },
+    {
+     "work": {
+      "en": "M→N, A→B, N→O, G→H, O→P",
+      "hi": "M→N, A→B, N→O, G→H, O→P"
+     },
+     "why": {
+      "en": "Apply the same +1 to MANGO.",
+      "hi": "MANGO पर वही +1 लगाएँ।"
+     }
+    }
+   ],
+   "answer": {
+    "en": "NBOHP.",
+    "hi": "NBOHP।"
+   },
+   "practice": [
+    {
+     "q": {
+      "en": "If CAT is coded as DBU, how is DOG coded?",
+      "hi": "अगर CAT को DBU लिखा जाता है, तो DOG कैसे लिखा जाएगा?"
+     },
+     "steps": [
+      {
+       "en": "C→D, A→B, T→U: +1",
+       "hi": "C→D, A→B, T→U: +1"
+      },
+      {
+       "en": "D→E, O→P, G→H",
+       "hi": "D→E, O→P, G→H"
+      }
+     ],
+     "answer": {
+      "en": "EPH.",
+      "hi": "EPH।"
+     }
+    }
+   ],
+   "review_note": "confirm with past CSAT papers",
+   "seq": 143
+  },
+  {
+   "id": "csat.reasoning.r03",
+   "topic": "csat.reasoning",
+   "type": "reasoning",
+   "difficulty": 2,
+   "source": "Standard CSAT reasoning method",
+   "status": "needs_review",
+   "exam_q": {
+    "en": "Pointing to a man, Ria says, 'He is the son of my grandfather's only son.' How is the man related to Ria?",
+    "hi": "एक आदमी की ओर इशारा करते हुए रिया कहती है, 'वह मेरे दादा के इकलौते बेटे का बेटा है।' वह आदमी रिया का क्या लगता है?"
+   },
+   "exam_note": {
+    "en": "A question like this can come in CSAT",
+    "hi": "ऐसा प्रश्न सीसैट में आ सकता है"
+   },
+   "split": {
+    "given": {
+     "en": "Grandfather → his only son → that son's son.",
+     "hi": "दादा → उनका इकलौता बेटा → उस बेटे का बेटा।"
+    },
+    "find": {
+     "en": "The man's relation to Ria.",
+     "hi": "आदमी का रिया से संबंध।"
+    },
+    "idea": {
+     "en": "Start from the far end of the sentence and come back one step at a time.",
+     "hi": "वाक्य के दूर वाले सिरे से शुरू करें और एक-एक क़दम लौटें।"
+    }
+   },
+   "theory": {
+    "en": "Draw a small family tree: generations up and down, siblings side by side.",
+    "hi": "एक छोटा वंश-वृक्ष बनाएँ: पीढ़ियाँ ऊपर-नीचे, भाई-बहन अगल-बगल।"
+   },
+   "steps": [
+    {
+     "work": {
+      "en": "My grandfather's only son = my father",
+      "hi": "मेरे दादा का इकलौता बेटा = मेरे पिता"
+     },
+     "why": {
+      "en": "If he has only one son, it must be Ria's father.",
+      "hi": "अगर उनका एक ही बेटा है, तो वह रिया के पिता ही हैं।"
+     }
+    },
+    {
+     "work": {
+      "en": "Son of my father = my brother",
+      "hi": "मेरे पिता का बेटा = मेरा भाई"
+     },
+     "why": {
+      "en": "Ria is a girl, so her father's son is her brother.",
+      "hi": "रिया लड़की है, इसलिए उसके पिता का बेटा उसका भाई है।"
+     }
+    }
+   ],
+   "answer": {
+    "en": "He is Ria's brother.",
+    "hi": "वह रिया का भाई है।"
+   },
+   "practice": [
+    {
+     "q": {
+      "en": "A woman says of a boy, 'His mother is the only daughter of my mother.' How is the woman related to the boy?",
+      "hi": "एक महिला एक लड़के के बारे में कहती है, 'उसकी माँ मेरी माँ की इकलौती बेटी है।' महिला उस लड़के की क्या लगती है?"
+     },
+     "steps": [
+      {
+       "en": "The only daughter of my mother = me",
+       "hi": "मेरी माँ की इकलौती बेटी = मैं"
+      },
+      {
+       "en": "So the boy's mother is the woman herself",
+       "hi": "तो लड़के की माँ वही महिला है"
+      }
+     ],
+     "answer": {
+      "en": "She is his mother.",
+      "hi": "वह उसकी माँ है।"
+     }
+    }
+   ],
+   "review_note": "confirm with past CSAT papers",
+   "seq": 144
+  },
+  {
+   "id": "csat.reasoning.r04",
+   "topic": "csat.reasoning",
+   "type": "reasoning",
+   "difficulty": 3,
+   "source": "Standard CSAT reasoning method",
+   "status": "needs_review",
+   "exam_q": {
+    "en": "What is the angle between the hour and minute hands of a clock at 3:30?",
+    "hi": "3:30 बजे घड़ी की घंटे और मिनट की सुइयों के बीच कितना कोण है?"
+   },
+   "exam_note": {
+    "en": "A question like this can come in CSAT",
+    "hi": "ऐसा प्रश्न सीसैट में आ सकता है"
+   },
+   "split": {
+    "given": {
+     "en": "Time 3:30.",
+     "hi": "समय 3:30।"
+    },
+    "find": {
+     "en": "The angle between the hands.",
+     "hi": "सुइयों के बीच का कोण।"
+    },
+    "idea": {
+     "en": "The hour hand also moves during the half hour; it is not exactly on 3.",
+     "hi": "आधे घंटे में घंटे की सुई भी खिसकती है; वह ठीक 3 पर नहीं होती।"
+    }
+   },
+   "theory": {
+    "en": "Angle = |30H − 5.5M|, where H is hours and M is minutes. If the answer is above 180°, subtract it from 360°.",
+    "hi": "कोण = |30H − 5.5M|, जहाँ H घंटे और M मिनट हैं। उत्तर 180° से अधिक हो तो उसे 360° से घटाएँ।"
+   },
+   "steps": [
+    {
+     "work": {
+      "en": "30 × 3 = 90",
+      "hi": "30 × 3 = 90"
+     },
+     "why": {
+      "en": "The hour hand moves 30° per hour.",
+      "hi": "घंटे की सुई प्रति घंटा 30° चलती है।"
+     }
+    },
+    {
+     "work": {
+      "en": "5.5 × 30 = 165",
+      "hi": "5.5 × 30 = 165"
+     },
+     "why": {
+      "en": "The minute hand gains 5.5° per minute on the hour hand.",
+      "hi": "मिनट की सुई हर मिनट घंटे की सुई से 5.5° आगे निकलती है।"
+     }
+    },
+    {
+     "work": {
+      "en": "|90 − 165| = 75°",
+      "hi": "|90 − 165| = 75°"
+     },
+     "why": {
+      "en": "Less than 180°, so this is the answer.",
+      "hi": "180° से कम है, इसलिए यही उत्तर है।"
+     }
+    }
+   ],
+   "answer": {
+    "en": "75°.",
+    "hi": "75°।"
+   },
+   "practice": [
+    {
+     "q": {
+      "en": "Find the angle between the hands at 4:20.",
+      "hi": "4:20 बजे सुइयों के बीच का कोण ज्ञात कीजिए।"
+     },
+     "steps": [
+      {
+       "en": "30 × 4 = 120",
+       "hi": "30 × 4 = 120"
+      },
+      {
+       "en": "5.5 × 20 = 110",
+       "hi": "5.5 × 20 = 110"
+      },
+      {
+       "en": "|120 − 110| = 10",
+       "hi": "|120 − 110| = 10"
+      }
+     ],
+     "answer": {
+      "en": "10°.",
+      "hi": "10°।"
+     }
+    }
+   ],
+   "review_note": "confirm with past CSAT papers",
+   "seq": 145
+  },
+  {
+   "id": "csat.reasoning.sum",
+   "topic": "csat.reasoning",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "Standard CSAT reasoning method",
+   "status": "needs_review",
+   "title": {
+    "en": "Reasoning rules",
+    "hi": "विवेचन के नियम"
+   },
+   "points": [
+    {
+     "en": "Series: check the gaps first.",
+     "hi": "श्रृंखला: पहले अंतर देखें।"
+    },
+    {
+     "en": "Codes: find the letter shift.",
+     "hi": "कोड: अक्षर का खिसकाव ढूँढें।"
+    },
+    {
+     "en": "Relations: draw a tree from the far end.",
+     "hi": "संबंध: दूर वाले सिरे से वृक्ष बनाएँ।"
+    },
+    {
+     "en": "Clock angle = |30H − 5.5M|.",
+     "hi": "घड़ी का कोण = |30H − 5.5M|।"
+    }
+   ],
+   "seq": 146
   },
   {
    "id": "polity.dpsp.f01",
@@ -4627,7 +5658,7 @@
     "en": "Rights (Part III) = court can enforce. Directives (Part IV) = goals for the government, not enforceable.",
     "hi": "अधिकार (भाग III) = न्यायालय लागू करा सकता है। निदेशक तत्व (भाग IV) = सरकार के लक्ष्य, लागू नहीं कराए जा सकते।"
    },
-   "seq": 133
+   "seq": 147
   },
   {
    "id": "polity.dpsp.f02",
@@ -4660,7 +5691,7 @@
     "en": "Goa has had a common civil code since Portuguese times.",
     "hi": "गोवा में पुर्तगाली काल से एक समान नागरिक संहिता चल रही है।"
    },
-   "seq": 134
+   "seq": 148
   },
   {
    "id": "polity.dpsp.f03",
@@ -4689,7 +5720,7 @@
     "en": "1976: Swaran Singh Committee → 42nd Amendment → Article 51A duties.",
     "hi": "1976: स्वर्ण सिंह समिति → 42वाँ संशोधन → अनुच्छेद 51A के कर्तव्य।"
    },
-   "seq": 135
+   "seq": 149
   },
   {
    "id": "polity.dpsp.f04",
@@ -4718,7 +5749,7 @@
     "en": "Ten in 1976, plus one about education in 2002 = eleven.",
     "hi": "1976 में दस, 2002 में शिक्षा वाला एक और = ग्यारह।"
    },
-   "seq": 136
+   "seq": 150
   },
   {
    "id": "polity.dpsp.sum",
@@ -4749,7 +5780,7 @@
      "hi": "11 कर्तव्य; 11वाँ 2002 में जुड़ा।"
     }
    ],
-   "seq": 137
+   "seq": 151
   },
   {
    "id": "economy.fiscal.f01",
@@ -4778,7 +5809,7 @@
     "en": "Spending minus all income that isn't a loan = what must be borrowed.",
     "hi": "ख़र्च घटा वह सारी आय जो क़र्ज़ नहीं है = जो उधार लेना पड़ेगा।"
    },
-   "seq": 138
+   "seq": 152
   },
   {
    "id": "economy.fiscal.f02",
@@ -4807,7 +5838,7 @@
     "en": "Take out the interest on old loans and see what new borrowing is left.",
     "hi": "पुराने क़र्ज़ का ब्याज निकाल दीजिए और देखिए कितना नया उधार बचता है।"
    },
-   "seq": 139
+   "seq": 153
   },
   {
    "id": "economy.fiscal.f03",
@@ -4836,7 +5867,7 @@
     "en": "Like taking a loan to pay the electricity bill instead of to buy a house.",
     "hi": "जैसे घर ख़रीदने के बजाय बिजली का बिल भरने के लिए क़र्ज़ लेना।"
    },
-   "seq": 140
+   "seq": 154
   },
   {
    "id": "economy.fiscal.f04",
@@ -4865,7 +5896,7 @@
     "en": "Everyone says budget; the Constitution says Annual Financial Statement.",
     "hi": "सब बजट कहते हैं; संविधान वार्षिक वित्तीय विवरण कहता है।"
    },
-   "seq": 141
+   "seq": 155
   },
   {
    "id": "economy.fiscal.f05",
@@ -4895,7 +5926,7 @@
     "hi": "तमिलनाडु में बना और केरल में ख़रीदा टीवी: जीएसटी का राज्य हिस्सा केरल को जाता है।"
    },
    "review_note": "Petroleum crude, diesel, petrol, natural gas and ATF are outside GST for now; alcohol for human consumption is outside by the Constitution.",
-   "seq": 142
+   "seq": 156
   },
   {
    "id": "economy.fiscal.f06",
@@ -4924,7 +5955,7 @@
     "en": "Direct = you pay it yourself. Indirect = it is hidden in the price.",
     "hi": "प्रत्यक्ष = आप ख़ुद चुकाते हैं। अप्रत्यक्ष = क़ीमत में छिपा रहता है।"
    },
-   "seq": 143
+   "seq": 157
   },
   {
    "id": "economy.fiscal.sum",
@@ -4959,7 +5990,7 @@
      "hi": "जीएसटी 1 जुलाई 2017 से, गंतव्य-आधारित।"
     }
    ],
-   "seq": 144
+   "seq": 158
   },
   {
    "id": "environment.conventions.f01",
@@ -4992,7 +6023,7 @@
     "en": "Keoladeo (Rajasthan) and Loktak (Manipur) are on the Montreux Record.",
     "hi": "केवलादेव (राजस्थान) और लोकटक (मणिपुर) मॉन्ट्रो रिकॉर्ड में हैं।"
    },
-   "seq": 145
+   "seq": 159
   },
   {
    "id": "environment.conventions.f02",
@@ -5021,7 +6052,7 @@
     "en": "CITES is a customs officer for wildlife: Appendix I means 'no commercial trade'.",
     "hi": "CITES वन्यजीवों का सीमा-शुल्क अधिकारी है: परिशिष्ट I यानी 'कोई व्यापारिक व्यापार नहीं'।"
    },
-   "seq": 146
+   "seq": 160
   },
   {
    "id": "environment.conventions.f03",
@@ -5054,7 +6085,7 @@
     "en": "The National Biodiversity Authority under the 2002 Act is in Chennai.",
     "hi": "2002 के अधिनियम के तहत राष्ट्रीय जैव विविधता प्राधिकरण चेन्नई में है।"
    },
-   "seq": 147
+   "seq": 161
   },
   {
    "id": "environment.conventions.f04",
@@ -5083,7 +6114,7 @@
     "en": "Kyoto: those who polluted more, cut first.",
     "hi": "क्योटो: जिसने ज़्यादा प्रदूषण किया, वह पहले घटाए।"
    },
-   "seq": 148
+   "seq": 162
   },
   {
    "id": "environment.conventions.f05",
@@ -5112,7 +6143,7 @@
     "en": "Paris: everyone joins, each country writes its own pledge.",
     "hi": "पेरिस: सब शामिल, हर देश अपना वचन ख़ुद लिखता है।"
    },
-   "seq": 149
+   "seq": 163
   },
   {
    "id": "environment.conventions.f06",
@@ -5141,7 +6172,7 @@
     "en": "CFCs hurt the ozone; their replacements, HFCs, heat the planet. Kigali fixes the second problem.",
     "hi": "CFC ओज़ोन को चोट पहुँचाते हैं; उनके विकल्प HFC धरती को गर्म करते हैं। किगाली दूसरी समस्या सुलझाता है।"
    },
-   "seq": 150
+   "seq": 164
   },
   {
    "id": "environment.conventions.f07",
@@ -5174,7 +6205,7 @@
     "en": "The Amur falcon, which stops in Nagaland on its way to Africa, is a species CMS cares about.",
     "hi": "अमूर बाज़, जो अफ़्रीका जाते हुए नागालैंड में रुकता है, CMS की चिंता वाली प्रजाति है।"
    },
-   "seq": 151
+   "seq": 165
   },
   {
    "id": "environment.conventions.sum",
@@ -5205,7 +6236,7 @@
      "hi": "मॉन्ट्रियल: CFC; किगाली: HFC।"
     }
    ],
-   "seq": 152
+   "seq": 166
   },
   {
    "id": "history.medieval.f01",
@@ -5234,7 +6265,7 @@
     "en": "Chola villages ran their own affairs through elected committees.",
     "hi": "चोल गाँव चुनी हुई समितियों से अपना काम चलाते थे।"
    },
-   "seq": 153
+   "seq": 167
   },
   {
    "id": "history.medieval.f02",
@@ -5263,7 +6294,7 @@
     "en": "Iltutmish: land for officers. Alauddin: fixed prices for soldiers.",
     "hi": "इल्तुतमिश: अधिकारियों को भूमि। अलाउद्दीन: सैनिकों के लिए तय भाव।"
    },
-   "seq": 154
+   "seq": 168
   },
   {
    "id": "history.medieval.f03",
@@ -5296,7 +6327,7 @@
     "en": "Raja Todar Mal designed Akbar's land revenue system (zabt).",
     "hi": "राजा टोडरमल ने अकबर की भू-राजस्व व्यवस्था (ज़ब्त) बनाई।"
    },
-   "seq": 155
+   "seq": 169
   },
   {
    "id": "history.medieval.f04",
@@ -5325,7 +6356,7 @@
     "en": "1336, Hampi, Harihara and Bukka; Krishnadevaraya at its peak.",
     "hi": "1336, हम्पी, हरिहर और बुक्का; शिखर पर कृष्णदेवराय।"
    },
-   "seq": 156
+   "seq": 170
   },
   {
    "id": "history.medieval.f05",
@@ -5354,7 +6385,7 @@
     "en": "Nirguna saints: no idols, no caste, one God within.",
     "hi": "निर्गुण संत: न मूर्ति, न जाति, भीतर एक ईश्वर।"
    },
-   "seq": 157
+   "seq": 171
   },
   {
    "id": "history.medieval.sum",
@@ -5385,7 +6416,7 @@
      "hi": "विजयनगर 1336, हम्पी।"
     }
    ],
-   "seq": 158
+   "seq": 172
   },
   {
    "id": "geography.world.f01",
@@ -5414,7 +6445,7 @@
     "en": "Hormuz = Gulf oil exit. Bab-el-Mandeb = Red Sea's southern door.",
     "hi": "होर्मुज़ = खाड़ी के तेल का निकास। बाब-अल-मंदेब = लाल सागर का दक्षिणी द्वार।"
    },
-   "seq": 159
+   "seq": 173
   },
   {
    "id": "geography.world.f02",
@@ -5447,7 +6478,7 @@
     "en": "The Andaman and Nicobar Islands sit near its western entrance.",
     "hi": "अंडमान और निकोबार द्वीप इसके पश्चिमी प्रवेश के पास हैं।"
    },
-   "seq": 160
+   "seq": 174
   },
   {
    "id": "geography.world.f03",
@@ -5480,7 +6511,7 @@
     "en": "The Namib Desert has the cold Benguela Current; the Sahara's west coast has the Canary Current.",
     "hi": "नामीब मरुस्थल के पास ठंडी बेंगुएला धारा है; सहारा के पश्चिमी तट पर कैनरी धारा।"
    },
-   "seq": 161
+   "seq": 175
   },
   {
    "id": "geography.world.sum",
@@ -5511,7 +6542,7 @@
      "hi": "पश्चिमी तट के मरुस्थल ठंडी धाराओं के पास।"
     }
    ],
-   "seq": 162
+   "seq": 176
   },
   {
    "id": "science.physics.f01",
@@ -5544,7 +6575,7 @@
     "en": "On the Moon, with no air, the sky is black even in daytime.",
     "hi": "चंद्रमा पर, हवा न होने से, दिन में भी आकाश काला होता है।"
    },
-   "seq": 163
+   "seq": 177
   },
   {
    "id": "science.physics.f02",
@@ -5577,7 +6608,7 @@
     "en": "The Prototype Fast Breeder Reactor is at Kalpakkam, Tamil Nadu.",
     "hi": "प्रोटोटाइप फ़ास्ट ब्रीडर रिएक्टर कलपक्कम, तमिलनाडु में है।"
    },
-   "seq": 164
+   "seq": 178
   },
   {
    "id": "science.physics.f03",
@@ -5606,7 +6637,7 @@
     "en": "No particles, no sound.",
     "hi": "कण नहीं, तो ध्वनि नहीं।"
    },
-   "seq": 165
+   "seq": 179
   },
   {
    "id": "science.physics.f04",
@@ -5639,7 +6670,7 @@
     "en": "Acid rain has damaged the marble of the Taj Mahal; the Taj Trapezium Zone limits polluting industries.",
     "hi": "अम्ल वर्षा ने ताजमहल के संगमरमर को नुक़सान पहुँचाया है; ताज ट्रेपेज़ियम ज़ोन प्रदूषक उद्योगों को सीमित करता है।"
    },
-   "seq": 166
+   "seq": 180
   },
   {
    "id": "science.physics.f05",
@@ -5668,7 +6699,7 @@
     "en": "Fission = breaking big. Fusion = joining small.",
     "hi": "विखंडन = बड़े को तोड़ना। संलयन = छोटे को जोड़ना।"
    },
-   "seq": 167
+   "seq": 181
   },
   {
    "id": "science.physics.sum",
@@ -5699,7 +6730,7 @@
      "hi": "अम्ल वर्षा: pH < 5.6; SO2 और NOx।"
     }
    ],
-   "seq": 168
+   "seq": 182
   },
   {
    "id": "polity.parliament.f01",
@@ -5728,7 +6759,7 @@
     "en": "Two houses plus the President who signs = Parliament.",
     "hi": "दो सदन और हस्ताक्षर करने वाले राष्ट्रपति = संसद।"
    },
-   "seq": 169
+   "seq": 183
   },
   {
    "id": "polity.parliament.f02",
@@ -5758,7 +6789,7 @@
     "hi": "250 सीटें: 238 विधानसभाओं द्वारा चुने गए + 12 प्रतिभा के लिए राष्ट्रपति द्वारा चुने गए।"
    },
    "review_note": "Present strength is about 245; check before publishing.",
-   "seq": 170
+   "seq": 184
   },
   {
    "id": "polity.parliament.f03",
@@ -5787,7 +6818,7 @@
     "en": "Like a school where one batch leaves every two years but the school never closes.",
     "hi": "जैसे कोई विद्यालय जहाँ हर दो साल में एक बैच निकलता है, पर विद्यालय कभी बंद नहीं होता।"
    },
-   "seq": 171
+   "seq": 185
   },
   {
    "id": "polity.parliament.f04",
@@ -5816,7 +6847,7 @@
     "en": "Lok Sabha is the people's house: all its members are now elected.",
     "hi": "लोकसभा जनता का सदन है: अब इसके सभी सदस्य चुने हुए हैं।"
    },
-   "seq": 172
+   "seq": 186
   },
   {
    "id": "polity.parliament.f05",
@@ -5845,7 +6876,7 @@
     "en": "Money comes from the people, so the people's House (Lok Sabha) has the final say. Rajya Sabha gets two weeks to comment.",
     "hi": "पैसा जनता का है, इसलिए अंतिम फ़ैसला जनता के सदन (लोकसभा) का। राज्यसभा को टिप्पणी के लिए दो सप्ताह मिलते हैं।"
    },
-   "seq": 173
+   "seq": 187
   },
   {
    "id": "polity.parliament.f06",
@@ -5878,7 +6909,7 @@
     "en": "Joint sittings have been held only three times, for example for the Prevention of Terrorism Bill in 2002.",
     "hi": "संयुक्त बैठक केवल तीन बार हुई है, जैसे 2002 में आतंकवाद निवारण विधेयक के लिए।"
    },
-   "seq": 174
+   "seq": 188
   },
   {
    "id": "polity.parliament.s01",
@@ -5953,7 +6984,7 @@
     "en": "Only once.",
     "hi": "केवल एक बार।"
    },
-   "seq": 175
+   "seq": 189
   },
   {
    "id": "polity.parliament.sum",
@@ -5984,7 +7015,7 @@
      "hi": "संयुक्त बैठक: केवल साधारण विधेयक; अध्यक्ष संचालन करते हैं।"
     }
    ],
-   "seq": 176
+   "seq": 190
   },
   {
    "id": "economy.banking.f01",
@@ -6014,7 +7045,7 @@
     "hi": "तीन महीने भुगतान नहीं → ऋण 'निष्पादित' नहीं रहता।"
    },
    "review_note": "For crop loans the rule follows crop seasons (two/one season).",
-   "seq": 177
+   "seq": 191
   },
   {
    "id": "economy.banking.f02",
@@ -6043,7 +7074,7 @@
     "en": "If a company can't pay, lenders take it to NCLT, which oversees a deadline-based rescue or sale.",
     "hi": "अगर कंपनी भुगतान न कर सके, तो ऋणदाता उसे NCLT ले जाते हैं, जो समय-सीमा वाली बचाव या बिक्री प्रक्रिया की निगरानी करता है।"
    },
-   "seq": 178
+   "seq": 192
   },
   {
    "id": "economy.banking.f03",
@@ -6073,7 +7104,7 @@
     "hi": "बैंक के हर ₹100 ऋण में से ₹40 खेती और छोटी इकाइयों जैसे क्षेत्रों को जाने चाहिए।"
    },
    "review_note": "Regional rural banks and small finance banks have a 75% target.",
-   "seq": 179
+   "seq": 193
   },
   {
    "id": "economy.banking.f04",
@@ -6103,7 +7134,7 @@
     "hi": "भुगतान बैंक बैंक लाइसेंस वाला बटुआ है: पैसा रखो, पैसा भेजो, पर उधार नहीं।"
    },
    "review_note": "Deposit cap raised from ₹1 lakh to ₹2 lakh per customer in 2021.",
-   "seq": 180
+   "seq": 194
   },
   {
    "id": "economy.banking.f05",
@@ -6133,7 +7164,7 @@
     "hi": "नाबार्ड गाँवों की सेवा करने वाले बैंकों के पीछे का बैंक है।"
    },
    "review_note": "Set up on the recommendation of the B. Sivaraman Committee (CRAFICARD).",
-   "seq": 181
+   "seq": 195
   },
   {
    "id": "economy.banking.sum",
@@ -6168,7 +7199,7 @@
      "hi": "नाबार्ड 1982: ग्रामीण ऋण की शीर्ष संस्था।"
     }
    ],
-   "seq": 182
+   "seq": 196
   },
   {
    "id": "environment.pollution.f01",
@@ -6197,7 +7228,7 @@
     "en": "Too much fertiliser in a lake feeds the algae, and the algae end up choking the lake.",
     "hi": "झील में ज़्यादा खाद शैवाल को खिलाती है, और शैवाल अंत में झील का दम घोंट देते हैं।"
    },
-   "seq": 183
+   "seq": 197
   },
   {
    "id": "environment.pollution.f02",
@@ -6226,7 +7257,7 @@
     "en": "BOD measures how much 'food' for microbes is floating in the water: more food, dirtier water.",
     "hi": "BOD मापता है कि पानी में सूक्ष्मजीवों का 'भोजन' कितना है: ज़्यादा भोजन, ज़्यादा गंदा पानी।"
    },
-   "seq": 184
+   "seq": 198
   },
   {
    "id": "environment.pollution.f03",
@@ -6256,7 +7287,7 @@
     "hi": "आठ प्रदूषक, एक संख्या, दिन की हवा का एक रंग।"
    },
    "review_note": "Full list: PM10, PM2.5, NO2, SO2, CO, O3, NH3, Pb.",
-   "seq": 185
+   "seq": 199
   },
   {
    "id": "environment.pollution.f04",
@@ -6285,7 +7316,7 @@
     "en": "Ozone up high is a sunscreen; ozone at ground level is a pollutant.",
     "hi": "ऊपर की ओज़ोन सनस्क्रीन है; ज़मीन के पास की ओज़ोन प्रदूषक है।"
    },
-   "seq": 186
+   "seq": 200
   },
   {
    "id": "environment.pollution.f05",
@@ -6314,7 +7345,7 @@
     "en": "Methane is a strong but short-lived heater; CO2 is weaker but stays for centuries.",
     "hi": "मीथेन प्रबल पर अल्पकालिक गर्म करने वाली है; CO2 कमज़ोर पर सदियों तक रहती है।"
    },
-   "seq": 187
+   "seq": 201
   },
   {
    "id": "environment.pollution.f06",
@@ -6344,7 +7375,7 @@
     "hi": "सुंदरबन = सबसे बड़ा मैंग्रोव वन, और यही पश्चिम बंगाल को पहला बनाता है।"
    },
    "review_note": "Re-check ranking against the latest ISFR before publishing.",
-   "seq": 188
+   "seq": 202
   },
   {
    "id": "environment.pollution.s01",
@@ -6415,7 +7446,7 @@
     "en": "Bacteria use it up while decomposing dead algae.",
     "hi": "मरे शैवाल को सड़ाते हुए जीवाणु उसे ख़त्म कर देते हैं।"
    },
-   "seq": 189
+   "seq": 203
   },
   {
    "id": "environment.pollution.sum",
@@ -6446,7 +7477,7 @@
      "hi": "मीथेन: प्रबल, अल्पकालिक; CO2: कमज़ोर, दीर्घकालिक।"
     }
    ],
-   "seq": 190
+   "seq": 204
   },
   {
    "id": "polity.president.f01",
@@ -6476,7 +7507,7 @@
     "hi": "राष्ट्रपति को केवल जनता द्वारा चुने गए लोग चुनते हैं: सांसद और विधायक, मनोनीत सदस्य नहीं।"
    },
    "review_note": "Voting is by proportional representation with the single transferable vote, by secret ballot.",
-   "seq": 191
+   "seq": 205
   },
   {
    "id": "polity.president.f02",
@@ -6505,7 +7536,7 @@
     "en": "72 = mercy. A Governor has a similar power under Article 161, but cannot pardon a death sentence.",
     "hi": "72 = दया। राज्यपाल के पास अनुच्छेद 161 के तहत ऐसी शक्ति है, पर वह मृत्युदंड माफ़ नहीं कर सकते।"
    },
-   "seq": 192
+   "seq": 206
   },
   {
    "id": "polity.president.f03",
@@ -6534,7 +7565,7 @@
     "en": "An ordinance is a temporary law for a break period; Parliament must okay it within six weeks of returning.",
     "hi": "अध्यादेश छुट्टी के समय का अस्थायी क़ानून है; लौटने के छह सप्ताह में संसद को इसे मंज़ूर करना होता है।"
    },
-   "seq": 193
+   "seq": 207
   },
   {
    "id": "polity.president.f04",
@@ -6563,7 +7594,7 @@
     "en": "Lok Sabha has a Speaker; Rajya Sabha's chair is the Vice-President.",
     "hi": "लोकसभा में अध्यक्ष (स्पीकर); राज्यसभा में सभापति उपराष्ट्रपति।"
    },
-   "seq": 194
+   "seq": 208
   },
   {
    "id": "polity.president.f05",
@@ -6592,7 +7623,7 @@
     "en": "Ministers are a team answerable to Lok Sabha, and the team can be at most 15% of its size.",
     "hi": "मंत्री लोकसभा के प्रति उत्तरदायी एक टीम हैं, और टीम इसके आकार का अधिकतम 15% हो सकती है।"
    },
-   "seq": 195
+   "seq": 209
   },
   {
    "id": "polity.president.sum",
@@ -6623,7 +7654,7 @@
      "hi": "मंत्री लोकसभा के प्रति उत्तरदायी; अधिकतम 15%।"
     }
    ],
-   "seq": 196
+   "seq": 210
   },
   {
    "id": "economy.external.f01",
@@ -6656,7 +7687,7 @@
     "en": "Kerala receives a large share of India's remittances from the Gulf.",
     "hi": "भारत के धन-प्रेषण का बड़ा हिस्सा खाड़ी देशों से केरल आता है।"
    },
-   "seq": 197
+   "seq": 211
   },
   {
    "id": "economy.external.f02",
@@ -6685,7 +7716,7 @@
     "en": "Buy a big stake to help run the company = FDI. Buy a small slice to trade = FPI.",
     "hi": "कंपनी चलाने में हिस्सा लेने के लिए बड़ा हिस्सा = FDI। व्यापार के लिए छोटा टुकड़ा = FPI।"
    },
-   "seq": 198
+   "seq": 212
   },
   {
    "id": "economy.external.f03",
@@ -6714,7 +7745,7 @@
     "en": "Weak rupee: exporters smile, importers (and oil buyers) pay more.",
     "hi": "कमज़ोर रुपया: निर्यातक ख़ुश, आयातक (और तेल ख़रीदार) ज़्यादा चुकाते हैं।"
    },
-   "seq": 199
+   "seq": 213
   },
   {
    "id": "economy.external.f04",
@@ -6743,7 +7774,7 @@
     "en": "SDR is the IMF's own money, made from five big currencies — not the rupee.",
     "hi": "SDR आईएमएफ़ की अपनी मुद्रा है, पाँच बड़ी मुद्राओं से बनी — रुपया नहीं।"
    },
-   "seq": 200
+   "seq": 214
   },
   {
    "id": "economy.external.sum",
@@ -6778,7 +7809,7 @@
      "hi": "SDR: पाँच मुद्राएँ, रुपया नहीं।"
     }
    ],
-   "seq": 201
+   "seq": 215
   },
   {
    "id": "polity.judiciary.f01",
@@ -6811,7 +7842,7 @@
     "en": "The case arose from a Kerala land-reform law challenged by the head of the Edneer Mutt in Kasaragod.",
     "hi": "यह मामला कासरगोड के एडनीर मठ के प्रमुख द्वारा केरल के भूमि-सुधार क़ानून को चुनौती देने से शुरू हुआ।"
    },
-   "seq": 202
+   "seq": 216
   },
   {
    "id": "polity.judiciary.f02",
@@ -6840,7 +7871,7 @@
     "en": "131 = government vs government cases start at the top.",
     "hi": "131 = सरकार बनाम सरकार के मामले सीधे सबसे ऊपर शुरू होते हैं।"
    },
-   "seq": 203
+   "seq": 217
   },
   {
    "id": "polity.judiciary.f03",
@@ -6873,7 +7904,7 @@
     "en": "The Ayodhya reference (1993) is one the Court declined to answer.",
     "hi": "अयोध्या संदर्भ (1993) में न्यायालय ने उत्तर देने से मना कर दिया था।"
    },
-   "seq": 204
+   "seq": 218
   },
   {
    "id": "polity.judiciary.f04",
@@ -6902,7 +7933,7 @@
     "en": "Supreme Court 65, High Court 62 — the higher court retires later.",
     "hi": "सर्वोच्च 65, उच्च 62 — ऊँचे न्यायालय में सेवानिवृत्ति बाद में।"
    },
-   "seq": 205
+   "seq": 219
   },
   {
    "id": "polity.judiciary.sum",
@@ -6933,7 +7964,7 @@
      "hi": "सेवानिवृत्ति: सर्वोच्च 65, उच्च 62।"
     }
    ],
-   "seq": 206
+   "seq": 220
   },
   {
    "id": "economy.agri.f01",
@@ -6963,7 +7994,7 @@
     "hi": "CACP सुझाव देता है; आर्थिक मामलों की मंत्रिमंडल समिति तय करती और घोषित करती है।"
    },
    "review_note": "CACP is an attached office of the Ministry of Agriculture, not a statutory body. Sugarcane has FRP, not MSP.",
-   "seq": 207
+   "seq": 221
   },
   {
    "id": "economy.agri.f02",
@@ -6992,7 +8023,7 @@
     "en": "Ask for work in your village; the law says you must get it within 15 days, up to 100 days a year.",
     "hi": "अपने गाँव में काम माँगिए; क़ानून कहता है 15 दिन में मिलना चाहिए, वर्ष में 100 दिन तक।"
    },
-   "seq": 208
+   "seq": 222
   },
   {
    "id": "economy.agri.f03",
@@ -7021,7 +8052,7 @@
     "en": "₹2,000 three times a year, straight to the bank.",
     "hi": "साल में तीन बार ₹2,000, सीधे बैंक में।"
    },
-   "seq": 209
+   "seq": 223
   },
   {
    "id": "economy.agri.sum",
@@ -7048,7 +8079,7 @@
      "hi": "पीएम-किसान: ₹6,000 तीन क़िस्तों में।"
     }
    ],
-   "seq": 210
+   "seq": 224
   },
   {
    "id": "polity.federal.f01",
@@ -7081,7 +8112,7 @@
     "en": "Defence is in the Union List, police in the State List, education and forests in the Concurrent List.",
     "hi": "रक्षा संघ सूची में, पुलिस राज्य सूची में, शिक्षा और वन समवर्ती सूची में हैं।"
    },
-   "seq": 211
+   "seq": 225
   },
   {
    "id": "polity.federal.f02",
@@ -7111,7 +8142,7 @@
     "hi": "शिक्षा पहले राज्य का विषय थी; 1976 से केंद्र और राज्य दोनों इसे साझा करते हैं।"
    },
    "review_note": "The five: education, forests, weights and measures, protection of wild animals and birds, administration of justice.",
-   "seq": 212
+   "seq": 226
   },
   {
    "id": "polity.federal.f03",
@@ -7140,7 +8171,7 @@
     "en": "After 1975, the vague words 'internal disturbance' were replaced by the stricter 'armed rebellion'.",
     "hi": "1975 के बाद अस्पष्ट 'आंतरिक अशांति' की जगह सख़्त 'सशस्त्र विद्रोह' रखा गया।"
    },
-   "seq": 213
+   "seq": 227
   },
   {
    "id": "polity.federal.f04",
@@ -7169,7 +8200,7 @@
     "en": "352 national, 356 state, 360 financial. Only 360 has never been used.",
     "hi": "352 राष्ट्रीय, 356 राज्य, 360 वित्तीय। केवल 360 कभी उपयोग नहीं हुआ।"
    },
-   "seq": 214
+   "seq": 228
   },
   {
    "id": "polity.federal.f05",
@@ -7198,7 +8229,7 @@
     "en": "One tax for the country, so one table where the Centre and every state sit together.",
     "hi": "देश के लिए एक कर, इसलिए एक मेज़ जहाँ केंद्र और हर राज्य साथ बैठते हैं।"
    },
-   "seq": 215
+   "seq": 229
   },
   {
    "id": "polity.federal.sum",
@@ -7229,7 +8260,7 @@
      "hi": "अनु. 360 कभी उपयोग नहीं; जीएसटी परिषद अनु. 279A।"
     }
    ],
-   "seq": 216
+   "seq": 230
   },
   {
    "id": "polity.local.f01",
@@ -7262,7 +8293,7 @@
     "en": "Kerala's 1996 People's Plan Campaign gave panchayats about a third of the state plan funds.",
     "hi": "केरल के 1996 के जन योजना अभियान ने पंचायतों को राज्य योजना निधि का लगभग एक-तिहाई दिया।"
    },
-   "seq": 217
+   "seq": 231
   },
   {
    "id": "polity.local.f02",
@@ -7291,7 +8322,7 @@
     "en": "Villages: 73rd, 29 subjects. Towns: 74th, 18 subjects.",
     "hi": "गाँव: 73वाँ, 29 विषय। शहर: 74वाँ, 18 विषय।"
    },
-   "seq": 218
+   "seq": 232
   },
   {
    "id": "polity.local.f03",
@@ -7320,7 +8351,7 @@
     "en": "Three floors of local government — village, block, district — suggested by Balwant Rai Mehta.",
     "hi": "स्थानीय शासन की तीन मंज़िलें — गाँव, ब्लॉक, ज़िला — बलवंत राय मेहता ने सुझाईं।"
    },
-   "seq": 219
+   "seq": 233
   },
   {
    "id": "polity.local.sum",
@@ -7351,7 +8382,7 @@
      "hi": "तीन स्तर: बलवंत राय मेहता, 1957।"
     }
    ],
-   "seq": 220
+   "seq": 234
   },
   {
    "id": "polity.bodies.f01",
@@ -7380,7 +8411,7 @@
     "en": "Pairs to remember: EC 324, CAG 148, FC 280, UPSC 315.",
     "hi": "याद रखने के जोड़े: निर्वाचन आयोग 324, CAG 148, वित्त आयोग 280, UPSC 315।"
    },
-   "seq": 221
+   "seq": 235
   },
   {
    "id": "polity.bodies.f02",
@@ -7410,7 +8441,7 @@
     "hi": "हर पाँच साल में एक निर्णायक तय करता है कि कर का केक केंद्र और राज्यों में कैसे कटे।"
    },
    "review_note": "16th Finance Commission chaired by Arvind Panagariya (constituted Dec 2023); check its report status before publishing.",
-   "seq": 222
+   "seq": 236
   },
   {
    "id": "polity.bodies.f03",
@@ -7439,7 +8470,7 @@
     "en": "Constitution-made: EC, CAG, Finance Commission. Government-made: NITI Aayog.",
     "hi": "संविधान से बने: निर्वाचन आयोग, CAG, वित्त आयोग। सरकार से बना: नीति आयोग।"
    },
-   "seq": 223
+   "seq": 237
   },
   {
    "id": "polity.bodies.f04",
@@ -7468,7 +8499,7 @@
     "en": "The government's lawyer can talk in Parliament, but only members vote.",
     "hi": "सरकार के वकील संसद में बोल सकते हैं, पर मतदान केवल सदस्य करते हैं।"
    },
-   "seq": 224
+   "seq": 238
   },
   {
    "id": "polity.bodies.sum",
@@ -7499,7 +8530,7 @@
      "hi": "महान्यायवादी बोल सकते हैं, मतदान नहीं।"
     }
    ],
-   "seq": 225
+   "seq": 239
   }
  ],
  "questions": [
@@ -12167,6 +13198,367 @@
    "source": "Practice — exam pattern (not from a past paper)",
    "covers": [
     "science.physics.f05"
+   ]
+  },
+  {
+   "id": "q.practice.csat.1",
+   "topic": "csat.pattern",
+   "kind": "mcq",
+   "q": {
+    "en": "Which of the following statements about the Prelims is correct?",
+    "hi": "प्रारंभिक परीक्षा के बारे में निम्नलिखित में से कौन-सा कथन सही है?"
+   },
+   "options": [
+    {
+     "en": "CSAT marks are added to the merit",
+     "hi": "सीसैट के अंक मेरिट में जुड़ते हैं"
+    },
+    {
+     "en": "CSAT is qualifying at 33%",
+     "hi": "सीसैट 33% पर क्वालिफ़ाइंग है"
+    },
+    {
+     "en": "There is no negative marking in CSAT",
+     "hi": "सीसैट में नकारात्मक अंकन नहीं है"
+    },
+    {
+     "en": "GS Paper I has 80 questions",
+     "hi": "सामान्य अध्ययन प्रश्नपत्र I में 80 प्रश्न हैं"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Only GS Paper I decides the cut-off.",
+    "hi": "केवल सामान्य अध्ययन प्रश्नपत्र I कट-ऑफ़ तय करता है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "csat.pattern.f01",
+    "csat.pattern.f02"
+   ]
+  },
+  {
+   "id": "q.practice.csat.2",
+   "topic": "csat.quant",
+   "kind": "mcq",
+   "q": {
+    "en": "A price is increased by 25% and then decreased by 20%. The net change is:",
+    "hi": "एक दाम 25% बढ़ाया जाता है और फिर 20% घटाया जाता है। कुल बदलाव है:"
+   },
+   "options": [
+    {
+     "en": "5% increase",
+     "hi": "5% वृद्धि"
+    },
+    {
+     "en": "No change",
+     "hi": "कोई बदलाव नहीं"
+    },
+    {
+     "en": "5% decrease",
+     "hi": "5% कमी"
+    },
+    {
+     "en": "1% decrease",
+     "hi": "1% कमी"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "25 − 20 − (25 × 20 ÷ 100) = 5 − 5 = 0.",
+    "hi": "25 − 20 − (25 × 20 ÷ 100) = 5 − 5 = 0।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "csat.quant.m01"
+   ]
+  },
+  {
+   "id": "q.practice.csat.3",
+   "topic": "csat.quant",
+   "kind": "mcq",
+   "q": {
+    "en": "A car covers 180 km in 3 hours. What is its speed in m/s?",
+    "hi": "एक कार 3 घंटे में 180 किमी चलती है। उसकी गति मी/से में कितनी है?"
+   },
+   "options": [
+    {
+     "en": "15",
+     "hi": "15"
+    },
+    {
+     "en": "16.67",
+     "hi": "16.67"
+    },
+    {
+     "en": "20",
+     "hi": "20"
+    },
+    {
+     "en": "60",
+     "hi": "60"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "60 km/h × 5/18 = 16.67 m/s.",
+    "hi": "60 किमी/घंटा × 5/18 = 16.67 मी/से।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "csat.quant.m02"
+   ]
+  },
+  {
+   "id": "q.practice.csat.4",
+   "topic": "csat.quant",
+   "kind": "mcq",
+   "q": {
+    "en": "A can do a work in 20 days and B in 30 days. Working together, they will finish it in:",
+    "hi": "A एक काम 20 दिन में और B 30 दिन में कर सकता है। साथ मिलकर वे इसे कितने दिन में पूरा करेंगे?"
+   },
+   "options": [
+    {
+     "en": "10 days",
+     "hi": "10 दिन"
+    },
+    {
+     "en": "12 days",
+     "hi": "12 दिन"
+    },
+    {
+     "en": "15 days",
+     "hi": "15 दिन"
+    },
+    {
+     "en": "25 days",
+     "hi": "25 दिन"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "1/20 + 1/30 = 5/60 = 1/12.",
+    "hi": "1/20 + 1/30 = 5/60 = 1/12।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "csat.quant.m03"
+   ]
+  },
+  {
+   "id": "q.practice.csat.5",
+   "topic": "csat.quant",
+   "kind": "mcq",
+   "q": {
+    "en": "The average of 4 numbers is 25. If a fifth number, 35, is added, the new average is:",
+    "hi": "4 संख्याओं का औसत 25 है। पाँचवीं संख्या 35 जोड़ने पर नया औसत होगा:"
+   },
+   "options": [
+    {
+     "en": "26",
+     "hi": "26"
+    },
+    {
+     "en": "27",
+     "hi": "27"
+    },
+    {
+     "en": "28",
+     "hi": "28"
+    },
+    {
+     "en": "30",
+     "hi": "30"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "(100 + 35) ÷ 5 = 27.",
+    "hi": "(100 + 35) ÷ 5 = 27।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "csat.quant.m04"
+   ]
+  },
+  {
+   "id": "q.practice.csat.6",
+   "topic": "csat.quant",
+   "kind": "mcq",
+   "q": {
+    "en": "₹1,500 is divided between P and Q in the ratio 2 : 3. Q gets:",
+    "hi": "₹1,500 को P और Q में 2 : 3 के अनुपात में बाँटा जाता है। Q को मिलेगा:"
+   },
+   "options": [
+    {
+     "en": "₹600",
+     "hi": "₹600"
+    },
+    {
+     "en": "₹750",
+     "hi": "₹750"
+    },
+    {
+     "en": "₹900",
+     "hi": "₹900"
+    },
+    {
+     "en": "₹1,000",
+     "hi": "₹1,000"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "5 parts of ₹300; Q gets 3 × 300.",
+    "hi": "₹300 के 5 भाग; Q को 3 × 300।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "csat.quant.m05"
+   ]
+  },
+  {
+   "id": "q.practice.csat.7",
+   "topic": "csat.reasoning",
+   "kind": "mcq",
+   "q": {
+    "en": "Find the next term: 1, 4, 9, 16, 25, ?",
+    "hi": "अगला पद ज्ञात कीजिए: 1, 4, 9, 16, 25, ?"
+   },
+   "options": [
+    {
+     "en": "30",
+     "hi": "30"
+    },
+    {
+     "en": "34",
+     "hi": "34"
+    },
+    {
+     "en": "36",
+     "hi": "36"
+    },
+    {
+     "en": "49",
+     "hi": "49"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Squares: 6² = 36.",
+    "hi": "वर्ग: 6² = 36।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "csat.reasoning.r01"
+   ]
+  },
+  {
+   "id": "q.practice.csat.8",
+   "topic": "csat.reasoning",
+   "kind": "mcq",
+   "q": {
+    "en": "If ROSE is coded as TQUG, how is LILY coded?",
+    "hi": "अगर ROSE को TQUG लिखा जाता है, तो LILY कैसे लिखा जाएगा?"
+   },
+   "options": [
+    {
+     "en": "NKNA",
+     "hi": "NKNA"
+    },
+    {
+     "en": "MJMZ",
+     "hi": "MJMZ"
+    },
+    {
+     "en": "NKNZ",
+     "hi": "NKNZ"
+    },
+    {
+     "en": "OLOB",
+     "hi": "OLOB"
+    }
+   ],
+   "answer": 0,
+   "explain": {
+    "en": "Each letter +2; Y + 2 wraps round to A.",
+    "hi": "हर अक्षर +2; Y + 2 घूमकर A बनता है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "csat.reasoning.r02"
+   ]
+  },
+  {
+   "id": "q.practice.csat.9",
+   "topic": "csat.reasoning",
+   "kind": "mcq",
+   "q": {
+    "en": "Introducing a girl, Arun says, 'She is the daughter of the only son of my father.' How is the girl related to Arun?",
+    "hi": "एक लड़की का परिचय कराते हुए अरुण कहता है, 'वह मेरे पिता के इकलौते बेटे की बेटी है।' लड़की अरुण की क्या लगती है?"
+   },
+   "options": [
+    {
+     "en": "Sister",
+     "hi": "बहन"
+    },
+    {
+     "en": "Niece",
+     "hi": "भतीजी"
+    },
+    {
+     "en": "Daughter",
+     "hi": "बेटी"
+    },
+    {
+     "en": "Cousin",
+     "hi": "चचेरी बहन"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "The only son of Arun's father is Arun himself.",
+    "hi": "अरुण के पिता का इकलौता बेटा अरुण ख़ुद है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "csat.reasoning.r03"
+   ]
+  },
+  {
+   "id": "q.practice.csat.10",
+   "topic": "csat.reasoning",
+   "kind": "mcq",
+   "q": {
+    "en": "What is the angle between the hands of a clock at 2:20?",
+    "hi": "2:20 बजे घड़ी की सुइयों के बीच कितना कोण है?"
+   },
+   "options": [
+    {
+     "en": "40°",
+     "hi": "40°"
+    },
+    {
+     "en": "50°",
+     "hi": "50°"
+    },
+    {
+     "en": "60°",
+     "hi": "60°"
+    },
+    {
+     "en": "70°",
+     "hi": "70°"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "|60 − 110| = 50°.",
+    "hi": "|60 − 110| = 50°।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "csat.reasoning.r04"
    ]
   }
  ]
