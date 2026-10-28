@@ -40,6 +40,7 @@ import {
   type Learner,
   type Sitting,
   type Stats,
+  saveQuota,
 } from "@/lib/data";
 import { clock, t } from "@/lib/i18n";
 import { callFunction, sb } from "@/lib/supabase";
@@ -157,6 +158,19 @@ export function Feed({ userId, learner, onLearner }: { userId: string; learner: 
   );
 
   const today = localDay(now, learner.timezone);
+
+  // Keep the server's copy of today's quota current for study alerts.
+  const quotaSaved = useRef("");
+  useEffect(() => {
+    if (!plan) return;
+    const snap = { day: plan.today, total: plan.quota, left: plan.left, minutes: plan.minutesLeft };
+    const sig = JSON.stringify(snap);
+    if (sig === quotaSaved.current) return;
+    quotaSaved.current = sig;
+    saveQuota(userId, snap).catch(() => {
+      quotaSaved.current = "";
+    });
+  }, [plan, userId]);
   const todays = useMemo(() => (ctx ? ctx.sittings.filter((s) => s.day === today) : []), [ctx, today]);
   const finishedToday = todays.filter((s) => s.finished_at);
   const lastFinished = finishedToday.length ? new Date(finishedToday[finishedToday.length - 1].finished_at!) : null;

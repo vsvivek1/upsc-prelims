@@ -70,6 +70,16 @@ export async function saveLearner(userId: string, patch: Partial<Learner>): Prom
   return check(await sb().from("learners").upsert(row).select("*").single()) as Learner;
 }
 
+/** Today's quota snapshot, so study alerts can say how many cards are waiting. */
+export async function saveQuota(userId: string, q: { day: string; total: number; left: number; minutes: number }) {
+  check(
+    await sb()
+      .from("learners")
+      .update({ quota_day: q.day, quota_total: q.total, quota_left: q.left, minutes_left: q.minutes })
+      .eq("user_id", userId),
+  );
+}
+
 export async function loadCourse(): Promise<Course> {
   return check(await sb().from("courses").select("*").limit(1).single()) as Course;
 }

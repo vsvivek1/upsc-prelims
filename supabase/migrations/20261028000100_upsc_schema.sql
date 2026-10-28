@@ -86,6 +86,11 @@ create table upsc.learners (
   billing_gstin    text,
   billing_state    text,
   onboarded_at     timestamptz,
+  -- Today's quota as the feed last computed it; the alert sender reads it.
+  quota_day        date,
+  quota_total      integer,
+  quota_left       integer,
+  minutes_left     integer,
   created_at       timestamptz not null default now(),
   updated_at       timestamptz not null default now()
 );
