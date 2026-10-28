@@ -50,13 +50,23 @@
    "freq": 0.6
   },
   {
+   "id": "history.modern",
+   "subject": "history",
+   "title": {
+    "en": "Freedom struggle",
+    "hi": "स्वतंत्रता संग्राम"
+   },
+   "order": 18,
+   "freq": 0.9
+  },
+  {
    "id": "polity.preamble",
    "subject": "polity",
    "title": {
     "en": "The Preamble",
     "hi": "प्रस्तावना (उद्देशिका)"
    },
-   "order": 18,
+   "order": 31,
    "freq": 0.6,
    "prereq": [
     "polity.making"
@@ -69,7 +79,7 @@
     "en": "Inflation and price indices",
     "hi": "मुद्रास्फीति और मूल्य सूचकांक"
    },
-   "order": 23,
+   "order": 36,
    "freq": 0.75,
    "prereq": [
     "economy.national"
@@ -82,11 +92,21 @@
     "en": "Biodiversity and species",
     "hi": "जैव विविधता और प्रजातियाँ"
    },
-   "order": 30,
+   "order": 43,
    "freq": 0.8,
    "prereq": [
     "environment.ecology"
    ]
+  },
+  {
+   "id": "history.ancient",
+   "subject": "history",
+   "title": {
+    "en": "Ancient India",
+    "hi": "प्राचीन भारत"
+   },
+   "order": 50,
+   "freq": 0.75
   },
   {
    "id": "polity.fr",
@@ -95,7 +115,7 @@
     "en": "Fundamental Rights",
     "hi": "मौलिक अधिकार"
    },
-   "order": 37,
+   "order": 58,
    "freq": 0.9,
    "prereq": [
     "polity.preamble"
@@ -108,7 +128,7 @@
     "en": "Money, RBI and monetary policy",
     "hi": "मुद्रा, आरबीआई और मौद्रिक नीति"
    },
-   "order": 52,
+   "order": 73,
    "freq": 0.9,
    "prereq": [
     "economy.inflation"
@@ -121,10 +141,23 @@
     "en": "Protected areas and Indian laws",
     "hi": "संरक्षित क्षेत्र और भारतीय क़ानून"
    },
-   "order": 59,
+   "order": 80,
    "freq": 0.8,
    "prereq": [
     "environment.biodiversity"
+   ]
+  },
+  {
+   "id": "history.culture",
+   "subject": "history",
+   "title": {
+    "en": "Art and culture",
+    "hi": "कला और संस्कृति"
+   },
+   "order": 88,
+   "freq": 0.8,
+   "prereq": [
+    "history.ancient"
    ]
   },
   {
@@ -134,7 +167,7 @@
     "en": "Directive Principles and Fundamental Duties",
     "hi": "राज्य के नीति निदेशक तत्व और मौलिक कर्तव्य"
    },
-   "order": 67,
+   "order": 94,
    "freq": 0.7,
    "prereq": [
     "polity.fr"
@@ -147,7 +180,7 @@
     "en": "Budget, deficits and taxes",
     "hi": "बजट, घाटे और कर"
    },
-   "order": 72,
+   "order": 99,
    "freq": 0.8,
    "prereq": [
     "economy.national"
@@ -160,10 +193,23 @@
     "en": "International conventions",
     "hi": "अंतरराष्ट्रीय अभिसमय"
    },
-   "order": 79,
+   "order": 106,
    "freq": 0.85,
    "prereq": [
     "environment.biodiversity"
+   ]
+  },
+  {
+   "id": "history.medieval",
+   "subject": "history",
+   "title": {
+    "en": "Medieval India",
+    "hi": "मध्यकालीन भारत"
+   },
+   "order": 114,
+   "freq": 0.55,
+   "prereq": [
+    "history.ancient"
    ]
   },
   {
@@ -173,7 +219,7 @@
     "en": "Parliament",
     "hi": "संसद"
    },
-   "order": 87,
+   "order": 120,
    "freq": 0.85,
    "prereq": [
     "polity.preamble"
@@ -186,7 +232,7 @@
     "en": "Banking and finance",
     "hi": "बैंकिंग और वित्त"
    },
-   "order": 95,
+   "order": 128,
    "freq": 0.7,
    "prereq": [
     "economy.money"
@@ -199,7 +245,7 @@
     "en": "Pollution and climate change",
     "hi": "प्रदूषण और जलवायु परिवर्तन"
    },
-   "order": 101,
+   "order": 134,
    "freq": 0.7,
    "prereq": [
     "environment.ecology"
@@ -212,7 +258,7 @@
     "en": "President and the Union Executive",
     "hi": "राष्ट्रपति और संघ की कार्यपालिका"
    },
-   "order": 109,
+   "order": 142,
    "freq": 0.75,
    "prereq": [
     "polity.parliament"
@@ -225,7 +271,7 @@
     "en": "External sector",
     "hi": "बाह्य क्षेत्र"
    },
-   "order": 115,
+   "order": 148,
    "freq": 0.7,
    "prereq": [
     "economy.money"
@@ -238,7 +284,7 @@
     "en": "The Judiciary",
     "hi": "न्यायपालिका"
    },
-   "order": 120,
+   "order": 153,
    "freq": 0.8,
    "prereq": [
     "polity.fr"
@@ -251,7 +297,7 @@
     "en": "Agriculture and rural schemes",
     "hi": "कृषि और ग्रामीण योजनाएँ"
    },
-   "order": 125,
+   "order": 158,
    "freq": 0.55
   },
   {
@@ -261,7 +307,7 @@
     "en": "Federalism and Emergency",
     "hi": "संघवाद और आपातकाल"
    },
-   "order": 129,
+   "order": 162,
    "freq": 0.7,
    "prereq": [
     "polity.parliament"
@@ -274,7 +320,7 @@
     "en": "Panchayats and Municipalities",
     "hi": "पंचायतें और नगरपालिकाएँ"
    },
-   "order": 135,
+   "order": 168,
    "freq": 0.6,
    "prereq": [
     "polity.federal"
@@ -287,7 +333,7 @@
     "en": "Constitutional and other bodies",
     "hi": "संवैधानिक और अन्य निकाय"
    },
-   "order": 139,
+   "order": 172,
    "freq": 0.7,
    "prereq": [
     "polity.parliament"
@@ -824,6 +870,443 @@
    "seq": 17
   },
   {
+   "id": "history.modern.f01",
+   "topic": "history.modern",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "Bipan Chandra, 'India's Struggle for Independence'; NCERT Class XII Part III",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Indian National Congress was founded in December 1885 in Bombay. A. O. Hume helped found it; W. C. Bonnerjee was its first president.",
+    "hi": "भारतीय राष्ट्रीय कांग्रेस दिसंबर 1885 में बंबई में स्थापित हुई। ए. ओ. ह्यूम ने इसकी स्थापना में मदद की; डब्ल्यू. सी. बनर्जी इसके पहले अध्यक्ष थे।"
+   },
+   "why": {
+    "en": "Educated Indians wanted one all-India platform to put their demands to the British.",
+    "hi": "शिक्षित भारतीय अंग्रेज़ों के सामने अपनी माँगें रखने के लिए एक अखिल भारतीय मंच चाहते थे।"
+   },
+   "recall_q": {
+    "en": "Who presided over the first session of the Congress?",
+    "hi": "कांग्रेस के पहले अधिवेशन की अध्यक्षता किसने की?"
+   },
+   "recall_a": {
+    "en": "W. C. Bonnerjee.",
+    "hi": "डब्ल्यू. सी. बनर्जी।"
+   },
+   "explain_simple": {
+    "en": "1885, Bombay, 72 delegates: the start of an all-India voice.",
+    "hi": "1885, बंबई, 72 प्रतिनिधि: एक अखिल भारतीय आवाज़ की शुरुआत।"
+   },
+   "seq": 18
+  },
+  {
+   "id": "history.modern.f02",
+   "topic": "history.modern",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Bipan Chandra, 'India's Struggle for Independence'; NCERT Class XII Part III",
+   "status": "needs_review",
+   "learn": {
+    "en": "Lord Curzon partitioned Bengal in 1905. The protest became the Swadeshi movement, and the partition was annulled in 1911.",
+    "hi": "लॉर्ड कर्ज़न ने 1905 में बंगाल का विभाजन किया। इसका विरोध स्वदेशी आंदोलन बना, और 1911 में विभाजन रद्द हुआ।"
+   },
+   "why": {
+    "en": "Indians saw the split as a way to divide Hindus and Muslims and weaken Bengal's nationalism.",
+    "hi": "भारतीयों ने इस बँटवारे को हिंदू-मुसलमानों को बाँटने और बंगाल के राष्ट्रवाद को कमज़ोर करने का तरीक़ा माना।"
+   },
+   "recall_q": {
+    "en": "Which movement grew out of the protest against the partition of Bengal?",
+    "hi": "बंगाल विभाजन के विरोध से कौन-सा आंदोलन निकला?"
+   },
+   "recall_a": {
+    "en": "The Swadeshi (and boycott) movement.",
+    "hi": "स्वदेशी (और बहिष्कार) आंदोलन।"
+   },
+   "explain_simple": {
+    "en": "Divide Bengal → buy Indian, burn foreign cloth.",
+    "hi": "बंगाल बाँटो → भारतीय ख़रीदो, विदेशी कपड़ा जलाओ।"
+   },
+   "seq": 19
+  },
+  {
+   "id": "history.modern.f03",
+   "topic": "history.modern",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Bipan Chandra, 'India's Struggle for Independence'; NCERT Class XII Part III",
+   "status": "needs_review",
+   "learn": {
+    "en": "Gandhi's first satyagraha in India was at Champaran, Bihar, in 1917, for indigo farmers. Kheda and Ahmedabad followed in 1918.",
+    "hi": "भारत में गांधी का पहला सत्याग्रह 1917 में बिहार के चंपारण में नील किसानों के लिए था। 1918 में खेड़ा और अहमदाबाद हुए।"
+   },
+   "why": {
+    "en": "Planters forced farmers to grow indigo on part of their land (the tinkathia system).",
+    "hi": "बागान मालिक किसानों को ज़मीन के एक हिस्से पर नील उगाने को मजबूर करते थे (तिनकठिया प्रथा)।"
+   },
+   "recall_q": {
+    "en": "Where was Gandhi's first satyagraha in India?",
+    "hi": "भारत में गांधी का पहला सत्याग्रह कहाँ हुआ?"
+   },
+   "recall_a": {
+    "en": "Champaran, 1917.",
+    "hi": "चंपारण, 1917।"
+   },
+   "explain_simple": {
+    "en": "Champaran (indigo) → Kheda (tax relief) → Ahmedabad (mill wages).",
+    "hi": "चंपारण (नील) → खेड़ा (लगान माफ़ी) → अहमदाबाद (मिल मज़दूरी)।"
+   },
+   "example": {
+    "en": "Rajkumar Shukla, a local farmer, persuaded Gandhi to come to Champaran.",
+    "hi": "स्थानीय किसान राजकुमार शुक्ल ने गांधी को चंपारण आने के लिए राज़ी किया।"
+   },
+   "seq": 20
+  },
+  {
+   "id": "history.modern.f04",
+   "topic": "history.modern",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Bipan Chandra, 'India's Struggle for Independence'; NCERT Class XII Part III",
+   "status": "needs_review",
+   "learn": {
+    "en": "Gandhi called off the Non-Cooperation Movement in February 1922 after a mob burned a police station at Chauri Chaura.",
+    "hi": "चौरी चौरा में भीड़ द्वारा थाना जलाने के बाद गांधी ने फ़रवरी 1922 में असहयोग आंदोलन वापस ले लिया।"
+   },
+   "why": {
+    "en": "Gandhi held that the movement had to stay non-violent; violence meant people were not yet ready.",
+    "hi": "गांधी मानते थे कि आंदोलन अहिंसक रहना चाहिए; हिंसा का अर्थ था कि लोग अभी तैयार नहीं हैं।"
+   },
+   "recall_q": {
+    "en": "Which incident made Gandhi withdraw Non-Cooperation?",
+    "hi": "किस घटना के कारण गांधी ने असहयोग वापस लिया?"
+   },
+   "recall_a": {
+    "en": "Chauri Chaura, February 1922.",
+    "hi": "चौरी चौरा, फ़रवरी 1922।"
+   },
+   "explain_simple": {
+    "en": "Non-Cooperation: started 1920, stopped 1922 at Chauri Chaura.",
+    "hi": "असहयोग: 1920 में शुरू, 1922 में चौरी चौरा पर रुका।"
+   },
+   "seq": 21
+  },
+  {
+   "id": "history.modern.f05",
+   "topic": "history.modern",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "Bipan Chandra, 'India's Struggle for Independence'; NCERT Class XII Part III",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Dandi March (12 March to 6 April 1930) began the Civil Disobedience Movement by breaking the salt law.",
+    "hi": "दांडी यात्रा (12 मार्च से 6 अप्रैल 1930) ने नमक क़ानून तोड़कर सविनय अवज्ञा आंदोलन शुरू किया।"
+   },
+   "why": {
+    "en": "Salt was used by everyone, so a salt tax hit the poorest and made a perfect symbol.",
+    "hi": "नमक हर कोई इस्तेमाल करता था, इसलिए नमक कर सबसे ग़रीब पर पड़ता था और एक आदर्श प्रतीक बना।"
+   },
+   "recall_q": {
+    "en": "Which movement did the Dandi March start?",
+    "hi": "दांडी यात्रा ने कौन-सा आंदोलन शुरू किया?"
+   },
+   "recall_a": {
+    "en": "The Civil Disobedience Movement.",
+    "hi": "सविनय अवज्ञा आंदोलन।"
+   },
+   "explain_simple": {
+    "en": "A handful of salt challenged an empire.",
+    "hi": "मुट्ठी भर नमक ने एक साम्राज्य को चुनौती दी।"
+   },
+   "example": {
+    "en": "Sarojini Naidu led the salt satyagraha at Dharasana after Gandhi's arrest.",
+    "hi": "गांधी की गिरफ़्तारी के बाद सरोजिनी नायडू ने धरसाना में नमक सत्याग्रह का नेतृत्व किया।"
+   },
+   "seq": 22
+  },
+  {
+   "id": "history.modern.f06",
+   "topic": "history.modern",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Bipan Chandra, 'India's Struggle for Independence'; NCERT Class XII Part III",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Poona Pact (1932) between Gandhi and Ambedkar gave the depressed classes reserved seats within joint electorates, instead of separate electorates.",
+    "hi": "पूना पैक्ट (1932) गांधी और आंबेडकर के बीच हुआ; इसमें दलित वर्गों को पृथक निर्वाचन के बजाय संयुक्त निर्वाचन में आरक्षित सीटें मिलीं।"
+   },
+   "why": {
+    "en": "The British Communal Award had offered separate electorates; Gandhi fasted against it, fearing it would split Hindu society.",
+    "hi": "अंग्रेज़ों के सांप्रदायिक पंचाट ने पृथक निर्वाचन दिया था; गांधी ने इसके विरुद्ध उपवास किया, क्योंकि उन्हें हिंदू समाज के बँटने का डर था।"
+   },
+   "recall_q": {
+    "en": "What did the Poona Pact replace separate electorates with?",
+    "hi": "पूना पैक्ट ने पृथक निर्वाचन की जगह क्या रखा?"
+   },
+   "recall_a": {
+    "en": "Reserved seats in joint electorates.",
+    "hi": "संयुक्त निर्वाचन में आरक्षित सीटें।"
+   },
+   "explain_simple": {
+    "en": "Everyone votes together, but some seats are kept for depressed-class candidates.",
+    "hi": "सब मिलकर वोट दें, पर कुछ सीटें दलित वर्ग के उम्मीदवारों के लिए रहें।"
+   },
+   "seq": 23
+  },
+  {
+   "id": "history.modern.f07",
+   "topic": "history.modern",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "Bipan Chandra, 'India's Struggle for Independence'; NCERT Class XII Part III",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Quit India resolution was passed in Bombay on 8 August 1942. Gandhi's call was 'Do or Die'.",
+    "hi": "भारत छोड़ो प्रस्ताव 8 अगस्त 1942 को बंबई में पारित हुआ। गांधी का आह्वान था 'करो या मरो'।"
+   },
+   "why": {
+    "en": "The failure of the Cripps Mission (1942) convinced Congress that only full independence would do.",
+    "hi": "क्रिप्स मिशन (1942) की विफलता ने कांग्रेस को विश्वास दिलाया कि केवल पूर्ण स्वतंत्रता ही चलेगी।"
+   },
+   "recall_q": {
+    "en": "What was Gandhi's slogan for Quit India?",
+    "hi": "भारत छोड़ो आंदोलन के लिए गांधी का नारा क्या था?"
+   },
+   "recall_a": {
+    "en": "'Do or Die' (Karo ya Maro).",
+    "hi": "'करो या मरो'।"
+   },
+   "explain_simple": {
+    "en": "Cripps fails → Quit India → leaders jailed at once → people lead themselves.",
+    "hi": "क्रिप्स विफल → भारत छोड़ो → नेता तुरंत जेल में → लोग ख़ुद नेतृत्व करते हैं।"
+   },
+   "example": {
+    "en": "Aruna Asaf Ali hoisted the flag at Gowalia Tank maidan.",
+    "hi": "अरुणा आसफ़ अली ने ग्वालिया टैंक मैदान में झंडा फहराया।"
+   },
+   "seq": 24
+  },
+  {
+   "id": "history.modern.f08",
+   "topic": "history.modern",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Bipan Chandra, 'India's Struggle for Independence'; NCERT Class XII Part III",
+   "status": "needs_review",
+   "learn": {
+    "en": "In 1916 came the Lucknow Pact between Congress and the Muslim League, and the Home Rule Leagues of Tilak and Annie Besant.",
+    "hi": "1916 में कांग्रेस और मुस्लिम लीग के बीच लखनऊ समझौता हुआ, और तिलक तथा एनी बेसेंट की होम रूल लीग बनीं।"
+   },
+   "why": {
+    "en": "The same year the moderates and extremists in Congress also came back together.",
+    "hi": "उसी साल कांग्रेस में नरमपंथी और गरमपंथी भी फिर एक हुए।"
+   },
+   "recall_q": {
+    "en": "Which two leaders started Home Rule Leagues in 1916?",
+    "hi": "1916 में किन दो नेताओं ने होम रूल लीग शुरू की?"
+   },
+   "recall_a": {
+    "en": "Bal Gangadhar Tilak and Annie Besant.",
+    "hi": "बाल गंगाधर तिलक और एनी बेसेंट।"
+   },
+   "explain_simple": {
+    "en": "1916 = the year of unity: Congress with the League, moderates with extremists.",
+    "hi": "1916 = एकता का वर्ष: कांग्रेस लीग के साथ, नरमपंथी गरमपंथियों के साथ।"
+   },
+   "seq": 25
+  },
+  {
+   "id": "history.modern.f09",
+   "topic": "history.modern",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Government of India Act 1935",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Government of India Act 1935 gave provincial autonomy and proposed an all-India federation, which never came into being.",
+    "hi": "भारत सरकार अधिनियम 1935 ने प्रांतीय स्वायत्तता दी और एक अखिल भारतीय संघ प्रस्तावित किया, जो कभी नहीं बना।"
+   },
+   "why": {
+    "en": "The princely states had to join for the federation to start, and not enough of them did.",
+    "hi": "संघ शुरू होने के लिए रियासतों का जुड़ना ज़रूरी था, और पर्याप्त रियासतें नहीं जुड़ीं।"
+   },
+   "recall_q": {
+    "en": "Which part of the 1935 Act was never put into force?",
+    "hi": "1935 के अधिनियम का कौन-सा भाग कभी लागू नहीं हुआ?"
+   },
+   "recall_a": {
+    "en": "The all-India federation.",
+    "hi": "अखिल भारतीय संघ।"
+   },
+   "explain_simple": {
+    "en": "1935: provinces got their governments; the federation stayed on paper.",
+    "hi": "1935: प्रांतों को सरकारें मिलीं; संघ काग़ज़ पर रहा।"
+   },
+   "example": {
+    "en": "Congress ministries took office in 1937 under this Act.",
+    "hi": "इसी अधिनियम के तहत 1937 में कांग्रेस मंत्रिमंडल बने।"
+   },
+   "seq": 26
+  },
+  {
+   "id": "history.modern.f10",
+   "topic": "history.modern",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class VIII 'Our Pasts III'",
+   "status": "needs_review",
+   "learn": {
+    "en": "Lord Cornwallis introduced the Permanent Settlement in Bengal in 1793. The revenue zamindars paid was fixed for ever.",
+    "hi": "लॉर्ड कॉर्नवालिस ने 1793 में बंगाल में स्थायी बंदोबस्त लागू किया। ज़मींदारों द्वारा दिया जाने वाला राजस्व हमेशा के लिए तय कर दिया गया।"
+   },
+   "why": {
+    "en": "The Company wanted a steady income; zamindars squeezed peasants, while ryotwari in Madras dealt with farmers directly.",
+    "hi": "कंपनी स्थिर आय चाहती थी; ज़मींदारों ने किसानों का शोषण किया, जबकि मद्रास की रैयतवाड़ी में सीधे किसानों से लेनदेन होता था।"
+   },
+   "recall_q": {
+    "en": "Who introduced the Permanent Settlement, and when?",
+    "hi": "स्थायी बंदोबस्त किसने और कब लागू किया?"
+   },
+   "recall_a": {
+    "en": "Lord Cornwallis, 1793.",
+    "hi": "लॉर्ड कॉर्नवालिस, 1793।"
+   },
+   "explain_simple": {
+    "en": "Permanent = zamindar pays a fixed sum. Ryotwari = farmer pays the state directly.",
+    "hi": "स्थायी = ज़मींदार तय रक़म देता है। रैयतवाड़ी = किसान सीधे राज्य को देता है।"
+   },
+   "seq": 27
+  },
+  {
+   "id": "history.modern.f11",
+   "topic": "history.modern",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "NCERT Class XII Part III, theme 11",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Revolt of 1857 began at Meerut on 10 May 1857, when sepoys rose and marched to Delhi.",
+    "hi": "1857 का विद्रोह 10 मई 1857 को मेरठ से शुरू हुआ, जब सिपाहियों ने विद्रोह किया और दिल्ली की ओर कूच किया।"
+   },
+   "why": {
+    "en": "The greased-cartridge rumour was the spark; deeper causes were annexations, land revenue and insults to soldiers.",
+    "hi": "चर्बी वाले कारतूस की अफ़वाह चिंगारी थी; गहरे कारण थे राज्य-हड़प, भू-राजस्व और सिपाहियों का अपमान।"
+   },
+   "recall_q": {
+    "en": "Where did the Revolt of 1857 begin?",
+    "hi": "1857 का विद्रोह कहाँ से शुरू हुआ?"
+   },
+   "recall_a": {
+    "en": "Meerut.",
+    "hi": "मेरठ।"
+   },
+   "explain_simple": {
+    "en": "Meerut rose, Delhi was taken, and Bahadur Shah Zafar was named leader.",
+    "hi": "मेरठ उठा, दिल्ली पर क़ब्ज़ा हुआ, और बहादुर शाह ज़फ़र नेता घोषित हुए।"
+   },
+   "seq": 28
+  },
+  {
+   "id": "history.modern.s01",
+   "topic": "history.modern",
+   "type": "steps",
+   "difficulty": 2,
+   "source": "Bipan Chandra, 'India's Struggle for Independence'; NCERT Class XII Part III",
+   "status": "needs_review",
+   "title": {
+    "en": "Gandhi's three mass movements",
+    "hi": "गांधी के तीन जन आंदोलन"
+   },
+   "steps": [
+    {
+     "text": {
+      "en": "1920 — Non-Cooperation: boycott of councils, courts, schools and foreign cloth.",
+      "hi": "1920 — असहयोग: परिषदों, अदालतों, स्कूलों और विदेशी कपड़े का बहिष्कार।"
+     },
+     "explain": {
+      "en": "It followed the Jallianwala Bagh massacre (1919) and joined with the Khilafat movement.",
+      "hi": "यह जलियाँवाला बाग़ हत्याकांड (1919) के बाद आया और ख़िलाफ़त आंदोलन से जुड़ा।"
+     }
+    },
+    {
+     "text": {
+      "en": "1922 — withdrawn after Chauri Chaura.",
+      "hi": "1922 — चौरी चौरा के बाद वापस।"
+     }
+    },
+    {
+     "text": {
+      "en": "1930 — Civil Disobedience: the Dandi March breaks the salt law.",
+      "hi": "1930 — सविनय अवज्ञा: दांडी यात्रा नमक क़ानून तोड़ती है।"
+     },
+     "explain": {
+      "en": "Now the aim was Purna Swaraj, declared at Lahore in December 1929.",
+      "hi": "अब लक्ष्य था पूर्ण स्वराज, जो दिसंबर 1929 में लाहौर में घोषित हुआ।"
+     }
+    },
+    {
+     "text": {
+      "en": "1931 — Gandhi–Irwin Pact pauses it; Gandhi attends the Second Round Table Conference.",
+      "hi": "1931 — गांधी-इरविन समझौते से विराम; गांधी दूसरे गोलमेज़ सम्मेलन में जाते हैं।"
+     }
+    },
+    {
+     "text": {
+      "en": "1942 — Quit India: 'Do or Die'. Leaders are jailed and people lead on their own.",
+      "hi": "1942 — भारत छोड़ो: 'करो या मरो'। नेता जेल में, लोग ख़ुद नेतृत्व करते हैं।"
+     }
+    }
+   ],
+   "summary": [
+    {
+     "en": "1920 Non-Cooperation → 1930 Civil Disobedience → 1942 Quit India.",
+     "hi": "1920 असहयोग → 1930 सविनय अवज्ञा → 1942 भारत छोड़ो।"
+    },
+    {
+     "en": "Each one went further: from not cooperating, to breaking laws, to demanding the British leave.",
+     "hi": "हर आंदोलन आगे बढ़ा: सहयोग न करने से, क़ानून तोड़ने तक, अंग्रेज़ों से जाने की माँग तक।"
+    }
+   ],
+   "recall_q": {
+    "en": "Which movement followed the Purna Swaraj resolution?",
+    "hi": "पूर्ण स्वराज प्रस्ताव के बाद कौन-सा आंदोलन हुआ?"
+   },
+   "recall_a": {
+    "en": "The Civil Disobedience Movement (1930).",
+    "hi": "सविनय अवज्ञा आंदोलन (1930)।"
+   },
+   "seq": 29
+  },
+  {
+   "id": "history.modern.sum",
+   "topic": "history.modern",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "Bipan Chandra, 'India's Struggle for Independence'; NCERT Class XII Part III",
+   "status": "needs_review",
+   "title": {
+    "en": "Freedom struggle",
+    "hi": "स्वतंत्रता संग्राम"
+   },
+   "points": [
+    {
+     "en": "1885 Congress; 1905 Bengal split → Swadeshi.",
+     "hi": "1885 कांग्रेस; 1905 बंगाल विभाजन → स्वदेशी।"
+    },
+    {
+     "en": "1917 Champaran; 1920 Non-Cooperation; 1922 Chauri Chaura.",
+     "hi": "1917 चंपारण; 1920 असहयोग; 1922 चौरी चौरा।"
+    },
+    {
+     "en": "1930 Dandi; 1932 Poona Pact; 1935 Act.",
+     "hi": "1930 दांडी; 1932 पूना पैक्ट; 1935 अधिनियम।"
+    },
+    {
+     "en": "1942 Quit India: 'Do or Die'.",
+     "hi": "1942 भारत छोड़ो: 'करो या मरो'।"
+    }
+   ],
+   "seq": 30
+  },
+  {
    "id": "polity.preamble.f01",
    "topic": "polity.preamble",
    "type": "fact",
@@ -850,7 +1333,7 @@
     "en": "'We, the people' means: we made it, so we are the boss of it.",
     "hi": "'हम, भारत के लोग' का अर्थ: हमने बनाया, इसलिए इसके मालिक हम हैं।"
    },
-   "seq": 18
+   "seq": 31
   },
   {
    "id": "polity.preamble.f02",
@@ -879,7 +1362,7 @@
     "en": "1976 added S-S-I: Socialist, Secular, and 'unity and integrity' of the nation.",
     "hi": "1976 में तीन शब्द जुड़े: समाजवादी, पंथनिरपेक्ष, और राष्ट्र की 'एकता और अखंडता'।"
    },
-   "seq": 19
+   "seq": 32
   },
   {
    "id": "polity.preamble.f03",
@@ -909,7 +1392,7 @@
     "hi": "बेरुबारी 1960 ने 'नहीं' कहा। केशवानंद 1973 ने 'हाँ' कहा। अब बाद वाला फ़ैसला ही क़ानून है।"
    },
    "review_note": "The Preamble is not enforceable in court (non-justiciable).",
-   "seq": 20
+   "seq": 33
   },
   {
    "id": "polity.preamble.f04",
@@ -939,7 +1422,7 @@
     "hi": "समाज में, पैसे के मामलों में और सत्ता में न्याय: सामाजिक, आर्थिक, राजनीतिक।"
    },
    "review_note": "'Justice: social, economic, political' is taken from the Russian (1917) revolution ideals per Laxmikanth.",
-   "seq": 21
+   "seq": 34
   },
   {
    "id": "polity.preamble.sum",
@@ -970,7 +1453,7 @@
      "hi": "सामाजिक, आर्थिक और राजनीतिक न्याय का वादा।"
     }
    ],
-   "seq": 22
+   "seq": 35
   },
   {
    "id": "economy.inflation.f01",
@@ -1000,7 +1483,7 @@
     "hi": "वेतन वही रहता है और सब्ज़ियाँ महँगी होती हैं: आप कम ख़रीद पाते हैं।"
    },
    "review_note": "Borrowers gain because they repay in money worth less.",
-   "seq": 23
+   "seq": 36
   },
   {
    "id": "economy.inflation.f02",
@@ -1029,7 +1512,7 @@
     "en": "Aim for 4, stay between 2 and 6.",
     "hi": "निशाना 4 पर, दायरा 2 से 6।"
    },
-   "seq": 24
+   "seq": 37
   },
   {
    "id": "economy.inflation.f03",
@@ -1058,7 +1541,7 @@
     "en": "Six people vote on interest rates; if it is 3–3, the Governor decides.",
     "hi": "छह लोग ब्याज दर पर मत देते हैं; 3–3 होने पर गवर्नर तय करते हैं।"
    },
-   "seq": 25
+   "seq": 38
   },
   {
    "id": "economy.inflation.f04",
@@ -1088,7 +1571,7 @@
     "hi": "CPI = आपका पूरा ख़र्च, बाल कटाई और स्कूल फ़ीस सहित। WPI = थोक में बिकी वस्तुएँ, सेवाएँ नहीं।"
    },
    "review_note": "Base years and weights are being revised (CPI new base 2024 announced) — confirm before publishing.",
-   "seq": 26
+   "seq": 39
   },
   {
    "id": "economy.inflation.f05",
@@ -1117,7 +1600,7 @@
     "en": "Pull = buyers pull prices up. Push = costs push prices up.",
     "hi": "माँग-जनित = ख़रीदार क़ीमतें ऊपर खींचते हैं। लागत-जनित = लागत क़ीमतें ऊपर धकेलती है।"
    },
-   "seq": 27
+   "seq": 40
   },
   {
    "id": "economy.inflation.f06",
@@ -1150,7 +1633,7 @@
     "en": "The 1970s oil shocks caused stagflation in many countries.",
     "hi": "1970 के दशक के तेल झटकों ने कई देशों में स्टैगफ़्लेशन पैदा किया।"
    },
-   "seq": 28
+   "seq": 41
   },
   {
    "id": "economy.inflation.sum",
@@ -1181,7 +1664,7 @@
      "hi": "माँग-जनित बनाम लागत-जनित; स्टैगफ़्लेशन।"
     }
    ],
-   "seq": 29
+   "seq": 42
   },
   {
    "id": "environment.biodiversity.f01",
@@ -1210,7 +1693,7 @@
     "en": "Hotspot = very rich AND badly damaged.",
     "hi": "हॉटस्पॉट = बहुत समृद्ध और बुरी तरह क्षतिग्रस्त।"
    },
-   "seq": 30
+   "seq": 43
   },
   {
    "id": "environment.biodiversity.f02",
@@ -1239,7 +1722,7 @@
     "en": "Four hotspots: two in the mountains of the north and north-east, one in the south-west, one in the islands.",
     "hi": "चार हॉटस्पॉट: दो उत्तर और पूर्वोत्तर के पहाड़ों में, एक दक्षिण-पश्चिम में, एक द्वीपों में।"
    },
-   "seq": 31
+   "seq": 44
   },
   {
    "id": "environment.biodiversity.f03",
@@ -1272,7 +1755,7 @@
     "en": "The Great Indian Bustard is Critically Endangered.",
     "hi": "सोन चिरैया (ग्रेट इंडियन बस्टर्ड) अति संकटग्रस्त है।"
    },
-   "seq": 32
+   "seq": 45
   },
   {
    "id": "environment.biodiversity.f04",
@@ -1301,7 +1784,7 @@
     "en": "In-situ = national parks, sanctuaries, biosphere reserves. Ex-situ = zoos, botanical gardens, seed banks.",
     "hi": "स्व-स्थाने = राष्ट्रीय उद्यान, अभयारण्य, जैवमंडल आरक्षित क्षेत्र। बाह्य-स्थाने = चिड़ियाघर, वनस्पति उद्यान, बीज बैंक।"
    },
-   "seq": 33
+   "seq": 46
   },
   {
    "id": "environment.biodiversity.f05",
@@ -1334,7 +1817,7 @@
     "en": "Reefs in the Gulf of Mannar and Lakshadweep have bleached in marine heatwaves.",
     "hi": "मन्नार की खाड़ी और लक्षद्वीप की चट्टानें समुद्री ताप-लहरों में विरंजित हुई हैं।"
    },
-   "seq": 34
+   "seq": 47
   },
   {
    "id": "environment.biodiversity.f06",
@@ -1363,7 +1846,7 @@
     "en": "A newcomer with no enemies takes over the whole field.",
     "hi": "बिना दुश्मन का नवागंतुक पूरा मैदान घेर लेता है।"
    },
-   "seq": 35
+   "seq": 48
   },
   {
    "id": "environment.biodiversity.sum",
@@ -1394,7 +1877,253 @@
      "hi": "विरंजन = प्रवाल शैवाल निकालते हैं।"
     }
    ],
-   "seq": 36
+   "seq": 49
+  },
+  {
+   "id": "history.ancient.f01",
+   "topic": "history.ancient",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XII 'Themes in Indian History' Part I, theme 1",
+   "status": "needs_review",
+   "learn": {
+    "en": "Harappan cities had planned streets and covered drains. Mohenjo-daro has the Great Bath; Lothal had a dockyard; Dholavira is known for water storage.",
+    "hi": "हड़प्पा नगरों में नियोजित सड़कें और ढकी नालियाँ थीं। मोहनजोदड़ो में विशाल स्नानागार है; लोथल में गोदीवाड़ा था; धोलावीरा जल-संग्रह के लिए प्रसिद्ध है।"
+   },
+   "why": {
+    "en": "The Harappan script has not been deciphered, so we learn about them only from what they built and left.",
+    "hi": "हड़प्पा लिपि अब तक पढ़ी नहीं गई, इसलिए हम उनके बारे में केवल उनके निर्माण और अवशेषों से जानते हैं।"
+   },
+   "recall_q": {
+    "en": "Which Harappan site had a dockyard?",
+    "hi": "किस हड़प्पा स्थल पर गोदीवाड़ा था?"
+   },
+   "recall_a": {
+    "en": "Lothal, in Gujarat.",
+    "hi": "लोथल, गुजरात में।"
+   },
+   "explain_simple": {
+    "en": "Mohenjo-daro = bath. Lothal = dock. Dholavira = water tanks.",
+    "hi": "मोहनजोदड़ो = स्नानागार। लोथल = गोदी। धोलावीरा = जलाशय।"
+   },
+   "example": {
+    "en": "Dholavira became a UNESCO World Heritage Site in 2021.",
+    "hi": "धोलावीरा 2021 में यूनेस्को विश्व धरोहर स्थल बना।"
+   },
+   "seq": 50
+  },
+  {
+   "id": "history.ancient.f02",
+   "topic": "history.ancient",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "NCERT Class XII 'Themes in Indian History' Part I, theme 4",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Buddha attained enlightenment at Bodh Gaya, gave his first sermon at Sarnath and died at Kushinagar.",
+    "hi": "बुद्ध को बोधगया में ज्ञान मिला, उन्होंने पहला उपदेश सारनाथ में दिया और कुशीनगर में देह त्यागी।"
+   },
+   "why": {
+    "en": "The first sermon is called 'turning the wheel of dharma' (Dhammachakkapavattana).",
+    "hi": "पहले उपदेश को 'धर्मचक्र प्रवर्तन' कहते हैं।"
+   },
+   "recall_q": {
+    "en": "Where did the Buddha give his first sermon?",
+    "hi": "बुद्ध ने पहला उपदेश कहाँ दिया?"
+   },
+   "recall_a": {
+    "en": "Sarnath, near Varanasi.",
+    "hi": "सारनाथ, वाराणसी के पास।"
+   },
+   "explain_simple": {
+    "en": "Bodh Gaya: wakes up. Sarnath: speaks. Kushinagar: departs.",
+    "hi": "बोधगया: जागे। सारनाथ: बोले। कुशीनगर: विदा हुए।"
+   },
+   "example": {
+    "en": "He was born at Lumbini, now in Nepal.",
+    "hi": "उनका जन्म लुंबिनी में हुआ, जो अब नेपाल में है।"
+   },
+   "seq": 51
+  },
+  {
+   "id": "history.ancient.f03",
+   "topic": "history.ancient",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XII 'Themes in Indian History' Part I, theme 4",
+   "status": "needs_review",
+   "learn": {
+    "en": "Mahavira, the 24th Jain tirthankara, added brahmacharya to the four vows taught by Parshvanatha, making five.",
+    "hi": "24वें जैन तीर्थंकर महावीर ने पार्श्वनाथ के चार व्रतों में ब्रह्मचर्य जोड़कर उन्हें पाँच किया।"
+   },
+   "why": {
+    "en": "The five vows are non-violence, truth, non-stealing, non-possession and celibacy.",
+    "hi": "पाँच व्रत हैं: अहिंसा, सत्य, अस्तेय, अपरिग्रह और ब्रह्मचर्य।"
+   },
+   "recall_q": {
+    "en": "Which vow did Mahavira add?",
+    "hi": "महावीर ने कौन-सा व्रत जोड़ा?"
+   },
+   "recall_a": {
+    "en": "Brahmacharya (celibacy).",
+    "hi": "ब्रह्मचर्य।"
+   },
+   "explain_simple": {
+    "en": "Parshvanatha gave four; Mahavira made it five.",
+    "hi": "पार्श्वनाथ ने चार दिए; महावीर ने पाँच किए।"
+   },
+   "seq": 52
+  },
+  {
+   "id": "history.ancient.f04",
+   "topic": "history.ancient",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XII 'Themes in Indian History' Part I, theme 2",
+   "status": "needs_review",
+   "learn": {
+    "en": "Most of Ashoka's edicts are in Prakrit in the Brahmi script. In the north-west he used Kharosthi; in Afghanistan, Greek and Aramaic.",
+    "hi": "अशोक के अधिकांश अभिलेख प्राकृत भाषा और ब्राह्मी लिपि में हैं। उत्तर-पश्चिम में उन्होंने खरोष्ठी, और अफ़ग़ानिस्तान में यूनानी व अरामाई का प्रयोग किया।"
+   },
+   "why": {
+    "en": "He wanted ordinary people to read his message of dhamma, so he used local languages and scripts.",
+    "hi": "वे चाहते थे कि आम लोग उनका धम्म संदेश पढ़ें, इसलिए उन्होंने स्थानीय भाषाएँ और लिपियाँ अपनाईं।"
+   },
+   "recall_q": {
+    "en": "Who first deciphered the Brahmi script?",
+    "hi": "ब्राह्मी लिपि को सबसे पहले किसने पढ़ा?"
+   },
+   "recall_a": {
+    "en": "James Prinsep, in 1837.",
+    "hi": "जेम्स प्रिंसेप ने, 1837 में।"
+   },
+   "explain_simple": {
+    "en": "Ashoka spoke to each region in its own script.",
+    "hi": "अशोक ने हर क्षेत्र से उसकी अपनी लिपि में बात की।"
+   },
+   "example": {
+    "en": "The Kalinga war (c. 261 BCE) turned him towards dhamma.",
+    "hi": "कलिंग युद्ध (लगभग 261 ई.पू.) ने उन्हें धम्म की ओर मोड़ा।"
+   },
+   "seq": 53
+  },
+  {
+   "id": "history.ancient.f05",
+   "topic": "history.ancient",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "NCERT Class VI 'Our Pasts I'",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Rigveda is the oldest of the four Vedas. It has ten books, called mandalas, of hymns to gods like Agni, Indra and Soma.",
+    "hi": "ऋग्वेद चारों वेदों में सबसे पुराना है। इसमें दस मंडल हैं, जिनमें अग्नि, इंद्र और सोम जैसे देवताओं की स्तुतियाँ हैं।"
+   },
+   "why": {
+    "en": "The hymns were passed on by memory for centuries before they were written down.",
+    "hi": "ये ऋचाएँ लिखे जाने से पहले सदियों तक कंठस्थ कर आगे बढ़ाई गईं।"
+   },
+   "recall_q": {
+    "en": "How many mandalas does the Rigveda have?",
+    "hi": "ऋग्वेद में कितने मंडल हैं?"
+   },
+   "recall_a": {
+    "en": "Ten.",
+    "hi": "दस।"
+   },
+   "explain_simple": {
+    "en": "Rigveda: oldest Veda, ten mandalas, the Gayatri mantra is in it.",
+    "hi": "ऋग्वेद: सबसे पुराना वेद, दस मंडल, गायत्री मंत्र इसी में है।"
+   },
+   "seq": 54
+  },
+  {
+   "id": "history.ancient.f06",
+   "topic": "history.ancient",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class VI 'Our Pasts I', ch. 11",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Gupta age saw Aryabhata's work on astronomy and mathematics, Kalidasa's plays and the rust-free Iron Pillar at Mehrauli.",
+    "hi": "गुप्त काल में आर्यभट का खगोल और गणित पर काम, कालिदास के नाटक और महरौली का ज़ंग-रहित लौह स्तंभ आए।"
+   },
+   "why": {
+    "en": "Aryabhata said the earth turns on its axis, which explains day and night.",
+    "hi": "आर्यभट ने कहा कि पृथ्वी अपनी धुरी पर घूमती है, जिससे दिन और रात होते हैं।"
+   },
+   "recall_q": {
+    "en": "Which text did Aryabhata write?",
+    "hi": "आर्यभट ने कौन-सा ग्रंथ लिखा?"
+   },
+   "recall_a": {
+    "en": "The Aryabhatiya.",
+    "hi": "आर्यभटीय।"
+   },
+   "explain_simple": {
+    "en": "Guptas: science (Aryabhata), poetry (Kalidasa), metal (Iron Pillar).",
+    "hi": "गुप्त: विज्ञान (आर्यभट), काव्य (कालिदास), धातु (लौह स्तंभ)।"
+   },
+   "seq": 55
+  },
+  {
+   "id": "history.ancient.f07",
+   "topic": "history.ancient",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class VI 'Our Pasts I', ch. 9",
+   "status": "needs_review",
+   "learn": {
+    "en": "Sangam literature is the earliest Tamil literature. The Tolkappiyam is a work of Tamil grammar; the poems describe the Chera, Chola and Pandya kings.",
+    "hi": "संगम साहित्य सबसे प्राचीन तमिल साहित्य है। तोलकाप्पियम तमिल व्याकरण का ग्रंथ है; कविताएँ चेर, चोल और पांड्य राजाओं का वर्णन करती हैं।"
+   },
+   "why": {
+    "en": "'Sangam' means assemblies of poets, said to have been held at Madurai.",
+    "hi": "'संगम' का अर्थ है कवियों की सभाएँ, जो मदुरै में होने की बात कही जाती है।"
+   },
+   "recall_q": {
+    "en": "Which three kingdoms appear in Sangam poems?",
+    "hi": "संगम कविताओं में कौन-से तीन राज्य आते हैं?"
+   },
+   "recall_a": {
+    "en": "Chera, Chola and Pandya.",
+    "hi": "चेर, चोल और पांड्य।"
+   },
+   "explain_simple": {
+    "en": "Sangam = Tamil poets' assemblies; three crowned kings.",
+    "hi": "संगम = तमिल कवियों की सभाएँ; तीन मुकुटधारी राजा।"
+   },
+   "seq": 56
+  },
+  {
+   "id": "history.ancient.sum",
+   "topic": "history.ancient",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "NCERT Class XII 'Themes in Indian History' Part I",
+   "status": "needs_review",
+   "title": {
+    "en": "Ancient India",
+    "hi": "प्राचीन भारत"
+   },
+   "points": [
+    {
+     "en": "Harappa: Lothal dock, Dholavira water.",
+     "hi": "हड़प्पा: लोथल गोदी, धोलावीरा जल।"
+    },
+    {
+     "en": "Buddha: Bodh Gaya, Sarnath, Kushinagar.",
+     "hi": "बुद्ध: बोधगया, सारनाथ, कुशीनगर।"
+    },
+    {
+     "en": "Ashoka: Prakrit in Brahmi; Prinsep 1837.",
+     "hi": "अशोक: ब्राह्मी में प्राकृत; प्रिंसेप 1837।"
+    },
+    {
+     "en": "Guptas: Aryabhata, Kalidasa, Iron Pillar.",
+     "hi": "गुप्त: आर्यभट, कालिदास, लौह स्तंभ।"
+    }
+   ],
+   "seq": 57
   },
   {
    "id": "polity.fr.f01",
@@ -1423,7 +2152,7 @@
     "en": "Part 3, numbers 12 to 35. Rights you can take to court.",
     "hi": "भाग 3, अनुच्छेद 12 से 35। ऐसे अधिकार जिनके लिए आप न्यायालय जा सकते हैं।"
    },
-   "seq": 37
+   "seq": 58
   },
   {
    "id": "polity.fr.f02",
@@ -1452,7 +2181,7 @@
     "en": "Seven became six when property was taken out in 1978.",
     "hi": "1978 में संपत्ति हटने से सात से छह हुए।"
    },
-   "seq": 38
+   "seq": 59
   },
   {
    "id": "polity.fr.f03",
@@ -1485,7 +2214,7 @@
     "en": "If a highway needs your land, the government can acquire it under a law, with compensation as that law provides.",
     "hi": "अगर राजमार्ग के लिए आपकी ज़मीन चाहिए, तो सरकार क़ानून के तहत, उस क़ानून में तय मुआवज़े के साथ, उसे ले सकती है।"
    },
-   "seq": 39
+   "seq": 60
   },
   {
    "id": "polity.fr.f04",
@@ -1514,7 +2243,7 @@
     "en": "Article 32 is the door to the Supreme Court for your rights.",
     "hi": "अनुच्छेद 32 आपके अधिकारों के लिए सर्वोच्च न्यायालय का दरवाज़ा है।"
    },
-   "seq": 40
+   "seq": 61
   },
   {
    "id": "polity.fr.f05",
@@ -1543,7 +2272,7 @@
     "en": "Five court orders: bring the person, do your duty, stop, send the case up, and by what authority?",
     "hi": "पाँच आदेश: व्यक्ति को पेश करो, कर्तव्य करो, रुको, मामला ऊपर भेजो, और किस अधिकार से?"
    },
-   "seq": 41
+   "seq": 62
   },
   {
    "id": "polity.fr.f06",
@@ -1576,7 +2305,7 @@
     "en": "A family whose son was picked up without charge can file habeas corpus in the High Court.",
     "hi": "जिस परिवार के बेटे को बिना आरोप पकड़ लिया गया, वह उच्च न्यायालय में बंदी प्रत्यक्षीकरण याचिका दाख़िल कर सकता है।"
    },
-   "seq": 42
+   "seq": 63
   },
   {
    "id": "polity.fr.f07",
@@ -1605,7 +2334,7 @@
     "en": "Mandamus = 'do your job'. Only for public officials.",
     "hi": "परमादेश = 'अपना काम करो'। केवल सार्वजनिक अधिकारियों के लिए।"
    },
-   "seq": 43
+   "seq": 64
   },
   {
    "id": "polity.fr.f08",
@@ -1634,7 +2363,7 @@
     "en": "'By what authority are you sitting in that chair?' — that is quo warranto.",
     "hi": "'आप किस अधिकार से उस कुर्सी पर बैठे हैं?' — यही अधिकार-पृच्छा है।"
    },
-   "seq": 44
+   "seq": 65
   },
   {
    "id": "polity.fr.f09",
@@ -1663,7 +2392,7 @@
     "en": "Prohibition = stop before. Certiorari = fix after.",
     "hi": "प्रतिषेध = पहले रोको। उत्प्रेषण = बाद में सुधारो।"
    },
-   "seq": 45
+   "seq": 66
   },
   {
    "id": "polity.fr.f10",
@@ -1696,7 +2425,7 @@
     "en": "Courts have read the right to privacy, clean environment and livelihood into Article 21.",
     "hi": "न्यायालयों ने निजता, स्वच्छ पर्यावरण और आजीविका के अधिकार को अनुच्छेद 21 में शामिल माना है।"
    },
-   "seq": 46
+   "seq": 67
   },
   {
    "id": "polity.fr.f11",
@@ -1725,7 +2454,7 @@
     "en": "21A sits right after 21 (life): education is part of a life with dignity.",
     "hi": "21A, 21 (जीवन) के ठीक बाद है: शिक्षा सम्मानजनक जीवन का हिस्सा है।"
    },
-   "seq": 47
+   "seq": 68
   },
   {
    "id": "polity.fr.f12",
@@ -1758,7 +2487,7 @@
     "en": "The Protection of Civil Rights Act, 1955 punishes the practice of untouchability.",
     "hi": "नागरिक अधिकार संरक्षण अधिनियम, 1955 अस्पृश्यता के आचरण को दंडित करता है।"
    },
-   "seq": 48
+   "seq": 69
   },
   {
    "id": "polity.fr.f13",
@@ -1787,7 +2516,7 @@
     "en": "20 (protection in criminal cases) and 21 (life) stay switched on, always.",
     "hi": "20 (आपराधिक मामलों में संरक्षण) और 21 (जीवन) हमेशा चालू रहते हैं।"
    },
-   "seq": 49
+   "seq": 70
   },
   {
    "id": "polity.fr.s01",
@@ -1856,7 +2585,7 @@
     "en": "Article 13.",
     "hi": "अनुच्छेद 13।"
    },
-   "seq": 50
+   "seq": 71
   },
   {
    "id": "polity.fr.sum",
@@ -1891,7 +2620,7 @@
      "hi": "21A: 6–14 वर्ष शिक्षा (86वाँ संशोधन)।"
     }
    ],
-   "seq": 51
+   "seq": 72
   },
   {
    "id": "economy.money.f01",
@@ -1921,7 +2650,7 @@
     "hi": "अधिनियम 1934, शुरुआत 1935, 1949 से सरकारी स्वामित्व।"
    },
    "review_note": "Recommended by the Hilton Young Commission (1926).",
-   "seq": 52
+   "seq": 73
   },
   {
    "id": "economy.money.f02",
@@ -1954,7 +2683,7 @@
     "en": "A higher repo rate usually means a higher EMI on a home loan.",
     "hi": "ऊँची रेपो दर का मतलब आमतौर पर गृह ऋण की ऊँची EMI होता है।"
    },
-   "seq": 53
+   "seq": 74
   },
   {
    "id": "economy.money.f03",
@@ -1983,7 +2712,7 @@
     "en": "CRR = cash parked at RBI. SLR = safe assets kept by the bank itself.",
     "hi": "CRR = आरबीआई के पास रखा नक़द। SLR = बैंक के पास रखी सुरक्षित संपत्तियाँ।"
    },
-   "seq": 54
+   "seq": 75
   },
   {
    "id": "economy.money.f04",
@@ -2012,7 +2741,7 @@
     "en": "Interest rates move inside a corridor: SDF at the bottom, repo in the middle, MSF at the top.",
     "hi": "ब्याज दरें एक गलियारे में चलती हैं: नीचे SDF, बीच में रेपो, ऊपर MSF।"
    },
-   "seq": 55
+   "seq": 76
   },
   {
    "id": "economy.money.f05",
@@ -2041,7 +2770,7 @@
     "en": "RBI buys bonds → pays cash → more money in the system.",
     "hi": "आरबीआई बॉन्ड ख़रीदे → नक़द चुकाए → व्यवस्था में ज़्यादा पैसा।"
    },
-   "seq": 56
+   "seq": 77
   },
   {
    "id": "economy.money.s01",
@@ -2110,7 +2839,7 @@
     "en": "Because it works through loans and demand, which change slowly (policy lag).",
     "hi": "क्योंकि यह ऋण और माँग के ज़रिए काम करती है, जो धीरे बदलते हैं (नीतिगत अंतराल)।"
    },
-   "seq": 57
+   "seq": 78
   },
   {
    "id": "economy.money.sum",
@@ -2145,7 +2874,7 @@
      "hi": "OMO ख़रीद से पैसा आता है।"
     }
    ],
-   "seq": 58
+   "seq": 79
   },
   {
    "id": "environment.laws.f01",
@@ -2174,7 +2903,7 @@
     "en": "National park = no entry for cattle. Sanctuary = some activities with permission.",
     "hi": "राष्ट्रीय उद्यान = मवेशियों का प्रवेश नहीं। अभयारण्य = अनुमति से कुछ गतिविधियाँ।"
    },
-   "seq": 59
+   "seq": 80
   },
   {
    "id": "environment.laws.f02",
@@ -2204,7 +2933,7 @@
     "hi": "छह सूचियाँ चार बनीं, उनमें एक CITES प्रजातियों के लिए।"
    },
    "review_note": "Check schedule numbering (I–IV) against the gazette text before publishing.",
-   "seq": 60
+   "seq": 81
   },
   {
    "id": "environment.laws.f03",
@@ -2233,7 +2962,7 @@
     "en": "One big law that covers everything the other environment laws miss.",
     "hi": "एक बड़ा क़ानून जो वह सब ढकता है जो दूसरे पर्यावरण क़ानून छोड़ देते हैं।"
    },
-   "seq": 61
+   "seq": 82
   },
   {
    "id": "environment.laws.f04",
@@ -2262,7 +2991,7 @@
     "en": "A state cannot hand over forest land for a mine or a road without the Centre saying yes.",
     "hi": "कोई राज्य केंद्र की हाँ के बिना खदान या सड़क के लिए वन भूमि नहीं दे सकता।"
    },
-   "seq": 62
+   "seq": 83
   },
   {
    "id": "environment.laws.f05",
@@ -2291,7 +3020,7 @@
     "en": "A fast-track court only for environment cases.",
     "hi": "केवल पर्यावरण मामलों के लिए फ़ास्ट-ट्रैक अदालत।"
    },
-   "seq": 63
+   "seq": 84
   },
   {
    "id": "environment.laws.f06",
@@ -2324,7 +3053,7 @@
     "en": "The Nilgiri Biosphere Reserve (1986), spread over Tamil Nadu, Kerala and Karnataka, was India's first.",
     "hi": "नीलगिरि जैवमंडल आरक्षित क्षेत्र (1986), जो तमिलनाडु, केरल और कर्नाटक में फैला है, भारत का पहला था।"
    },
-   "seq": 64
+   "seq": 85
   },
   {
    "id": "environment.laws.f07",
@@ -2353,7 +3082,7 @@
     "en": "1973 project, 2006 law.",
     "hi": "1973 में परियोजना, 2006 में क़ानून।"
    },
-   "seq": 65
+   "seq": 86
   },
   {
    "id": "environment.laws.sum",
@@ -2384,7 +3113,195 @@
      "hi": "NGT 2010; जैवमंडल: केंद्र, बफ़र, संक्रमण।"
     }
    ],
-   "seq": 66
+   "seq": 87
+  },
+  {
+   "id": "history.culture.f01",
+   "topic": "history.culture",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "Sangeet Natak Akademi",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Sangeet Natak Akademi recognises eight classical dances: Bharatanatyam, Kathak, Kathakali, Kuchipudi, Odissi, Manipuri, Mohiniyattam and Sattriya.",
+    "hi": "संगीत नाटक अकादमी आठ शास्त्रीय नृत्यों को मान्यता देती है: भरतनाट्यम, कथक, कथकली, कुचिपुड़ी, ओडिसी, मणिपुरी, मोहिनीअट्टम और सत्रिया।"
+   },
+   "why": {
+    "en": "Each grew from a region's temple or court tradition and follows the Natya Shastra.",
+    "hi": "हर नृत्य किसी क्षेत्र की मंदिर या दरबार परंपरा से निकला और नाट्यशास्त्र का पालन करता है।"
+   },
+   "recall_q": {
+    "en": "Sattriya comes from which state?",
+    "hi": "सत्रिया किस राज्य से है?"
+   },
+   "recall_a": {
+    "en": "Assam.",
+    "hi": "असम।"
+   },
+   "explain_simple": {
+    "en": "Two from Kerala (Kathakali, Mohiniyattam), one each from TN, AP, Odisha, Manipur, Assam, and Kathak from the north.",
+    "hi": "दो केरल से (कथकली, मोहिनीअट्टम), एक-एक तमिलनाडु, आंध्र, ओडिशा, मणिपुर, असम से, और कथक उत्तर से।"
+   },
+   "example": {
+    "en": "Sattriya was introduced by the saint Sankaradeva in the Vaishnava monasteries (sattras).",
+    "hi": "सत्रिया संत शंकरदेव ने वैष्णव मठों (सत्रों) में शुरू किया।"
+   },
+   "seq": 88
+  },
+  {
+   "id": "history.culture.f02",
+   "topic": "history.culture",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XI 'An Introduction to Indian Art'",
+   "status": "needs_review",
+   "learn": {
+    "en": "Indian temples follow three main styles: Nagara in the north, Dravida in the south and Vesara, a mix of the two, in the Deccan.",
+    "hi": "भारतीय मंदिर तीन मुख्य शैलियों में हैं: उत्तर में नागर, दक्षिण में द्रविड़, और दक्कन में वेसर, जो दोनों का मिश्रण है।"
+   },
+   "why": {
+    "en": "Nagara temples have a curved tower (shikhara); Dravida temples have a stepped tower (vimana) and tall gateways (gopurams).",
+    "hi": "नागर मंदिरों में वक्र शिखर होता है; द्रविड़ मंदिरों में सीढ़ीदार विमान और ऊँचे गोपुरम होते हैं।"
+   },
+   "recall_q": {
+    "en": "What are the tall gateways of Dravida temples called?",
+    "hi": "द्रविड़ मंदिरों के ऊँचे प्रवेश द्वार क्या कहलाते हैं?"
+   },
+   "recall_a": {
+    "en": "Gopurams.",
+    "hi": "गोपुरम।"
+   },
+   "explain_simple": {
+    "en": "North = curved shikhara. South = pyramid vimana + gopuram. Deccan = Vesara mix.",
+    "hi": "उत्तर = वक्र शिखर। दक्षिण = पिरामिड विमान + गोपुरम। दक्कन = वेसर मिश्रण।"
+   },
+   "example": {
+    "en": "The Brihadeshwara temple at Thanjavur (Rajaraja Chola) is a great Dravida temple.",
+    "hi": "तंजावुर का बृहदेश्वर मंदिर (राजराज चोल) एक महान द्रविड़ मंदिर है।"
+   },
+   "seq": 89
+  },
+  {
+   "id": "history.culture.f03",
+   "topic": "history.culture",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XI 'An Introduction to Indian Art'",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Ajanta caves are Buddhist and famous for paintings. Ellora has Buddhist, Hindu and Jain caves, including the rock-cut Kailasa temple.",
+    "hi": "अजंता की गुफाएँ बौद्ध हैं और चित्रों के लिए प्रसिद्ध हैं। एलोरा में बौद्ध, हिंदू और जैन गुफाएँ हैं, जिनमें चट्टान काटकर बना कैलाश मंदिर भी है।"
+   },
+   "why": {
+    "en": "The Kailasa temple was carved from one rock, top downwards, under the Rashtrakuta king Krishna I.",
+    "hi": "कैलाश मंदिर एक ही चट्टान को ऊपर से नीचे काटकर राष्ट्रकूट राजा कृष्ण प्रथम के समय बना।"
+   },
+   "recall_q": {
+    "en": "Which cave site has caves of three religions?",
+    "hi": "किस गुफा स्थल में तीन धर्मों की गुफाएँ हैं?"
+   },
+   "recall_a": {
+    "en": "Ellora.",
+    "hi": "एलोरा।"
+   },
+   "explain_simple": {
+    "en": "Ajanta = Buddhist paintings. Ellora = three faiths, and Kailasa carved from one rock.",
+    "hi": "अजंता = बौद्ध चित्र। एलोरा = तीन धर्म, और एक चट्टान से बना कैलाश।"
+   },
+   "seq": 90
+  },
+  {
+   "id": "history.culture.f04",
+   "topic": "history.culture",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XII 'Themes in Indian History' Part II, theme 6",
+   "status": "needs_review",
+   "learn": {
+    "en": "In Tamil Nadu, the Alvars sang devotion to Vishnu and the Nayanars to Shiva, between about the 6th and 9th centuries.",
+    "hi": "तमिलनाडु में लगभग 6वीं से 9वीं सदी के बीच आलवारों ने विष्णु और नयनारों ने शिव की भक्ति गाई।"
+   },
+   "why": {
+    "en": "They sang in Tamil, not Sanskrit, and welcomed people of all castes, which spread bhakti widely.",
+    "hi": "उन्होंने संस्कृत नहीं, तमिल में गाया और सभी जातियों को अपनाया, जिससे भक्ति दूर-दूर फैली।"
+   },
+   "recall_q": {
+    "en": "The Nayanars were devotees of which god?",
+    "hi": "नयनार किस देवता के भक्त थे?"
+   },
+   "recall_a": {
+    "en": "Shiva.",
+    "hi": "शिव।"
+   },
+   "explain_simple": {
+    "en": "Alvars = Vishnu. Nayanars = Shiva.",
+    "hi": "आलवार = विष्णु। नयनार = शिव।"
+   },
+   "seq": 91
+  },
+  {
+   "id": "history.culture.f05",
+   "topic": "history.culture",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XII 'Themes in Indian History' Part II, theme 6",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Chishti Sufi order came to India with Khwaja Moinuddin Chishti, whose shrine is at Ajmer. Nizamuddin Auliya was a later Chishti saint in Delhi.",
+    "hi": "चिश्ती सूफ़ी सिलसिला ख़्वाजा मोइनुद्दीन चिश्ती के साथ भारत आया, जिनकी दरगाह अजमेर में है। निज़ामुद्दीन औलिया दिल्ली के बाद के चिश्ती संत थे।"
+   },
+   "why": {
+    "en": "Chishtis kept away from the court and lived simply, which drew ordinary people to them.",
+    "hi": "चिश्ती दरबार से दूर और सादगी से रहते थे, जिससे आम लोग उनकी ओर खिंचे।"
+   },
+   "recall_q": {
+    "en": "Where is the shrine of Moinuddin Chishti?",
+    "hi": "मोइनुद्दीन चिश्ती की दरगाह कहाँ है?"
+   },
+   "recall_a": {
+    "en": "Ajmer.",
+    "hi": "अजमेर।"
+   },
+   "explain_simple": {
+    "en": "Chishti: Ajmer first, then Delhi; far from kings, close to people.",
+    "hi": "चिश्ती: पहले अजमेर, फिर दिल्ली; राजाओं से दूर, लोगों के पास।"
+   },
+   "example": {
+    "en": "Amir Khusrau was a disciple of Nizamuddin Auliya.",
+    "hi": "अमीर ख़ुसरो निज़ामुद्दीन औलिया के शिष्य थे।"
+   },
+   "seq": 92
+  },
+  {
+   "id": "history.culture.sum",
+   "topic": "history.culture",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "NCERT Class XI 'An Introduction to Indian Art'",
+   "status": "needs_review",
+   "title": {
+    "en": "Art and culture",
+    "hi": "कला और संस्कृति"
+   },
+   "points": [
+    {
+     "en": "Eight classical dances; Sattriya from Assam.",
+     "hi": "आठ शास्त्रीय नृत्य; सत्रिया असम से।"
+    },
+    {
+     "en": "Nagara, Dravida, Vesara.",
+     "hi": "नागर, द्रविड़, वेसर।"
+    },
+    {
+     "en": "Ajanta paintings; Ellora three faiths.",
+     "hi": "अजंता चित्र; एलोरा तीन धर्म।"
+    },
+    {
+     "en": "Alvars Vishnu, Nayanars Shiva; Chishti at Ajmer.",
+     "hi": "आलवार विष्णु, नयनार शिव; अजमेर में चिश्ती।"
+    }
+   ],
+   "seq": 93
   },
   {
    "id": "polity.dpsp.f01",
@@ -2413,7 +3330,7 @@
     "en": "Rights (Part III) = court can enforce. Directives (Part IV) = goals for the government, not enforceable.",
     "hi": "अधिकार (भाग III) = न्यायालय लागू करा सकता है। निदेशक तत्व (भाग IV) = सरकार के लक्ष्य, लागू नहीं कराए जा सकते।"
    },
-   "seq": 67
+   "seq": 94
   },
   {
    "id": "polity.dpsp.f02",
@@ -2446,7 +3363,7 @@
     "en": "Goa has had a common civil code since Portuguese times.",
     "hi": "गोवा में पुर्तगाली काल से एक समान नागरिक संहिता चल रही है।"
    },
-   "seq": 68
+   "seq": 95
   },
   {
    "id": "polity.dpsp.f03",
@@ -2475,7 +3392,7 @@
     "en": "1976: Swaran Singh Committee → 42nd Amendment → Article 51A duties.",
     "hi": "1976: स्वर्ण सिंह समिति → 42वाँ संशोधन → अनुच्छेद 51A के कर्तव्य।"
    },
-   "seq": 69
+   "seq": 96
   },
   {
    "id": "polity.dpsp.f04",
@@ -2504,7 +3421,7 @@
     "en": "Ten in 1976, plus one about education in 2002 = eleven.",
     "hi": "1976 में दस, 2002 में शिक्षा वाला एक और = ग्यारह।"
    },
-   "seq": 70
+   "seq": 97
   },
   {
    "id": "polity.dpsp.sum",
@@ -2535,7 +3452,7 @@
      "hi": "11 कर्तव्य; 11वाँ 2002 में जुड़ा।"
     }
    ],
-   "seq": 71
+   "seq": 98
   },
   {
    "id": "economy.fiscal.f01",
@@ -2564,7 +3481,7 @@
     "en": "Spending minus all income that isn't a loan = what must be borrowed.",
     "hi": "ख़र्च घटा वह सारी आय जो क़र्ज़ नहीं है = जो उधार लेना पड़ेगा।"
    },
-   "seq": 72
+   "seq": 99
   },
   {
    "id": "economy.fiscal.f02",
@@ -2593,7 +3510,7 @@
     "en": "Take out the interest on old loans and see what new borrowing is left.",
     "hi": "पुराने क़र्ज़ का ब्याज निकाल दीजिए और देखिए कितना नया उधार बचता है।"
    },
-   "seq": 73
+   "seq": 100
   },
   {
    "id": "economy.fiscal.f03",
@@ -2622,7 +3539,7 @@
     "en": "Like taking a loan to pay the electricity bill instead of to buy a house.",
     "hi": "जैसे घर ख़रीदने के बजाय बिजली का बिल भरने के लिए क़र्ज़ लेना।"
    },
-   "seq": 74
+   "seq": 101
   },
   {
    "id": "economy.fiscal.f04",
@@ -2651,7 +3568,7 @@
     "en": "Everyone says budget; the Constitution says Annual Financial Statement.",
     "hi": "सब बजट कहते हैं; संविधान वार्षिक वित्तीय विवरण कहता है।"
    },
-   "seq": 75
+   "seq": 102
   },
   {
    "id": "economy.fiscal.f05",
@@ -2681,7 +3598,7 @@
     "hi": "तमिलनाडु में बना और केरल में ख़रीदा टीवी: जीएसटी का राज्य हिस्सा केरल को जाता है।"
    },
    "review_note": "Petroleum crude, diesel, petrol, natural gas and ATF are outside GST for now; alcohol for human consumption is outside by the Constitution.",
-   "seq": 76
+   "seq": 103
   },
   {
    "id": "economy.fiscal.f06",
@@ -2710,7 +3627,7 @@
     "en": "Direct = you pay it yourself. Indirect = it is hidden in the price.",
     "hi": "प्रत्यक्ष = आप ख़ुद चुकाते हैं। अप्रत्यक्ष = क़ीमत में छिपा रहता है।"
    },
-   "seq": 77
+   "seq": 104
   },
   {
    "id": "economy.fiscal.sum",
@@ -2745,7 +3662,7 @@
      "hi": "जीएसटी 1 जुलाई 2017 से, गंतव्य-आधारित।"
     }
    ],
-   "seq": 78
+   "seq": 105
   },
   {
    "id": "environment.conventions.f01",
@@ -2778,7 +3695,7 @@
     "en": "Keoladeo (Rajasthan) and Loktak (Manipur) are on the Montreux Record.",
     "hi": "केवलादेव (राजस्थान) और लोकटक (मणिपुर) मॉन्ट्रो रिकॉर्ड में हैं।"
    },
-   "seq": 79
+   "seq": 106
   },
   {
    "id": "environment.conventions.f02",
@@ -2807,7 +3724,7 @@
     "en": "CITES is a customs officer for wildlife: Appendix I means 'no commercial trade'.",
     "hi": "CITES वन्यजीवों का सीमा-शुल्क अधिकारी है: परिशिष्ट I यानी 'कोई व्यापारिक व्यापार नहीं'।"
    },
-   "seq": 80
+   "seq": 107
   },
   {
    "id": "environment.conventions.f03",
@@ -2840,7 +3757,7 @@
     "en": "The National Biodiversity Authority under the 2002 Act is in Chennai.",
     "hi": "2002 के अधिनियम के तहत राष्ट्रीय जैव विविधता प्राधिकरण चेन्नई में है।"
    },
-   "seq": 81
+   "seq": 108
   },
   {
    "id": "environment.conventions.f04",
@@ -2869,7 +3786,7 @@
     "en": "Kyoto: those who polluted more, cut first.",
     "hi": "क्योटो: जिसने ज़्यादा प्रदूषण किया, वह पहले घटाए।"
    },
-   "seq": 82
+   "seq": 109
   },
   {
    "id": "environment.conventions.f05",
@@ -2898,7 +3815,7 @@
     "en": "Paris: everyone joins, each country writes its own pledge.",
     "hi": "पेरिस: सब शामिल, हर देश अपना वचन ख़ुद लिखता है।"
    },
-   "seq": 83
+   "seq": 110
   },
   {
    "id": "environment.conventions.f06",
@@ -2927,7 +3844,7 @@
     "en": "CFCs hurt the ozone; their replacements, HFCs, heat the planet. Kigali fixes the second problem.",
     "hi": "CFC ओज़ोन को चोट पहुँचाते हैं; उनके विकल्प HFC धरती को गर्म करते हैं। किगाली दूसरी समस्या सुलझाता है।"
    },
-   "seq": 84
+   "seq": 111
   },
   {
    "id": "environment.conventions.f07",
@@ -2960,7 +3877,7 @@
     "en": "The Amur falcon, which stops in Nagaland on its way to Africa, is a species CMS cares about.",
     "hi": "अमूर बाज़, जो अफ़्रीका जाते हुए नागालैंड में रुकता है, CMS की चिंता वाली प्रजाति है।"
    },
-   "seq": 85
+   "seq": 112
   },
   {
    "id": "environment.conventions.sum",
@@ -2991,7 +3908,187 @@
      "hi": "मॉन्ट्रियल: CFC; किगाली: HFC।"
     }
    ],
-   "seq": 86
+   "seq": 113
+  },
+  {
+   "id": "history.medieval.f01",
+   "topic": "history.medieval",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class VII 'Our Pasts II', ch. 2",
+   "status": "needs_review",
+   "learn": {
+    "en": "Inscriptions at Uttaramerur describe how Chola village assemblies (sabhas) chose members, partly by drawing lots.",
+    "hi": "उत्तरमेरूर के अभिलेख बताते हैं कि चोल ग्राम सभाएँ अपने सदस्य कैसे चुनती थीं, आंशिक रूप से पर्ची निकालकर।"
+   },
+   "why": {
+    "en": "They show an early system of local self-government with committees for tanks, gardens and temples.",
+    "hi": "ये तालाब, बाग़ और मंदिर के लिए समितियों वाली स्थानीय स्वशासन की एक प्रारंभिक व्यवस्था दिखाते हैं।"
+   },
+   "recall_q": {
+    "en": "Which inscriptions tell us about Chola village assemblies?",
+    "hi": "चोल ग्राम सभाओं के बारे में कौन-से अभिलेख बताते हैं?"
+   },
+   "recall_a": {
+    "en": "The Uttaramerur inscriptions.",
+    "hi": "उत्तरमेरूर अभिलेख।"
+   },
+   "explain_simple": {
+    "en": "Chola villages ran their own affairs through elected committees.",
+    "hi": "चोल गाँव चुनी हुई समितियों से अपना काम चलाते थे।"
+   },
+   "seq": 114
+  },
+  {
+   "id": "history.medieval.f02",
+   "topic": "history.medieval",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class VII 'Our Pasts II', ch. 3",
+   "status": "needs_review",
+   "learn": {
+    "en": "Iltutmish set up the iqta system, giving officers land revenue in place of salary. Alauddin Khalji later fixed market prices in Delhi.",
+    "hi": "इल्तुतमिश ने इक़्ता व्यवस्था शुरू की, जिसमें अधिकारियों को वेतन के बदले भू-राजस्व मिलता था। अलाउद्दीन ख़िलजी ने बाद में दिल्ली में बाज़ार भाव तय किए।"
+   },
+   "why": {
+    "en": "Alauddin needed a large army without raising pay, so he made goods cheap by controlling prices.",
+    "hi": "अलाउद्दीन को वेतन बढ़ाए बिना बड़ी सेना चाहिए थी, इसलिए उसने क़ीमतें नियंत्रित कर चीज़ें सस्ती कीं।"
+   },
+   "recall_q": {
+    "en": "Which Sultan introduced market control in Delhi?",
+    "hi": "किस सुल्तान ने दिल्ली में बाज़ार नियंत्रण लागू किया?"
+   },
+   "recall_a": {
+    "en": "Alauddin Khalji.",
+    "hi": "अलाउद्दीन ख़िलजी।"
+   },
+   "explain_simple": {
+    "en": "Iltutmish: land for officers. Alauddin: fixed prices for soldiers.",
+    "hi": "इल्तुतमिश: अधिकारियों को भूमि। अलाउद्दीन: सैनिकों के लिए तय भाव।"
+   },
+   "seq": 115
+  },
+  {
+   "id": "history.medieval.f03",
+   "topic": "history.medieval",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XII 'Themes in Indian History' Part II, theme 9",
+   "status": "needs_review",
+   "learn": {
+    "en": "Akbar's mansabdari system ranked every officer by zat (personal rank) and sawar (number of horsemen to keep).",
+    "hi": "अकबर की मनसबदारी व्यवस्था में हर अधिकारी का पद ज़ात (व्यक्तिगत पद) और सवार (रखे जाने वाले घुड़सवारों की संख्या) से तय होता था।"
+   },
+   "why": {
+    "en": "One ranking tied together a noble's status, pay and military duty.",
+    "hi": "एक ही पद-क्रम ने सरदार का दर्जा, वेतन और सैनिक दायित्व जोड़ दिया।"
+   },
+   "recall_q": {
+    "en": "What did 'sawar' rank decide?",
+    "hi": "'सवार' पद से क्या तय होता था?"
+   },
+   "recall_a": {
+    "en": "The number of horsemen the mansabdar had to maintain.",
+    "hi": "मनसबदार को कितने घुड़सवार रखने होते थे।"
+   },
+   "explain_simple": {
+    "en": "Zat = how important you are. Sawar = how many horsemen you bring.",
+    "hi": "ज़ात = आप कितने महत्वपूर्ण हैं। सवार = आप कितने घुड़सवार लाते हैं।"
+   },
+   "example": {
+    "en": "Raja Todar Mal designed Akbar's land revenue system (zabt).",
+    "hi": "राजा टोडरमल ने अकबर की भू-राजस्व व्यवस्था (ज़ब्त) बनाई।"
+   },
+   "seq": 116
+  },
+  {
+   "id": "history.medieval.f04",
+   "topic": "history.medieval",
+   "type": "fact",
+   "difficulty": 2,
+   "source": "NCERT Class XII 'Themes in Indian History' Part II, theme 7",
+   "status": "needs_review",
+   "learn": {
+    "en": "The Vijayanagara empire was founded in 1336 by Harihara and Bukka. Its capital was at Hampi.",
+    "hi": "विजयनगर साम्राज्य की स्थापना 1336 में हरिहर और बुक्का ने की। इसकी राजधानी हम्पी में थी।"
+   },
+   "why": {
+    "en": "Its greatest ruler, Krishnadevaraya, wrote the Telugu poem Amuktamalyada.",
+    "hi": "इसके सबसे महान शासक कृष्णदेवराय ने तेलुगु काव्य आमुक्तमाल्यद लिखा।"
+   },
+   "recall_q": {
+    "en": "Who founded the Vijayanagara empire?",
+    "hi": "विजयनगर साम्राज्य किसने स्थापित किया?"
+   },
+   "recall_a": {
+    "en": "Harihara and Bukka, in 1336.",
+    "hi": "हरिहर और बुक्का ने, 1336 में।"
+   },
+   "explain_simple": {
+    "en": "1336, Hampi, Harihara and Bukka; Krishnadevaraya at its peak.",
+    "hi": "1336, हम्पी, हरिहर और बुक्का; शिखर पर कृष्णदेवराय।"
+   },
+   "seq": 117
+  },
+  {
+   "id": "history.medieval.f05",
+   "topic": "history.medieval",
+   "type": "fact",
+   "difficulty": 1,
+   "source": "NCERT Class XII 'Themes in Indian History' Part II, theme 6",
+   "status": "needs_review",
+   "learn": {
+    "en": "Kabir and Guru Nanak taught devotion to one formless God and rejected caste and empty ritual.",
+    "hi": "कबीर और गुरु नानक ने एक निराकार ईश्वर की भक्ति सिखाई और जाति तथा खोखले कर्मकांड को नकारा।"
+   },
+   "why": {
+    "en": "Their verses, in the people's language, are kept in the Guru Granth Sahib and the Bijak.",
+    "hi": "जनभाषा में उनकी वाणी गुरु ग्रंथ साहिब और बीजक में सुरक्षित है।"
+   },
+   "recall_q": {
+    "en": "Is Kabir's God with form (saguna) or without form (nirguna)?",
+    "hi": "कबीर का ईश्वर सगुण है या निर्गुण?"
+   },
+   "recall_a": {
+    "en": "Nirguna — without form.",
+    "hi": "निर्गुण — निराकार।"
+   },
+   "explain_simple": {
+    "en": "Nirguna saints: no idols, no caste, one God within.",
+    "hi": "निर्गुण संत: न मूर्ति, न जाति, भीतर एक ईश्वर।"
+   },
+   "seq": 118
+  },
+  {
+   "id": "history.medieval.sum",
+   "topic": "history.medieval",
+   "type": "summary",
+   "difficulty": 1,
+   "source": "NCERT Class XII 'Themes in Indian History' Part II",
+   "status": "needs_review",
+   "title": {
+    "en": "Medieval India",
+    "hi": "मध्यकालीन भारत"
+   },
+   "points": [
+    {
+     "en": "Uttaramerur: Chola village assemblies.",
+     "hi": "उत्तरमेरूर: चोल ग्राम सभाएँ।"
+    },
+    {
+     "en": "Iltutmish iqta; Alauddin price control.",
+     "hi": "इल्तुतमिश इक़्ता; अलाउद्दीन मूल्य नियंत्रण।"
+    },
+    {
+     "en": "Akbar: mansab = zat + sawar.",
+     "hi": "अकबर: मनसब = ज़ात + सवार।"
+    },
+    {
+     "en": "Vijayanagara 1336, Hampi.",
+     "hi": "विजयनगर 1336, हम्पी।"
+    }
+   ],
+   "seq": 119
   },
   {
    "id": "polity.parliament.f01",
@@ -3020,7 +4117,7 @@
     "en": "Two houses plus the President who signs = Parliament.",
     "hi": "दो सदन और हस्ताक्षर करने वाले राष्ट्रपति = संसद।"
    },
-   "seq": 87
+   "seq": 120
   },
   {
    "id": "polity.parliament.f02",
@@ -3050,7 +4147,7 @@
     "hi": "250 सीटें: 238 विधानसभाओं द्वारा चुने गए + 12 प्रतिभा के लिए राष्ट्रपति द्वारा चुने गए।"
    },
    "review_note": "Present strength is about 245; check before publishing.",
-   "seq": 88
+   "seq": 121
   },
   {
    "id": "polity.parliament.f03",
@@ -3079,7 +4176,7 @@
     "en": "Like a school where one batch leaves every two years but the school never closes.",
     "hi": "जैसे कोई विद्यालय जहाँ हर दो साल में एक बैच निकलता है, पर विद्यालय कभी बंद नहीं होता।"
    },
-   "seq": 89
+   "seq": 122
   },
   {
    "id": "polity.parliament.f04",
@@ -3108,7 +4205,7 @@
     "en": "Lok Sabha is the people's house: all its members are now elected.",
     "hi": "लोकसभा जनता का सदन है: अब इसके सभी सदस्य चुने हुए हैं।"
    },
-   "seq": 90
+   "seq": 123
   },
   {
    "id": "polity.parliament.f05",
@@ -3137,7 +4234,7 @@
     "en": "Money comes from the people, so the people's House (Lok Sabha) has the final say. Rajya Sabha gets two weeks to comment.",
     "hi": "पैसा जनता का है, इसलिए अंतिम फ़ैसला जनता के सदन (लोकसभा) का। राज्यसभा को टिप्पणी के लिए दो सप्ताह मिलते हैं।"
    },
-   "seq": 91
+   "seq": 124
   },
   {
    "id": "polity.parliament.f06",
@@ -3170,7 +4267,7 @@
     "en": "Joint sittings have been held only three times, for example for the Prevention of Terrorism Bill in 2002.",
     "hi": "संयुक्त बैठक केवल तीन बार हुई है, जैसे 2002 में आतंकवाद निवारण विधेयक के लिए।"
    },
-   "seq": 92
+   "seq": 125
   },
   {
    "id": "polity.parliament.s01",
@@ -3245,7 +4342,7 @@
     "en": "Only once.",
     "hi": "केवल एक बार।"
    },
-   "seq": 93
+   "seq": 126
   },
   {
    "id": "polity.parliament.sum",
@@ -3276,7 +4373,7 @@
      "hi": "संयुक्त बैठक: केवल साधारण विधेयक; अध्यक्ष संचालन करते हैं।"
     }
    ],
-   "seq": 94
+   "seq": 127
   },
   {
    "id": "economy.banking.f01",
@@ -3306,7 +4403,7 @@
     "hi": "तीन महीने भुगतान नहीं → ऋण 'निष्पादित' नहीं रहता।"
    },
    "review_note": "For crop loans the rule follows crop seasons (two/one season).",
-   "seq": 95
+   "seq": 128
   },
   {
    "id": "economy.banking.f02",
@@ -3335,7 +4432,7 @@
     "en": "If a company can't pay, lenders take it to NCLT, which oversees a deadline-based rescue or sale.",
     "hi": "अगर कंपनी भुगतान न कर सके, तो ऋणदाता उसे NCLT ले जाते हैं, जो समय-सीमा वाली बचाव या बिक्री प्रक्रिया की निगरानी करता है।"
    },
-   "seq": 96
+   "seq": 129
   },
   {
    "id": "economy.banking.f03",
@@ -3365,7 +4462,7 @@
     "hi": "बैंक के हर ₹100 ऋण में से ₹40 खेती और छोटी इकाइयों जैसे क्षेत्रों को जाने चाहिए।"
    },
    "review_note": "Regional rural banks and small finance banks have a 75% target.",
-   "seq": 97
+   "seq": 130
   },
   {
    "id": "economy.banking.f04",
@@ -3395,7 +4492,7 @@
     "hi": "भुगतान बैंक बैंक लाइसेंस वाला बटुआ है: पैसा रखो, पैसा भेजो, पर उधार नहीं।"
    },
    "review_note": "Deposit cap raised from ₹1 lakh to ₹2 lakh per customer in 2021.",
-   "seq": 98
+   "seq": 131
   },
   {
    "id": "economy.banking.f05",
@@ -3425,7 +4522,7 @@
     "hi": "नाबार्ड गाँवों की सेवा करने वाले बैंकों के पीछे का बैंक है।"
    },
    "review_note": "Set up on the recommendation of the B. Sivaraman Committee (CRAFICARD).",
-   "seq": 99
+   "seq": 132
   },
   {
    "id": "economy.banking.sum",
@@ -3460,7 +4557,7 @@
      "hi": "नाबार्ड 1982: ग्रामीण ऋण की शीर्ष संस्था।"
     }
    ],
-   "seq": 100
+   "seq": 133
   },
   {
    "id": "environment.pollution.f01",
@@ -3489,7 +4586,7 @@
     "en": "Too much fertiliser in a lake feeds the algae, and the algae end up choking the lake.",
     "hi": "झील में ज़्यादा खाद शैवाल को खिलाती है, और शैवाल अंत में झील का दम घोंट देते हैं।"
    },
-   "seq": 101
+   "seq": 134
   },
   {
    "id": "environment.pollution.f02",
@@ -3518,7 +4615,7 @@
     "en": "BOD measures how much 'food' for microbes is floating in the water: more food, dirtier water.",
     "hi": "BOD मापता है कि पानी में सूक्ष्मजीवों का 'भोजन' कितना है: ज़्यादा भोजन, ज़्यादा गंदा पानी।"
    },
-   "seq": 102
+   "seq": 135
   },
   {
    "id": "environment.pollution.f03",
@@ -3548,7 +4645,7 @@
     "hi": "आठ प्रदूषक, एक संख्या, दिन की हवा का एक रंग।"
    },
    "review_note": "Full list: PM10, PM2.5, NO2, SO2, CO, O3, NH3, Pb.",
-   "seq": 103
+   "seq": 136
   },
   {
    "id": "environment.pollution.f04",
@@ -3577,7 +4674,7 @@
     "en": "Ozone up high is a sunscreen; ozone at ground level is a pollutant.",
     "hi": "ऊपर की ओज़ोन सनस्क्रीन है; ज़मीन के पास की ओज़ोन प्रदूषक है।"
    },
-   "seq": 104
+   "seq": 137
   },
   {
    "id": "environment.pollution.f05",
@@ -3606,7 +4703,7 @@
     "en": "Methane is a strong but short-lived heater; CO2 is weaker but stays for centuries.",
     "hi": "मीथेन प्रबल पर अल्पकालिक गर्म करने वाली है; CO2 कमज़ोर पर सदियों तक रहती है।"
    },
-   "seq": 105
+   "seq": 138
   },
   {
    "id": "environment.pollution.f06",
@@ -3636,7 +4733,7 @@
     "hi": "सुंदरबन = सबसे बड़ा मैंग्रोव वन, और यही पश्चिम बंगाल को पहला बनाता है।"
    },
    "review_note": "Re-check ranking against the latest ISFR before publishing.",
-   "seq": 106
+   "seq": 139
   },
   {
    "id": "environment.pollution.s01",
@@ -3707,7 +4804,7 @@
     "en": "Bacteria use it up while decomposing dead algae.",
     "hi": "मरे शैवाल को सड़ाते हुए जीवाणु उसे ख़त्म कर देते हैं।"
    },
-   "seq": 107
+   "seq": 140
   },
   {
    "id": "environment.pollution.sum",
@@ -3738,7 +4835,7 @@
      "hi": "मीथेन: प्रबल, अल्पकालिक; CO2: कमज़ोर, दीर्घकालिक।"
     }
    ],
-   "seq": 108
+   "seq": 141
   },
   {
    "id": "polity.president.f01",
@@ -3768,7 +4865,7 @@
     "hi": "राष्ट्रपति को केवल जनता द्वारा चुने गए लोग चुनते हैं: सांसद और विधायक, मनोनीत सदस्य नहीं।"
    },
    "review_note": "Voting is by proportional representation with the single transferable vote, by secret ballot.",
-   "seq": 109
+   "seq": 142
   },
   {
    "id": "polity.president.f02",
@@ -3797,7 +4894,7 @@
     "en": "72 = mercy. A Governor has a similar power under Article 161, but cannot pardon a death sentence.",
     "hi": "72 = दया। राज्यपाल के पास अनुच्छेद 161 के तहत ऐसी शक्ति है, पर वह मृत्युदंड माफ़ नहीं कर सकते।"
    },
-   "seq": 110
+   "seq": 143
   },
   {
    "id": "polity.president.f03",
@@ -3826,7 +4923,7 @@
     "en": "An ordinance is a temporary law for a break period; Parliament must okay it within six weeks of returning.",
     "hi": "अध्यादेश छुट्टी के समय का अस्थायी क़ानून है; लौटने के छह सप्ताह में संसद को इसे मंज़ूर करना होता है।"
    },
-   "seq": 111
+   "seq": 144
   },
   {
    "id": "polity.president.f04",
@@ -3855,7 +4952,7 @@
     "en": "Lok Sabha has a Speaker; Rajya Sabha's chair is the Vice-President.",
     "hi": "लोकसभा में अध्यक्ष (स्पीकर); राज्यसभा में सभापति उपराष्ट्रपति।"
    },
-   "seq": 112
+   "seq": 145
   },
   {
    "id": "polity.president.f05",
@@ -3884,7 +4981,7 @@
     "en": "Ministers are a team answerable to Lok Sabha, and the team can be at most 15% of its size.",
     "hi": "मंत्री लोकसभा के प्रति उत्तरदायी एक टीम हैं, और टीम इसके आकार का अधिकतम 15% हो सकती है।"
    },
-   "seq": 113
+   "seq": 146
   },
   {
    "id": "polity.president.sum",
@@ -3915,7 +5012,7 @@
      "hi": "मंत्री लोकसभा के प्रति उत्तरदायी; अधिकतम 15%।"
     }
    ],
-   "seq": 114
+   "seq": 147
   },
   {
    "id": "economy.external.f01",
@@ -3948,7 +5045,7 @@
     "en": "Kerala receives a large share of India's remittances from the Gulf.",
     "hi": "भारत के धन-प्रेषण का बड़ा हिस्सा खाड़ी देशों से केरल आता है।"
    },
-   "seq": 115
+   "seq": 148
   },
   {
    "id": "economy.external.f02",
@@ -3977,7 +5074,7 @@
     "en": "Buy a big stake to help run the company = FDI. Buy a small slice to trade = FPI.",
     "hi": "कंपनी चलाने में हिस्सा लेने के लिए बड़ा हिस्सा = FDI। व्यापार के लिए छोटा टुकड़ा = FPI।"
    },
-   "seq": 116
+   "seq": 149
   },
   {
    "id": "economy.external.f03",
@@ -4006,7 +5103,7 @@
     "en": "Weak rupee: exporters smile, importers (and oil buyers) pay more.",
     "hi": "कमज़ोर रुपया: निर्यातक ख़ुश, आयातक (और तेल ख़रीदार) ज़्यादा चुकाते हैं।"
    },
-   "seq": 117
+   "seq": 150
   },
   {
    "id": "economy.external.f04",
@@ -4035,7 +5132,7 @@
     "en": "SDR is the IMF's own money, made from five big currencies — not the rupee.",
     "hi": "SDR आईएमएफ़ की अपनी मुद्रा है, पाँच बड़ी मुद्राओं से बनी — रुपया नहीं।"
    },
-   "seq": 118
+   "seq": 151
   },
   {
    "id": "economy.external.sum",
@@ -4070,7 +5167,7 @@
      "hi": "SDR: पाँच मुद्राएँ, रुपया नहीं।"
     }
    ],
-   "seq": 119
+   "seq": 152
   },
   {
    "id": "polity.judiciary.f01",
@@ -4103,7 +5200,7 @@
     "en": "The case arose from a Kerala land-reform law challenged by the head of the Edneer Mutt in Kasaragod.",
     "hi": "यह मामला कासरगोड के एडनीर मठ के प्रमुख द्वारा केरल के भूमि-सुधार क़ानून को चुनौती देने से शुरू हुआ।"
    },
-   "seq": 120
+   "seq": 153
   },
   {
    "id": "polity.judiciary.f02",
@@ -4132,7 +5229,7 @@
     "en": "131 = government vs government cases start at the top.",
     "hi": "131 = सरकार बनाम सरकार के मामले सीधे सबसे ऊपर शुरू होते हैं।"
    },
-   "seq": 121
+   "seq": 154
   },
   {
    "id": "polity.judiciary.f03",
@@ -4165,7 +5262,7 @@
     "en": "The Ayodhya reference (1993) is one the Court declined to answer.",
     "hi": "अयोध्या संदर्भ (1993) में न्यायालय ने उत्तर देने से मना कर दिया था।"
    },
-   "seq": 122
+   "seq": 155
   },
   {
    "id": "polity.judiciary.f04",
@@ -4194,7 +5291,7 @@
     "en": "Supreme Court 65, High Court 62 — the higher court retires later.",
     "hi": "सर्वोच्च 65, उच्च 62 — ऊँचे न्यायालय में सेवानिवृत्ति बाद में।"
    },
-   "seq": 123
+   "seq": 156
   },
   {
    "id": "polity.judiciary.sum",
@@ -4225,7 +5322,7 @@
      "hi": "सेवानिवृत्ति: सर्वोच्च 65, उच्च 62।"
     }
    ],
-   "seq": 124
+   "seq": 157
   },
   {
    "id": "economy.agri.f01",
@@ -4255,7 +5352,7 @@
     "hi": "CACP सुझाव देता है; आर्थिक मामलों की मंत्रिमंडल समिति तय करती और घोषित करती है।"
    },
    "review_note": "CACP is an attached office of the Ministry of Agriculture, not a statutory body. Sugarcane has FRP, not MSP.",
-   "seq": 125
+   "seq": 158
   },
   {
    "id": "economy.agri.f02",
@@ -4284,7 +5381,7 @@
     "en": "Ask for work in your village; the law says you must get it within 15 days, up to 100 days a year.",
     "hi": "अपने गाँव में काम माँगिए; क़ानून कहता है 15 दिन में मिलना चाहिए, वर्ष में 100 दिन तक।"
    },
-   "seq": 126
+   "seq": 159
   },
   {
    "id": "economy.agri.f03",
@@ -4313,7 +5410,7 @@
     "en": "₹2,000 three times a year, straight to the bank.",
     "hi": "साल में तीन बार ₹2,000, सीधे बैंक में।"
    },
-   "seq": 127
+   "seq": 160
   },
   {
    "id": "economy.agri.sum",
@@ -4340,7 +5437,7 @@
      "hi": "पीएम-किसान: ₹6,000 तीन क़िस्तों में।"
     }
    ],
-   "seq": 128
+   "seq": 161
   },
   {
    "id": "polity.federal.f01",
@@ -4373,7 +5470,7 @@
     "en": "Defence is in the Union List, police in the State List, education and forests in the Concurrent List.",
     "hi": "रक्षा संघ सूची में, पुलिस राज्य सूची में, शिक्षा और वन समवर्ती सूची में हैं।"
    },
-   "seq": 129
+   "seq": 162
   },
   {
    "id": "polity.federal.f02",
@@ -4403,7 +5500,7 @@
     "hi": "शिक्षा पहले राज्य का विषय थी; 1976 से केंद्र और राज्य दोनों इसे साझा करते हैं।"
    },
    "review_note": "The five: education, forests, weights and measures, protection of wild animals and birds, administration of justice.",
-   "seq": 130
+   "seq": 163
   },
   {
    "id": "polity.federal.f03",
@@ -4432,7 +5529,7 @@
     "en": "After 1975, the vague words 'internal disturbance' were replaced by the stricter 'armed rebellion'.",
     "hi": "1975 के बाद अस्पष्ट 'आंतरिक अशांति' की जगह सख़्त 'सशस्त्र विद्रोह' रखा गया।"
    },
-   "seq": 131
+   "seq": 164
   },
   {
    "id": "polity.federal.f04",
@@ -4461,7 +5558,7 @@
     "en": "352 national, 356 state, 360 financial. Only 360 has never been used.",
     "hi": "352 राष्ट्रीय, 356 राज्य, 360 वित्तीय। केवल 360 कभी उपयोग नहीं हुआ।"
    },
-   "seq": 132
+   "seq": 165
   },
   {
    "id": "polity.federal.f05",
@@ -4490,7 +5587,7 @@
     "en": "One tax for the country, so one table where the Centre and every state sit together.",
     "hi": "देश के लिए एक कर, इसलिए एक मेज़ जहाँ केंद्र और हर राज्य साथ बैठते हैं।"
    },
-   "seq": 133
+   "seq": 166
   },
   {
    "id": "polity.federal.sum",
@@ -4521,7 +5618,7 @@
      "hi": "अनु. 360 कभी उपयोग नहीं; जीएसटी परिषद अनु. 279A।"
     }
    ],
-   "seq": 134
+   "seq": 167
   },
   {
    "id": "polity.local.f01",
@@ -4554,7 +5651,7 @@
     "en": "Kerala's 1996 People's Plan Campaign gave panchayats about a third of the state plan funds.",
     "hi": "केरल के 1996 के जन योजना अभियान ने पंचायतों को राज्य योजना निधि का लगभग एक-तिहाई दिया।"
    },
-   "seq": 135
+   "seq": 168
   },
   {
    "id": "polity.local.f02",
@@ -4583,7 +5680,7 @@
     "en": "Villages: 73rd, 29 subjects. Towns: 74th, 18 subjects.",
     "hi": "गाँव: 73वाँ, 29 विषय। शहर: 74वाँ, 18 विषय।"
    },
-   "seq": 136
+   "seq": 169
   },
   {
    "id": "polity.local.f03",
@@ -4612,7 +5709,7 @@
     "en": "Three floors of local government — village, block, district — suggested by Balwant Rai Mehta.",
     "hi": "स्थानीय शासन की तीन मंज़िलें — गाँव, ब्लॉक, ज़िला — बलवंत राय मेहता ने सुझाईं।"
    },
-   "seq": 137
+   "seq": 170
   },
   {
    "id": "polity.local.sum",
@@ -4643,7 +5740,7 @@
      "hi": "तीन स्तर: बलवंत राय मेहता, 1957।"
     }
    ],
-   "seq": 138
+   "seq": 171
   },
   {
    "id": "polity.bodies.f01",
@@ -4672,7 +5769,7 @@
     "en": "Pairs to remember: EC 324, CAG 148, FC 280, UPSC 315.",
     "hi": "याद रखने के जोड़े: निर्वाचन आयोग 324, CAG 148, वित्त आयोग 280, UPSC 315।"
    },
-   "seq": 139
+   "seq": 172
   },
   {
    "id": "polity.bodies.f02",
@@ -4702,7 +5799,7 @@
     "hi": "हर पाँच साल में एक निर्णायक तय करता है कि कर का केक केंद्र और राज्यों में कैसे कटे।"
    },
    "review_note": "16th Finance Commission chaired by Arvind Panagariya (constituted Dec 2023); check its report status before publishing.",
-   "seq": 140
+   "seq": 173
   },
   {
    "id": "polity.bodies.f03",
@@ -4731,7 +5828,7 @@
     "en": "Constitution-made: EC, CAG, Finance Commission. Government-made: NITI Aayog.",
     "hi": "संविधान से बने: निर्वाचन आयोग, CAG, वित्त आयोग। सरकार से बना: नीति आयोग।"
    },
-   "seq": 141
+   "seq": 174
   },
   {
    "id": "polity.bodies.f04",
@@ -4760,7 +5857,7 @@
     "en": "The government's lawyer can talk in Parliament, but only members vote.",
     "hi": "सरकार के वकील संसद में बोल सकते हैं, पर मतदान केवल सदस्य करते हैं।"
    },
-   "seq": 142
+   "seq": 175
   },
   {
    "id": "polity.bodies.sum",
@@ -4791,7 +5888,7 @@
      "hi": "महान्यायवादी बोल सकते हैं, मतदान नहीं।"
     }
    ],
-   "seq": 143
+   "seq": 176
   }
  ],
  "questions": [
@@ -7472,6 +8569,730 @@
    "source": "Practice — exam pattern (not from a past paper)",
    "covers": [
     "environment.pollution.f06"
+   ]
+  },
+  {
+   "id": "q.practice.history.1",
+   "topic": "history.modern",
+   "kind": "mcq",
+   "q": {
+    "en": "Who was the first president of the Indian National Congress?",
+    "hi": "भारतीय राष्ट्रीय कांग्रेस के पहले अध्यक्ष कौन थे?"
+   },
+   "options": [
+    {
+     "en": "Dadabhai Naoroji",
+     "hi": "दादाभाई नौरोजी"
+    },
+    {
+     "en": "A. O. Hume",
+     "hi": "ए. ओ. ह्यूम"
+    },
+    {
+     "en": "W. C. Bonnerjee",
+     "hi": "डब्ल्यू. सी. बनर्जी"
+    },
+    {
+     "en": "Surendranath Banerjea",
+     "hi": "सुरेंद्रनाथ बनर्जी"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Hume helped found it; Bonnerjee presided.",
+    "hi": "ह्यूम ने स्थापना में मदद की; बनर्जी ने अध्यक्षता की।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.modern.f01"
+   ]
+  },
+  {
+   "id": "q.practice.history.2",
+   "topic": "history.modern",
+   "kind": "mcq",
+   "q": {
+    "en": "Arrange in chronological order:\n1. Champaran Satyagraha\n2. Partition of Bengal\n3. Chauri Chaura incident\n4. Dandi March",
+    "hi": "कालानुक्रम में लगाइए:\n1. चंपारण सत्याग्रह\n2. बंगाल विभाजन\n3. चौरी चौरा घटना\n4. दांडी यात्रा"
+   },
+   "options": [
+    {
+     "en": "2-1-3-4",
+     "hi": "2-1-3-4"
+    },
+    {
+     "en": "1-2-3-4",
+     "hi": "1-2-3-4"
+    },
+    {
+     "en": "2-3-1-4",
+     "hi": "2-3-1-4"
+    },
+    {
+     "en": "1-3-2-4",
+     "hi": "1-3-2-4"
+    }
+   ],
+   "answer": 0,
+   "explain": {
+    "en": "1905, 1917, 1922, 1930.",
+    "hi": "1905, 1917, 1922, 1930।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.modern.f02",
+    "history.modern.f03",
+    "history.modern.f04",
+    "history.modern.f05"
+   ]
+  },
+  {
+   "id": "q.practice.history.3",
+   "topic": "history.modern",
+   "kind": "mcq",
+   "q": {
+    "en": "The Poona Pact (1932) provided for:",
+    "hi": "पूना पैक्ट (1932) में प्रावधान था:"
+   },
+   "options": [
+    {
+     "en": "Separate electorates for the depressed classes",
+     "hi": "दलित वर्गों के लिए पृथक निर्वाचन"
+    },
+    {
+     "en": "Reserved seats for the depressed classes in joint electorates",
+     "hi": "संयुक्त निर्वाचन में दलित वर्गों के लिए आरक्षित सीटें"
+    },
+    {
+     "en": "Dominion status for India",
+     "hi": "भारत को डोमिनियन दर्जा"
+    },
+    {
+     "en": "Abolition of untouchability by law",
+     "hi": "क़ानून से अस्पृश्यता का उन्मूलन"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "It replaced the Communal Award's separate electorates.",
+    "hi": "इसने सांप्रदायिक पंचाट के पृथक निर्वाचन की जगह ली।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.modern.f06"
+   ]
+  },
+  {
+   "id": "q.practice.history.4",
+   "topic": "history.modern",
+   "kind": "mcq",
+   "q": {
+    "en": "Consider:\n1. The Lucknow Pact was signed between Congress and the Muslim League.\n2. The Home Rule Leagues were started in 1916.\nWhich is/are correct?",
+    "hi": "विचार कीजिए:\n1. लखनऊ समझौता कांग्रेस और मुस्लिम लीग के बीच हुआ।\n2. होम रूल लीग 1916 में शुरू हुईं।\nकौन-सा/से सही है/हैं?"
+   },
+   "options": [
+    {
+     "en": "1 only",
+     "hi": "केवल 1"
+    },
+    {
+     "en": "2 only",
+     "hi": "केवल 2"
+    },
+    {
+     "en": "Both 1 and 2",
+     "hi": "1 और 2 दोनों"
+    },
+    {
+     "en": "Neither 1 nor 2",
+     "hi": "न 1, न 2"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Both happened in 1916.",
+    "hi": "दोनों 1916 में हुए।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.modern.f08"
+   ]
+  },
+  {
+   "id": "q.practice.history.5",
+   "topic": "history.modern",
+   "kind": "mcq",
+   "q": {
+    "en": "Which provision of the Government of India Act 1935 never came into force?",
+    "hi": "भारत सरकार अधिनियम 1935 का कौन-सा प्रावधान कभी लागू नहीं हुआ?"
+   },
+   "options": [
+    {
+     "en": "Provincial autonomy",
+     "hi": "प्रांतीय स्वायत्तता"
+    },
+    {
+     "en": "All-India federation",
+     "hi": "अखिल भारतीय संघ"
+    },
+    {
+     "en": "Federal Court",
+     "hi": "संघीय न्यायालय"
+    },
+    {
+     "en": "Reserve Bank of India",
+     "hi": "भारतीय रिज़र्व बैंक"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Not enough princely states joined.",
+    "hi": "पर्याप्त रियासतें नहीं जुड़ीं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.modern.f09"
+   ]
+  },
+  {
+   "id": "q.practice.history.6",
+   "topic": "history.modern",
+   "kind": "mcq",
+   "q": {
+    "en": "The Permanent Settlement fixed land revenue to be paid by:",
+    "hi": "स्थायी बंदोबस्त में भू-राजस्व किसके द्वारा देय तय हुआ?"
+   },
+   "options": [
+    {
+     "en": "Individual peasants",
+     "hi": "व्यक्तिगत किसान"
+    },
+    {
+     "en": "Village communities",
+     "hi": "ग्राम समुदाय"
+    },
+    {
+     "en": "Zamindars",
+     "hi": "ज़मींदार"
+    },
+    {
+     "en": "Moneylenders",
+     "hi": "साहूकार"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Ryotwari dealt with peasants; Permanent Settlement with zamindars.",
+    "hi": "रैयतवाड़ी में किसान; स्थायी बंदोबस्त में ज़मींदार।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.modern.f10"
+   ]
+  },
+  {
+   "id": "q.practice.history.7",
+   "topic": "history.modern",
+   "kind": "mcq",
+   "q": {
+    "en": "The Quit India resolution was adopted in:",
+    "hi": "भारत छोड़ो प्रस्ताव कहाँ पारित हुआ?"
+   },
+   "options": [
+    {
+     "en": "Lahore, 1929",
+     "hi": "लाहौर, 1929"
+    },
+    {
+     "en": "Bombay, 1942",
+     "hi": "बंबई, 1942"
+    },
+    {
+     "en": "Wardha, 1942",
+     "hi": "वर्धा, 1942"
+    },
+    {
+     "en": "Calcutta, 1946",
+     "hi": "कलकत्ता, 1946"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "8 August 1942, Bombay.",
+    "hi": "8 अगस्त 1942, बंबई।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.modern.f07",
+    "history.modern.s01"
+   ]
+  },
+  {
+   "id": "q.practice.history.8",
+   "topic": "history.ancient",
+   "kind": "mcq",
+   "q": {
+    "en": "Which Harappan site is associated with a dockyard?",
+    "hi": "किस हड़प्पा स्थल से गोदीवाड़ा जुड़ा है?"
+   },
+   "options": [
+    {
+     "en": "Harappa",
+     "hi": "हड़प्पा"
+    },
+    {
+     "en": "Kalibangan",
+     "hi": "कालीबंगा"
+    },
+    {
+     "en": "Lothal",
+     "hi": "लोथल"
+    },
+    {
+     "en": "Mohenjo-daro",
+     "hi": "मोहनजोदड़ो"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Lothal in Gujarat had a dockyard.",
+    "hi": "गुजरात के लोथल में गोदीवाड़ा था।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.ancient.f01"
+   ]
+  },
+  {
+   "id": "q.practice.history.9",
+   "topic": "history.ancient",
+   "kind": "mcq",
+   "q": {
+    "en": "The Buddha delivered his first sermon at:",
+    "hi": "बुद्ध ने पहला उपदेश कहाँ दिया?"
+   },
+   "options": [
+    {
+     "en": "Bodh Gaya",
+     "hi": "बोधगया"
+    },
+    {
+     "en": "Sarnath",
+     "hi": "सारनाथ"
+    },
+    {
+     "en": "Kushinagar",
+     "hi": "कुशीनगर"
+    },
+    {
+     "en": "Lumbini",
+     "hi": "लुंबिनी"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Sarnath: turning the wheel of dharma.",
+    "hi": "सारनाथ: धर्मचक्र प्रवर्तन।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.ancient.f02"
+   ]
+  },
+  {
+   "id": "q.practice.history.10",
+   "topic": "history.ancient",
+   "kind": "mcq",
+   "q": {
+    "en": "Most of Ashoka's inscriptions are written in:",
+    "hi": "अशोक के अधिकांश अभिलेख किसमें लिखे गए हैं?"
+   },
+   "options": [
+    {
+     "en": "Sanskrit in Devanagari",
+     "hi": "देवनागरी में संस्कृत"
+    },
+    {
+     "en": "Prakrit in Brahmi",
+     "hi": "ब्राह्मी में प्राकृत"
+    },
+    {
+     "en": "Pali in Kharosthi",
+     "hi": "खरोष्ठी में पाली"
+    },
+    {
+     "en": "Greek",
+     "hi": "यूनानी"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Kharosthi, Greek and Aramaic were used only in the north-west.",
+    "hi": "खरोष्ठी, यूनानी और अरामाई केवल उत्तर-पश्चिम में।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.ancient.f04"
+   ]
+  },
+  {
+   "id": "q.practice.history.11",
+   "topic": "history.ancient",
+   "kind": "mcq",
+   "q": {
+    "en": "Which vow was added by Mahavira to the four vows of Parshvanatha?",
+    "hi": "महावीर ने पार्श्वनाथ के चार व्रतों में कौन-सा व्रत जोड़ा?"
+   },
+   "options": [
+    {
+     "en": "Ahimsa",
+     "hi": "अहिंसा"
+    },
+    {
+     "en": "Aparigraha",
+     "hi": "अपरिग्रह"
+    },
+    {
+     "en": "Brahmacharya",
+     "hi": "ब्रह्मचर्य"
+    },
+    {
+     "en": "Asteya",
+     "hi": "अस्तेय"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Brahmacharya made the vows five.",
+    "hi": "ब्रह्मचर्य से व्रत पाँच हुए।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.ancient.f03"
+   ]
+  },
+  {
+   "id": "q.practice.history.12",
+   "topic": "history.ancient",
+   "kind": "mcq",
+   "q": {
+    "en": "Tolkappiyam is a work on:",
+    "hi": "तोलकाप्पियम किस विषय पर ग्रंथ है?"
+   },
+   "options": [
+    {
+     "en": "Tamil grammar",
+     "hi": "तमिल व्याकरण"
+    },
+    {
+     "en": "Astronomy",
+     "hi": "खगोल"
+    },
+    {
+     "en": "Statecraft",
+     "hi": "राजनीति"
+    },
+    {
+     "en": "Medicine",
+     "hi": "चिकित्सा"
+    }
+   ],
+   "answer": 0,
+   "explain": {
+    "en": "It is the earliest Tamil grammar.",
+    "hi": "यह सबसे प्राचीन तमिल व्याकरण है।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.ancient.f07"
+   ]
+  },
+  {
+   "id": "q.practice.history.13",
+   "topic": "history.culture",
+   "kind": "mcq",
+   "q": {
+    "en": "Which of the following classical dances originated in Assam?",
+    "hi": "निम्नलिखित में से कौन-सा शास्त्रीय नृत्य असम में उत्पन्न हुआ?"
+   },
+   "options": [
+    {
+     "en": "Manipuri",
+     "hi": "मणिपुरी"
+    },
+    {
+     "en": "Sattriya",
+     "hi": "सत्रिया"
+    },
+    {
+     "en": "Odissi",
+     "hi": "ओडिसी"
+    },
+    {
+     "en": "Kuchipudi",
+     "hi": "कुचिपुड़ी"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Sankaradeva's sattras gave Sattriya.",
+    "hi": "शंकरदेव के सत्रों से सत्रिया आया।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.culture.f01"
+   ]
+  },
+  {
+   "id": "q.practice.history.14",
+   "topic": "history.culture",
+   "kind": "mcq",
+   "q": {
+    "en": "'Gopuram' is a feature of which temple style?",
+    "hi": "'गोपुरम' किस मंदिर शैली की विशेषता है?"
+   },
+   "options": [
+    {
+     "en": "Nagara",
+     "hi": "नागर"
+    },
+    {
+     "en": "Dravida",
+     "hi": "द्रविड़"
+    },
+    {
+     "en": "Vesara",
+     "hi": "वेसर"
+    },
+    {
+     "en": "Indo-Islamic",
+     "hi": "इंडो-इस्लामिक"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Dravida temples have gopurams and a stepped vimana.",
+    "hi": "द्रविड़ मंदिरों में गोपुरम और सीढ़ीदार विमान होते हैं।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.culture.f02"
+   ]
+  },
+  {
+   "id": "q.practice.history.15",
+   "topic": "history.culture",
+   "kind": "mcq",
+   "q": {
+    "en": "The Kailasa temple at Ellora was built under which dynasty?",
+    "hi": "एलोरा का कैलाश मंदिर किस राजवंश के समय बना?"
+   },
+   "options": [
+    {
+     "en": "Chalukya",
+     "hi": "चालुक्य"
+    },
+    {
+     "en": "Pallava",
+     "hi": "पल्लव"
+    },
+    {
+     "en": "Rashtrakuta",
+     "hi": "राष्ट्रकूट"
+    },
+    {
+     "en": "Chola",
+     "hi": "चोल"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Krishna I, a Rashtrakuta king.",
+    "hi": "कृष्ण प्रथम, एक राष्ट्रकूट राजा।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.culture.f03"
+   ]
+  },
+  {
+   "id": "q.practice.history.16",
+   "topic": "history.culture",
+   "kind": "mcq",
+   "q": {
+    "en": "The Nayanars were devotees of:",
+    "hi": "नयनार किसके भक्त थे?"
+   },
+   "options": [
+    {
+     "en": "Vishnu",
+     "hi": "विष्णु"
+    },
+    {
+     "en": "Shiva",
+     "hi": "शिव"
+    },
+    {
+     "en": "Shakti",
+     "hi": "शक्ति"
+    },
+    {
+     "en": "Murugan",
+     "hi": "मुरुगन"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Alvars = Vishnu; Nayanars = Shiva.",
+    "hi": "आलवार = विष्णु; नयनार = शिव।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.culture.f04"
+   ]
+  },
+  {
+   "id": "q.practice.history.17",
+   "topic": "history.medieval",
+   "kind": "mcq",
+   "q": {
+    "en": "The Uttaramerur inscriptions are a source of information about:",
+    "hi": "उत्तरमेरूर अभिलेख किसके बारे में जानकारी का स्रोत हैं?"
+   },
+   "options": [
+    {
+     "en": "Mughal revenue",
+     "hi": "मुग़ल राजस्व"
+    },
+    {
+     "en": "Chola village assemblies",
+     "hi": "चोल ग्राम सभाएँ"
+    },
+    {
+     "en": "Maratha forts",
+     "hi": "मराठा क़िले"
+    },
+    {
+     "en": "Vijayanagara temples",
+     "hi": "विजयनगर मंदिर"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "They describe how sabha members were chosen.",
+    "hi": "ये बताते हैं कि सभा के सदस्य कैसे चुने जाते थे।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.medieval.f01"
+   ]
+  },
+  {
+   "id": "q.practice.history.18",
+   "topic": "history.medieval",
+   "kind": "mcq",
+   "q": {
+    "en": "In the mansabdari system, 'sawar' indicated:",
+    "hi": "मनसबदारी व्यवस्था में 'सवार' क्या दर्शाता था?"
+   },
+   "options": [
+    {
+     "en": "Personal rank",
+     "hi": "व्यक्तिगत पद"
+    },
+    {
+     "en": "Number of horsemen to be maintained",
+     "hi": "रखे जाने वाले घुड़सवारों की संख्या"
+    },
+    {
+     "en": "Land revenue assigned",
+     "hi": "आवंटित भू-राजस्व"
+    },
+    {
+     "en": "Number of elephants",
+     "hi": "हाथियों की संख्या"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Zat was the personal rank.",
+    "hi": "ज़ात व्यक्तिगत पद था।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.medieval.f03"
+   ]
+  },
+  {
+   "id": "q.practice.history.19",
+   "topic": "history.medieval",
+   "kind": "mcq",
+   "q": {
+    "en": "Amuktamalyada was written by:",
+    "hi": "आमुक्तमाल्यद किसने लिखा?"
+   },
+   "options": [
+    {
+     "en": "Harihara",
+     "hi": "हरिहर"
+    },
+    {
+     "en": "Krishnadevaraya",
+     "hi": "कृष्णदेवराय"
+    },
+    {
+     "en": "Tenali Rama",
+     "hi": "तेनाली राम"
+    },
+    {
+     "en": "Bukka",
+     "hi": "बुक्का"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "en": "Krishnadevaraya wrote it in Telugu.",
+    "hi": "कृष्णदेवराय ने इसे तेलुगु में लिखा।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.medieval.f04"
+   ]
+  },
+  {
+   "id": "q.practice.history.20",
+   "topic": "history.medieval",
+   "kind": "mcq",
+   "q": {
+    "en": "Market control measures in Delhi are associated with:",
+    "hi": "दिल्ली में बाज़ार नियंत्रण के उपाय किससे जुड़े हैं?"
+   },
+   "options": [
+    {
+     "en": "Iltutmish",
+     "hi": "इल्तुतमिश"
+    },
+    {
+     "en": "Balban",
+     "hi": "बलबन"
+    },
+    {
+     "en": "Alauddin Khalji",
+     "hi": "अलाउद्दीन ख़िलजी"
+    },
+    {
+     "en": "Muhammad bin Tughluq",
+     "hi": "मुहम्मद बिन तुग़लक़"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "en": "Alauddin fixed prices to pay a large army.",
+    "hi": "बड़ी सेना के लिए अलाउद्दीन ने भाव तय किए।"
+   },
+   "source": "Practice — exam pattern (not from a past paper)",
+   "covers": [
+    "history.medieval.f02"
    ]
   }
  ]
